@@ -1,0 +1,6 @@
+2013/04/11 10:18:46 - Kitchen - Logging is at level : Basic logging
+2013/04/11 10:18:46 - Kitchen - Start of run.
+2013/04/11 10:18:46 - Dummy_JOB_2 - Start of job execution
+2013/04/11 10:18:46 - Dummy_JOB_2 - Starting entry [DUMMY]
+2013/04/11 10:18:46 - Dummy_JOB_2 - Finished job entry [DUMMY] (result=[true])
+2013/04/11 10:18:46 - Dummy_JOB_2 - Job execution finished

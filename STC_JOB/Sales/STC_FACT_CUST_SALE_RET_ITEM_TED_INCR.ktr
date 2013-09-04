@@ -1,0 +1,3809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>STC_FACT_CUST_SALE_RET_ITEM_TED</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;10&#47;15 18:06:49.926</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;10&#47;15 18:06:49.926</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>leaf_fact</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1521</port>
+    <username>hr</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2a7c8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live_CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM</name>
+    <server>192.168.2.100</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>STC_V4</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom1</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom2</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM_ORACLE</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>mycom</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7dc791a0d7</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>naga</name>
+    <server>10.80.0.46</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ORION</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>ORION106</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orion_original</name>
+    <server>shankartrading</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>orion106</username>
+    <password>Encrypted 2be98dcbc09c8808da417ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orionpay</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PAYROLL</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>STCNEW.WORLD</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>RPRO</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>rpro</username>
+    <password>Encrypted 2be98afc86aa78190a80bbe62d1c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>STCBI106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact0</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact07</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact2</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact3</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact5</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact6</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_DIM_FACT_1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse1</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Table input</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>GRADE1_ID</from><to>GRADE2_ID</to><enabled>Y</enabled> </hop>  <hop> <from>GRADE2_ID</from><to>CATEGORY_ID</to><enabled>Y</enabled> </hop>  <hop> <from>COMP_ID</from><to>TRAN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>TRAN_ID</from><to>DOC_SRC_LOCTN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>DOC_SRC_LOCTN_ID</from><to>CUSTOMER_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ITEM_ID</from><to>REF_TRAN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>REF_TRAN_ID</from><to>CLO_REASON_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ARTICLE_ID</from><to>SHORT_CLO_REASON_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SHORT_CLO_REASON_ID</from><to>PACKING_ID</to><enabled>Y</enabled> </hop>  <hop> <from>PACKING_ID</from><to>AMD_REASON_ID</to><enabled>Y</enabled> </hop>  <hop> <from>AMD_REASON_ID</from><to>SIZE_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SIZE_ID</from><to>CAT_MANG_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CAT_MANG_ID</from><to>FOOD_CAT_ID</to><enabled>Y</enabled> </hop>  <hop> <from>FOOD_CAT_ID</from><to>PRICE_LIST_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CUSTOMER_ID</from><to>Ship_to_address_ID </to><enabled>Y</enabled> </hop>  <hop> <from>Ship_to_address_ID </from><to>BILL_TO_ADDRESS_ID</to><enabled>Y</enabled> </hop>  <hop> <from>BILL_TO_ADDRESS_ID</from><to>ITEM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CLO_REASON_ID</from><to>ARTICLE_ID</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>ITEM_UOM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ITEM_UOM_ID</from><to>GRADE1_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CATEGORY_ID</from><to>LOCATION_ID</to><enabled>Y</enabled> </hop>  <hop> <from>LOCATION_ID</from><to>DEL_LOCATION_ID</to><enabled>Y</enabled> </hop>  <hop> <from>DEL_LOCATION_ID</from><to>DEPARTMENT_ID_LKP</to><enabled>Y</enabled> </hop>  <hop> <from>DEPARTMENT_ID_LKP</from><to>COMP_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CURRENCY_ID</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  <hop> <from>PRICE_LIST_ID</from><to>CURRENCY_ID</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>AMD_REASON_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_REASON</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_AMD_RES_CODE</name>
+        <field>RES_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>REASON_ID</name>
+        <rename>AMD_REASON_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>775</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ARTICLE_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ARTICLE</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_10</name>
+        <field>ARTICLE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ARTICLE_ID</name>
+        <rename>ARTICLE_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>715</xloc>
+      <yloc>330</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>BILL_TO_ADDRESS_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CUST_ADDRESS</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_CUST_CODE</name>
+        <field>CA_CUST_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRH_BILL_TO_ADDR_CODE</name>
+        <field>ADDR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CUST_ADDRESS_ID</name>
+        <rename>BILL_TO_ADDRESS_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>218</xloc>
+      <yloc>294</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CATEGORY_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CATEGORY</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_08</name>
+        <field>CATEGORY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CATEGORY_ID</name>
+        <rename>CATEGORY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>818</xloc>
+      <yloc>40</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CAT_MANG_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CAT_MANG</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_13</name>
+        <field>CAT_MANG_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CAT_MANG_ID</name>
+        <rename>CAT_MANG_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>547</xloc>
+      <yloc>402</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CLO_REASON_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>stc_dim_reason</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRI_RES_CODE</name>
+        <field>RES_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>REASON_ID</name>
+        <rename>CLO_REASON_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>578</xloc>
+      <yloc>330</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>COMP_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_COMPANIES</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_COMP_CODE</name>
+        <field>COMPANY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COMP_ID</name>
+        <rename>COMP_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>480</xloc>
+      <yloc>205</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CURRENCY_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CURRENCY</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_CURR_CODE</name>
+        <field>CURR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>60</xloc>
+      <yloc>419</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CUSTOMER_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CUSTOMER</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_CUST_CODE</name>
+        <field>CUST_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRH_COMP_CODE</name>
+        <field>CCO_COMP_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CUSTOMER_ID</name>
+        <rename>CUSTOMER_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>122</xloc>
+      <yloc>197</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DEL_LOCATION_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_LOCATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_DEL_LOCN_CODE</name>
+        <field>LOCN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>DEL_LOCATION_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>747</xloc>
+      <yloc>219</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DEPARTMENT_ID_LKP</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_DEPARTMENT</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_02</name>
+        <field>DEPARTMENT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_06</name>
+        <field>CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_07</name>
+        <field>SUB_CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>DEPARTMENT_ID</name>
+        <rename>DEPARTMENT_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>604</xloc>
+      <yloc>213</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DOC_SRC_LOCTN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_LOCATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_DOC_SRC_LOCN_CODE</name>
+        <field>LOCN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>DOC_SRC_LOCN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>260</xloc>
+      <yloc>197</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>FOOD_CAT_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_FOOD_CAT</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_03</name>
+        <field>FOOD_CAT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_04</name>
+        <field>FOOD_SUB_CAT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>FOOD_CAT_ID</name>
+        <rename>FOOD_CAT_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>450</xloc>
+      <yloc>404</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>GRADE1_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_GRADE1</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRI_GRADE_CODE_1</name>
+        <field>GRADE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRADE1_ID</name>
+        <rename>GRADE1_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>543</xloc>
+      <yloc>45</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>GRADE2_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_GRADE2</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRI_GRADE_CODE_2</name>
+        <field>GRADE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRADE2_ID</name>
+        <rename>GRADE2_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>698</xloc>
+      <yloc>43</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRI_ITEM_CODE</name>
+        <field>ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>352</xloc>
+      <yloc>313</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_UOM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM_UOM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRI_ITEM_CODE</name>
+        <field>IU_ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRI_UOM_CODE</name>
+        <field>IU_UOM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ITEM_UOM_ID</name>
+        <rename>ITEM_UOM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>353</xloc>
+      <yloc>41</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>STC_FACT_CUST_SALE_RET_ted</table>
+      <key>
+        <name>ITED_SYS_ID</name>
+        <field>ITED_SYS_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>AMD_REASON_ID</name>
+        <rename>AMD_REASON_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ARTICLE_ID</name>
+        <rename>ARTICLE_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>BILL_TO_ADDESS_ID</name>
+        <rename>BILL_TO_ADDRESS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CATEGORY_ID</name>
+        <rename>CATEGORY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CAT_MANG_ID</name>
+        <rename>CAT_MANG_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>REASON_ID</name>
+        <rename>CLO_REASON_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>COMPANY_ID</name>
+        <rename>COMP_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CUSTOMER_ID</name>
+        <rename>CUSTOMER_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DEL_LOCATION_ID</name>
+        <rename>DEL_LOCATION_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DEPARTMENT_ID</name>
+        <rename>DEPARTMENT_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DOC_SRC_LOCATION_ID</name>
+        <rename>DOC_SRC_LOCN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FOOD_CAT_ID</name>
+        <rename>FOOD_CAT_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>GRADE1_ID</name>
+        <rename>GRADE1_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>GRADE2_ID</name>
+        <rename>GRADE2_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>IM_MANF_NAME</name>
+        <rename>IM_MANF_NAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ACTY_VALUE_CODE_1</name>
+        <rename>ITED_ACTY_VALUE_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ACTY_VALUE_CODE_2</name>
+        <rename>ITED_ACTY_VALUE_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ADD_TO_COST_YN</name>
+        <rename>ITED_ADD_TO_COST_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ALLOC_BY</name>
+        <rename>ITED_ALLOC_BY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ALLOC_BY_NUM</name>
+        <rename>ITED_ALLOC_BY_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_CODE_1</name>
+        <rename>ITED_ANLY_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_CODE_2</name>
+        <rename>ITED_ANLY_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_HEAD_NO_1</name>
+        <rename>ITED_ANLY_HEAD_NO_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_HEAD_NO_2</name>
+        <rename>ITED_ANLY_HEAD_NO_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CR_DT</name>
+        <rename>ITED_CR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CR_UID</name>
+        <rename>ITED_CR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_DEPT_CODE</name>
+        <rename>ITED_DEPT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_DIVN_CODE</name>
+        <rename>ITED_DIVN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_DNH_SYS_ID</name>
+        <rename>ITED_DNH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_DNI_SYS_ID</name>
+        <rename>ITED_DNI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_DUTY_SR_NO</name>
+        <rename>ITED_DUTY_SR_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_EXCISE_TYPE</name>
+        <rename>ITED_EXCISE_TYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FC_AMT</name>
+        <rename>ITED_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_01</name>
+        <rename>ITED_FLEX_01</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_02</name>
+        <rename>ITED_FLEX_02</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_03</name>
+        <rename>ITED_FLEX_03</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_04</name>
+        <rename>ITED_FLEX_04</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_05</name>
+        <rename>ITED_FLEX_05</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_06</name>
+        <rename>ITED_FLEX_06</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_07</name>
+        <rename>ITED_FLEX_07</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_08</name>
+        <rename>ITED_FLEX_08</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_09</name>
+        <rename>ITED_FLEX_09</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_10</name>
+        <rename>ITED_FLEX_10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_11</name>
+        <rename>ITED_FLEX_11</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_12</name>
+        <rename>ITED_FLEX_12</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_13</name>
+        <rename>ITED_FLEX_13</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_14</name>
+        <rename>ITED_FLEX_14</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_15</name>
+        <rename>ITED_FLEX_15</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_16</name>
+        <rename>ITED_FLEX_16</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_17</name>
+        <rename>ITED_FLEX_17</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_18</name>
+        <rename>ITED_FLEX_18</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_19</name>
+        <rename>ITED_FLEX_19</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_20</name>
+        <rename>ITED_FLEX_20</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_H_SYS_ID</name>
+        <rename>ITED_H_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_INVH_SYS_ID</name>
+        <rename>ITED_INVH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_INVI_SYS_ID</name>
+        <rename>ITED_INVI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ITED_SYS_ID</name>
+        <rename>ITED_ITED_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_I_SYS_ID</name>
+        <rename>ITED_I_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_LC_AMT</name>
+        <rename>ITED_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_MAIN_ACNT_CODE</name>
+        <rename>ITED_MAIN_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_NET_FC_AMT</name>
+        <rename>ITED_NET_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_NET_LC_AMT</name>
+        <rename>ITED_NET_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_POST_TYPE_NUM</name>
+        <rename>ITED_POST_TYPE_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_REMARKS</name>
+        <rename>ITED_REMARKS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SET_OFF_FC_AMT</name>
+        <rename>ITED_SET_OFF_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SET_OFF_LC_AMT</name>
+        <rename>ITED_SET_OFF_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SET_OFF_PERC</name>
+        <rename>ITED_SET_OFF_PERC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SUB_ACNT_CODE</name>
+        <rename>ITED_SUB_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SYS_ID</name>
+        <rename>ITED_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TAXABLE_FC_AMT</name>
+        <rename>ITED_TAXABLE_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TAXABLE_LC_AMT</name>
+        <rename>ITED_TAXABLE_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_BASIS</name>
+        <rename>ITED_TED_BASIS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_CODE</name>
+        <rename>ITED_TED_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_CURR_CODE</name>
+        <rename>ITED_TED_CURR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_EXCISE_YN_NUM</name>
+        <rename>ITED_TED_EXCISE_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_HEAD_ITEM_NUM</name>
+        <rename>ITED_TED_HEAD_ITEM_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_INCL_EXCL_FLAG</name>
+        <rename>ITED_TED_INCL_EXCL_FLAG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_MODVAT_YN</name>
+        <rename>ITED_TED_MODVAT_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_RATE</name>
+        <rename>ITED_TED_RATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_TYPE_CODE</name>
+        <rename>ITED_TED_TYPE_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_TYPE_NUM</name>
+        <rename>ITED_TED_TYPE_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_UOM</name>
+        <rename>ITED_TED_UOM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TXN_CURR_CODE</name>
+        <rename>ITED_TXN_CURR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TXN_QTY</name>
+        <rename>ITED_TXN_QTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TXN_UOM</name>
+        <rename>ITED_TXN_UOM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UNROUND_FC_AMT</name>
+        <rename>ITED_UNROUND_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UNROUND_LC_AMT</name>
+        <rename>ITED_UNROUND_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UPDATED_YN_NUM</name>
+        <rename>ITED_UPDATED_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UPD_DT</name>
+        <rename>ITED_UPD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UPD_REG_TYPE</name>
+        <rename>ITED_UPD_REG_TYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UPD_UID</name>
+        <rename>ITED_UPD_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_USER_QTY</name>
+        <rename>ITED_USER_QTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UTILIZED_AMT</name>
+        <rename>ITED_UTILIZED_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UTILIZED_LC_AMT</name>
+        <rename>ITED_UTILIZED_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITEM_UOM_ID</name>
+        <rename>ITEM_UOM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>LOCATION_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PACKING_ID</name>
+        <rename>PACKING_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PRICE_LIST_ID</name>
+        <rename>PRICE_LIST_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>REF_TRAN_ID</name>
+        <rename>REF_TRAN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SHIP_TO_ADDRESS_ID</name>
+        <rename>SHIP_TO_ADDRESS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SHORT_CLO_REASON_ID</name>
+        <rename>SHORT_CLO_REASON_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SIZE_ID</name>
+        <rename>SIZE_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_CR_DT</name>
+        <rename>SYSDATE</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>TRAN_ID</name>
+        <rename>TXN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_UPD_DT</name>
+        <rename>SYSDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_FLEX_DT_01</name>
+        <rename>CSRH_DT</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>140</xloc>
+      <yloc>485</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>LOCATION_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_LOCATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_LOCN_CODE</name>
+        <field>LOCN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>LOCATION_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>856</xloc>
+      <yloc>211</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>PACKING_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_PACKING</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_11</name>
+        <field>PACKING_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>PACKING_ID</name>
+        <rename>PACKING_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>886</xloc>
+      <yloc>398</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>PRICE_LIST_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM_PRICE_LIST</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CCO_PL_CODE</name>
+        <field>PL_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRH_COMP_CODE</name>
+        <field>PLI_COMP_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRH_CURR_CODE</name>
+        <field>PLI_CURR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRI_ITEM_CODE</name>
+        <field>PLI_ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRI_UOM_CODE</name>
+        <field>PLI_UOM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>PRICE_LIST_ID</name>
+        <rename>PRICE_LIST_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>344</xloc>
+      <yloc>404</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>REF_TRAN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TXN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_REF_TXN_CODE</name>
+        <field>TXN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TXN_ID</name>
+        <rename>REF_TRAN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>469</xloc>
+      <yloc>292</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SHORT_CLO_REASON_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_REASON</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRI_RES_CODE</name>
+        <field>RES_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>REASON_ID</name>
+        <rename>SHORT_CLO_REASON_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>899</xloc>
+      <yloc>303</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SIZE_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_SIZE</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_12</name>
+        <field>SIZE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SIZE_ID</name>
+        <rename>SIZE_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>653</xloc>
+      <yloc>399</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>CSRH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_TXN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_ACNT_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CAL_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CAL_PERIOD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_DOC_SRC_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_AMD_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_AMD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_AMD_USER_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_AMD_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_REF_FROM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_REF_FROM_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_REF_TXN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_REF_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_REF_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_DEL_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CUST_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_TO_ADDR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_TO_ADDR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_EXGE_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_DISC_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_FC_DISC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BOE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_PRINT_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_APPR_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_APPR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_APPR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_COS_FIN_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_TH_TRAN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_TH_DOC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_TH_DOC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_COS_TH_TRAN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_COS_TH_DOC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_COS_TH_DOC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_FORM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_ANNOTATION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SALE_FIN_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SUBMIT_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_EXC_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_EXC_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_EXC_INV_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CR_QTY_UPDATED_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CR_DUTY_UPDATED_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_DOC_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CHALLAN_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CHALLAN_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_DUTY_IMPACT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CUST_NAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_ADDR_LINE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_ADDR_LINE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_ADDR_LINE_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_ADDR_LINE_4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_ADDR_LINE_5</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_CITY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_COUNTY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_STATE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_POSTAL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_PROVINCE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_COUNTRY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_CONTACT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_EMAIL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_FAX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_TEL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_SHIP_MOBILE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_ADDR_LINE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_ADDR_LINE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_ADDR_LINE_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_ADDR_LINE_4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_ADDR_LINE_5</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_CITY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_COUNTY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_STATE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_POSTAL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_PROVINCE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_COUNTRY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_CONTACT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_EMAIL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_FAX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_TEL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_BILL_MOBILE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_PULL_MULTIPLE_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_TRAN_CLASS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_WH_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_RECEIVE_BAY_POSN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_RECEIVE_BAY_POSN_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRH_HHT_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_CSRH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_CSRR_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_DNI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_INVI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ITEM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ITEM_STK_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ITEM_DESC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_QTY_LS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_INVI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_DNI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_DISC_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_FC_DISC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_FC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_FC_VAL_AFT_H_DISC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_FC_TAX_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_UPD_STK_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ITEM_LENGTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ITEM_WIDTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ITEM_HEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ITEM_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_DEL_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_SM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_BOE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ACTH_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_GRADE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_GRADE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_SEQ_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_REG_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_RG_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_CHAP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_SUBHEAD_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_DUTY_PAID_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ASSESS_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ASSESS_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_REF_EXC_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_REF_EXC_INV_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_REF_EXC_INV_EL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_QTY_SR_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_WHPI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_EL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_EL_CATG_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_FOC_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_BONUS_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_CSRI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_FC_ACT_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_OPEN_SO_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_DUTY_SR_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_INVI_CSRI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_ACT_ASSESS_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CSRI_74_CSRN_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_DIMENSION_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_WEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_WEIGHT_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_ITEM_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_CBM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_CBM_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_LENGTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_WIDTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_HEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IM_MANF_NAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CCO_PL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_H_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_I_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_INVH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_INVI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_DNH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_DNI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ITED_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_TYPE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_TYPE_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_HEAD_ITEM_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_INCL_EXCL_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_BASIS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TXN_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_UOM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TXN_UOM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TXN_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_USER_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SET_OFF_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SET_OFF_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SET_OFF_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TAXABLE_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TAXABLE_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UNROUND_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UNROUND_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UPDATED_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_REMARKS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ADD_TO_COST_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ALLOC_BY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ALLOC_BY_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_NET_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_NET_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UTILIZED_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UTILIZED_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_POST_TYPE_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_EXCISE_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_MODVAT_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_EXCISE_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UPD_REG_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_DUTY_SR_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd-MM-yy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>244</xloc>
+      <yloc>39</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Set Variables</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <field_name/>
+        <variable_name>VARFACTNAME</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value>STC_FACT_CUST_SALE_RET_TED</default_value>
+        </field>
+      </fields>
+    <use_formatting>Y</use_formatting>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>593</xloc>
+      <yloc>113</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Ship_to_address_ID </name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CUST_ADDRESS</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_CUST_CODE</name>
+        <field>CA_CUST_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>CSRH_SHIP_TO_ADDR_CODE</name>
+        <field>ADDR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CUST_ADDRESS_ID</name>
+        <rename>SHIP_TO_ADDRESS_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>68</xloc>
+      <yloc>286</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TRAN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TXN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>CSRH_TXN_CODE</name>
+        <field>TXN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TXN_ID</name>
+        <rename>TXN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>374</xloc>
+      <yloc>201</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>orion_original</connection>
+    <sql>SELECT  
+
+  A.CSRH_SYS_ID
+, A.CSRH_COMP_CODE
+, A.CSRH_TXN_CODE
+, A.CSRH_NO
+, A.CSRH_DT
+, A.CSRH_ACNT_YEAR
+, A.CSRH_CAL_YEAR
+, A.CSRH_CAL_PERIOD
+, A.CSRH_DOC_SRC_LOCN_CODE
+, A.CSRH_AMD_NO
+, A.CSRH_AMD_DT
+, A.CSRH_AMD_USER_ID
+, A.CSRH_AMD_RES_CODE
+, A.CSRH_REF_FROM
+, A.CSRH_REF_FROM_NUM
+, A.CSRH_REF_TXN_CODE
+, A.CSRH_REF_NO
+, A.CSRH_REF_SYS_ID
+, A.CSRH_LOCN_CODE
+, A.CSRH_DEL_LOCN_CODE
+, A.CSRH_CUST_CODE
+, A.CSRH_CURR_CODE
+, A.CSRH_SHIP_TO_ADDR_CODE
+, A.CSRH_BILL_TO_ADDR_CODE
+, A.CSRH_EXGE_RATE
+, A.CSRH_DISC_PERC
+, A.CSRH_FC_DISC_VAL
+, A.CSRH_SM_CODE
+, A.CSRH_RES_CODE
+, A.CSRH_BOE_NO
+, A.CSRH_STATUS
+, A.CSRH_PRINT_STATUS
+, A.CSRH_APPR_STATUS
+, A.CSRH_APPR_UID
+, A.CSRH_APPR_DT
+, A.CSRH_COS_FIN_STATUS
+, A.CSRH_TH_TRAN_CODE
+, A.CSRH_TH_DOC_NO
+, A.CSRH_TH_DOC_DT
+, A.CSRH_COS_TH_TRAN_CODE
+, A.CSRH_COS_TH_DOC_NO
+, A.CSRH_COS_TH_DOC_DT
+, A.CSRH_FORM_CODE
+, A.CSRH_ANNOTATION
+, A.CSRH_SALE_FIN_STATUS
+, A.CSRH_SUBMIT_STATUS
+, A.CSRH_EXC_YN
+, A.CSRH_EXC_INV_NO
+, A.CSRH_EXC_INV_DT
+, A.CSRH_CR_QTY_UPDATED_YN
+, A.CSRH_CR_DUTY_UPDATED_YN
+, A.CSRH_DOC_TYPE
+, A.CSRH_CT_CODE
+, A.CSRH_CHALLAN_NO
+, A.CSRH_CHALLAN_DT
+, A.CSRH_DUTY_IMPACT_CODE
+, A.CSRH_CUST_NAME
+, A.CSRH_SHIP_ADDR_LINE_1
+, A.CSRH_SHIP_ADDR_LINE_2
+, A.CSRH_SHIP_ADDR_LINE_3
+, A.CSRH_SHIP_ADDR_LINE_4
+, A.CSRH_SHIP_ADDR_LINE_5
+, A.CSRH_SHIP_CITY_CODE
+, A.CSRH_SHIP_COUNTY_CODE
+, A.CSRH_SHIP_STATE_CODE
+, A.CSRH_SHIP_POSTAL_CODE
+, A.CSRH_SHIP_PROVINCE_CODE
+, A.CSRH_SHIP_COUNTRY_CODE
+, A.CSRH_SHIP_CONTACT
+, A.CSRH_SHIP_EMAIL
+, A.CSRH_SHIP_FAX
+, A.CSRH_SHIP_TEL
+, A.CSRH_SHIP_MOBILE
+, A.CSRH_BILL_ADDR_LINE_1
+, A.CSRH_BILL_ADDR_LINE_2
+, A.CSRH_BILL_ADDR_LINE_3
+, A.CSRH_BILL_ADDR_LINE_4
+, A.CSRH_BILL_ADDR_LINE_5
+, A.CSRH_BILL_CITY_CODE
+, A.CSRH_BILL_COUNTY_CODE
+, A.CSRH_BILL_STATE_CODE
+, A.CSRH_BILL_POSTAL_CODE
+, A.CSRH_BILL_PROVINCE_CODE
+, A.CSRH_BILL_COUNTRY_CODE
+, A.CSRH_BILL_CONTACT
+, A.CSRH_BILL_EMAIL
+, A.CSRH_BILL_FAX
+, A.CSRH_BILL_TEL
+, A.CSRH_BILL_MOBILE
+, A.CSRH_CR_UID
+, A.CSRH_CR_DT
+, A.CSRH_UPD_UID
+, A.CSRH_UPD_DT
+, A.CSRH_PULL_MULTIPLE_YN_NUM
+, A.CSRH_TRAN_CLASS
+, A.CSRH_WH_CODE
+, A.CSRH_RECEIVE_BAY_POSN_CODE
+, A.CSRH_RECEIVE_BAY_POSN_NO
+, A.CSRH_HHT_YN_NUM
+, B.CSRI_SYS_ID
+, B.CSRI_CSRH_SYS_ID
+, B.CSRI_CSRR_SYS_ID
+, B.CSRI_DNI_SYS_ID
+, B.CSRI_INVI_SYS_ID
+, B.CSRI_ITEM_CODE
+
+,CASE B.CSRI_ITEM_STK_YN_NUM
+WHEN 1 THEN nvl(&apos;STOCK&apos;,0)
+WHEN 2 THEN nvl(&apos;NON STOCK&apos;,0)
+END CSRI_ITEM_STK_YN_NUM
+
+, B.CSRI_ITEM_DESC
+, B.CSRI_UOM_CODE
+, B.CSRI_QTY
+, B.CSRI_QTY_LS
+, B.CSRI_QTY_BU
+, B.CSRI_INVI_QTY_BU
+, B.CSRI_DNI_QTY_BU
+, B.CSRI_RATE
+, B.CSRI_DISC_PERC
+, B.CSRI_FC_DISC_VAL
+, B.CSRI_FC_VAL
+, B.CSRI_FC_VAL_AFT_H_DISC
+, B.CSRI_FC_TAX_AMT
+
+
+,CASE B.CSRI_UPD_STK_YN
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+END CSRI_UPD_STK_YN
+
+, B.CSRI_ITEM_LENGTH
+, B.CSRI_ITEM_WIDTH
+, B.CSRI_ITEM_HEIGHT
+, B.CSRI_ITEM_AREA
+, B.CSRI_LOCN_CODE
+, B.CSRI_DEL_LOCN_CODE
+, B.CSRI_SM_CODE
+, B.CSRI_BOE_NO
+, B.CSRI_RES_CODE
+, B.CSRI_ACTH_CODE
+, B.CSRI_GRADE_CODE_1
+, B.CSRI_GRADE_CODE_2
+, B.CSRI_SEQ_NO
+, B.CSRI_REG_TYPE
+, B.CSRI_RG_CODE
+, B.CSRI_CHAP_CODE
+, B.CSRI_SUBHEAD_CODE
+
+,CASE B.CSRI_DUTY_PAID_YN
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN NULL THEN nvl(&apos;NO&apos;,0)
+END CSRI_DUTY_PAID_YN
+
+, B.CSRI_ASSESS_RATE
+, B.CSRI_ASSESS_VAL
+, B.CSRI_REF_EXC_INV_NO
+, B.CSRI_REF_EXC_INV_DT
+, B.CSRI_REF_EXC_INV_EL_CODE
+, B.CSRI_QTY_SR_NO
+
+,CASE B.CSRI_TYPE
+WHEN &apos;1&apos; THEN nvl(&apos;QTY&apos;,0)
+WHEN &apos;2&apos; THEN nvl(&apos;VALUE&apos;,0)
+WHEN &apos;3&apos; THEN nvl(&apos;QTY AND VALUE&apos;,0)
+WHEN NULL THEN NULL
+END CSRI_TYPE
+
+, B.CSRI_WHPI_QTY_BU
+, B.CSRI_EL_CODE
+, B.CSRI_EL_CATG_TYPE
+
+,CASE B.CSRI_FOC_YN
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN NULL THEN nvl(&apos;NO&apos;,0)
+END CSRI_FOC_YN
+
+, B.CSRI_BONUS_CODE
+, B.CSRI_CSRI_SYS_ID
+, B.CSRI_CR_UID
+, B.CSRI_CR_DT
+, B.CSRI_UPD_UID
+, B.CSRI_UPD_DT
+, B.CSRI_FC_ACT_VAL
+
+,CASE B.CSRI_OPEN_SO_YN_NUM
+WHEN 1 THEN nvl(&apos;YES&apos;,0)
+WHEN 2 THEN nvl(&apos;NO&apos;,0)
+WHEN NULL THEN nvl(&apos;NO&apos;,0)
+END CSRI_OPEN_SO_YN_NUM
+
+, B.CSRI_DUTY_SR_NO
+, B.CSRI_INVI_CSRI_QTY_BU
+, B.CSRI_ACT_ASSESS_VAL
+, B.CSRI_74_CSRN_SYS_ID
+, E.IP_DIMENSION_UOM_CODE ,
+E.IP_PACK_WEIGHT ,
+E.IP_WEIGHT_UOM_CODE ,
+(E.IP_PACK_LENGTH * E.IP_PACK_WIDTH)&#47;10000 AS prog_ITEM_AREA ,
+(E.IP_PACK_LENGTH * E.IP_PACK_WIDTH * E.IP_PACK_HEIGHT)&#47;1000000 AS prog_cbm ,
+(E.IP_PACK_LENGTH * E.IP_PACK_WIDTH * E.IP_PACK_HEIGHT * E.IP_MAX_QTY_BU)&#47;1000000 AS prog_cbm_BU ,
+E.IP_PACK_LENGTH ,
+E.IP_PACK_WIDTH ,
+E.IP_PACK_HEIGHT,
+D.IM_MANF_NAME ,
+C.ITEM_ANLY_CODE_01,
+C.ITEM_ANLY_CODE_02,
+C.ITEM_ANLY_CODE_03,
+C.ITEM_ANLY_CODE_04,
+C.ITEM_ANLY_CODE_05,
+C.ITEM_ANLY_CODE_06,
+C.ITEM_ANLY_CODE_07,
+C.ITEM_ANLY_CODE_08,
+C.ITEM_ANLY_CODE_09,
+C.ITEM_ANLY_CODE_10,
+C.ITEM_ANLY_CODE_11,
+C.ITEM_ANLY_CODE_12,
+C.ITEM_ANLY_CODE_13,
+C.ITEM_ANLY_CODE_14,
+C.ITEM_ANLY_CODE_15,
+C.ITEM_ANLY_CODE_16,
+C.ITEM_ANLY_CODE_17,
+F.CCO_PL_CODE,
+SYSDATE  ,
+
+Z.ITED_SYS_ID                         ,
+  Z.ITED_H_SYS_ID            ,
+  Z.ITED_I_SYS_ID            ,
+  Z.ITED_INVH_SYS_ID         ,
+  Z.ITED_INVI_SYS_ID         ,
+  Z.ITED_DNH_SYS_ID          ,
+  Z.ITED_DNI_SYS_ID          ,
+  Z.ITED_ITED_SYS_ID         ,
+  Z.ITED_TED_CODE                ,
+  Z.ITED_TED_TYPE_CODE       ,
+  Z.ITED_TED_TYPE_NUM        ,
+  Z.ITED_TED_HEAD_ITEM_NUM   ,
+  Z.ITED_TED_INCL_EXCL_FLAG  ,
+  Z.ITED_TED_BASIS           ,
+  Z.ITED_TED_CURR_CODE       ,
+  Z.ITED_TXN_CURR_CODE       ,
+  Z.ITED_TED_RATE            ,
+  Z.ITED_TED_UOM             ,
+  Z.ITED_TXN_UOM             ,
+  Z.ITED_TXN_QTY             ,
+  Z.ITED_USER_QTY            ,
+  Z.ITED_SET_OFF_PERC        ,
+  Z.ITED_SET_OFF_FC_AMT      ,
+  Z.ITED_SET_OFF_LC_AMT      ,
+  Z.ITED_TAXABLE_FC_AMT      ,
+  Z.ITED_TAXABLE_LC_AMT      ,
+  Z.ITED_UNROUND_FC_AMT      ,
+  Z.ITED_UNROUND_LC_AMT      ,
+  Z.ITED_FC_AMT              ,
+  Z.ITED_LC_AMT              ,
+  Z.ITED_UPDATED_YN_NUM      ,
+  Z.ITED_REMARKS             ,
+  Z.ITED_ADD_TO_COST_YN      ,
+  Z.ITED_ALLOC_BY            ,
+  Z.ITED_ALLOC_BY_NUM        ,
+  Z.ITED_NET_FC_AMT          ,
+  Z.ITED_NET_LC_AMT          ,
+  Z.ITED_UTILIZED_AMT        ,
+  Z.ITED_UTILIZED_LC_AMT     ,
+  Z.ITED_MAIN_ACNT_CODE      ,
+  Z.ITED_SUB_ACNT_CODE       ,
+  Z.ITED_DIVN_CODE           ,
+  Z.ITED_DEPT_CODE           ,
+  Z.ITED_ANLY_HEAD_NO_1      ,
+  Z.ITED_ANLY_HEAD_NO_2      ,
+  Z.ITED_ANLY_CODE_1         ,
+  Z.ITED_ANLY_CODE_2         ,
+  Z.ITED_ACTY_VALUE_CODE_1   ,
+  Z.ITED_ACTY_VALUE_CODE_2   ,
+  Z.ITED_POST_TYPE_NUM       ,
+  Z.ITED_TED_EXCISE_YN_NUM              ,
+  Z.ITED_TED_MODVAT_YN         ,
+  Z.ITED_EXCISE_TYPE         ,
+  Z.ITED_UPD_REG_TYPE        ,
+  Z.ITED_DUTY_SR_NO          ,
+  Z.ITED_FLEX_01             ,
+  Z.ITED_FLEX_02             ,
+  Z.ITED_FLEX_03             ,
+  Z.ITED_FLEX_04             ,
+  Z.ITED_FLEX_05             ,
+  Z.ITED_FLEX_06             ,
+  Z.ITED_FLEX_07             ,
+  Z.ITED_FLEX_08             ,
+  Z.ITED_FLEX_09             ,
+  Z.ITED_FLEX_10             ,
+  Z.ITED_FLEX_11             ,
+  Z.ITED_FLEX_12             ,
+  Z.ITED_FLEX_13             ,
+  Z.ITED_FLEX_14             ,
+  Z.ITED_FLEX_15             ,
+  Z.ITED_FLEX_16             ,
+  Z.ITED_FLEX_17             ,
+  Z.ITED_FLEX_18             ,
+  Z.ITED_FLEX_19             ,
+  Z.ITED_FLEX_20             ,
+  Z.ITED_CR_UID              ,
+  Z.ITED_CR_DT               ,
+  Z.ITED_UPD_UID             ,
+  Z.ITED_UPD_DT              
+
+
+FROM 	
+
+
+OT_CUST_SALE_RET_ITEM_TED Z 
+
+left outer join OT_CUST_SALE_RET_ITEM B
+ON(Z.ITED_I_SYS_ID = B.CSRI_SYS_ID)
+
+left outer join OT_CUST_SALE_RET_HEAD A
+ON( Z.ITED_H_SYS_ID = A.CSRH_SYS_ID)
+
+left outer join OM_ITEM C
+ON ( B.CSRI_ITEM_CODE = C.ITEM_CODE)
+
+left outer join OM_ITEM_PACK E
+on (B.CSRI_ITEM_CODE= E.IP_ITEM_CODE and B.CSRI_UOM_CODE = E.IP_PACK_UOM_CODE)
+
+left outer join OM_ITEM_MANF D  
+on (B.CSRI_ITEM_CODE= D.IM_ITEM_CODE AND B.CSRI_UOM_CODE = D.IM_MANF_PART_NO)
+
+left outer join OM_CUST_COMP F
+on(A.CSRH_CUST_CODE = F.CCO_CUST_CODE AND A.CSRH_COMP_CODE = F.CCO_COMP_CODE)
+
+WHERE
+(Z.ITED_CR_DT &gt;= TO_DATE(&apos;${MAXETLDATE_CUST_SALE_RET_TED}&apos;,&apos;DD-MM-YYYY&apos;) AND
+to_date(Z.ITED_CR_DT,&apos;DD-MM-YYYY&apos;) &lt; TO_DATE(SYSDATE,&apos;DD-MM-YYYY&apos;)
+OR
+Z.ITED_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_CUST_SALE_RET_TED}&apos;,&apos;DD-MM-YYYY&apos;) AND
+to_date(Z.ITED_UPD_DT,&apos;DD-MM-YYYY&apos;) &lt; TO_DATE(SYSDATE,&apos;DD-MM-YYYY&apos;))
+&#47;*
+OM_ITEM C,
+
+OT_CUST_SALE_RET_ITEM B
+left outer join OM_ITEM_PACK e 
+on (B.CSRI_ITEM_CODE= e.IP_ITEM_CODE and B.CSRI_UOM_CODE = e.IP_PACK_UOM_CODE)
+left outer join OM_ITEM_MANF D  
+on (B.CSRI_ITEM_CODE= D.IM_ITEM_CODE AND B.CSRI_UOM_CODE = D.IM_MANF_PART_NO),
+OT_CUST_SALE_RET_HEAD A 
+left outer join OM_CUST_COMP F
+ON (A.CSRH_CUST_CODE = F.CCO_CUST_CODE  AND  A.CSRH_Comp_CODE = f.cco_comp_code)
+
+WHERE 
+A.CSRH_SYS_ID = B.CSRI_CSRH_SYS_ID AND
+B.CSRI_ITEM_CODE = C.ITEM_CODE AND 
+
+(A.CSRH_CR_DT &gt;= TO_DATE(&apos;${MAXETLDATE_CUST_SALE_RET}&apos;,&apos;DD-MM-YYYY&apos;) AND
+TO_DATE(A.CSRH_CR_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR 
+A.CSRH_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_CUST_SALE_RET}&apos;,&apos;DD-MM-YYYY&apos;) AND 
+TO_DATE(A.CSRH_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR
+B.CSRI_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_CUST_SALE_RET}&apos;,&apos;DD-MM-YYYY&apos;)  AND
+TO_DATE(B.CSRI_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+*&#47;
+--A.CSRH_CR_DT &gt;= TO_DATE(&apos;1&#47;JUL&#47;2009&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) AND 
+--A.CSRH_CR_DT &lt; TO_DATE(&apos;1&#47;JAN&#47;2010&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) 
+--A.CSRH_CR_DT &gt;= TO_DATE(&apos;1&#47;JAN&#47;2010&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) AND 
+--A.CSRH_CR_DT &lt; TO_DATE(&apos;1&#47;JUL&#47;2011&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) 
+--A.CSRH_CR_DT &gt;= TO_DATE(&apos;1&#47;JUL&#47;2011&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) AND 
+--A.CSRH_CR_DT &lt;  TO_DATE(&apos;11&#47;JAN&#47;2013&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) 
+--AND rownum&lt;=100
+--ORDER BY 1
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>71</xloc>
+      <yloc>53</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

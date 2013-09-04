@@ -1,0 +1,4007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>RPRO_FACT_VOUCHERS_INCR</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;11&#47;28 23:58:58.788</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;11&#47;28 23:58:58.788</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>leaf_fact</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1521</port>
+    <username>hr</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2a7c8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live_CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM</name>
+    <server>192.168.2.100</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>STC_V4</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom1</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom2</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM_ORACLE</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>mycom</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7dc791a0d7</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ORION</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>ORION106</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orion_original</name>
+    <server>shankartrading</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>orion106</username>
+    <password>Encrypted 2be98dcbc09c8808da417ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orionpay</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>RPRO</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>rpro</username>
+    <password>Encrypted 2be98afc86aa78190a80bbe62d1c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>STCBI106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact0</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact2</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact3</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact5</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact6</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_DIM_FACT_1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse1</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Table input</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>rpro_item_id</from><to>supplier_id</to><enabled>Y</enabled> </hop>  <hop> <from>rpro_vendor_id</from><to>rpro_item_id</to><enabled>Y</enabled> </hop>  <hop> <from>COMP_ID</from><to>DEPT_ID</to><enabled>Y</enabled> </hop>  <hop> <from>DEPT_ID</from><to>rpro_vendor_id</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>store_id</to><enabled>Y</enabled> </hop>  <hop> <from>store_id</from><to>ITEM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>supplier_id</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  <hop> <from>ITEM_ID</from><to>COMP_CODE_LKP</to><enabled>Y</enabled> </hop>  <hop> <from>COMP_CODE_LKP</from><to>COMP_ID</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>COMP_CODE_LKP</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>RPRO_MAPPING_ORION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>FLDSTORE</name>
+        <field>STORE_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>FLDMAIN</name>
+        <field>MAIN_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COMPANY_CODE</name>
+        <rename>COMPANY_CODE</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>497</xloc>
+      <yloc>54</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>COMP_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_COMPANIES</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>COMPANY_CODE</name>
+        <field>COMPANY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COMP_ID</name>
+        <rename>COMP_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>667</xloc>
+      <yloc>57</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DEPT_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_DEPARTMENT</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEMDEPT</name>
+        <field>DEPARTMENT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEMCLASS</name>
+        <field>CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEMSUBCLASS</name>
+        <field>SUB_CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>DEPARTMENT_ID</name>
+        <rename>DEPARTMENT_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>203</xloc>
+      <yloc>196</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>I_FLDDESC2</name>
+        <field>ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>403</xloc>
+      <yloc>50</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>RPRO_FACT_VOUCHERS</table>
+      <key>
+        <name>FLDKEY</name>
+        <field>FLDKEY</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>I_FLDKEY</name>
+        <field>I_FLDKEY</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>FLDKEY</name>
+        <rename>FLDKEY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDMAIN</name>
+        <rename>FLDMAIN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDPONUMBER</name>
+        <rename>FLDPONUMBER</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVENDORCODE</name>
+        <rename>FLDVENDORCODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDCOMPANY</name>
+        <rename>FLDCOMPANY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDACCNUM</name>
+        <rename>FLDACCNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUNUMBER</name>
+        <rename>FLDVOUNUMBER</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDCLERK</name>
+        <rename>FLDCLERK</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTORESTATN</name>
+        <rename>FLDSTORESTATN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDOCDATE</name>
+        <rename>FLDDOCDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTERMS</name>
+        <rename>FLDVOUTERMS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSUBTOTAL</name>
+        <rename>FLDSUBTOTAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDTOTAL</name>
+        <rename>FLDTOTAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDISCPRC</name>
+        <rename>FLDDISCPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDISCOUNT</name>
+        <rename>FLDDISCOUNT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDFEE</name>
+        <rename>FLDFEE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUARRIVALDATE</name>
+        <rename>FLDVOUARRIVALDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEECODE</name>
+        <rename>FLDVOUPAYEECODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEENAME</name>
+        <rename>FLDVOUPAYEENAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUINVCNUMBER</name>
+        <rename>FLDVOUINVCNUMBER</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUFREIGHT</name>
+        <rename>FLDVOUFREIGHT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTAXINCPRC</name>
+        <rename>FLDVOUTAXINCPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTAXINCAMT</name>
+        <rename>FLDVOUTAXINCAMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTAXEXCPRC</name>
+        <rename>FLDVOUTAXEXCPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTAXEXCAMT</name>
+        <rename>FLDVOUTAXEXCAMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUINVCDATE</name>
+        <rename>FLDVOUINVCDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTYPE</name>
+        <rename>FLDVOUTYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUSTATUS</name>
+        <rename>FLDVOUSTATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDITEMPICTURE</name>
+        <rename>FLDITEMPICTURE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOSTMETHOD</name>
+        <rename>FLDVOUCOSTMETHOD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDGL</name>
+        <rename>FLDGL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDAP</name>
+        <rename>FLDAP</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDPC</name>
+        <rename>FLDPC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDFEETYPE</name>
+        <rename>FLDFEETYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDOCLASTEDIT</name>
+        <rename>FLDDOCLASTEDIT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDOCPOSTDATE</name>
+        <rename>FLDDOCPOSTDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDOCTIME</name>
+        <rename>FLDDOCTIME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDADDR1</name>
+        <rename>FLDADDR1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDADDR2</name>
+        <rename>FLDADDR2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDADDR3</name>
+        <rename>FLDADDR3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDZIP</name>
+        <rename>FLDZIP</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDWORKSTATION</name>
+        <rename>FLDWORKSTATION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDITEMSCOUNT</name>
+        <rename>FLDITEMSCOUNT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDMARKED</name>
+        <rename>FLDMARKED</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPACKAGENUMBER</name>
+        <rename>FLDVOUPACKAGENUMBER</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM1</name>
+        <rename>FLDVOUCOMM1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM2</name>
+        <rename>FLDVOUCOMM2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM3</name>
+        <rename>FLDVOUCOMM3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM4</name>
+        <rename>FLDVOUCOMM4</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM5</name>
+        <rename>FLDVOUCOMM5</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM6</name>
+        <rename>FLDVOUCOMM6</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM7</name>
+        <rename>FLDVOUCOMM7</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM8</name>
+        <rename>FLDVOUCOMM8</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM9</name>
+        <rename>FLDVOUCOMM9</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUCOMM10</name>
+        <rename>FLDVOUCOMM10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEADDR1</name>
+        <rename>FLDVOUPAYEEADDR1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEADDR2</name>
+        <rename>FLDVOUPAYEEADDR2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEADDR3</name>
+        <rename>FLDVOUPAYEEADDR3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEZIP</name>
+        <rename>FLDVOUPAYEEZIP</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEACCTNUM</name>
+        <rename>FLDVOUPAYEEACCTNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDTONUMBER</name>
+        <rename>FLDTONUMBER</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTOREHEADING1</name>
+        <rename>FLDSTOREHEADING1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTOREHEADING2</name>
+        <rename>FLDSTOREHEADING2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTOREHEADING3</name>
+        <rename>FLDSTOREHEADING3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDTITLE</name>
+        <rename>FLDTITLE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDFNAME</name>
+        <rename>FLDFNAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDLNAME</name>
+        <rename>FLDLNAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDPHONE1</name>
+        <rename>FLDPHONE1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDPHONE2</name>
+        <rename>FLDPHONE2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDINFO1</name>
+        <rename>FLDINFO1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDINFO2</name>
+        <rename>FLDINFO2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEETITLE</name>
+        <rename>FLDVOUPAYEETITLE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEFNAME</name>
+        <rename>FLDVOUPAYEEFNAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEELNAME</name>
+        <rename>FLDVOUPAYEELNAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEPHONE1</name>
+        <rename>FLDVOUPAYEEPHONE1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEPHONE2</name>
+        <rename>FLDVOUPAYEEPHONE2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEINFO1</name>
+        <rename>FLDVOUPAYEEINFO1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUPAYEEINFO2</name>
+        <rename>FLDVOUPAYEEINFO2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTORE</name>
+        <rename>FLDSTORE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTATION</name>
+        <rename>FLDSTATION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDTRANSMITTED</name>
+        <rename>FLDTRANSMITTED</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTYLEPICTURE</name>
+        <rename>FLDSTYLEPICTURE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSHIPMENTNUMBER</name>
+        <rename>FLDSHIPMENTNUMBER</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDREFDOCNUM</name>
+        <rename>FLDREFDOCNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDREFDOCPOSTDT</name>
+        <rename>FLDREFDOCPOSTDT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVCHRTOTALQTY</name>
+        <rename>FLDVCHRTOTALQTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTOREHEADING4</name>
+        <rename>FLDSTOREHEADING4</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTOREHEADING5</name>
+        <rename>FLDSTOREHEADING5</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTOREHEADING6</name>
+        <rename>FLDSTOREHEADING6</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDORIGSTORESTATN</name>
+        <rename>FLDORIGSTORESTATN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDAUDITED</name>
+        <rename>FLDAUDITED</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDEFSUBLOC</name>
+        <rename>FLDDEFSUBLOC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDMOVNOTESHIPNUM</name>
+        <rename>FLDMOVNOTESHIPNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSEQWSNO</name>
+        <rename>FLDSEQWSNO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDATAORIGIN</name>
+        <rename>FLDDATAORIGIN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVNDRINVCTOTAL</name>
+        <rename>FLDVNDRINVCTOTAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDREVIEWEDBY</name>
+        <rename>FLDREVIEWEDBY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDREVIEWEDDT</name>
+        <rename>FLDREVIEWEDDT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDAPPROVEDBY</name>
+        <rename>FLDAPPROVEDBY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDAPPROVEDDT</name>
+        <rename>FLDAPPROVEDDT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDREFDOCSID</name>
+        <rename>FLDREFDOCSID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDDOCSID</name>
+        <rename>FLDDOCSID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTOTALPRICE</name>
+        <rename>FLDVOUTOTALPRICE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDVOUTOTALPRCTAX</name>
+        <rename>FLDVOUTOTALPRCTAX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDLOTNUM</name>
+        <rename>FLDLOTNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDLOTCRTDATE</name>
+        <rename>FLDLOTCRTDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDLOTMODDATE</name>
+        <rename>FLDLOTMODDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDLOTEXPDATE</name>
+        <rename>FLDLOTEXPDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLDSTATUS</name>
+        <rename>FLDSTATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDKEY</name>
+        <rename>I_FLDKEY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDMAIN</name>
+        <rename>I_FLDMAIN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDFKEY</name>
+        <rename>I_FLDFKEY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDCS</name>
+        <rename>I_FLDDCS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDCSNAME</name>
+        <rename>I_FLDDCSNAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDVENDORCODE</name>
+        <rename>I_FLDVENDORCODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDESC1</name>
+        <rename>I_FLDDESC1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDESC2</name>
+        <rename>I_FLDDESC2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDATTR</name>
+        <rename>I_FLDATTR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSIZE</name>
+        <rename>I_FLDSIZE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDUPC</name>
+        <rename>I_FLDUPC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDALU</name>
+        <rename>I_FLDALU</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDUDF0</name>
+        <rename>I_FLDUDF0</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDUDF1</name>
+        <rename>I_FLDUDF1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDUDF2</name>
+        <rename>I_FLDUDF2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDUDF3</name>
+        <rename>I_FLDUDF3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDFRECVD</name>
+        <rename>I_FLDFRECVD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDPRICE</name>
+        <rename>I_FLDPRICE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDCOST</name>
+        <rename>I_FLDCOST</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDMGN</name>
+        <rename>I_FLDMGN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDMGNPRC</name>
+        <rename>I_FLDMGNPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDMKUPPRC</name>
+        <rename>I_FLDMKUPPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDCOEFF</name>
+        <rename>I_FLDCOEFF</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTAX</name>
+        <rename>I_FLDTAX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDITMRCVD</name>
+        <rename>I_FLDITMRCVD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDEXTPRC</name>
+        <rename>I_FLDEXTPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDEXTCOST</name>
+        <rename>I_FLDEXTCOST</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDPRCWTX</name>
+        <rename>I_FLDPRCWTX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDMRGWTX</name>
+        <rename>I_FLDMRGWTX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDEXTPWT</name>
+        <rename>I_FLDEXTPWT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDCASEQTYRCVD</name>
+        <rename>I_FLDCASEQTYRCVD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDPRINTTAGS</name>
+        <rename>I_FLDPRINTTAGS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDOCITEMDISC</name>
+        <rename>I_FLDDOCITEMDISC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDVOUITMCOST</name>
+        <rename>I_FLDVOUITMCOST</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDVOUITMPWTX</name>
+        <rename>I_FLDVOUITMPWTX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDVOUITMPRC</name>
+        <rename>I_FLDVOUITMPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDCARTONID</name>
+        <rename>I_FLDCARTONID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDITEMLOOKUP</name>
+        <rename>I_FLDITEMLOOKUP</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDVOUITMORIGQTY</name>
+        <rename>I_FLDVOUITMORIGQTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDNDECIMALS</name>
+        <rename>I_FLDNDECIMALS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTOTONHND</name>
+        <rename>I_FLDTOTONHND</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSTRQTY</name>
+        <rename>I_FLDSTRQTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDITEMSID</name>
+        <rename>I_FLDITEMSID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTAXCD</name>
+        <rename>I_FLDTAXCD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTAXPRC</name>
+        <rename>I_FLDTAXPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDEXTTAX</name>
+        <rename>I_FLDEXTTAX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDRECNO</name>
+        <rename>I_FLDRECNO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDFC1PRC</name>
+        <rename>I_FLDFC1PRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDFC1PRCWTX</name>
+        <rename>I_FLDFC1PRCWTX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDORDCOST</name>
+        <rename>I_FLDORDCOST</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSTYLESID</name>
+        <rename>I_FLDSTYLESID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDESC3</name>
+        <rename>I_FLDDESC3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDESC4</name>
+        <rename>I_FLDDESC4</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX0</name>
+        <rename>I_FLDINVNAUX0</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX1</name>
+        <rename>I_FLDINVNAUX1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX2</name>
+        <rename>I_FLDINVNAUX2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX3</name>
+        <rename>I_FLDINVNAUX3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX4</name>
+        <rename>I_FLDINVNAUX4</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX5</name>
+        <rename>I_FLDINVNAUX5</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX6</name>
+        <rename>I_FLDINVNAUX6</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNAUX7</name>
+        <rename>I_FLDINVNAUX7</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNUDFSTR</name>
+        <rename>I_FLDINVNUDFSTR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNUDFDATE</name>
+        <rename>I_FLDINVNUDFDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNFRSTPRC</name>
+        <rename>I_FLDINVNFRSTPRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNFRSTPWT</name>
+        <rename>I_FLDINVNFRSTPWT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNSERIALFLG</name>
+        <rename>I_FLDINVNSERIALFLG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDFCC</name>
+        <rename>I_FLDFCC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDFCCTYPE</name>
+        <rename>I_FLDFCCTYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSERIALNUM</name>
+        <rename>I_FLDSERIALNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDASSOCIATEPO</name>
+        <rename>I_FLDASSOCIATEPO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDCOSTCODE</name>
+        <rename>I_FLDCOSTCODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDVOUITMCOSTCODE</name>
+        <rename>I_FLDVOUITMCOSTCODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDCOMMITTED</name>
+        <rename>I_FLDCOMMITTED</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDCASESTRQTY</name>
+        <rename>I_FLDCASESTRQTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSALEDISCPERCENT</name>
+        <rename>I_FLDSALEDISCPERCENT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSALEDISC</name>
+        <rename>I_FLDSALEDISC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTOTALTAX</name>
+        <rename>I_FLDTOTALTAX</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTAX2PRC</name>
+        <rename>I_FLDTAX2PRC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTAX2</name>
+        <rename>I_FLDTAX2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTAX2CD</name>
+        <rename>I_FLDTAX2CD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDTAX1CD</name>
+        <rename>I_FLDTAX1CD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDDEFSUBLOC</name>
+        <rename>I_FLDDEFSUBLOC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDITEMSCALE</name>
+        <rename>I_FLDITEMSCALE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSEQNUM</name>
+        <rename>I_FLDSEQNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDLOTNUM</name>
+        <rename>I_FLDLOTNUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDINVNLOTFLG</name>
+        <rename>I_FLDINVNLOTFLG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDLOTCRTDATE</name>
+        <rename>I_FLDLOTCRTDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDLOTMODDATE</name>
+        <rename>I_FLDLOTMODDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDLOTEXPDATE</name>
+        <rename>I_FLDLOTEXPDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDITEMPICTURE</name>
+        <rename>I_FLDITEMPICTURE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSTYLEPICTURE</name>
+        <rename>I_FLDSTYLEPICTURE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>I_FLDSTATUS</name>
+        <rename>I_FLDSTATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>STORE_ID</name>
+        <rename>STORE_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>COMPANY_ID</name>
+        <rename>COMP_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DEPARTMENT_ID</name>
+        <rename>DEPARTMENT_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>RPRO_VENDOR_ID</name>
+        <rename>RPRO_VENDOR_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>RPRO_ITEM_ID</name>
+        <rename>RPRO_ITEM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SUPPLIER_ID</name>
+        <rename>SUPPLIER_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_CR_DT</name>
+        <rename>SYSDATE</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>PROG_UPD_DT</name>
+        <rename>SYSDATE</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>615</xloc>
+      <yloc>187</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>FLDKEY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDMAIN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDPONUMBER</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVENDORCODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDCOMPANY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDACCNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUNUMBER</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDCLERK</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTORESTATN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDOCDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTERMS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSUBTOTAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDTOTAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDISCPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDISCOUNT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDFEE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUARRIVALDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEECODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEENAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUINVCNUMBER</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUFREIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTAXINCPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTAXINCAMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTAXEXCPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTAXEXCAMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUINVCDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUSTATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDITEMPICTURE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOSTMETHOD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDGL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDAP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDPC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDFEETYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDOCLASTEDIT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDOCPOSTDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDOCTIME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDADDR1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDADDR2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDADDR3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDZIP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDWORKSTATION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDITEMSCOUNT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDMARKED</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPACKAGENUMBER</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM5</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM6</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM7</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM8</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM9</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUCOMM10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEADDR1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEADDR2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEADDR3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEZIP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEACCTNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDTONUMBER</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTOREHEADING1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTOREHEADING2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTOREHEADING3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDTITLE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDFNAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDLNAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDPHONE1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDPHONE2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDINFO1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDINFO2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEETITLE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEFNAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEELNAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEPHONE1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEPHONE2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEINFO1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUPAYEEINFO2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTORE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTATION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDTRANSMITTED</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTYLEPICTURE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSHIPMENTNUMBER</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDREFDOCNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDREFDOCPOSTDT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVCHRTOTALQTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTOREHEADING4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTOREHEADING5</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTOREHEADING6</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDORIGSTORESTATN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDAUDITED</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDEFSUBLOC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDMOVNOTESHIPNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSEQWSNO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDATAORIGIN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVNDRINVCTOTAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDREVIEWEDBY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDREVIEWEDDT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDAPPROVEDBY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDAPPROVEDDT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDREFDOCSID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDDOCSID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTOTALPRICE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDVOUTOTALPRCTAX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDLOTNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDLOTCRTDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDLOTMODDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDLOTEXPDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLDSTATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDKEY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDMAIN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDFKEY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDCS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DEPT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CLASS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SUB_CLASS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDCSNAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDVENDORCODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDESC1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDESC2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDATTR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSIZE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDUPC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDALU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDUDF0</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDUDF1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDUDF2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDUDF3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDFRECVD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDPRICE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDCOST</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDMGN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDMGNPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDMKUPPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDCOEFF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTAX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDITMRCVD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDEXTPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDEXTCOST</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDPRCWTX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDMRGWTX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDEXTPWT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDCASEQTYRCVD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDPRINTTAGS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDOCITEMDISC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDVOUITMCOST</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDVOUITMPWTX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDVOUITMPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDCARTONID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDITEMLOOKUP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDVOUITMORIGQTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDNDECIMALS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTOTONHND</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSTRQTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDITEMSID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTAXCD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTAXPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDEXTTAX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDRECNO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDFC1PRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDFC1PRCWTX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDORDCOST</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSTYLESID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDESC3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDESC4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX0</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX5</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX6</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNAUX7</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNUDFSTR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNUDFDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNFRSTPRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNFRSTPWT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNSERIALFLG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDFCC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDFCCTYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSERIALNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDASSOCIATEPO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDCOSTCODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDVOUITMCOSTCODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDCOMMITTED</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDCASESTRQTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSALEDISCPERCENT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSALEDISC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTOTALTAX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTAX2PRC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTAX2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTAX2CD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDTAX1CD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDDEFSUBLOC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDITEMSCALE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSEQNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDLOTNUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDINVNLOTFLG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDLOTCRTDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDLOTMODDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDLOTEXPDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDITEMPICTURE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSTYLEPICTURE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>I_FLDSTATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEMDEPT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEMCLASS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEMSUBCLASS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>168</xloc>
+      <yloc>55</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Set Variables</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <field_name/>
+        <variable_name>VARFACTNAME</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value>RPRO_FACT_VOUCHERS</default_value>
+        </field>
+      </fields>
+    <use_formatting>Y</use_formatting>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>66</xloc>
+      <yloc>125</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>RPRO</connection>
+    <sql>SELECT
+  A.FLDKEY
+, A.FLDMAIN
+, A.FLDPONUMBER
+, A.FLDVENDORCODE
+, A.FLDCOMPANY
+, A.FLDACCNUM
+, A.FLDVOUNUMBER
+, A.FLDCLERK
+, A.FLDSTORESTATN
+, A.FLDDOCDATE
+, A.FLDVOUTERMS
+, A.FLDSUBTOTAL
+, A.FLDTOTAL
+, A.FLDDISCPRC
+, A.FLDDISCOUNT
+, A.FLDFEE
+, A.FLDVOUARRIVALDATE
+, A.FLDVOUPAYEECODE
+, A.FLDVOUPAYEENAME
+, A.FLDVOUINVCNUMBER
+, A.FLDVOUFREIGHT
+, A.FLDVOUTAXINCPRC
+, A.FLDVOUTAXINCAMT
+, A.FLDVOUTAXEXCPRC
+, A.FLDVOUTAXEXCAMT
+, A.FLDVOUINVCDATE
+, A.FLDVOUTYPE
+, A.FLDVOUSTATUS
+, A.FLDITEMPICTURE
+, A.FLDVOUCOSTMETHOD
+, A.FLDGL
+
+ 
+, A.FLDAP
+, A.FLDPC
+, A.FLDFEETYPE
+, A.FLDDOCLASTEDIT
+, A.FLDDOCPOSTDATE
+, A.FLDDOCTIME
+, A.FLDADDR1
+, A.FLDADDR2
+, A.FLDADDR3
+, A.FLDZIP
+, A.FLDWORKSTATION
+, A.FLDITEMSCOUNT
+, A.FLDMARKED
+, A.FLDVOUPACKAGENUMBER
+, A.FLDVOUCOMM1
+, A.FLDVOUCOMM2
+, A.FLDVOUCOMM3
+, A.FLDVOUCOMM4
+, A.FLDVOUCOMM5
+, A.FLDVOUCOMM6
+, A.FLDVOUCOMM7
+, A.FLDVOUCOMM8
+, A.FLDVOUCOMM9
+, A.FLDVOUCOMM10
+, A.FLDVOUPAYEEADDR1
+, A.FLDVOUPAYEEADDR2
+, A.FLDVOUPAYEEADDR3
+, A.FLDVOUPAYEEZIP
+, A.FLDVOUPAYEEACCTNUM
+, A.FLDTONUMBER
+, A.FLDSTOREHEADING1
+, A.FLDSTOREHEADING2
+, A.FLDSTOREHEADING3
+, A.FLDTITLE
+, A.FLDFNAME
+, A.FLDLNAME
+, A.FLDPHONE1
+, A.FLDPHONE2
+, A.FLDINFO1
+, A.FLDINFO2
+, A.FLDVOUPAYEETITLE
+, A.FLDVOUPAYEEFNAME
+, A.FLDVOUPAYEELNAME
+, A.FLDVOUPAYEEPHONE1
+, A.FLDVOUPAYEEPHONE2
+, A.FLDVOUPAYEEINFO1
+, A.FLDVOUPAYEEINFO2
+, A.FLDSTORE
+, A.FLDSTATION
+, A.FLDTRANSMITTED
+, A.FLDSTYLEPICTURE
+, A.FLDSHIPMENTNUMBER
+, A.FLDREFDOCNUM
+, A.FLDREFDOCPOSTDT
+, A.FLDVCHRTOTALQTY
+, A.FLDSTOREHEADING4
+, A.FLDSTOREHEADING5
+, A.FLDSTOREHEADING6
+, A.FLDORIGSTORESTATN
+, A.FLDAUDITED
+, A.FLDDEFSUBLOC
+, A.FLDMOVNOTESHIPNUM
+, A.FLDSEQWSNO
+, A.FLDDATAORIGIN
+, A.FLDVNDRINVCTOTAL
+, A.FLDREVIEWEDBY
+, A.FLDREVIEWEDDT
+, A.FLDAPPROVEDBY
+, A.FLDAPPROVEDDT
+, A.FLDREFDOCSID
+, A.FLDDOCSID
+, A.FLDVOUTOTALPRICE
+, A.FLDVOUTOTALPRCTAX
+, A.FLDLOTNUM
+, A.FLDLOTCRTDATE
+, A.FLDLOTMODDATE
+, A.FLDLOTEXPDATE
+, A.FLDSTATUS
+, sysdate
+
+
+, B.FLDKEY	AS	I_FLDKEY
+, B.FLDMAIN	AS	I_FLDMAIN
+, B.FLDFKEY	AS	I_FLDFKEY
+, B.FLDDCS	AS	I_FLDDCS
+--,substr (B.FLDDCS,1,3) as DEPT		
+,TRIM(to_char(substr (B.FLDDCS,1,2))) as DEPT		
+,TRIM(to_char(substr (B.FLDDCS,4,2))) as class		
+,TRIM(to_char(substr (B.FLDDCS,7,1)))as sub_class		
+		
+, B.FLDDCSNAME	AS	I_FLDDCSNAME
+, ltrim(rtrim(B.FLDVENDORCODE))	AS	I_FLDVENDORCODE
+, B.FLDDESC1	AS	I_FLDDESC1
+, B.FLDDESC2	AS	I_FLDDESC2
+, B.FLDATTR	AS	I_FLDATTR
+, B.FLDSIZE	AS	I_FLDSIZE
+, B.FLDUPC	AS	I_FLDUPC
+, B.FLDALU	AS	I_FLDALU
+, B.FLDUDF0	AS	I_FLDUDF0
+, B.FLDUDF1	AS	I_FLDUDF1
+, B.FLDUDF2	AS	I_FLDUDF2
+, B.FLDUDF3	AS	I_FLDUDF3
+, B.FLDFRECVD	AS	I_FLDFRECVD
+, B.FLDPRICE	AS	I_FLDPRICE
+, B.FLDCOST	AS	I_FLDCOST
+, B.FLDMGN	AS	I_FLDMGN
+, B.FLDMGNPRC	AS	I_FLDMGNPRC
+, B.FLDMKUPPRC	AS	I_FLDMKUPPRC
+, B.FLDCOEFF	AS	I_FLDCOEFF
+, B.FLDTAX	AS	I_FLDTAX
+, B.FLDITMRCVD	AS	I_FLDITMRCVD
+, B.FLDEXTPRC	AS	I_FLDEXTPRC
+, B.FLDEXTCOST	AS	I_FLDEXTCOST
+, B.FLDPRCWTX	AS	I_FLDPRCWTX
+, B.FLDMRGWTX	AS	I_FLDMRGWTX
+, B.FLDEXTPWT	AS	I_FLDEXTPWT
+, B.FLDCASEQTYRCVD	AS	I_FLDCASEQTYRCVD
+, B.FLDPRINTTAGS	AS	I_FLDPRINTTAGS
+, B.FLDDOCITEMDISC	AS	I_FLDDOCITEMDISC
+, B.FLDVOUITMCOST	AS	I_FLDVOUITMCOST
+, B.FLDVOUITMPWTX	AS	I_FLDVOUITMPWTX
+, B.FLDVOUITMPRC	AS	I_FLDVOUITMPRC
+, B.FLDCARTONID	AS	I_FLDCARTONID
+, B.FLDITEMLOOKUP	AS	I_FLDITEMLOOKUP
+, B.FLDVOUITMORIGQTY	AS	I_FLDVOUITMORIGQTY
+, B.FLDNDECIMALS	AS	I_FLDNDECIMALS
+, B.FLDTOTONHND	AS	I_FLDTOTONHND
+, B.FLDSTRQTY	AS	I_FLDSTRQTY
+, B.FLDITEMSID	AS	I_FLDITEMSID
+, B.FLDTAXCD	AS	I_FLDTAXCD
+, B.FLDTAXPRC	AS	I_FLDTAXPRC
+, B.FLDEXTTAX	AS	I_FLDEXTTAX
+, B.FLDRECNO	AS	I_FLDRECNO
+, B.FLDFC1PRC	AS	I_FLDFC1PRC
+, B.FLDFC1PRCWTX	AS	I_FLDFC1PRCWTX
+, B.FLDORDCOST	AS	I_FLDORDCOST
+, B.FLDSTYLESID	AS	I_FLDSTYLESID
+, B.FLDDESC3	AS	I_FLDDESC3
+, B.FLDDESC4	AS	I_FLDDESC4
+, B.FLDINVNAUX0	AS	I_FLDINVNAUX0
+, B.FLDINVNAUX1	AS	I_FLDINVNAUX1
+, B.FLDINVNAUX2	AS	I_FLDINVNAUX2
+, B.FLDINVNAUX3	AS	I_FLDINVNAUX3
+, B.FLDINVNAUX4	AS	I_FLDINVNAUX4
+, B.FLDINVNAUX5	AS	I_FLDINVNAUX5
+, B.FLDINVNAUX6	AS	I_FLDINVNAUX6
+, B.FLDINVNAUX7	AS	I_FLDINVNAUX7
+, B.FLDINVNUDFSTR	AS	I_FLDINVNUDFSTR
+, B.FLDINVNUDFDATE	AS	I_FLDINVNUDFDATE
+, B.FLDINVNFRSTPRC	AS	I_FLDINVNFRSTPRC
+, B.FLDINVNFRSTPWT	AS	I_FLDINVNFRSTPWT
+, B.FLDINVNSERIALFLG	AS	I_FLDINVNSERIALFLG
+, B.FLDFCC	AS	I_FLDFCC
+, B.FLDFCCTYPE	AS	I_FLDFCCTYPE
+, B.FLDSERIALNUM	AS	I_FLDSERIALNUM
+, B.FLDASSOCIATEPO	AS	I_FLDASSOCIATEPO
+, B.FLDCOSTCODE	AS	I_FLDCOSTCODE
+, B.FLDVOUITMCOSTCODE	AS	I_FLDVOUITMCOSTCODE
+, B.FLDCOMMITTED	AS	I_FLDCOMMITTED
+, B.FLDCASESTRQTY	AS	I_FLDCASESTRQTY
+, B.FLDSALEDISCPERCENT	AS	I_FLDSALEDISCPERCENT
+, B.FLDSALEDISC	AS	I_FLDSALEDISC
+, B.FLDTOTALTAX	AS	I_FLDTOTALTAX
+, B.FLDTAX2PRC	AS	I_FLDTAX2PRC
+, B.FLDTAX2	AS	I_FLDTAX2
+, B.FLDTAX2CD	AS	I_FLDTAX2CD
+, B.FLDTAX1CD	AS	I_FLDTAX1CD
+, B.FLDDEFSUBLOC	AS	I_FLDDEFSUBLOC
+, B.FLDITEMSCALE	AS	I_FLDITEMSCALE
+, B.FLDSEQNUM	AS	I_FLDSEQNUM
+, B.FLDLOTNUM	AS	I_FLDLOTNUM
+, B.FLDINVNLOTFLG	AS	I_FLDINVNLOTFLG
+, B.FLDLOTCRTDATE	AS	I_FLDLOTCRTDATE
+, B.FLDLOTMODDATE	AS	I_FLDLOTMODDATE
+, B.FLDLOTEXPDATE	AS	I_FLDLOTEXPDATE
+, B.FLDITEMPICTURE	AS	I_FLDITEMPICTURE
+, B.FLDSTYLEPICTURE	AS	I_FLDSTYLEPICTURE
+, B.FLDSTATUS	AS	I_FLDSTATUS
+, LTRIM(RTRIM(C.FLDDEPT)) ITEMDEPT
+, LTRIM(RTRIM(C.FLDCLASS)) ITEMCLASS
+, LTRIM(RTRIM(C.FLDSUBCLASS)) ITEMSUBCLASS
+
+FROM TBLFRMRVOUCHERS A,
+
+
+NTBLVOUCHERITEMS B
+left outer join TBLITEMS C on
+(B.FLDITEMLOOKUP=C.FLDITEMNUM and b.FLDMAIN= c.FLDMAIN)
+
+where  A.FLDKEY = B.FLDFKEY AND
+--AND A.FLDDOCDATE &lt; TO_DATE(&apos;1&#47;JAN&#47;2005&apos;, &apos;DD&#47;MM&#47;YYYY&apos;)
+--AND A.FLDDOCDATE &gt;= TO_DATE(&apos;1&#47;JAN&#47;2005&apos;, &apos;DD&#47;MM&#47;YYYY&apos;)
+--A.FLDDOCDATE &lt; TO_DATE(&apos;1&#47;JAN&#47;2006&apos;, &apos;DD&#47;MM&#47;YYYY&apos;)
+--(A.FLDDOCDATE &gt;= TO_DATE(&apos;1&#47;JAN&#47;2013&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) AND
+--A.FLDDOCDATE &lt; TO_DATE(&apos;1&#47;MAR&#47;2013&apos;, &apos;DD&#47;MM&#47;YYYY&apos;))
+(A.FLDDOCDATE &gt;= TO_DATE(&apos;${MAXETLDATE_RPRO_VOUCHERS}&apos;,&apos;DD-MM-YYYY&apos;) AND
+TO_DATE(A.FLDDOCDATE, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR 
+A.FLDDOCLASTEDIT &gt;= TO_DATE(&apos;${MAXETLDATE_RPRO_VOUCHERS}&apos;,&apos;DD-MM-YYYY&apos;) AND 
+TO_DATE(A.FLDDOCLASTEDIT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+--OR
+--B.PI_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_PO}&apos;,&apos;DD-MM-YYYY&apos;)  AND
+--TO_DATE(B.PI_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>44</xloc>
+      <yloc>52</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <schema/>
+    <table>RPRO_FACT_VOUCHERS</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>FLDKEY</column_name>
+          <stream_name>FLDKEY</stream_name>
+        </field>
+        <field>
+          <column_name>FLDMAIN</column_name>
+          <stream_name>FLDMAIN</stream_name>
+        </field>
+        <field>
+          <column_name>FLDPONUMBER</column_name>
+          <stream_name>FLDPONUMBER</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVENDORCODE</column_name>
+          <stream_name>FLDVENDORCODE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDCOMPANY</column_name>
+          <stream_name>FLDCOMPANY</stream_name>
+        </field>
+        <field>
+          <column_name>FLDACCNUM</column_name>
+          <stream_name>FLDACCNUM</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUNUMBER</column_name>
+          <stream_name>FLDVOUNUMBER</stream_name>
+        </field>
+        <field>
+          <column_name>FLDCLERK</column_name>
+          <stream_name>FLDCLERK</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTORESTATN</column_name>
+          <stream_name>FLDSTORESTATN</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDOCDATE</column_name>
+          <stream_name>FLDDOCDATE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTERMS</column_name>
+          <stream_name>FLDVOUTERMS</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSUBTOTAL</column_name>
+          <stream_name>FLDSUBTOTAL</stream_name>
+        </field>
+        <field>
+          <column_name>FLDTOTAL</column_name>
+          <stream_name>FLDTOTAL</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDISCPRC</column_name>
+          <stream_name>FLDDISCPRC</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDISCOUNT</column_name>
+          <stream_name>FLDDISCOUNT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDFEE</column_name>
+          <stream_name>FLDFEE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUARRIVALDATE</column_name>
+          <stream_name>FLDVOUARRIVALDATE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEECODE</column_name>
+          <stream_name>FLDVOUPAYEECODE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEENAME</column_name>
+          <stream_name>FLDVOUPAYEENAME</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUINVCNUMBER</column_name>
+          <stream_name>FLDVOUINVCNUMBER</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUFREIGHT</column_name>
+          <stream_name>FLDVOUFREIGHT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTAXINCPRC</column_name>
+          <stream_name>FLDVOUTAXINCPRC</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTAXINCAMT</column_name>
+          <stream_name>FLDVOUTAXINCAMT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTAXEXCPRC</column_name>
+          <stream_name>FLDVOUTAXEXCPRC</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTAXEXCAMT</column_name>
+          <stream_name>FLDVOUTAXEXCAMT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUINVCDATE</column_name>
+          <stream_name>FLDVOUINVCDATE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTYPE</column_name>
+          <stream_name>FLDVOUTYPE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUSTATUS</column_name>
+          <stream_name>FLDVOUSTATUS</stream_name>
+        </field>
+        <field>
+          <column_name>FLDITEMPICTURE</column_name>
+          <stream_name>FLDITEMPICTURE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOSTMETHOD</column_name>
+          <stream_name>FLDVOUCOSTMETHOD</stream_name>
+        </field>
+        <field>
+          <column_name>FLDGL</column_name>
+          <stream_name>FLDGL</stream_name>
+        </field>
+        <field>
+          <column_name>FLDAP</column_name>
+          <stream_name>FLDAP</stream_name>
+        </field>
+        <field>
+          <column_name>FLDPC</column_name>
+          <stream_name>FLDPC</stream_name>
+        </field>
+        <field>
+          <column_name>FLDFEETYPE</column_name>
+          <stream_name>FLDFEETYPE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDOCLASTEDIT</column_name>
+          <stream_name>FLDDOCLASTEDIT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDOCPOSTDATE</column_name>
+          <stream_name>FLDDOCPOSTDATE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDOCTIME</column_name>
+          <stream_name>FLDDOCTIME</stream_name>
+        </field>
+        <field>
+          <column_name>FLDADDR1</column_name>
+          <stream_name>FLDADDR1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDADDR2</column_name>
+          <stream_name>FLDADDR2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDADDR3</column_name>
+          <stream_name>FLDADDR3</stream_name>
+        </field>
+        <field>
+          <column_name>FLDZIP</column_name>
+          <stream_name>FLDZIP</stream_name>
+        </field>
+        <field>
+          <column_name>FLDWORKSTATION</column_name>
+          <stream_name>FLDWORKSTATION</stream_name>
+        </field>
+        <field>
+          <column_name>FLDITEMSCOUNT</column_name>
+          <stream_name>FLDITEMSCOUNT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDMARKED</column_name>
+          <stream_name>FLDMARKED</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPACKAGENUMBER</column_name>
+          <stream_name>FLDVOUPACKAGENUMBER</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM1</column_name>
+          <stream_name>FLDVOUCOMM1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM2</column_name>
+          <stream_name>FLDVOUCOMM2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM3</column_name>
+          <stream_name>FLDVOUCOMM3</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM4</column_name>
+          <stream_name>FLDVOUCOMM4</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM5</column_name>
+          <stream_name>FLDVOUCOMM5</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM6</column_name>
+          <stream_name>FLDVOUCOMM6</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM7</column_name>
+          <stream_name>FLDVOUCOMM7</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM8</column_name>
+          <stream_name>FLDVOUCOMM8</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM9</column_name>
+          <stream_name>FLDVOUCOMM9</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUCOMM10</column_name>
+          <stream_name>FLDVOUCOMM10</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEADDR1</column_name>
+          <stream_name>FLDVOUPAYEEADDR1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEADDR2</column_name>
+          <stream_name>FLDVOUPAYEEADDR2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEADDR3</column_name>
+          <stream_name>FLDVOUPAYEEADDR3</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEZIP</column_name>
+          <stream_name>FLDVOUPAYEEZIP</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEACCTNUM</column_name>
+          <stream_name>FLDVOUPAYEEACCTNUM</stream_name>
+        </field>
+        <field>
+          <column_name>FLDTONUMBER</column_name>
+          <stream_name>FLDTONUMBER</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTOREHEADING1</column_name>
+          <stream_name>FLDSTOREHEADING1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTOREHEADING2</column_name>
+          <stream_name>FLDSTOREHEADING2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTOREHEADING3</column_name>
+          <stream_name>FLDSTOREHEADING3</stream_name>
+        </field>
+        <field>
+          <column_name>FLDTITLE</column_name>
+          <stream_name>FLDTITLE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDFNAME</column_name>
+          <stream_name>FLDFNAME</stream_name>
+        </field>
+        <field>
+          <column_name>FLDLNAME</column_name>
+          <stream_name>FLDLNAME</stream_name>
+        </field>
+        <field>
+          <column_name>FLDPHONE1</column_name>
+          <stream_name>FLDPHONE1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDPHONE2</column_name>
+          <stream_name>FLDPHONE2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDINFO1</column_name>
+          <stream_name>FLDINFO1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDINFO2</column_name>
+          <stream_name>FLDINFO2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEETITLE</column_name>
+          <stream_name>FLDVOUPAYEETITLE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEFNAME</column_name>
+          <stream_name>FLDVOUPAYEEFNAME</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEELNAME</column_name>
+          <stream_name>FLDVOUPAYEELNAME</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEPHONE1</column_name>
+          <stream_name>FLDVOUPAYEEPHONE1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEPHONE2</column_name>
+          <stream_name>FLDVOUPAYEEPHONE2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEINFO1</column_name>
+          <stream_name>FLDVOUPAYEEINFO1</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUPAYEEINFO2</column_name>
+          <stream_name>FLDVOUPAYEEINFO2</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTORE</column_name>
+          <stream_name>FLDSTORE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTATION</column_name>
+          <stream_name>FLDSTATION</stream_name>
+        </field>
+        <field>
+          <column_name>FLDTRANSMITTED</column_name>
+          <stream_name>FLDTRANSMITTED</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTYLEPICTURE</column_name>
+          <stream_name>FLDSTYLEPICTURE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSHIPMENTNUMBER</column_name>
+          <stream_name>FLDSHIPMENTNUMBER</stream_name>
+        </field>
+        <field>
+          <column_name>FLDREFDOCNUM</column_name>
+          <stream_name>FLDREFDOCNUM</stream_name>
+        </field>
+        <field>
+          <column_name>FLDREFDOCPOSTDT</column_name>
+          <stream_name>FLDREFDOCPOSTDT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVCHRTOTALQTY</column_name>
+          <stream_name>FLDVCHRTOTALQTY</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTOREHEADING4</column_name>
+          <stream_name>FLDSTOREHEADING4</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTOREHEADING5</column_name>
+          <stream_name>FLDSTOREHEADING5</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTOREHEADING6</column_name>
+          <stream_name>FLDSTOREHEADING6</stream_name>
+        </field>
+        <field>
+          <column_name>FLDORIGSTORESTATN</column_name>
+          <stream_name>FLDORIGSTORESTATN</stream_name>
+        </field>
+        <field>
+          <column_name>FLDAUDITED</column_name>
+          <stream_name>FLDAUDITED</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDEFSUBLOC</column_name>
+          <stream_name>FLDDEFSUBLOC</stream_name>
+        </field>
+        <field>
+          <column_name>FLDMOVNOTESHIPNUM</column_name>
+          <stream_name>FLDMOVNOTESHIPNUM</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSEQWSNO</column_name>
+          <stream_name>FLDSEQWSNO</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDATAORIGIN</column_name>
+          <stream_name>FLDDATAORIGIN</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVNDRINVCTOTAL</column_name>
+          <stream_name>FLDVNDRINVCTOTAL</stream_name>
+        </field>
+        <field>
+          <column_name>FLDREVIEWEDBY</column_name>
+          <stream_name>FLDREVIEWEDBY</stream_name>
+        </field>
+        <field>
+          <column_name>FLDREVIEWEDDT</column_name>
+          <stream_name>FLDREVIEWEDDT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDAPPROVEDBY</column_name>
+          <stream_name>FLDAPPROVEDBY</stream_name>
+        </field>
+        <field>
+          <column_name>FLDAPPROVEDDT</column_name>
+          <stream_name>FLDAPPROVEDDT</stream_name>
+        </field>
+        <field>
+          <column_name>FLDREFDOCSID</column_name>
+          <stream_name>FLDREFDOCSID</stream_name>
+        </field>
+        <field>
+          <column_name>FLDDOCSID</column_name>
+          <stream_name>FLDDOCSID</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTOTALPRICE</column_name>
+          <stream_name>FLDVOUTOTALPRICE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDVOUTOTALPRCTAX</column_name>
+          <stream_name>FLDVOUTOTALPRCTAX</stream_name>
+        </field>
+        <field>
+          <column_name>FLDLOTNUM</column_name>
+          <stream_name>FLDLOTNUM</stream_name>
+        </field>
+        <field>
+          <column_name>FLDLOTCRTDATE</column_name>
+          <stream_name>FLDLOTCRTDATE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDLOTMODDATE</column_name>
+          <stream_name>FLDLOTMODDATE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDLOTEXPDATE</column_name>
+          <stream_name>FLDLOTEXPDATE</stream_name>
+        </field>
+        <field>
+          <column_name>FLDSTATUS</column_name>
+          <stream_name>FLDSTATUS</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDKEY</column_name>
+          <stream_name>FLDKEY_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDMAIN</column_name>
+          <stream_name>FLDMAIN_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDFKEY</column_name>
+          <stream_name>FLDFKEY</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDCS</column_name>
+          <stream_name>FLDDCS</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDCSNAME</column_name>
+          <stream_name>FLDDCSNAME</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDVENDORCODE</column_name>
+          <stream_name>FLDVENDORCODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDESC1</column_name>
+          <stream_name>FLDDESC1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDESC2</column_name>
+          <stream_name>FLDDESC2</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDATTR</column_name>
+          <stream_name>FLDATTR</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSIZE</column_name>
+          <stream_name>FLDSIZE</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDUPC</column_name>
+          <stream_name>FLDUPC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDALU</column_name>
+          <stream_name>FLDALU</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDUDF0</column_name>
+          <stream_name>FLDUDF0</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDUDF1</column_name>
+          <stream_name>FLDUDF1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDUDF2</column_name>
+          <stream_name>FLDUDF2</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDUDF3</column_name>
+          <stream_name>FLDUDF3</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDFRECVD</column_name>
+          <stream_name>FLDFRECVD</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDPRICE</column_name>
+          <stream_name>FLDPRICE</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDCOST</column_name>
+          <stream_name>FLDCOST</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDMGN</column_name>
+          <stream_name>FLDMGN</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDMGNPRC</column_name>
+          <stream_name>FLDMGNPRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDMKUPPRC</column_name>
+          <stream_name>FLDMKUPPRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDCOEFF</column_name>
+          <stream_name>FLDCOEFF</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTAX</column_name>
+          <stream_name>FLDTAX</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDITMRCVD</column_name>
+          <stream_name>FLDITMRCVD</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDEXTPRC</column_name>
+          <stream_name>FLDEXTPRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDEXTCOST</column_name>
+          <stream_name>FLDEXTCOST</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDPRCWTX</column_name>
+          <stream_name>FLDPRCWTX</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDMRGWTX</column_name>
+          <stream_name>FLDMRGWTX</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDEXTPWT</column_name>
+          <stream_name>FLDEXTPWT</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDCASEQTYRCVD</column_name>
+          <stream_name>FLDCASEQTYRCVD</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDPRINTTAGS</column_name>
+          <stream_name>FLDPRINTTAGS</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDOCITEMDISC</column_name>
+          <stream_name>FLDDOCITEMDISC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDVOUITMCOST</column_name>
+          <stream_name>FLDVOUITMCOST</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDVOUITMPWTX</column_name>
+          <stream_name>FLDVOUITMPWTX</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDVOUITMPRC</column_name>
+          <stream_name>FLDVOUITMPRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDCARTONID</column_name>
+          <stream_name>FLDCARTONID</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDITEMLOOKUP</column_name>
+          <stream_name>FLDITEMLOOKUP</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDVOUITMORIGQTY</column_name>
+          <stream_name>FLDVOUITMORIGQTY</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDNDECIMALS</column_name>
+          <stream_name>FLDNDECIMALS</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTOTONHND</column_name>
+          <stream_name>FLDTOTONHND</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSTRQTY</column_name>
+          <stream_name>FLDSTRQTY</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDITEMSID</column_name>
+          <stream_name>FLDITEMSID</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTAXCD</column_name>
+          <stream_name>FLDTAXCD</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTAXPRC</column_name>
+          <stream_name>FLDTAXPRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDEXTTAX</column_name>
+          <stream_name>FLDEXTTAX</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDRECNO</column_name>
+          <stream_name>FLDRECNO</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDFC1PRC</column_name>
+          <stream_name>FLDFC1PRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDFC1PRCWTX</column_name>
+          <stream_name>FLDFC1PRCWTX</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDORDCOST</column_name>
+          <stream_name>FLDORDCOST</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSTYLESID</column_name>
+          <stream_name>FLDSTYLESID</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDESC3</column_name>
+          <stream_name>FLDDESC3</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDESC4</column_name>
+          <stream_name>FLDDESC4</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX0</column_name>
+          <stream_name>FLDINVNAUX0</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX1</column_name>
+          <stream_name>FLDINVNAUX1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX2</column_name>
+          <stream_name>FLDINVNAUX2</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX3</column_name>
+          <stream_name>FLDINVNAUX3</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX4</column_name>
+          <stream_name>FLDINVNAUX4</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX5</column_name>
+          <stream_name>FLDINVNAUX5</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX6</column_name>
+          <stream_name>FLDINVNAUX6</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNAUX7</column_name>
+          <stream_name>FLDINVNAUX7</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNUDFSTR</column_name>
+          <stream_name>FLDINVNUDFSTR</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNUDFDATE</column_name>
+          <stream_name>FLDINVNUDFDATE</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNFRSTPRC</column_name>
+          <stream_name>FLDINVNFRSTPRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNFRSTPWT</column_name>
+          <stream_name>FLDINVNFRSTPWT</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNSERIALFLG</column_name>
+          <stream_name>FLDINVNSERIALFLG</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDFCC</column_name>
+          <stream_name>FLDFCC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDFCCTYPE</column_name>
+          <stream_name>FLDFCCTYPE</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSERIALNUM</column_name>
+          <stream_name>FLDSERIALNUM</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDASSOCIATEPO</column_name>
+          <stream_name>FLDASSOCIATEPO</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDCOSTCODE</column_name>
+          <stream_name>FLDCOSTCODE</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDVOUITMCOSTCODE</column_name>
+          <stream_name>FLDVOUITMCOSTCODE</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDCOMMITTED</column_name>
+          <stream_name>FLDCOMMITTED</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDCASESTRQTY</column_name>
+          <stream_name>FLDCASESTRQTY</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSALEDISCPERCENT</column_name>
+          <stream_name>FLDSALEDISCPERCENT</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSALEDISC</column_name>
+          <stream_name>FLDSALEDISC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTOTALTAX</column_name>
+          <stream_name>FLDTOTALTAX</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTAX2PRC</column_name>
+          <stream_name>FLDTAX2PRC</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTAX2</column_name>
+          <stream_name>FLDTAX2</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTAX2CD</column_name>
+          <stream_name>FLDTAX2CD</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDTAX1CD</column_name>
+          <stream_name>FLDTAX1CD</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDDEFSUBLOC</column_name>
+          <stream_name>FLDDEFSUBLOC_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDITEMSCALE</column_name>
+          <stream_name>FLDITEMSCALE</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSEQNUM</column_name>
+          <stream_name>FLDSEQNUM</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDLOTNUM</column_name>
+          <stream_name>FLDLOTNUM_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDINVNLOTFLG</column_name>
+          <stream_name>FLDINVNLOTFLG</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDLOTCRTDATE</column_name>
+          <stream_name>FLDLOTCRTDATE_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDLOTMODDATE</column_name>
+          <stream_name>FLDLOTMODDATE_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDLOTEXPDATE</column_name>
+          <stream_name>FLDLOTEXPDATE_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDITEMPICTURE</column_name>
+          <stream_name>FLDITEMPICTURE_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSTYLEPICTURE</column_name>
+          <stream_name>FLDSTYLEPICTURE_1</stream_name>
+        </field>
+        <field>
+          <column_name>I_FLDSTATUS</column_name>
+          <stream_name>FLDSTATUS_1</stream_name>
+        </field>
+        <field>
+          <column_name>STORE_ID</column_name>
+          <stream_name>STORE_ID</stream_name>
+        </field>
+        <field>
+          <column_name>ITEM_ID</column_name>
+          <stream_name>ITEM_ID</stream_name>
+        </field>
+        <field>
+          <column_name>PROG_CR_DT</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
+        <field>
+          <column_name>DEPARTMENT_ID</column_name>
+          <stream_name>DEPARTMENT_ID</stream_name>
+        </field>
+        <field>
+          <column_name>RPRO_ITEM_ID</column_name>
+          <stream_name>RPRO_ITEM_ID</stream_name>
+        </field>
+        <field>
+          <column_name>RPRO_VENDOR_ID</column_name>
+          <stream_name>RPRO_VENDOR_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SUPPLIER_ID</column_name>
+          <stream_name>SUPPLIER_ID</stream_name>
+        </field>
+        <field>
+          <column_name>COMPANY_ID</column_name>
+          <stream_name>COMP_ID</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>48</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>rpro_item_id</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>RPRO_DIM_ITEM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>I_FLDITEMLOOKUP</name>
+        <field>FLDITEMNUM</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>I_FLDMAIN</name>
+        <field>FLDMAIN</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>RPRO_ITEM_ID</name>
+        <rename>RPRO_ITEM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>424</xloc>
+      <yloc>189</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>rpro_vendor_id</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>RPRO_DIM_VENDOR</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>FLDVENDORCODE</name>
+        <field>FLDVENDORCODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>RPRO_VENDOR_ID</name>
+        <rename>RPRO_VENDOR_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>316</xloc>
+      <yloc>191</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>store_id</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse1</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>RPRO_dim_store</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>FLDMAIN</name>
+        <field>FLDMAIN</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>FLDSTORE</name>
+        <field>FLDSTOREID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>STORE_ID</name>
+        <rename>STORE_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>273</xloc>
+      <yloc>57</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>supplier_id</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>stc_dim_supplier</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>FLDVENDORCODE</name>
+        <field>SUPP_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SUPPLIER_ID</name>
+        <rename>SUPPLIER_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>530</xloc>
+      <yloc>187</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

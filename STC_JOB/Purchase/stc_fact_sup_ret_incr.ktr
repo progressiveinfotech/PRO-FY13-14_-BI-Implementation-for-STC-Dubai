@@ -1,0 +1,4687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>stc_fact_sup_ret_incr</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;10&#47;15 18:06:49.926</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;10&#47;15 18:06:49.926</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>leaf_fact</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1521</port>
+    <username>hr</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2a7c8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live_CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM</name>
+    <server>192.168.2.100</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>STC_V4</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom1</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom2</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>naga</name>
+    <server>10.80.0.46</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ORION</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>ORION106</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orion_original</name>
+    <server>shankartrading</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>orion106</username>
+    <password>Encrypted 2be98dcbc09c8808da417ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orionpay</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PAYROLL</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>STCNEW.WORLD</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>RPRO</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>rpro</username>
+    <password>Encrypted 2be98afc86aa78190a80bbe62d1c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>STCBI106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact0</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact07</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact2</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact3</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact5</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact6</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_DIM_FACT_1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_DW</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1522</port>
+    <username>STC_DW</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb799d44fdad8bed</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1522</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_ORION</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1522</port>
+    <username>STC_ORION</username>
+    <password>Encrypted 2be98afc86aa7f2b79f3a915fecbb80f4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1522</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse1</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Table input</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>GRADE1_ID</from><to>GRADE2_ID</to><enabled>Y</enabled> </hop>  <hop> <from>COMP_ID</from><to>TRAN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SUPPLIER_ID</from><to>ITEM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SIZE_ID</from><to>CAT_MANG_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CAT_MANG_ID</from><to>FOOD_CAT_ID</to><enabled>Y</enabled> </hop>  <hop> <from>REF_TRAN_ID</from><to>ARTICLE_ID</to><enabled>Y</enabled> </hop>  <hop> <from>PACKING_ID</from><to>SIZE_ID</to><enabled>Y</enabled> </hop>  <hop> <from>TRAN_ID</from><to>SUPPLIER_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ARTICLE_ID</from><to>PACKING_ID</to><enabled>Y</enabled> </hop>  <hop> <from>GRADE2_ID</from><to>CATEGORY_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ITEM_ID</from><to>LOCATION_ID</to><enabled>Y</enabled> </hop>  <hop> <from>LOCATION_ID</from><to>DOC_SRC_LOCTN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>DOC_SRC_LOCTN_ID</from><to>REF_TRAN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CURRENCY_ID</from><to>DEPT_ID</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>ITEM_UOM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ITEM_UOM_ID</from><to>GRADE1_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CATEGORY_ID</from><to>COMP_ID</to><enabled>Y</enabled> </hop>  <hop> <from>DEPT_ID</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  <hop> <from>FOOD_CAT_ID</from><to>CURRENCY_ID</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>ARTICLE_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ARTICLE</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_10</name>
+        <field>ARTICLE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ARTICLE_ID</name>
+        <rename>ARTICLE_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>966</xloc>
+      <yloc>326</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>BRAND_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_BRAND</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_01</name>
+        <field>BRAND_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>BRAND_ID</name>
+        <rename>BRAND_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>860</xloc>
+      <yloc>190</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CATEGORY_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CATEGORY</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_08</name>
+        <field>CATEGORY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CATEGORY_ID</name>
+        <rename>CATEGORY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>736</xloc>
+      <yloc>31</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CAT_MANG_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CAT_MANG</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_13</name>
+        <field>CAT_MANG_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CAT_MANG_ID</name>
+        <rename>CAT_MANG_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>524</xloc>
+      <yloc>450</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>COLOR_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_COLOR</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_05</name>
+        <field>COLOR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COLOR_ID</name>
+        <rename>COLOR_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>973</xloc>
+      <yloc>50</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>COMP_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_COMPANIES</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_COMP_CODE</name>
+        <field>COMPANY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COMP_ID</name>
+        <rename>COMP_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>515</xloc>
+      <yloc>187</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>COUNTRY_ORIGIN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_COUNTRY_ORIGIN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_16</name>
+        <field>COUN_ORIGIN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COUNTRY_ORIGIN_ID</name>
+        <rename>COUNTRY_ORIGIN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>105</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CURRENCY_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CURRENCY</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_CURR_CODE</name>
+        <field>CURR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>132</xloc>
+      <yloc>532</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DEPT_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_DEPARTMENT</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_02</name>
+        <field>DEPARTMENT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_06</name>
+        <field>CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_07</name>
+        <field>SUB_CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>DEPARTMENT_ID</name>
+        <rename>DEPARTMENT_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>302</xloc>
+      <yloc>499</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DOC_SRC_LOCTN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_LOCATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_LOCN_CODE</name>
+        <field>LOCN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>DOC_SRC_LOCN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>689</xloc>
+      <yloc>312</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>FOOD_CAT_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_FOOD_CAT</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_03</name>
+        <field>FOOD_CAT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_04</name>
+        <field>FOOD_SUB_CAT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>FOOD_CAT_ID</name>
+        <rename>FOOD_CAT_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>322</xloc>
+      <yloc>421</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>GRADE1_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_GRADE1</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRI_GRADE_CODE_1</name>
+        <field>GRADE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRADE1_ID</name>
+        <rename>GRADE1_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>448</xloc>
+      <yloc>58</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>GRADE2_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_GRADE2</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRI_GRADE_CODE_2</name>
+        <field>GRADE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRADE2_ID</name>
+        <rename>GRADE2_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>565</xloc>
+      <yloc>59</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>GRP_COMP_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_GROUP_COMPANIES</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_COMP_CODE</name>
+        <field>COMPANY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRP_COMP_ID</name>
+        <rename>GRP_COMP_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>717</xloc>
+      <yloc>180</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRI_ITEM_CODE</name>
+        <field>ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>322</xloc>
+      <yloc>297</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_UOM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM_UOM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRI_ITEM_CODE</name>
+        <field>IU_ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>SRI_UOM_CODE</name>
+        <field>IU_UOM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ITEM_UOM_ID</name>
+        <rename>ITEM_UOM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>306</xloc>
+      <yloc>53</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_UOM_ID_LKP</name>
+    <type>CombinationLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <schema/>
+      <table>STC_DIM_ITEM_UOM</table>
+      <connection>Warehouse</connection>
+      <commit>100</commit>
+      <cache_size>9999</cache_size>
+      <replace>N</replace>
+      <crc>N</crc>
+      <crcfield>hashcode</crcfield>
+      <fields>
+        <key>
+          <name>SRI_ITEM_CODE</name>
+          <lookup>IU_ITEM_CODE</lookup>
+        </key>
+        <key>
+          <name>SRI_UOM_CODE</name>
+          <lookup>IU_UOM_CODE</lookup>
+        </key>
+        <return>
+          <name>ITEM_UOM_ID</name>
+          <creation_method>tablemax</creation_method>
+          <use_autoinc>N</use_autoinc>
+        </return>
+      </fields>
+      <sequence/>
+      <last_update_field/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>171</xloc>
+      <yloc>168</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <commit>10000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>stc_fact_sup_ret</table>
+      <key>
+        <name>SRH_SYS_ID</name>
+        <field>SRH_SYS_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>SRI_SYS_ID</name>
+        <field>SRI_SYS_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SRH_SYS_ID</name>
+        <rename>SRH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_COMP_CODE</name>
+        <rename>SRH_COMP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_TXN_CODE</name>
+        <rename>SRH_TXN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_DOC_SRC_LOCN_CODE</name>
+        <rename>SRH_DOC_SRC_LOCN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_NO</name>
+        <rename>SRH_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_DT</name>
+        <rename>SRH_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ACNT_YEAR</name>
+        <rename>SRH_ACNT_YEAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CAL_YEAR</name>
+        <rename>SRH_CAL_YEAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CAL_PERIOD</name>
+        <rename>SRH_CAL_PERIOD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_AMD_NO</name>
+        <rename>SRH_AMD_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_AMD_DT</name>
+        <rename>SRH_AMD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_AMD_USER_ID</name>
+        <rename>SRH_AMD_USER_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_AMD_RES_CODE</name>
+        <rename>SRH_AMD_RES_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_REF_FROM</name>
+        <rename>SRH_REF_FROM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_REF_FROM_NUM</name>
+        <rename>SRH_REF_FROM_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_REF_TXN_CODE</name>
+        <rename>SRH_REF_TXN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_REF_NO</name>
+        <rename>SRH_REF_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_REF_SYS_ID</name>
+        <rename>SRH_REF_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_SUPP_CODE</name>
+        <rename>SRH_SUPP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ADDR_CODE</name>
+        <rename>SRH_ADDR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_LOCN_CODE</name>
+        <rename>SRH_LOCN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CURR_CODE</name>
+        <rename>SRH_CURR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_EXGE_RATE</name>
+        <rename>SRH_EXGE_RATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_DISC_PERC</name>
+        <rename>SRH_DISC_PERC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_DISC_VAL</name>
+        <rename>SRH_DISC_VAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CHARGE_AREA</name>
+        <rename>SRH_CHARGE_AREA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CHARGE_AREA_NUM</name>
+        <rename>SRH_CHARGE_AREA_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CHARGE_CODE</name>
+        <rename>SRH_CHARGE_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FORM_CODE</name>
+        <rename>SRH_FORM_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_MAIN_ACNT_CODE</name>
+        <rename>SRH_MAIN_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_SUB_ACNT_CODE</name>
+        <rename>SRH_SUB_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_DIVN_CODE</name>
+        <rename>SRH_DIVN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_DEPT_CODE</name>
+        <rename>SRH_DEPT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ANLY_CODE_1</name>
+        <rename>SRH_ANLY_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ANLY_CODE_2</name>
+        <rename>SRH_ANLY_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ACTY_VALUE_CODE_1</name>
+        <rename>SRH_ACTY_VALUE_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ACTY_VALUE_CODE_2</name>
+        <rename>SRH_ACTY_VALUE_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ANLY_HEAD_NO_1</name>
+        <rename>SRH_ANLY_HEAD_NO_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ANLY_HEAD_NO_2</name>
+        <rename>SRH_ANLY_HEAD_NO_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_STATUS</name>
+        <rename>SRH_STATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_PRINT_STATUS</name>
+        <rename>SRH_PRINT_STATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_APPR_STATUS</name>
+        <rename>SRH_APPR_STATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_APPR_UID</name>
+        <rename>SRH_APPR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_APPR_DT</name>
+        <rename>SRH_APPR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_TH_TRAN_CODE</name>
+        <rename>SRH_TH_TRAN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_TH_DOC_NO</name>
+        <rename>SRH_TH_DOC_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_TH_DOC_DT</name>
+        <rename>SRH_TH_DOC_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ANNOTATION</name>
+        <rename>SRH_ANNOTATION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_POST_STATUS</name>
+        <rename>SRH_POST_STATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_SUBMIT_STATUS</name>
+        <rename>SRH_SUBMIT_STATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_PULLQTYBASE_NUM</name>
+        <rename>SRH_PULLQTYBASE_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_EXC_YN</name>
+        <rename>SRH_EXC_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CENVAT_YN</name>
+        <rename>SRH_CENVAT_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CR_QTY_UPDATED_YN</name>
+        <rename>SRH_CR_QTY_UPDATED_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CR_DUTY_UPDATED_YN</name>
+        <rename>SRH_CR_DUTY_UPDATED_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_EXC_INV_NO</name>
+        <rename>SRH_EXC_INV_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_EXC_INV_DT</name>
+        <rename>SRH_EXC_INV_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ED_SUPP_CODE</name>
+        <rename>SRH_ED_SUPP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ED_SUPP_ADDR_CODE</name>
+        <rename>SRH_ED_SUPP_ADDR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_DOC_TYPE</name>
+        <rename>SRH_DOC_TYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_ST_CODE</name>
+        <rename>SRH_ST_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_01</name>
+        <rename>SRH_FLEX_01</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_02</name>
+        <rename>SRH_FLEX_02</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_03</name>
+        <rename>SRH_FLEX_03</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_04</name>
+        <rename>SRH_FLEX_04</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_05</name>
+        <rename>SRH_FLEX_05</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_06</name>
+        <rename>SRH_FLEX_06</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_07</name>
+        <rename>SRH_FLEX_07</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_08</name>
+        <rename>SRH_FLEX_08</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_09</name>
+        <rename>SRH_FLEX_09</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_10</name>
+        <rename>SRH_FLEX_10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_11</name>
+        <rename>SRH_FLEX_11</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_12</name>
+        <rename>SRH_FLEX_12</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_13</name>
+        <rename>SRH_FLEX_13</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_14</name>
+        <rename>SRH_FLEX_14</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_15</name>
+        <rename>SRH_FLEX_15</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_16</name>
+        <rename>SRH_FLEX_16</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_17</name>
+        <rename>SRH_FLEX_17</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_18</name>
+        <rename>SRH_FLEX_18</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_19</name>
+        <rename>SRH_FLEX_19</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_FLEX_20</name>
+        <rename>SRH_FLEX_20</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CR_DT</name>
+        <rename>SRH_CR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_CR_UID</name>
+        <rename>SRH_CR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_UPD_UID</name>
+        <rename>SRH_UPD_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_UPD_DT</name>
+        <rename>SRH_UPD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_EXC_INV_NO_GEN_YN</name>
+        <rename>SRH_EXC_INV_NO_GEN_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_VAT_INV_NO</name>
+        <rename>SRH_VAT_INV_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_QVB_TYPE</name>
+        <rename>SRH_QVB_TYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_SUBCONTRACT_YN</name>
+        <rename>SRH_SUBCONTRACT_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_SC_LOCN_CODE</name>
+        <rename>SRH_SC_LOCN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_PULL_MULTIPLE_YN_NUM</name>
+        <rename>SRH_PULL_MULTIPLE_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRH_TRAN_CLASS</name>
+        <rename>SRH_TRAN_CLASS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_SYS_ID</name>
+        <rename>SRI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_SRH_SYS_ID</name>
+        <rename>SRI_SRH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_GI_SYS_ID</name>
+        <rename>SRI_GI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_PI_SYS_ID</name>
+        <rename>SRI_PI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_LOCN_CODE</name>
+        <rename>SRI_LOCN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ITEM_CODE</name>
+        <rename>SRI_ITEM_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ITEM_STK_YN_NUM</name>
+        <rename>SRI_ITEM_STK_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_UOM_CODE</name>
+        <rename>SRI_UOM_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_RES_CODE</name>
+        <rename>SRI_RES_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_UPD_STK_YN</name>
+        <rename>SRI_UPD_STK_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_QTY</name>
+        <rename>SRI_QTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_QTY_LS</name>
+        <rename>SRI_QTY_LS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_QTY_BU</name>
+        <rename>SRI_QTY_BU</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ITEM_DESC</name>
+        <rename>SRI_ITEM_DESC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_REL_PO_YN_NUM</name>
+        <rename>SRI_REL_PO_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FC_TAX_AMT</name>
+        <rename>SRI_FC_TAX_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_CHARGE_AREA</name>
+        <rename>SRI_CHARGE_AREA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_CHARGE_AREA_NUM</name>
+        <rename>SRI_CHARGE_AREA_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_CHARGE_CODE</name>
+        <rename>SRI_CHARGE_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ACTH_CODE</name>
+        <rename>SRI_ACTH_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_COMP_CODE</name>
+        <rename>SRI_COMP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_MAIN_ACNT_CODE</name>
+        <rename>SRI_MAIN_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_SUB_ACNT_CODE</name>
+        <rename>SRI_SUB_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_DIVN_CODE</name>
+        <rename>SRI_DIVN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_DEPT_CODE</name>
+        <rename>SRI_DEPT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ANLY_CODE_1</name>
+        <rename>SRI_ANLY_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ANLY_CODE_2</name>
+        <rename>SRI_ANLY_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ACTY_VALUE_CODE_1</name>
+        <rename>SRI_ACTY_VALUE_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ACTY_VALUE_CODE_2</name>
+        <rename>SRI_ACTY_VALUE_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ANLY_HEAD_NO_1</name>
+        <rename>SRI_ANLY_HEAD_NO_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ANLY_HEAD_NO_2</name>
+        <rename>SRI_ANLY_HEAD_NO_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_RATE</name>
+        <rename>SRI_RATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_DISC_PERC</name>
+        <rename>SRI_DISC_PERC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FC_VAL</name>
+        <rename>SRI_FC_VAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FC_VAL_AFT_H_DISC</name>
+        <rename>SRI_FC_VAL_AFT_H_DISC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ITEM_LENGTH</name>
+        <rename>IP_PACK_LENGTH</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ITEM_WIDTH</name>
+        <rename>IP_PACK_WIDTH</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ITEM_HEIGHT</name>
+        <rename>IP_PACK_HEIGHT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ITEM_AREA</name>
+        <rename>SRI_ITEM_AREA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_GRADE_CODE_1</name>
+        <rename>SRI_GRADE_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_GRADE_CODE_2</name>
+        <rename>SRI_GRADE_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_SEQ_NO</name>
+        <rename>SRI_SEQ_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_REG_TYPE</name>
+        <rename>SRI_REG_TYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_RG_CODE</name>
+        <rename>SRI_RG_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_CHAP_CODE</name>
+        <rename>SRI_CHAP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_SUBHEAD_CODE</name>
+        <rename>SRI_SUBHEAD_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ASSESS_RATE</name>
+        <rename>SRI_ASSESS_RATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_ASSESS_VAL</name>
+        <rename>SRI_ASSESS_VAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_EXC_INV_NO</name>
+        <rename>SRI_EXC_INV_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_EXC_INV_DT</name>
+        <rename>SRI_EXC_INV_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_II_QTY_BU</name>
+        <rename>SRI_II_QTY_BU</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_DUTY_PAID_YN</name>
+        <rename>SRI_DUTY_PAID_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_QTY_SR_NO</name>
+        <rename>SRI_QTY_SR_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_DUTY_SR_NO</name>
+        <rename>SRI_DUTY_SR_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_INSP_SYS_ID</name>
+        <rename>SRI_INSP_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_REF_EXC_INV_EL_CODE</name>
+        <rename>SRI_REF_EXC_INV_EL_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_EL_LOCN_CODE</name>
+        <rename>SRI_EL_LOCN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_WHOI_QTY_BU</name>
+        <rename>SRI_WHOI_QTY_BU</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_WHOI_SYS_ID</name>
+        <rename>SRI_WHOI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_01</name>
+        <rename>SRI_FLEX_01</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_02</name>
+        <rename>SRI_FLEX_02</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_03</name>
+        <rename>SRI_FLEX_03</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_04</name>
+        <rename>SRI_FLEX_04</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_05</name>
+        <rename>SRI_FLEX_05</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_06</name>
+        <rename>SRI_FLEX_06</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_07</name>
+        <rename>SRI_FLEX_07</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_08</name>
+        <rename>SRI_FLEX_08</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_09</name>
+        <rename>SRI_FLEX_09</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_10</name>
+        <rename>SRI_FLEX_10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_11</name>
+        <rename>SRI_FLEX_11</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_12</name>
+        <rename>SRI_FLEX_12</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_13</name>
+        <rename>SRI_FLEX_13</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_14</name>
+        <rename>SRI_FLEX_14</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_15</name>
+        <rename>SRI_FLEX_15</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_16</name>
+        <rename>SRI_FLEX_16</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_17</name>
+        <rename>SRI_FLEX_17</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_18</name>
+        <rename>SRI_FLEX_18</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_19</name>
+        <rename>SRI_FLEX_19</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FLEX_20</name>
+        <rename>SRI_FLEX_20</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_CR_UID</name>
+        <rename>SRI_CR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_CR_DT</name>
+        <rename>SRI_CR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_UPD_UID</name>
+        <rename>SRI_UPD_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_UPD_DT</name>
+        <rename>SRI_UPD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FC_DISC_VAL</name>
+        <rename>SRI_FC_DISC_VAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_SRR_SYS_ID</name>
+        <rename>SRI_SRR_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_SC_BOM_CODE</name>
+        <rename>SRI_SC_BOM_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_FC_ACT_VAL</name>
+        <rename>SRI_FC_ACT_VAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_WH_INS_YN</name>
+        <rename>SRI_WH_INS_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_WH_UPD_YN</name>
+        <rename>SRI_WH_UPD_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SRI_74_SRN_SYS_ID</name>
+        <rename>SRI_74_SRN_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>IM_MANF_NAME</name>
+        <rename>IM_MANF_NAME</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_CR_DT</name>
+        <rename>SYSDATE</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>ITEM_UOM_ID</name>
+        <rename>ITEM_UOM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>GRADE1_ID</name>
+        <rename>GRADE1_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>GRADE2_ID</name>
+        <rename>GRADE2_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CATEGORY_ID</name>
+        <rename>CATEGORY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>COMPANY_ID</name>
+        <rename>COMP_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TRAN_ID</name>
+        <rename>TXN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SUPPLIER_ID</name>
+        <rename>SUPPLIER_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>LOCATION_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DOC_SRC_LOCATION_ID</name>
+        <rename>DOC_SRC_LOCN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>REF_TRAN_ID</name>
+        <rename>REF_TRAN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ARTICLE_ID</name>
+        <rename>ARTICLE_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PACKING_ID</name>
+        <rename>PACKING_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SIZE_ID</name>
+        <rename>SIZE_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CAT_MANG_ID</name>
+        <rename>CAT_MANG_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FOOD_CAT_ID</name>
+        <rename>FOOD_CAT_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DEPARTMENT_ID</name>
+        <rename>DEPARTMENT_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_UPD_DT</name>
+        <rename>SYSDATE</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>477</xloc>
+      <yloc>514</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>LOCATION_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_LOCATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_LOCN_CODE</name>
+        <field>LOCN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>LOCATION_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>473</xloc>
+      <yloc>302</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>PACKING_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_PACKING</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_11</name>
+        <field>PACKING_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>PACKING_ID</name>
+        <rename>PACKING_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>902</xloc>
+      <yloc>444</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>REF_TRAN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TXN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_TXN_CODE</name>
+        <field>TXN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TXN_ID</name>
+        <rename>REF_TRAN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>875</xloc>
+      <yloc>328</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SIZE_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_SIZE</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_12</name>
+        <field>SIZE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SIZE_ID</name>
+        <rename>SIZE_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>751</xloc>
+      <yloc>444</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SUPPLIER_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_SUPPLIER</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_SUPP_CODE</name>
+        <field>SUPP_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SUPPLIER_ID</name>
+        <rename>SUPPLIER_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>91</xloc>
+      <yloc>324</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>SRH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_TXN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_DOC_SRC_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ACNT_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CAL_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CAL_PERIOD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_AMD_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_AMD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_AMD_USER_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_AMD_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_REF_FROM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_REF_FROM_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_REF_TXN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_REF_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_REF_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_SUPP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ADDR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_EXGE_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_DISC_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_DISC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CHARGE_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CHARGE_AREA_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CHARGE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FORM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ANLY_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ANLY_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_PRINT_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_APPR_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_APPR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_APPR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_TH_TRAN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_TH_DOC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_TH_DOC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ANNOTATION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_POST_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_SUBMIT_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_PULLQTYBASE_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_EXC_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CENVAT_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CR_QTY_UPDATED_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CR_DUTY_UPDATED_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_EXC_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_EXC_INV_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ED_SUPP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ED_SUPP_ADDR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_DOC_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_ST_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_FLEX_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_EXC_INV_NO_GEN_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_VAT_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_QVB_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_SUBCONTRACT_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_SC_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_PULL_MULTIPLE_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRH_TRAN_CLASS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_SRH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_GI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_PI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ITEM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ITEM_STK_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_UPD_STK_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_QTY_LS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ITEM_DESC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_REL_PO_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FC_TAX_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_CHARGE_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_CHARGE_AREA_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_CHARGE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ACTH_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ANLY_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ANLY_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_DISC_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FC_VAL_AFT_H_DISC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ITEM_LENGTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ITEM_WIDTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ITEM_HEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ITEM_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_GRADE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_GRADE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_SEQ_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_REG_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_RG_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_CHAP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_SUBHEAD_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ASSESS_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_ASSESS_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_EXC_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_EXC_INV_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_II_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_DUTY_PAID_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_QTY_SR_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_DUTY_SR_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_INSP_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_REF_EXC_INV_EL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_EL_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_WHOI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_WHOI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FLEX_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FC_DISC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_SRR_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_SC_BOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_FC_ACT_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_WH_INS_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_WH_UPD_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SRI_74_SRN_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_CBM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_CBM_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_ITEM_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_LENGTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_WIDTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_HEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_DIMENSION_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_WEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_WEIGHT_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IM_MANF_NAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd-MM-yy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>189</xloc>
+      <yloc>50</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Set Variables</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <field_name/>
+        <variable_name>VARFACTNAME</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value>STC_FACT_SUP_RET</default_value>
+        </field>
+      </fields>
+    <use_formatting>Y</use_formatting>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>79</xloc>
+      <yloc>214</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TRAN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TXN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SRH_TXN_CODE</name>
+        <field>TXN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TXN_ID</name>
+        <rename>TXN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>337</xloc>
+      <yloc>166</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>orion_original</connection>
+    <sql>SELECT
+ A.SRH_SYS_ID
+,A.SRH_COMP_CODE
+,A.SRH_TXN_CODE
+,A.SRH_DOC_SRC_LOCN_CODE
+,A.SRH_NO
+,A.SRH_DT
+,A.SRH_ACNT_YEAR
+,A.SRH_CAL_YEAR
+,A.SRH_CAL_PERIOD
+,A.SRH_AMD_NO
+,A.SRH_AMD_DT
+,A.SRH_AMD_USER_ID
+,A.SRH_AMD_RES_CODE
+,A.SRH_REF_FROM
+,A.SRH_REF_FROM_NUM
+,A.SRH_REF_TXN_CODE
+,A.SRH_REF_NO
+,A.SRH_REF_SYS_ID
+,A.SRH_SUPP_CODE
+,A.SRH_ADDR_CODE
+,A.SRH_LOCN_CODE
+,A.SRH_CURR_CODE
+,A.SRH_EXGE_RATE
+,A.SRH_DISC_PERC
+,A.SRH_DISC_VAL
+,A.SRH_CHARGE_AREA
+,A.SRH_CHARGE_AREA_NUM
+,A.SRH_CHARGE_CODE
+,A.SRH_FORM_CODE
+,A.SRH_MAIN_ACNT_CODE
+,A.SRH_SUB_ACNT_CODE
+,A.SRH_DIVN_CODE
+,A.SRH_DEPT_CODE
+,A.SRH_ANLY_CODE_1
+,A.SRH_ANLY_CODE_2
+,A.SRH_ACTY_VALUE_CODE_1
+,A.SRH_ACTY_VALUE_CODE_2
+,A.SRH_ANLY_HEAD_NO_1
+,A.SRH_ANLY_HEAD_NO_2
+,A.SRH_STATUS
+,A.SRH_PRINT_STATUS
+,A.SRH_APPR_STATUS
+,A.SRH_APPR_UID
+,A.SRH_APPR_DT
+,A.SRH_TH_TRAN_CODE
+,A.SRH_TH_DOC_NO
+,A.SRH_TH_DOC_DT
+,A.SRH_ANNOTATION
+,A.SRH_POST_STATUS
+,A.SRH_SUBMIT_STATUS
+,A.SRH_PULLQTYBASE_NUM
+,A.SRH_EXC_YN
+,A.SRH_CENVAT_YN
+,A.SRH_CR_QTY_UPDATED_YN
+,A.SRH_CR_DUTY_UPDATED_YN
+,A.SRH_EXC_INV_NO
+,A.SRH_EXC_INV_DT
+,A.SRH_ED_SUPP_CODE
+,A.SRH_ED_SUPP_ADDR_CODE
+,A.SRH_DOC_TYPE
+,A.SRH_ST_CODE
+,A.SRH_FLEX_01
+,A.SRH_FLEX_02
+,A.SRH_FLEX_03
+,A.SRH_FLEX_04
+,A.SRH_FLEX_05
+,A.SRH_FLEX_06
+,A.SRH_FLEX_07
+,A.SRH_FLEX_08
+,A.SRH_FLEX_09
+,A.SRH_FLEX_10
+,A.SRH_FLEX_11
+,A.SRH_FLEX_12
+,A.SRH_FLEX_13
+,A.SRH_FLEX_14
+,A.SRH_FLEX_15
+,A.SRH_FLEX_16
+,A.SRH_FLEX_17
+,A.SRH_FLEX_18
+,A.SRH_FLEX_19
+,A.SRH_FLEX_20
+,A.SRH_CR_DT
+,A.SRH_CR_UID
+,A.SRH_UPD_UID
+,A.SRH_UPD_DT
+,A.SRH_EXC_INV_NO_GEN_YN
+,A.SRH_VAT_INV_NO
+,A.SRH_QVB_TYPE
+,A.SRH_SUBCONTRACT_YN
+,A.SRH_SC_LOCN_CODE
+,A.SRH_PULL_MULTIPLE_YN_NUM
+,A.SRH_TRAN_CLASS
+
+,B.SRI_SYS_ID
+,B.SRI_SRH_SYS_ID
+,B.SRI_GI_SYS_ID
+,B.SRI_PI_SYS_ID
+,B.SRI_LOCN_CODE
+,B.SRI_ITEM_CODE
+,B.SRI_ITEM_STK_YN_NUM
+,B.SRI_UOM_CODE
+,B.SRI_RES_CODE
+,B.SRI_UPD_STK_YN
+,B.SRI_QTY
+,B.SRI_QTY_LS
+,B.SRI_QTY_BU
+,B.SRI_ITEM_DESC
+,B.SRI_REL_PO_YN_NUM
+,B.SRI_FC_TAX_AMT
+,B.SRI_CHARGE_AREA
+,B.SRI_CHARGE_AREA_NUM
+,B.SRI_CHARGE_CODE
+,B.SRI_ACTH_CODE
+,B.SRI_COMP_CODE
+,B.SRI_MAIN_ACNT_CODE
+,B.SRI_SUB_ACNT_CODE
+,B.SRI_DIVN_CODE
+,B.SRI_DEPT_CODE
+,B.SRI_ANLY_CODE_1
+,B.SRI_ANLY_CODE_2
+,B.SRI_ACTY_VALUE_CODE_1
+,B.SRI_ACTY_VALUE_CODE_2
+,B.SRI_ANLY_HEAD_NO_1
+,B.SRI_ANLY_HEAD_NO_2
+,B.SRI_RATE
+,B.SRI_DISC_PERC
+,B.SRI_FC_VAL
+,B.SRI_FC_VAL_AFT_H_DISC
+,B.SRI_ITEM_LENGTH
+,B.SRI_ITEM_WIDTH
+,B.SRI_ITEM_HEIGHT
+,B.SRI_ITEM_AREA
+,B.SRI_GRADE_CODE_1
+,B.SRI_GRADE_CODE_2
+,B.SRI_SEQ_NO
+,B.SRI_REG_TYPE
+,B.SRI_RG_CODE
+,B.SRI_CHAP_CODE
+,B.SRI_SUBHEAD_CODE
+,B.SRI_ASSESS_RATE
+,B.SRI_ASSESS_VAL
+,B.SRI_EXC_INV_NO
+,B.SRI_EXC_INV_DT
+,B.SRI_II_QTY_BU
+,B.SRI_DUTY_PAID_YN
+,B.SRI_QTY_SR_NO
+,B.SRI_DUTY_SR_NO
+,B.SRI_INSP_SYS_ID
+,B.SRI_REF_EXC_INV_EL_CODE
+,B.SRI_EL_LOCN_CODE
+,B.SRI_WHOI_QTY_BU
+,B.SRI_WHOI_SYS_ID
+,B.SRI_FLEX_01
+,B.SRI_FLEX_02
+,B.SRI_FLEX_03
+,B.SRI_FLEX_04
+,B.SRI_FLEX_05
+,B.SRI_FLEX_06
+,B.SRI_FLEX_07
+,B.SRI_FLEX_08
+,B.SRI_FLEX_09
+,B.SRI_FLEX_10
+,B.SRI_FLEX_11
+,B.SRI_FLEX_12
+,B.SRI_FLEX_13
+,B.SRI_FLEX_14
+,B.SRI_FLEX_15
+,B.SRI_FLEX_16
+,B.SRI_FLEX_17
+,B.SRI_FLEX_18
+,B.SRI_FLEX_19
+,B.SRI_FLEX_20
+,B.SRI_CR_UID
+,B.SRI_CR_DT
+,B.SRI_UPD_UID
+,B.SRI_UPD_DT
+,B.SRI_FC_DISC_VAL
+,B.SRI_SRR_SYS_ID
+,B.SRI_SC_BOM_CODE
+,B.SRI_FC_ACT_VAL
+,B.SRI_WH_INS_YN
+,B.SRI_WH_UPD_YN
+,B.SRI_74_SRN_SYS_ID
+
+
+
+
+,(C.IP_PACK_LENGTH * C.IP_PACK_WIDTH * C.IP_PACK_HEIGHT)&#47;1000000 AS prog_cbm
+,(C.IP_PACK_LENGTH * C.IP_PACK_WIDTH * C.IP_PACK_HEIGHT * C.IP_MAX_QTY_BU)&#47;1000000 AS prog_cbm_BU
+,(C.IP_PACK_LENGTH * C.IP_PACK_WIDTH)&#47;10000 AS prog_ITEM_AREA 
+,C.IP_PACK_LENGTH
+,C.IP_PACK_WIDTH
+,C.IP_PACK_HEIGHT
+,c.IP_DIMENSION_UOM_CODE
+,c.IP_PACK_WEIGHT
+,c.IP_WEIGHT_UOM_CODE
+,D.IM_MANF_NAME
+,E.ITEM_ANLY_CODE_01
+,E.ITEM_ANLY_CODE_02
+,E.ITEM_ANLY_CODE_03
+,E.ITEM_ANLY_CODE_04
+,E.ITEM_ANLY_CODE_05
+,E.ITEM_ANLY_CODE_06
+,E.ITEM_ANLY_CODE_07
+,E.ITEM_ANLY_CODE_08
+,E.ITEM_ANLY_CODE_09
+,E.ITEM_ANLY_CODE_10
+,E.ITEM_ANLY_CODE_11
+,E.ITEM_ANLY_CODE_12
+,E.ITEM_ANLY_CODE_13
+,E.ITEM_ANLY_CODE_14
+,E.ITEM_ANLY_CODE_15
+,E.ITEM_ANLY_CODE_16
+,E.ITEM_ANLY_CODE_17
+,E.ITEM_ANLY_CODE_18
+,E.ITEM_ANLY_CODE_19
+,E.ITEM_ANLY_CODE_20
+
+,sysdate 
+
+FROM OT_SUP_RET_HEAD A,
+OM_ITEM E,
+OT_SUP_RET_ITEM B
+left outer join OM_ITEM_PACK C 
+on (B.SRI_ITEM_CODE= C.IP_ITEM_CODE and B.SRI_UOM_CODE = C.IP_PACK_UOM_CODE)
+left outer join OM_ITEM_MANF D  
+on (B.SRI_ITEM_CODE= D.IM_ITEM_CODE AND B.SRI_UOM_CODE = D.IM_MANF_PART_NO)
+
+
+
+WHERE A.SRH_SYS_ID = B.SRI_SRH_SYS_ID AND
+B.SRI_ITEM_CODE = E.ITEM_CODE AND
+(A.SRH_CR_DT &gt;= TO_DATE(&apos;${MAXETLDATE_SUPP_RET}&apos;,&apos;DD-MM-YYYY&apos;) AND
+TO_DATE(A.SRH_CR_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR 
+A.SRH_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_SUPP_RET}&apos;,&apos;DD-MM-YYYY&apos;) AND 
+TO_DATE(A.SRH_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR
+B.SRI_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_SUPP_RET}&apos;,&apos;DD-MM-YYYY&apos;)  AND
+TO_DATE(B.SRI_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+--to_date(A.SRH_CR_DT,&apos;DD-MM-YYYY&apos;)&gt;=TO_DATE(&apos;1-JULY-09&apos;,&apos;DD-MM-YYYY&apos;) AND
+--to_date(A.SRH_CR_DT,&apos;DD-MM-YYYY&apos;)&lt;TO_DATE(&apos;11-JANUARY-13&apos;,&apos;DD-MM-YYYY&apos;) 
+ORDER BY 1
+--AND ROWNUM&lt;=10000</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>66</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <schema/>
+    <table>stc_fact_sup_ret</table>
+    <commit>10000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>TRAN_ID</column_name>
+          <stream_name>TXN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SUPPLIER_ID</column_name>
+          <stream_name>SUPPLIER_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_WH_UPD_YN</column_name>
+          <stream_name>SRI_WH_UPD_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_WH_INS_YN</column_name>
+          <stream_name>SRI_WH_INS_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_WHOI_SYS_ID</column_name>
+          <stream_name>SRI_WHOI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_WHOI_QTY_BU</column_name>
+          <stream_name>SRI_WHOI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_UPD_UID</column_name>
+          <stream_name>SRI_UPD_UID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_UPD_STK_YN</column_name>
+          <stream_name>SRI_UPD_STK_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_UPD_DT</column_name>
+          <stream_name>SRI_UPD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_UOM_CODE</column_name>
+          <stream_name>SRI_UOM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_SYS_ID</column_name>
+          <stream_name>SRI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_SUB_ACNT_CODE</column_name>
+          <stream_name>SRI_SUB_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_SUBHEAD_CODE</column_name>
+          <stream_name>SRI_SUBHEAD_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_SRR_SYS_ID</column_name>
+          <stream_name>SRI_SRR_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_SRH_SYS_ID</column_name>
+          <stream_name>SRI_SRH_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_SEQ_NO</column_name>
+          <stream_name>SRI_SEQ_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_SC_BOM_CODE</column_name>
+          <stream_name>SRI_SC_BOM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_RG_CODE</column_name>
+          <stream_name>SRI_RG_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_RES_CODE</column_name>
+          <stream_name>SRI_RES_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_REL_PO_YN_NUM</column_name>
+          <stream_name>SRI_REL_PO_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_REG_TYPE</column_name>
+          <stream_name>SRI_REG_TYPE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_REF_EXC_INV_EL_CODE</column_name>
+          <stream_name>SRI_REF_EXC_INV_EL_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_RATE</column_name>
+          <stream_name>SRI_RATE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_QTY_SR_NO</column_name>
+          <stream_name>SRI_QTY_SR_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_QTY_LS</column_name>
+          <stream_name>SRI_QTY_LS</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_QTY_BU</column_name>
+          <stream_name>SRI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_QTY</column_name>
+          <stream_name>SRI_QTY</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_PI_SYS_ID</column_name>
+          <stream_name>SRI_PI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_MAIN_ACNT_CODE</column_name>
+          <stream_name>SRI_MAIN_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_LOCN_CODE</column_name>
+          <stream_name>SRI_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ITEM_WIDTH</column_name>
+          <stream_name>SRI_ITEM_WIDTH</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ITEM_STK_YN_NUM</column_name>
+          <stream_name>SRI_ITEM_STK_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ITEM_LENGTH</column_name>
+          <stream_name>SRI_ITEM_LENGTH</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ITEM_HEIGHT</column_name>
+          <stream_name>SRI_ITEM_HEIGHT</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ITEM_DESC</column_name>
+          <stream_name>SRI_ITEM_DESC</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ITEM_CODE</column_name>
+          <stream_name>SRI_ITEM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ITEM_AREA</column_name>
+          <stream_name>SRI_ITEM_AREA</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_INSP_SYS_ID</column_name>
+          <stream_name>SRI_INSP_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_II_QTY_BU</column_name>
+          <stream_name>SRI_II_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_GRADE_CODE_2</column_name>
+          <stream_name>SRI_GRADE_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_GRADE_CODE_1</column_name>
+          <stream_name>SRI_GRADE_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_GI_SYS_ID</column_name>
+          <stream_name>SRI_GI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_20</column_name>
+          <stream_name>SRI_FLEX_20</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_19</column_name>
+          <stream_name>SRI_FLEX_19</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_18</column_name>
+          <stream_name>SRI_FLEX_18</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_17</column_name>
+          <stream_name>SRI_FLEX_17</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_16</column_name>
+          <stream_name>SRI_FLEX_16</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_15</column_name>
+          <stream_name>SRI_FLEX_15</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_14</column_name>
+          <stream_name>SRI_FLEX_14</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_13</column_name>
+          <stream_name>SRI_FLEX_13</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_12</column_name>
+          <stream_name>SRI_FLEX_12</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_11</column_name>
+          <stream_name>SRI_FLEX_11</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_10</column_name>
+          <stream_name>SRI_FLEX_10</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_09</column_name>
+          <stream_name>SRI_FLEX_09</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_08</column_name>
+          <stream_name>SRI_FLEX_08</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_07</column_name>
+          <stream_name>SRI_FLEX_07</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_06</column_name>
+          <stream_name>SRI_FLEX_06</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_05</column_name>
+          <stream_name>SRI_FLEX_05</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_04</column_name>
+          <stream_name>SRI_FLEX_04</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_03</column_name>
+          <stream_name>SRI_FLEX_03</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_02</column_name>
+          <stream_name>SRI_FLEX_02</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FLEX_01</column_name>
+          <stream_name>SRI_FLEX_01</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FC_VAL_AFT_H_DISC</column_name>
+          <stream_name>SRI_FC_VAL_AFT_H_DISC</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FC_VAL</column_name>
+          <stream_name>SRI_FC_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FC_TAX_AMT</column_name>
+          <stream_name>SRI_FC_TAX_AMT</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FC_DISC_VAL</column_name>
+          <stream_name>SRI_FC_DISC_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_FC_ACT_VAL</column_name>
+          <stream_name>SRI_FC_ACT_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_EXC_INV_NO</column_name>
+          <stream_name>SRI_EXC_INV_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_EXC_INV_DT</column_name>
+          <stream_name>SRI_EXC_INV_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_EL_LOCN_CODE</column_name>
+          <stream_name>SRI_EL_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_DUTY_SR_NO</column_name>
+          <stream_name>SRI_DUTY_SR_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_DUTY_PAID_YN</column_name>
+          <stream_name>SRI_DUTY_PAID_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_DIVN_CODE</column_name>
+          <stream_name>SRI_DIVN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_DISC_PERC</column_name>
+          <stream_name>SRI_DISC_PERC</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_DEPT_CODE</column_name>
+          <stream_name>SRI_DEPT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_CR_UID</column_name>
+          <stream_name>SRI_CR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_CR_DT</column_name>
+          <stream_name>SRI_CR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_COMP_CODE</column_name>
+          <stream_name>SRI_COMP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_CHARGE_CODE</column_name>
+          <stream_name>SRI_CHARGE_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_CHARGE_AREA_NUM</column_name>
+          <stream_name>SRI_CHARGE_AREA_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_CHARGE_AREA</column_name>
+          <stream_name>SRI_CHARGE_AREA</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_CHAP_CODE</column_name>
+          <stream_name>SRI_CHAP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ASSESS_VAL</column_name>
+          <stream_name>SRI_ASSESS_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ASSESS_RATE</column_name>
+          <stream_name>SRI_ASSESS_RATE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ANLY_HEAD_NO_2</column_name>
+          <stream_name>SRI_ANLY_HEAD_NO_2</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ANLY_HEAD_NO_1</column_name>
+          <stream_name>SRI_ANLY_HEAD_NO_1</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ANLY_CODE_2</column_name>
+          <stream_name>SRI_ANLY_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ANLY_CODE_1</column_name>
+          <stream_name>SRI_ANLY_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ACTY_VALUE_CODE_2</column_name>
+          <stream_name>SRI_ACTY_VALUE_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ACTY_VALUE_CODE_1</column_name>
+          <stream_name>SRI_ACTY_VALUE_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_ACTH_CODE</column_name>
+          <stream_name>SRI_ACTH_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRI_74_SRN_SYS_ID</column_name>
+          <stream_name>SRI_74_SRN_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_VAT_INV_NO</column_name>
+          <stream_name>SRH_VAT_INV_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_UPD_UID</column_name>
+          <stream_name>SRH_UPD_UID</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_UPD_DT</column_name>
+          <stream_name>SRH_UPD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_TXN_CODE</column_name>
+          <stream_name>SRH_TXN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_TRAN_CLASS</column_name>
+          <stream_name>SRH_TRAN_CLASS</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_TH_TRAN_CODE</column_name>
+          <stream_name>SRH_TH_TRAN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_TH_DOC_NO</column_name>
+          <stream_name>SRH_TH_DOC_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_TH_DOC_DT</column_name>
+          <stream_name>SRH_TH_DOC_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_SYS_ID</column_name>
+          <stream_name>SRH_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_SUPP_CODE</column_name>
+          <stream_name>SRH_SUPP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_SUB_ACNT_CODE</column_name>
+          <stream_name>SRH_SUB_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_SUBMIT_STATUS</column_name>
+          <stream_name>SRH_SUBMIT_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_SUBCONTRACT_YN</column_name>
+          <stream_name>SRH_SUBCONTRACT_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ST_CODE</column_name>
+          <stream_name>SRH_ST_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_STATUS</column_name>
+          <stream_name>SRH_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_SC_LOCN_CODE</column_name>
+          <stream_name>SRH_SC_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_REF_TXN_CODE</column_name>
+          <stream_name>SRH_REF_TXN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_REF_SYS_ID</column_name>
+          <stream_name>SRH_REF_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_REF_NO</column_name>
+          <stream_name>SRH_REF_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_REF_FROM_NUM</column_name>
+          <stream_name>SRH_REF_FROM_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_REF_FROM</column_name>
+          <stream_name>SRH_REF_FROM</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_QVB_TYPE</column_name>
+          <stream_name>SRH_QVB_TYPE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_PULL_MULTIPLE_YN_NUM</column_name>
+          <stream_name>SRH_PULL_MULTIPLE_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_PULLQTYBASE_NUM</column_name>
+          <stream_name>SRH_PULLQTYBASE_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_PRINT_STATUS</column_name>
+          <stream_name>SRH_PRINT_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_POST_STATUS</column_name>
+          <stream_name>SRH_POST_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_NO</column_name>
+          <stream_name>SRH_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_MAIN_ACNT_CODE</column_name>
+          <stream_name>SRH_MAIN_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_LOCN_CODE</column_name>
+          <stream_name>SRH_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FORM_CODE</column_name>
+          <stream_name>SRH_FORM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_20</column_name>
+          <stream_name>SRH_FLEX_20</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_19</column_name>
+          <stream_name>SRH_FLEX_19</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_18</column_name>
+          <stream_name>SRH_FLEX_18</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_17</column_name>
+          <stream_name>SRH_FLEX_17</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_16</column_name>
+          <stream_name>SRH_FLEX_16</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_15</column_name>
+          <stream_name>SRH_FLEX_15</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_14</column_name>
+          <stream_name>SRH_FLEX_14</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_13</column_name>
+          <stream_name>SRH_FLEX_13</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_12</column_name>
+          <stream_name>SRH_FLEX_12</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_11</column_name>
+          <stream_name>SRH_FLEX_11</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_10</column_name>
+          <stream_name>SRH_FLEX_10</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_09</column_name>
+          <stream_name>SRH_FLEX_09</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_08</column_name>
+          <stream_name>SRH_FLEX_08</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_07</column_name>
+          <stream_name>SRH_FLEX_07</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_06</column_name>
+          <stream_name>SRH_FLEX_06</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_05</column_name>
+          <stream_name>SRH_FLEX_05</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_04</column_name>
+          <stream_name>SRH_FLEX_04</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_03</column_name>
+          <stream_name>SRH_FLEX_03</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_02</column_name>
+          <stream_name>SRH_FLEX_02</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_FLEX_01</column_name>
+          <stream_name>SRH_FLEX_01</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_EXGE_RATE</column_name>
+          <stream_name>SRH_EXGE_RATE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_EXC_YN</column_name>
+          <stream_name>SRH_EXC_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_EXC_INV_NO_GEN_YN</column_name>
+          <stream_name>SRH_EXC_INV_NO_GEN_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_EXC_INV_NO</column_name>
+          <stream_name>SRH_EXC_INV_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_EXC_INV_DT</column_name>
+          <stream_name>SRH_EXC_INV_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ED_SUPP_CODE</column_name>
+          <stream_name>SRH_ED_SUPP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ED_SUPP_ADDR_CODE</column_name>
+          <stream_name>SRH_ED_SUPP_ADDR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_DT</column_name>
+          <stream_name>SRH_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_DOC_TYPE</column_name>
+          <stream_name>SRH_DOC_TYPE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_DOC_SRC_LOCN_CODE</column_name>
+          <stream_name>SRH_DOC_SRC_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_DIVN_CODE</column_name>
+          <stream_name>SRH_DIVN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_DISC_VAL</column_name>
+          <stream_name>SRH_DISC_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_DISC_PERC</column_name>
+          <stream_name>SRH_DISC_PERC</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_DEPT_CODE</column_name>
+          <stream_name>SRH_DEPT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CURR_CODE</column_name>
+          <stream_name>SRH_CURR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CR_UID</column_name>
+          <stream_name>SRH_CR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CR_QTY_UPDATED_YN</column_name>
+          <stream_name>SRH_CR_QTY_UPDATED_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CR_DUTY_UPDATED_YN</column_name>
+          <stream_name>SRH_CR_DUTY_UPDATED_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CR_DT</column_name>
+          <stream_name>SRH_CR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_COMP_CODE</column_name>
+          <stream_name>SRH_COMP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CHARGE_CODE</column_name>
+          <stream_name>SRH_CHARGE_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CHARGE_AREA_NUM</column_name>
+          <stream_name>SRH_CHARGE_AREA_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CHARGE_AREA</column_name>
+          <stream_name>SRH_CHARGE_AREA</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CENVAT_YN</column_name>
+          <stream_name>SRH_CENVAT_YN</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CAL_YEAR</column_name>
+          <stream_name>SRH_CAL_YEAR</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_CAL_PERIOD</column_name>
+          <stream_name>SRH_CAL_PERIOD</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_APPR_UID</column_name>
+          <stream_name>SRH_APPR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_APPR_STATUS</column_name>
+          <stream_name>SRH_APPR_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_APPR_DT</column_name>
+          <stream_name>SRH_APPR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ANNOTATION</column_name>
+          <stream_name>SRH_ANNOTATION</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ANLY_HEAD_NO_2</column_name>
+          <stream_name>SRH_ANLY_HEAD_NO_2</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ANLY_HEAD_NO_1</column_name>
+          <stream_name>SRH_ANLY_HEAD_NO_1</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ANLY_CODE_2</column_name>
+          <stream_name>SRH_ANLY_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ANLY_CODE_1</column_name>
+          <stream_name>SRH_ANLY_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_AMD_USER_ID</column_name>
+          <stream_name>SRH_AMD_USER_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_AMD_RES_CODE</column_name>
+          <stream_name>SRH_AMD_RES_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_AMD_NO</column_name>
+          <stream_name>SRH_AMD_NO</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_AMD_DT</column_name>
+          <stream_name>SRH_AMD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ADDR_CODE</column_name>
+          <stream_name>SRH_ADDR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ACTY_VALUE_CODE_2</column_name>
+          <stream_name>SRH_ACTY_VALUE_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ACTY_VALUE_CODE_1</column_name>
+          <stream_name>SRH_ACTY_VALUE_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>SRH_ACNT_YEAR</column_name>
+          <stream_name>SRH_ACNT_YEAR</stream_name>
+        </field>
+        <field>
+          <column_name>SIZE_ID</column_name>
+          <stream_name>SIZE_ID</stream_name>
+        </field>
+        <field>
+          <column_name>REF_TRAN_ID</column_name>
+          <stream_name>REF_TRAN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>PROG_CR_DT</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
+        <field>
+          <column_name>PACKING_ID</column_name>
+          <stream_name>PACKING_ID</stream_name>
+        </field>
+        <field>
+          <column_name>LOCATION_ID</column_name>
+          <stream_name>LOCATION_ID</stream_name>
+        </field>
+        <field>
+          <column_name>ITEM_UOM_ID</column_name>
+          <stream_name>ITEM_UOM_ID</stream_name>
+        </field>
+        <field>
+          <column_name>ITEM_ID</column_name>
+          <stream_name>ITEM_ID</stream_name>
+        </field>
+        <field>
+          <column_name>IM_MANF_NAME</column_name>
+          <stream_name>IM_MANF_NAME</stream_name>
+        </field>
+        <field>
+          <column_name>GRADE2_ID</column_name>
+          <stream_name>GRADE2_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GRADE1_ID</column_name>
+          <stream_name>GRADE1_ID</stream_name>
+        </field>
+        <field>
+          <column_name>FOOD_CAT_ID</column_name>
+          <stream_name>FOOD_CAT_ID</stream_name>
+        </field>
+        <field>
+          <column_name>DOC_SRC_LOCATION_ID</column_name>
+          <stream_name>DOC_SRC_LOCN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>DEPARTMENT_ID</column_name>
+          <stream_name>DEPARTMENT_ID</stream_name>
+        </field>
+        <field>
+          <column_name>CURRENCY_ID</column_name>
+          <stream_name>CURRENCY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>COUNTRY_ORIGIN_ID</column_name>
+          <stream_name>COUNTRY_ORIGIN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>COMPANY_ID</column_name>
+          <stream_name>COMP_ID</stream_name>
+        </field>
+        <field>
+          <column_name>CAT_MANG_ID</column_name>
+          <stream_name>CAT_MANG_ID</stream_name>
+        </field>
+        <field>
+          <column_name>CATEGORY_ID</column_name>
+          <stream_name>CATEGORY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>ARTICLE_ID</column_name>
+          <stream_name>ARTICLE_ID</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>667</xloc>
+      <yloc>540</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

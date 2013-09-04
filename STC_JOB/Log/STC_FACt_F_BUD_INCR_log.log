@@ -1,0 +1,347 @@
+2013/04/18 11:42:40 - Pan - Logging is at level : Basic logging
+2013/04/18 11:42:40 - Pan - Start of run.
+2013/04/18 11:42:41 - STC_FACT_F_BUD - Dispatching started for transformation [STC_FACT_F_BUD]
+2013/04/18 11:42:42 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/04/18 11:42:42 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/04/18 11:42:42 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_F_BUD]
+2013/04/18 11:42:42 - Set Variables.0 - Finished after 0 rows.
+2013/04/18 11:45:17 - Table input.0 - linenr 50000
+2013/04/18 11:46:34 - Select values.0 - linenr 50000
+2013/04/18 11:47:51 - Calculator.0 - Linenr 50000
+2013/04/18 11:49:07 - GRP_COMP_ID_LKP.0 - linenr 50000
+2013/04/18 11:49:07 - TXN_LKP.0 - linenr 50000
+2013/04/18 11:49:07 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 50000
+2013/04/18 11:49:07 - BUD_CAT_LKP.0 - linenr 50000
+2013/04/18 11:49:07 - BUD_period_LKP.0 - linenr 50000
+2013/04/18 11:49:07 - Table output.0 - linenr 50000
+2013/04/18 11:51:39 - Table input.0 - linenr 100000
+2013/04/18 11:52:56 - Select values.0 - linenr 100000
+2013/04/18 11:54:11 - Calculator.0 - Linenr 100000
+2013/04/18 11:55:28 - GRP_COMP_ID_LKP.0 - linenr 100000
+2013/04/18 11:55:28 - TXN_LKP.0 - linenr 100000
+2013/04/18 11:55:28 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 100000
+2013/04/18 11:55:28 - BUD_CAT_LKP.0 - linenr 100000
+2013/04/18 11:55:28 - BUD_period_LKP.0 - linenr 100000
+2013/04/18 11:55:28 - Table output.0 - linenr 100000
+2013/04/18 11:57:58 - Table input.0 - linenr 150000
+2013/04/18 11:59:11 - Select values.0 - linenr 150000
+2013/04/18 12:00:24 - Calculator.0 - Linenr 150000
+2013/04/18 12:01:39 - GRP_COMP_ID_LKP.0 - linenr 150000
+2013/04/18 12:01:39 - TXN_LKP.0 - linenr 150000
+2013/04/18 12:01:39 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 150000
+2013/04/18 12:01:39 - BUD_CAT_LKP.0 - linenr 150000
+2013/04/18 12:01:39 - BUD_period_LKP.0 - linenr 150000
+2013/04/18 12:01:39 - Table output.0 - linenr 150000
+2013/04/18 12:04:06 - Table input.0 - linenr 200000
+2013/04/18 12:05:20 - Select values.0 - linenr 200000
+2013/04/18 12:06:34 - Calculator.0 - Linenr 200000
+2013/04/18 12:07:47 - GRP_COMP_ID_LKP.0 - linenr 200000
+2013/04/18 12:07:47 - TXN_LKP.0 - linenr 200000
+2013/04/18 12:07:47 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 200000
+2013/04/18 12:07:47 - BUD_CAT_LKP.0 - linenr 200000
+2013/04/18 12:07:47 - BUD_period_LKP.0 - linenr 200000
+2013/04/18 12:07:47 - Table output.0 - linenr 200000
+2013/04/18 12:10:14 - Table input.0 - linenr 250000
+2013/04/18 12:11:27 - Select values.0 - linenr 250000
+2013/04/18 12:12:39 - Calculator.0 - Linenr 250000
+2013/04/18 12:13:52 - GRP_COMP_ID_LKP.0 - linenr 250000
+2013/04/18 12:13:52 - TXN_LKP.0 - linenr 250000
+2013/04/18 12:13:52 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 250000
+2013/04/18 12:13:52 - BUD_CAT_LKP.0 - linenr 250000
+2013/04/18 12:13:52 - BUD_period_LKP.0 - linenr 250000
+2013/04/18 12:13:52 - Table output.0 - linenr 250000
+2013/04/18 12:16:15 - Table input.0 - linenr 300000
+2013/04/18 12:17:28 - Select values.0 - linenr 300000
+2013/04/18 12:18:41 - Calculator.0 - Linenr 300000
+2013/04/18 12:19:55 - GRP_COMP_ID_LKP.0 - linenr 300000
+2013/04/18 12:19:55 - TXN_LKP.0 - linenr 300000
+2013/04/18 12:19:55 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 300000
+2013/04/18 12:19:55 - BUD_CAT_LKP.0 - linenr 300000
+2013/04/18 12:19:55 - BUD_period_LKP.0 - linenr 300000
+2013/04/18 12:19:55 - Table output.0 - linenr 300000
+2013/04/18 12:22:23 - Table input.0 - linenr 350000
+2013/04/18 12:23:36 - Select values.0 - linenr 350000
+2013/04/18 12:24:49 - Calculator.0 - Linenr 350000
+2013/04/18 12:26:01 - GRP_COMP_ID_LKP.0 - linenr 350000
+2013/04/18 12:26:01 - TXN_LKP.0 - linenr 350000
+2013/04/18 12:26:01 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 350000
+2013/04/18 12:26:01 - BUD_CAT_LKP.0 - linenr 350000
+2013/04/18 12:26:01 - BUD_period_LKP.0 - linenr 350000
+2013/04/18 12:26:01 - Table output.0 - linenr 350000
+2013/04/18 12:28:25 - Table input.0 - linenr 400000
+2013/04/18 12:29:38 - Select values.0 - linenr 400000
+2013/04/18 12:30:52 - Calculator.0 - Linenr 400000
+2013/04/18 12:32:06 - GRP_COMP_ID_LKP.0 - linenr 400000
+2013/04/18 12:32:06 - TXN_LKP.0 - linenr 400000
+2013/04/18 12:32:06 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 400000
+2013/04/18 12:32:06 - BUD_CAT_LKP.0 - linenr 400000
+2013/04/18 12:32:06 - BUD_period_LKP.0 - linenr 400000
+2013/04/18 12:32:06 - Table output.0 - linenr 400000
+2013/04/18 12:34:33 - Table input.0 - linenr 450000
+2013/04/18 12:35:48 - Select values.0 - linenr 450000
+2013/04/18 12:37:01 - Calculator.0 - Linenr 450000
+2013/04/18 12:38:14 - GRP_COMP_ID_LKP.0 - linenr 450000
+2013/04/18 12:38:14 - TXN_LKP.0 - linenr 450000
+2013/04/18 12:38:14 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 450000
+2013/04/18 12:38:14 - BUD_CAT_LKP.0 - linenr 450000
+2013/04/18 12:38:14 - BUD_period_LKP.0 - linenr 450000
+2013/04/18 12:38:14 - Table output.0 - linenr 450000
+2013/04/18 12:40:41 - Table input.0 - linenr 500000
+2013/04/18 12:41:55 - Select values.0 - linenr 500000
+2013/04/18 12:43:08 - Calculator.0 - Linenr 500000
+2013/04/18 12:44:21 - GRP_COMP_ID_LKP.0 - linenr 500000
+2013/04/18 12:44:21 - TXN_LKP.0 - linenr 500000
+2013/04/18 12:44:21 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 500000
+2013/04/18 12:44:21 - BUD_CAT_LKP.0 - linenr 500000
+2013/04/18 12:44:21 - BUD_period_LKP.0 - linenr 500000
+2013/04/18 12:44:21 - Table output.0 - linenr 500000
+2013/04/18 12:46:47 - Table input.0 - linenr 550000
+2013/04/18 12:48:01 - Select values.0 - linenr 550000
+2013/04/18 12:49:14 - Calculator.0 - Linenr 550000
+2013/04/18 12:50:28 - GRP_COMP_ID_LKP.0 - linenr 550000
+2013/04/18 12:50:28 - TXN_LKP.0 - linenr 550000
+2013/04/18 12:50:28 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 550000
+2013/04/18 12:50:28 - BUD_CAT_LKP.0 - linenr 550000
+2013/04/18 12:50:28 - BUD_period_LKP.0 - linenr 550000
+2013/04/18 12:50:28 - Table output.0 - linenr 550000
+2013/04/18 12:52:54 - Table input.0 - linenr 600000
+2013/04/18 12:54:07 - Select values.0 - linenr 600000
+2013/04/18 12:55:21 - Calculator.0 - Linenr 600000
+2013/04/18 12:56:36 - GRP_COMP_ID_LKP.0 - linenr 600000
+2013/04/18 12:56:36 - TXN_LKP.0 - linenr 600000
+2013/04/18 12:56:36 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 600000
+2013/04/18 12:56:36 - BUD_CAT_LKP.0 - linenr 600000
+2013/04/18 12:56:36 - BUD_period_LKP.0 - linenr 600000
+2013/04/18 12:56:36 - Table output.0 - linenr 600000
+2013/04/18 12:59:05 - Table input.0 - linenr 650000
+2013/04/18 13:00:25 - Select values.0 - linenr 650000
+2013/04/18 13:01:44 - Calculator.0 - Linenr 650000
+2013/04/18 13:03:05 - GRP_COMP_ID_LKP.0 - linenr 650000
+2013/04/18 13:03:05 - TXN_LKP.0 - linenr 650000
+2013/04/18 13:03:05 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 650000
+2013/04/18 13:03:05 - BUD_CAT_LKP.0 - linenr 650000
+2013/04/18 13:03:05 - BUD_period_LKP.0 - linenr 650000
+2013/04/18 13:03:05 - Table output.0 - linenr 650000
+2013/04/18 13:05:43 - Table input.0 - linenr 700000
+2013/04/18 13:07:02 - Select values.0 - linenr 700000
+2013/04/18 13:08:21 - Calculator.0 - Linenr 700000
+2013/04/18 13:09:42 - GRP_COMP_ID_LKP.0 - linenr 700000
+2013/04/18 13:09:42 - TXN_LKP.0 - linenr 700000
+2013/04/18 13:09:42 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 700000
+2013/04/18 13:09:42 - BUD_CAT_LKP.0 - linenr 700000
+2013/04/18 13:09:42 - BUD_period_LKP.0 - linenr 700000
+2013/04/18 13:09:42 - Table output.0 - linenr 700000
+2013/04/18 13:12:20 - Table input.0 - linenr 750000
+2013/04/18 13:13:39 - Select values.0 - linenr 750000
+2013/04/18 13:14:57 - Calculator.0 - Linenr 750000
+2013/04/18 13:16:13 - GRP_COMP_ID_LKP.0 - linenr 750000
+2013/04/18 13:16:13 - TXN_LKP.0 - linenr 750000
+2013/04/18 13:16:13 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 750000
+2013/04/18 13:16:13 - BUD_CAT_LKP.0 - linenr 750000
+2013/04/18 13:16:13 - BUD_period_LKP.0 - linenr 750000
+2013/04/18 13:16:14 - Table output.0 - linenr 750000
+2013/04/18 13:18:42 - Table input.0 - linenr 800000
+2013/04/18 13:19:56 - Select values.0 - linenr 800000
+2013/04/18 13:21:09 - Calculator.0 - Linenr 800000
+2013/04/18 13:22:23 - GRP_COMP_ID_LKP.0 - linenr 800000
+2013/04/18 13:22:23 - TXN_LKP.0 - linenr 800000
+2013/04/18 13:22:23 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 800000
+2013/04/18 13:22:23 - BUD_CAT_LKP.0 - linenr 800000
+2013/04/18 13:22:23 - BUD_period_LKP.0 - linenr 800000
+2013/04/18 13:22:23 - Table output.0 - linenr 800000
+2013/04/18 13:24:51 - Table input.0 - linenr 850000
+2013/04/18 13:26:05 - Select values.0 - linenr 850000
+2013/04/18 13:27:19 - Calculator.0 - Linenr 850000
+2013/04/18 13:28:33 - GRP_COMP_ID_LKP.0 - linenr 850000
+2013/04/18 13:28:33 - TXN_LKP.0 - linenr 850000
+2013/04/18 13:28:33 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 850000
+2013/04/18 13:28:33 - BUD_CAT_LKP.0 - linenr 850000
+2013/04/18 13:28:33 - BUD_period_LKP.0 - linenr 850000
+2013/04/18 13:28:33 - Table output.0 - linenr 850000
+2013/04/18 13:31:02 - Table input.0 - linenr 900000
+2013/04/18 13:32:16 - Select values.0 - linenr 900000
+2013/04/18 13:33:29 - Calculator.0 - Linenr 900000
+2013/04/18 13:34:43 - GRP_COMP_ID_LKP.0 - linenr 900000
+2013/04/18 13:34:43 - TXN_LKP.0 - linenr 900000
+2013/04/18 13:34:43 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 900000
+2013/04/18 13:34:43 - BUD_CAT_LKP.0 - linenr 900000
+2013/04/18 13:34:43 - BUD_period_LKP.0 - linenr 900000
+2013/04/18 13:34:43 - Table output.0 - linenr 900000
+2013/04/18 13:37:05 - Table input.0 - linenr 950000
+2013/04/18 13:38:14 - Select values.0 - linenr 950000
+2013/04/18 13:39:27 - Calculator.0 - Linenr 950000
+2013/04/18 13:40:40 - GRP_COMP_ID_LKP.0 - linenr 950000
+2013/04/18 13:40:40 - TXN_LKP.0 - linenr 950000
+2013/04/18 13:40:40 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 950000
+2013/04/18 13:40:40 - BUD_CAT_LKP.0 - linenr 950000
+2013/04/18 13:40:40 - BUD_period_LKP.0 - linenr 950000
+2013/04/18 13:40:40 - Table output.0 - linenr 950000
+2013/04/18 13:43:05 - Table input.0 - linenr 1000000
+2013/04/18 13:44:17 - Select values.0 - linenr 1000000
+2013/04/18 13:45:28 - Calculator.0 - Linenr 1000000
+2013/04/18 13:46:38 - GRP_COMP_ID_LKP.0 - linenr 1000000
+2013/04/18 13:46:38 - TXN_LKP.0 - linenr 1000000
+2013/04/18 13:46:38 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1000000
+2013/04/18 13:46:38 - BUD_CAT_LKP.0 - linenr 1000000
+2013/04/18 13:46:38 - BUD_period_LKP.0 - linenr 1000000
+2013/04/18 13:46:38 - Table output.0 - linenr 1000000
+2013/04/18 13:49:01 - Table input.0 - linenr 1050000
+2013/04/18 13:50:07 - Select values.0 - linenr 1050000
+2013/04/18 13:51:08 - Calculator.0 - Linenr 1050000
+2013/04/18 13:52:10 - GRP_COMP_ID_LKP.0 - linenr 1050000
+2013/04/18 13:52:10 - TXN_LKP.0 - linenr 1050000
+2013/04/18 13:52:10 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1050000
+2013/04/18 13:52:10 - BUD_CAT_LKP.0 - linenr 1050000
+2013/04/18 13:52:10 - BUD_period_LKP.0 - linenr 1050000
+2013/04/18 13:52:10 - Table output.0 - linenr 1050000
+2013/04/18 13:54:08 - Table input.0 - linenr 1100000
+2013/04/18 13:55:10 - Select values.0 - linenr 1100000
+2013/04/18 13:56:12 - Calculator.0 - Linenr 1100000
+2013/04/18 13:57:14 - GRP_COMP_ID_LKP.0 - linenr 1100000
+2013/04/18 13:57:14 - TXN_LKP.0 - linenr 1100000
+2013/04/18 13:57:14 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1100000
+2013/04/18 13:57:14 - BUD_CAT_LKP.0 - linenr 1100000
+2013/04/18 13:57:14 - BUD_period_LKP.0 - linenr 1100000
+2013/04/18 13:57:15 - Table output.0 - linenr 1100000
+2013/04/18 13:59:18 - Table input.0 - linenr 1150000
+2013/04/18 14:00:19 - Select values.0 - linenr 1150000
+2013/04/18 14:01:20 - Calculator.0 - Linenr 1150000
+2013/04/18 14:02:24 - GRP_COMP_ID_LKP.0 - linenr 1150000
+2013/04/18 14:02:24 - TXN_LKP.0 - linenr 1150000
+2013/04/18 14:02:24 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1150000
+2013/04/18 14:02:24 - BUD_CAT_LKP.0 - linenr 1150000
+2013/04/18 14:02:24 - BUD_period_LKP.0 - linenr 1150000
+2013/04/18 14:02:24 - Table output.0 - linenr 1150000
+2013/04/18 14:04:25 - Table input.0 - linenr 1200000
+2013/04/18 14:05:21 - Select values.0 - linenr 1200000
+2013/04/18 14:06:15 - Calculator.0 - Linenr 1200000
+2013/04/18 14:07:10 - GRP_COMP_ID_LKP.0 - linenr 1200000
+2013/04/18 14:07:10 - TXN_LKP.0 - linenr 1200000
+2013/04/18 14:07:10 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1200000
+2013/04/18 14:07:10 - BUD_CAT_LKP.0 - linenr 1200000
+2013/04/18 14:07:10 - BUD_period_LKP.0 - linenr 1200000
+2013/04/18 14:07:10 - Table output.0 - linenr 1200000
+2013/04/18 14:09:03 - Table input.0 - linenr 1250000
+2013/04/18 14:09:59 - Select values.0 - linenr 1250000
+2013/04/18 14:10:56 - Calculator.0 - Linenr 1250000
+2013/04/18 14:11:51 - GRP_COMP_ID_LKP.0 - linenr 1250000
+2013/04/18 14:11:51 - TXN_LKP.0 - linenr 1250000
+2013/04/18 14:11:51 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1250000
+2013/04/18 14:11:51 - BUD_CAT_LKP.0 - linenr 1250000
+2013/04/18 14:11:51 - BUD_period_LKP.0 - linenr 1250000
+2013/04/18 14:11:51 - Table output.0 - linenr 1250000
+2013/04/18 14:13:43 - Table input.0 - linenr 1300000
+2013/04/18 14:14:39 - Select values.0 - linenr 1300000
+2013/04/18 14:15:35 - Calculator.0 - Linenr 1300000
+2013/04/18 14:16:30 - GRP_COMP_ID_LKP.0 - linenr 1300000
+2013/04/18 14:16:30 - TXN_LKP.0 - linenr 1300000
+2013/04/18 14:16:30 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1300000
+2013/04/18 14:16:30 - BUD_CAT_LKP.0 - linenr 1300000
+2013/04/18 14:16:30 - BUD_period_LKP.0 - linenr 1300000
+2013/04/18 14:16:30 - Table output.0 - linenr 1300000
+2013/04/18 14:18:20 - Table input.0 - linenr 1350000
+2013/04/18 14:19:21 - Select values.0 - linenr 1350000
+2013/04/18 14:20:23 - Calculator.0 - Linenr 1350000
+2013/04/18 14:21:24 - GRP_COMP_ID_LKP.0 - linenr 1350000
+2013/04/18 14:21:24 - TXN_LKP.0 - linenr 1350000
+2013/04/18 14:21:24 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1350000
+2013/04/18 14:21:24 - BUD_CAT_LKP.0 - linenr 1350000
+2013/04/18 14:21:24 - BUD_period_LKP.0 - linenr 1350000
+2013/04/18 14:21:24 - Table output.0 - linenr 1350000
+2013/04/18 14:23:27 - Table input.0 - linenr 1400000
+2013/04/18 14:24:29 - Select values.0 - linenr 1400000
+2013/04/18 14:25:30 - Calculator.0 - Linenr 1400000
+2013/04/18 14:26:31 - GRP_COMP_ID_LKP.0 - linenr 1400000
+2013/04/18 14:26:31 - TXN_LKP.0 - linenr 1400000
+2013/04/18 14:26:31 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1400000
+2013/04/18 14:26:31 - BUD_CAT_LKP.0 - linenr 1400000
+2013/04/18 14:26:31 - BUD_period_LKP.0 - linenr 1400000
+2013/04/18 14:26:31 - Table output.0 - linenr 1400000
+2013/04/18 14:28:34 - Table input.0 - linenr 1450000
+2013/04/18 14:29:35 - Select values.0 - linenr 1450000
+2013/04/18 14:30:37 - Calculator.0 - Linenr 1450000
+2013/04/18 14:31:39 - GRP_COMP_ID_LKP.0 - linenr 1450000
+2013/04/18 14:31:39 - TXN_LKP.0 - linenr 1450000
+2013/04/18 14:31:39 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1450000
+2013/04/18 14:31:39 - BUD_CAT_LKP.0 - linenr 1450000
+2013/04/18 14:31:39 - BUD_period_LKP.0 - linenr 1450000
+2013/04/18 14:31:39 - Table output.0 - linenr 1450000
+2013/04/18 14:33:40 - Table input.0 - linenr 1500000
+2013/04/18 14:34:41 - Select values.0 - linenr 1500000
+2013/04/18 14:35:42 - Calculator.0 - Linenr 1500000
+2013/04/18 14:36:43 - GRP_COMP_ID_LKP.0 - linenr 1500000
+2013/04/18 14:36:43 - TXN_LKP.0 - linenr 1500000
+2013/04/18 14:36:43 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1500000
+2013/04/18 14:36:43 - BUD_CAT_LKP.0 - linenr 1500000
+2013/04/18 14:36:43 - BUD_period_LKP.0 - linenr 1500000
+2013/04/18 14:36:43 - Table output.0 - linenr 1500000
+2013/04/18 14:38:46 - Table input.0 - linenr 1550000
+2013/04/18 14:39:47 - Select values.0 - linenr 1550000
+2013/04/18 14:40:48 - Calculator.0 - Linenr 1550000
+2013/04/18 14:41:50 - GRP_COMP_ID_LKP.0 - linenr 1550000
+2013/04/18 14:41:50 - TXN_LKP.0 - linenr 1550000
+2013/04/18 14:41:50 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1550000
+2013/04/18 14:41:50 - BUD_CAT_LKP.0 - linenr 1550000
+2013/04/18 14:41:50 - BUD_period_LKP.0 - linenr 1550000
+2013/04/18 14:41:50 - Table output.0 - linenr 1550000
+2013/04/18 14:43:52 - Table input.0 - linenr 1600000
+2013/04/18 14:44:54 - Select values.0 - linenr 1600000
+2013/04/18 14:45:55 - Calculator.0 - Linenr 1600000
+2013/04/18 14:46:59 - GRP_COMP_ID_LKP.0 - linenr 1600000
+2013/04/18 14:46:59 - TXN_LKP.0 - linenr 1600000
+2013/04/18 14:46:59 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1600000
+2013/04/18 14:46:59 - BUD_CAT_LKP.0 - linenr 1600000
+2013/04/18 14:46:59 - BUD_period_LKP.0 - linenr 1600000
+2013/04/18 14:46:59 - Table output.0 - linenr 1600000
+2013/04/18 14:49:11 - Table input.0 - linenr 1650000
+2013/04/18 14:50:17 - Select values.0 - linenr 1650000
+2013/04/18 14:51:22 - Calculator.0 - Linenr 1650000
+2013/04/18 14:52:28 - GRP_COMP_ID_LKP.0 - linenr 1650000
+2013/04/18 14:52:28 - TXN_LKP.0 - linenr 1650000
+2013/04/18 14:52:28 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1650000
+2013/04/18 14:52:28 - BUD_CAT_LKP.0 - linenr 1650000
+2013/04/18 14:52:28 - BUD_period_LKP.0 - linenr 1650000
+2013/04/18 14:52:28 - Table output.0 - linenr 1650000
+2013/04/18 14:54:40 - Table input.0 - linenr 1700000
+2013/04/18 14:55:46 - Select values.0 - linenr 1700000
+2013/04/18 14:56:52 - Calculator.0 - Linenr 1700000
+2013/04/18 14:57:58 - GRP_COMP_ID_LKP.0 - linenr 1700000
+2013/04/18 14:57:58 - TXN_LKP.0 - linenr 1700000
+2013/04/18 14:57:58 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1700000
+2013/04/18 14:57:58 - BUD_CAT_LKP.0 - linenr 1700000
+2013/04/18 14:57:58 - BUD_period_LKP.0 - linenr 1700000
+2013/04/18 14:57:58 - Table output.0 - linenr 1700000
+2013/04/18 15:00:10 - Table input.0 - linenr 1750000
+2013/04/18 15:01:15 - Select values.0 - linenr 1750000
+2013/04/18 15:01:48 - Table input.0 - Finished reading query, closing connection.
+2013/04/18 15:01:48 - Table input.0 - Finished processing (I=1765008, O=0, R=0, W=1765008, U=0, E=0)
+2013/04/18 15:02:22 - Calculator.0 - Linenr 1750000
+2013/04/18 15:02:56 - Select values.0 - Finished processing (I=0, O=0, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:03:30 - GRP_COMP_ID_LKP.0 - linenr 1750000
+2013/04/18 15:03:30 - TXN_LKP.0 - linenr 1750000
+2013/04/18 15:03:30 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - linenr 1750000
+2013/04/18 15:03:30 - BUD_CAT_LKP.0 - linenr 1750000
+2013/04/18 15:03:30 - BUD_period_LKP.0 - linenr 1750000
+2013/04/18 15:03:30 - Table output.0 - linenr 1750000
+2013/04/18 15:04:04 - Calculator.0 - Finished processing (I=0, O=0, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:05:11 - BUD_period_LKP.0 - Finished processing (I=386496, O=0, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:05:11 - BUD_CAT_LKP.0 - Finished processing (I=1765008, O=0, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:05:11 - GRP_COMP_ID_LKP.0 - Finished processing (I=1755517, O=0, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:05:11 - TXN_LKP.0 - Finished processing (I=1765008, O=0, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:05:11 - STC_DIM_F_BUD_HIERARCHY_LKP.0 - Finished processing (I=1765008, O=0, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:05:11 - Table output.0 - Finished processing (I=0, O=1765008, R=1765008, W=1765008, U=0, E=0)
+2013/04/18 15:05:11 - Pan - Finished!
+2013/04/18 15:05:11 - Pan - Start=2013/04/18 11:42:40.330, Stop=2013/04/18 15:05:11.300
+2013/04/18 15:05:11 - Pan - Processing ended after 3 hours, 22 minutes and 30 seconds (12150 seconds total).
+2013/04/18 15:05:11 - STC_FACT_F_BUD -  
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step Table input.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step Select values.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step GRP_COMP_ID_LKP.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step TXN_LKP.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step BUD_CAT_LKP.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step BUD_period_LKP.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step STC_DIM_F_BUD_HIERARCHY_LKP.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step Calculator.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step Table output.0 ended successfully, processed 1765008 lines. ( 145 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step Insert / Update.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/04/18 15:05:11 - STC_FACT_F_BUD - Step Set Variables.0 ended successfully, processed 0 lines. ( 0 lines/s)

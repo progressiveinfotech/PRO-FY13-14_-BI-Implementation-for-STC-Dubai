@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>STC_FACT_EMP_FAMILY_PERS</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;11&#47;05 19:03:46.975</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;11&#47;05 19:03:46.975</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>leaf_fact</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1521</port>
+    <username>hr</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2a7c8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live_CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM</name>
+    <server>192.168.2.100</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>STC_V4</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom1</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom2</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ORION</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>ORION106</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orion_original</name>
+    <server>shankartrading</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>orion106</username>
+    <password>Encrypted 2be98dcbc09c8808da417ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orionpay</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>RPRO</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>rpro</username>
+    <password>Encrypted 2be98afc86aa78190a80bbe62d1c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>STCBI106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse1</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Table input</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>COMP_ID</to><enabled>Y</enabled> </hop>  <hop> <from>COMP_ID</from><to>EMP_KEY_ID</to><enabled>Y</enabled> </hop>  <hop> <from>EMP_KEY_ID</from><to>SECTR_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SECTR_ID</from><to>RELATION_ID</to><enabled>Y</enabled> </hop>  <hop> <from>RELATION_ID</from><to>RELIGION_ID</to><enabled>Y</enabled> </hop>  <hop> <from>RELIGION_ID</from><to>Table output</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>COMP_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_COMPANIES</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>EMPS_COMP_CODE</name>
+        <field>DIVISION_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COMP_ID</name>
+        <rename>COMP_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>695</xloc>
+      <yloc>145</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>EMP_KEY_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_EMP</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>EMPF_CODE</name>
+        <field>EMP_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>EMP_KEY_ID</name>
+        <rename>EMP_KEY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>851</xloc>
+      <yloc>204</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>RELATION_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_pay_RELATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>EMPF_RELAT_CODE</name>
+        <field>RELAT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>RELAT_ID</name>
+        <rename>RELAT_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>412</xloc>
+      <yloc>376</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>RELIGION_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_pay_RELIGION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>EMPS_RELIGION_CODE</name>
+        <field>RELG_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>RELG_ID</name>
+        <rename>RELG_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>229</xloc>
+      <yloc>355</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SECTR_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_pay_SECTOR</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>EMPS_CNTRY_CODE</name>
+        <field>SECTR_CNTRY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>EMPS_SECTOR_CODE</name>
+        <field>SECTR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SECTR_ID</name>
+        <rename>SECTR_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>789</xloc>
+      <yloc>385</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>EMPF_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_RELAT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_RELAT_NAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_BL_RELAT_NAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_DEP_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_SEX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_TICKET_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_SPLIT_TICKET_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_SPLIT_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_ACI</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_BIRTH_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_BIRTH_DT_HIJR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_CNTRY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_REMARKS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_FRZ_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPF_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_SEX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_MARITAL_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_CONTR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_CNTRY_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_SECTOR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_RELIGION_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_SPLITS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_SPLIT_TICKET_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_SPLIT_TICKET_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_GOSI_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_GOSI_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_ADD_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_ADD_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_ADD_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_PHONE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_FAX_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_EMAIL_ADD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_PAGER_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PRESENT_MOBILE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_ADD_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_ADD_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_ADD_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_PHONE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_FAX_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_EMAIL_ADD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_PAGER_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PERMANENT_MOBILE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_ADD_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_ADD_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_ADD_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_PHONE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_FAX_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_EMAIL_ADD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_PAGER_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_KIN_MOBILE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_FRZ_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_5</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_5</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_6</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_6</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_7</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_7</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_8</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_8</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_NO_9</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_ANAL_CODE_9</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPS_PR_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>418</xloc>
+      <yloc>193</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>orionpay</connection>
+    <sql>SELECT
+
+ A.EMPF_SYS_ID
+, A.EMPF_COMP_CODE
+, A.EMPF_CODE
+, A.EMPF_RELAT_CODE
+, A.EMPF_RELAT_NAME
+, A.EMPF_BL_RELAT_NAME
+
+, CASE EMPF_DEP_YN
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN NULL THEN NULL
+END  EMPF_DEP_YN
+
+, CASE EMPF_SEX
+WHEN &apos;M&apos; THEN nvl(&apos;MALE&apos;,0)
+WHEN &apos;F&apos; THEN nvl(&apos;FEMALE&apos;,0)
+WHEN NULL THEN NULL
+END EMPF_SEX
+
+, CASE EMPF_TICKET_YN
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN NULL THEN NULL
+END EMPF_TICKET_YN
+
+, A.EMPF_SPLIT_TICKET_YN
+, A.EMPF_SPLIT_NUM
+, A.EMPF_ACI
+, A.EMPF_BIRTH_DT
+, A.EMPF_BIRTH_DT_HIJR
+, A.EMPF_CNTRY_CODE
+, A.EMPF_REMARKS
+
+, CASE EMPF_FRZ_FLAG
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN NULL THEN NULL
+END EMPF_FRZ_FLAG
+
+, A.EMPF_CR_UID
+, A.EMPF_CR_DT
+, A.EMPF_UPD_UID
+, A.EMPF_UPD_DT
+, B.EMPS_COMP_CODE
+, B.EMPS_CODE
+
+, CASE EMPS_SEX
+WHEN &apos;M&apos; THEN nvl(&apos;MALE&apos;,0)
+WHEN &apos;F&apos; THEN nvl(&apos;FEMALE&apos;,0)
+WHEN NULL THEN NULL
+END EMPS_SEX
+
+, CASE EMPS_MARITAL_STATUS
+WHEN &apos;S&apos; THEN nvl(&apos;SINGLE&apos;,0)
+WHEN &apos;M&apos; THEN nvl(&apos;MARRIED&apos;,0)
+WHEN NULL THEN NULL
+END EMPS_MARITAL_STATUS
+
+, B.EMPS_CONTR_CODE
+, B.EMPS_CNTRY_CODE
+, B.EMPS_SECTOR_CODE
+, B.EMPS_RELIGION_CODE
+, B.EMPS_SPLITS
+
+, CASE EMPS_SPLIT_TICKET_YN
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN NULL THEN NULL
+END EMPS_SPLIT_TICKET_YN
+
+, B.EMPS_SPLIT_TICKET_NUM
+, B.EMPS_GOSI_CODE
+, B.EMPS_GOSI_NO
+, B.EMPS_PRESENT_ADD_1
+, B.EMPS_PRESENT_ADD_2
+, B.EMPS_PRESENT_ADD_3
+, B.EMPS_PRESENT_PHONE_NO
+, B.EMPS_PRESENT_FAX_NO
+, B.EMPS_PRESENT_EMAIL_ADD
+, B.EMPS_PRESENT_PAGER_NO
+, B.EMPS_PRESENT_MOBILE_NO
+, B.EMPS_PERMANENT_ADD_1
+, B.EMPS_PERMANENT_ADD_2
+, B.EMPS_PERMANENT_ADD_3
+, B.EMPS_PERMANENT_PHONE_NO
+, B.EMPS_PERMANENT_FAX_NO
+, B.EMPS_PERMANENT_EMAIL_ADD
+, B.EMPS_PERMANENT_PAGER_NO
+, B.EMPS_PERMANENT_MOBILE_NO
+, B.EMPS_KIN
+, B.EMPS_KIN_ADD_1
+, B.EMPS_KIN_ADD_2
+, B.EMPS_KIN_ADD_3
+, B.EMPS_KIN_PHONE_NO
+, B.EMPS_KIN_FAX_NO
+, B.EMPS_KIN_EMAIL_ADD
+, B.EMPS_KIN_PAGER_NO
+, B.EMPS_KIN_MOBILE_NO
+
+, CASE EMPS_FRZ_FLAG
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN NULL THEN NULL
+END EMPS_FRZ_FLAG
+
+, B.EMPS_CR_UID
+, B.EMPS_CR_DT
+, B.EMPS_UPD_UID
+, B.EMPS_UPD_DT
+, B.EMPS_ANAL_NO_1
+, B.EMPS_ANAL_CODE_1
+, B.EMPS_ANAL_NO_2
+, B.EMPS_ANAL_CODE_2
+, B.EMPS_ANAL_NO_3
+, B.EMPS_ANAL_CODE_3
+, B.EMPS_ANAL_NO_4
+, B.EMPS_ANAL_CODE_4
+, B.EMPS_ANAL_NO_5
+, B.EMPS_ANAL_CODE_5
+, B.EMPS_ANAL_NO_6
+, B.EMPS_ANAL_CODE_6
+, B.EMPS_ANAL_NO_7
+, B.EMPS_ANAL_CODE_7
+, B.EMPS_ANAL_NO_8
+, B.EMPS_ANAL_CODE_8
+, B.EMPS_ANAL_NO_9
+, B.EMPS_ANAL_CODE_9
+
+, CASE EMPS_PR_YN
+WHEN &apos;N&apos; THEN nvl(&apos;NO&apos;,0)
+WHEN &apos;Y&apos; THEN nvl(&apos;YES&apos;,0)
+WHEN NULL THEN NULL
+END EMPS_PR_YN
+
+, SYSDATE
+
+
+FROM 
+
+
+PM_EMP_PERS B LEFT OUTER JOIN PM_EMP_FAMILY A
+ON ( B.EMPS_CODE = A.EMPF_CODE AND
+A.EMPF_SEX = B.EMPS_SEX 
+)</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>184</xloc>
+      <yloc>184</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <schema/>
+    <table>STC_FACT_pay_EMP_FAMILY_PERS</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>EMPF_SYS_ID</column_name>
+          <stream_name>EMPF_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_RELAT_CODE</column_name>
+          <stream_name>EMPF_RELAT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_RELAT_NAME</column_name>
+          <stream_name>EMPF_RELAT_NAME</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_BL_RELAT_NAME</column_name>
+          <stream_name>EMPF_BL_RELAT_NAME</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_DEP_YN</column_name>
+          <stream_name>EMPF_DEP_YN</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_SEX</column_name>
+          <stream_name>EMPF_SEX</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_TICKET_YN</column_name>
+          <stream_name>EMPF_TICKET_YN</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_SPLIT_TICKET_YN</column_name>
+          <stream_name>EMPF_SPLIT_TICKET_YN</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_SPLIT_NUM</column_name>
+          <stream_name>EMPF_SPLIT_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_ACI</column_name>
+          <stream_name>EMPF_ACI</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_BIRTH_DT</column_name>
+          <stream_name>EMPF_BIRTH_DT</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_BIRTH_DT_HIJR</column_name>
+          <stream_name>EMPF_BIRTH_DT_HIJR</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_CNTRY_CODE</column_name>
+          <stream_name>EMPF_CNTRY_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_REMARKS</column_name>
+          <stream_name>EMPF_REMARKS</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_FRZ_FLAG</column_name>
+          <stream_name>EMPF_FRZ_FLAG</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_CR_UID</column_name>
+          <stream_name>EMPF_CR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_CR_DT</column_name>
+          <stream_name>EMPF_CR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_UPD_UID</column_name>
+          <stream_name>EMPF_UPD_UID</stream_name>
+        </field>
+        <field>
+          <column_name>EMPF_UPD_DT</column_name>
+          <stream_name>EMPF_UPD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_COMP_CODE</column_name>
+          <stream_name>EMPS_COMP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_CODE</column_name>
+          <stream_name>EMPS_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_SEX</column_name>
+          <stream_name>EMPS_SEX</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_MARITAL_STATUS</column_name>
+          <stream_name>EMPS_MARITAL_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_CONTR_CODE</column_name>
+          <stream_name>EMPS_CONTR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_CNTRY_CODE</column_name>
+          <stream_name>EMPS_CNTRY_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_SECTOR_CODE</column_name>
+          <stream_name>EMPS_SECTOR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_RELIGION_CODE</column_name>
+          <stream_name>EMPS_RELIGION_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_SPLITS</column_name>
+          <stream_name>EMPS_SPLITS</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_SPLIT_TICKET_NUM</column_name>
+          <stream_name>EMPS_SPLIT_TICKET_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_GOSI_CODE</column_name>
+          <stream_name>EMPS_GOSI_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_SPLIT_TICKET_YN</column_name>
+          <stream_name>EMPS_SPLIT_TICKET_YN</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_GOSI_NO</column_name>
+          <stream_name>EMPS_GOSI_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_ADD_1</column_name>
+          <stream_name>EMPS_PRESENT_ADD_1</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_ADD_2</column_name>
+          <stream_name>EMPS_PRESENT_ADD_2</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_ADD_3</column_name>
+          <stream_name>EMPS_PRESENT_ADD_3</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_PHONE_NO</column_name>
+          <stream_name>EMPS_PRESENT_PHONE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_FAX_NO</column_name>
+          <stream_name>EMPS_PRESENT_FAX_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_EMAIL_ADD</column_name>
+          <stream_name>EMPS_PRESENT_EMAIL_ADD</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_PAGER_NO</column_name>
+          <stream_name>EMPS_PRESENT_PAGER_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PRESENT_MOBILE_NO</column_name>
+          <stream_name>EMPS_PRESENT_MOBILE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_ADD_1</column_name>
+          <stream_name>EMPS_PERMANENT_ADD_1</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_ADD_2</column_name>
+          <stream_name>EMPS_PERMANENT_ADD_2</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_ADD_3</column_name>
+          <stream_name>EMPS_PERMANENT_ADD_3</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_PHONE_NO</column_name>
+          <stream_name>EMPS_PERMANENT_PHONE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_FAX_NO</column_name>
+          <stream_name>EMPS_PERMANENT_FAX_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_EMAIL_ADD</column_name>
+          <stream_name>EMPS_PERMANENT_EMAIL_ADD</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_PAGER_NO</column_name>
+          <stream_name>EMPS_PERMANENT_PAGER_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PERMANENT_MOBILE_NO</column_name>
+          <stream_name>EMPS_PERMANENT_MOBILE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_ADD_1</column_name>
+          <stream_name>EMPS_KIN_ADD_1</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_ADD_2</column_name>
+          <stream_name>EMPS_KIN_ADD_2</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_ADD_3</column_name>
+          <stream_name>EMPS_KIN_ADD_3</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_PHONE_NO</column_name>
+          <stream_name>EMPS_KIN_PHONE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_FAX_NO</column_name>
+          <stream_name>EMPS_KIN_FAX_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_EMAIL_ADD</column_name>
+          <stream_name>EMPS_KIN_EMAIL_ADD</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_PAGER_NO</column_name>
+          <stream_name>EMPS_KIN_PAGER_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN_MOBILE_NO</column_name>
+          <stream_name>EMPS_KIN_MOBILE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_FRZ_FLAG</column_name>
+          <stream_name>EMPS_FRZ_FLAG</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_CR_UID</column_name>
+          <stream_name>EMPS_CR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_CR_DT</column_name>
+          <stream_name>EMPS_CR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_UPD_UID</column_name>
+          <stream_name>EMPS_UPD_UID</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_UPD_DT</column_name>
+          <stream_name>EMPS_UPD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_1</column_name>
+          <stream_name>EMPS_ANAL_NO_1</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_1</column_name>
+          <stream_name>EMPS_ANAL_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_2</column_name>
+          <stream_name>EMPS_ANAL_NO_2</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_2</column_name>
+          <stream_name>EMPS_ANAL_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_3</column_name>
+          <stream_name>EMPS_ANAL_NO_3</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_3</column_name>
+          <stream_name>EMPS_ANAL_CODE_3</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_4</column_name>
+          <stream_name>EMPS_ANAL_NO_4</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_4</column_name>
+          <stream_name>EMPS_ANAL_CODE_4</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_5</column_name>
+          <stream_name>EMPS_ANAL_NO_5</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_5</column_name>
+          <stream_name>EMPS_ANAL_CODE_5</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_6</column_name>
+          <stream_name>EMPS_ANAL_NO_6</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_6</column_name>
+          <stream_name>EMPS_ANAL_CODE_6</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_7</column_name>
+          <stream_name>EMPS_ANAL_NO_7</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_7</column_name>
+          <stream_name>EMPS_ANAL_CODE_7</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_8</column_name>
+          <stream_name>EMPS_ANAL_NO_8</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_8</column_name>
+          <stream_name>EMPS_ANAL_CODE_8</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_NO_9</column_name>
+          <stream_name>EMPS_ANAL_NO_9</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_ANAL_CODE_9</column_name>
+          <stream_name>EMPS_ANAL_CODE_9</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_PR_YN</column_name>
+          <stream_name>EMPS_PR_YN</stream_name>
+        </field>
+        <field>
+          <column_name>EMP_KEY_ID</column_name>
+          <stream_name>EMP_KEY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SECTR_ID</column_name>
+          <stream_name>SECTR_ID</stream_name>
+        </field>
+        <field>
+          <column_name>RELATION_ID</column_name>
+          <stream_name>RELAT_ID</stream_name>
+        </field>
+        <field>
+          <column_name>RELIGION_ID</column_name>
+          <stream_name>RELG_ID</stream_name>
+        </field>
+        <field>
+          <column_name>EMPS_KIN</column_name>
+          <stream_name>EMPS_KIN</stream_name>
+        </field>
+        <field>
+          <column_name>PROG_CR_DT</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
+        <field>
+          <column_name>COMP_ID</column_name>
+          <stream_name>COMP_ID</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>136</xloc>
+      <yloc>323</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

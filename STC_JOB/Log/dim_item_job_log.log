@@ -1,0 +1,32 @@
+2013/04/12 22:28:26 - Kitchen - Logging is at level : Basic logging
+2013/04/12 22:28:26 - Kitchen - Start of run.
+2013/04/12 22:28:26 - dim_item_job - Start of job execution
+2013/04/12 22:28:26 - dim_item_job - Starting entry [ITEM_VAR_MYCOM]
+2013/04/12 22:28:26 - ITEM_VAR_MYCOM - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/DIM_item_JOB/dim_item_env.ktr]
+2013/04/12 22:28:27 - dim_item_env - Dispatching started for transformation [dim_item_env]
+2013/04/12 22:28:27 - Table input.0 - Finished reading query, closing connection.
+2013/04/12 22:28:27 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/04/12 22:28:27 - Set Variables.0 - Setting environment variables...
+2013/04/12 22:28:27 - Set Variables.0 - Set variable VAR_ITEM_ID to value [3058004]
+2013/04/12 22:28:27 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/04/12 22:28:27 - Set Variables.0 - Finished after 1 rows.
+2013/04/12 22:28:27 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/04/12 22:28:27 - dim_item_job - Starting entry [DIM_ITEM_MYCOM]
+2013/04/12 22:28:27 - DIM_ITEM_MYCOM - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/DIM_item_JOB/dim_item_mycom.ktr]
+2013/04/12 22:28:27 - dim_item_mycom - Dispatching started for transformation [dim_item_mycom]
+2013/04/12 23:05:01 - Table input.0 - linenr 50000
+2013/04/12 23:23:58 - Select values.0 - linenr 50000
+2013/04/12 23:42:29 - Add sequence.0 - linenr 50000
+2013/04/13 00:01:38 - Insert / Update.0 - linenr 50000
+2013/04/13 00:40:28 - Table input.0 - linenr 100000
+2013/04/13 00:59:40 - Select values.0 - linenr 100000
+2013/04/13 01:18:51 - Add sequence.0 - linenr 100000
+2013/04/13 01:27:05 - Table input.0 - Finished reading query, closing connection.
+2013/04/13 01:27:05 - Table input.0 - Finished processing (I=124310, O=0, R=0, W=124310, U=0, E=0)
+2013/04/13 01:37:29 - Insert / Update.0 - linenr 100000
+2013/04/13 01:45:23 - Select values.0 - Finished processing (I=0, O=0, R=124310, W=124310, U=0, E=0)
+2013/04/13 02:03:11 - Add sequence.0 - Finished processing (I=0, O=0, R=124310, W=124310, U=0, E=0)
+2013/04/13 02:20:35 - Insert / Update.0 - Finished processing (I=124310, O=0, R=124310, W=124310, U=117285, E=0)
+2013/04/13 02:20:35 - dim_item_job - Finished job entry [DIM_ITEM_MYCOM] (result=[true])
+2013/04/13 02:20:35 - dim_item_job - Finished job entry [ITEM_VAR_MYCOM] (result=[true])
+2013/04/13 02:20:35 - dim_item_job - Job execution finished

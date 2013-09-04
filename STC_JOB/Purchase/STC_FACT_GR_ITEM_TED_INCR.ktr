@@ -1,0 +1,4967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>stc_fact_gr_item_ted_incr</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;10&#47;15 18:06:49.926</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;10&#47;15 18:06:49.926</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>leaf_fact</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1521</port>
+    <username>hr</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2a7c8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live_CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM</name>
+    <server>192.168.2.100</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>STC_V4</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom1</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom2</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM_ORACLE</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>mycom</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7dc791a0d7</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>naga</name>
+    <server>10.80.0.46</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ORION</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>ORION106</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orion_original</name>
+    <server>shankartrading</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>orion106</username>
+    <password>Encrypted 2be98dcbc09c8808da417ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orionpay</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PAYROLL</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>STCNEW.WORLD</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>RPRO</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>rpro</username>
+    <password>Encrypted 2be98afc86aa78190a80bbe62d1c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>STCBI106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact0</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact07</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact2</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact3</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact5</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact6</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_DIM_FACT_1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_DW</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1522</port>
+    <username>STC_DW</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb799d44fdad8bed</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1522</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_ORION</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1522</port>
+    <username>STC_ORION</username>
+    <password>Encrypted 2be98afc86aa7f2b79f3a915fecbb80f4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1522</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse1</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Table input</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>GRADE1_ID</from><to>GRADE2_ID</to><enabled>Y</enabled> </hop>  <hop> <from>GRADE2_ID</from><to>CATEGORY_ID</to><enabled>Y</enabled> </hop>  <hop> <from>COMP_ID</from><to>TRAN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>DOC_SRC_LOCTN_ID</from><to>SUPPLIER_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SUPPLIER_ID</from><to>ITEM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ITEM_ID</from><to>REF_TRAN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ARTICLE_ID</from><to>SHORT_CLO_REASON_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SHORT_CLO_REASON_ID</from><to>PACKING_ID</to><enabled>Y</enabled> </hop>  <hop> <from>SIZE_ID</from><to>CAT_MANG_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CAT_MANG_ID</from><to>FOOD_CAT_ID</to><enabled>Y</enabled> </hop>  <hop> <from>REF_TRAN_ID</from><to>ARTICLE_ID</to><enabled>Y</enabled> </hop>  <hop> <from>PACKING_ID</from><to>SIZE_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CURRENCY_ID</from><to>TERM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>TRAN_ID</from><to>Department_id</to><enabled>Y</enabled> </hop>  <hop> <from>Department_id</from><to>DOC_SRC_LOCTN_ID</to><enabled>Y</enabled> </hop>  <hop> <from>TERM_ID</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>ITEM_UOM_ID</to><enabled>Y</enabled> </hop>  <hop> <from>ITEM_UOM_ID</from><to>GRADE1_ID</to><enabled>Y</enabled> </hop>  <hop> <from>CATEGORY_ID</from><to>LOCATION_ID</to><enabled>Y</enabled> </hop>  <hop> <from>LOCATION_ID</from><to>COMP_ID</to><enabled>Y</enabled> </hop>  <hop> <from>FOOD_CAT_ID</from><to>CURRENCY_ID</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>ARTICLE_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ARTICLE</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_10</name>
+        <field>ARTICLE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ARTICLE_ID</name>
+        <rename>ARTICLE_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>736</xloc>
+      <yloc>333</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CATEGORY_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CATEGORY</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_08</name>
+        <field>CATEGORY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CATEGORY_ID</name>
+        <rename>CATEGORY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>691</xloc>
+      <yloc>56</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CAT_MANG_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CAT_MANG</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_13</name>
+        <field>CAT_MANG_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CAT_MANG_ID</name>
+        <rename>CAT_MANG_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>524</xloc>
+      <yloc>450</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>COMP_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_COMPANIES</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GH_COMP_CODE</name>
+        <field>COMPANY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>COMP_ID</name>
+        <rename>COMP_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>515</xloc>
+      <yloc>187</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CURRENCY_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CURRENCY</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GH_CURR_CODE</name>
+        <field>CURR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>132</xloc>
+      <yloc>532</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DOC_SRC_LOCTN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_LOCATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GI_LOCN_CODE</name>
+        <field>LOCN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>DOC_SRC_LOCN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>90</xloc>
+      <yloc>159</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Department_id</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_department</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_02</name>
+        <field>DEPARTMENT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_06</name>
+        <field>CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_07</name>
+        <field>SUB_CLASS_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>department_ID</name>
+        <rename>department_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>216</xloc>
+      <yloc>159</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>FOOD_CAT_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_FOOD_CAT</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_03</name>
+        <field>FOOD_CAT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>ITEM_ANLY_CODE_04</name>
+        <field>FOOD_SUB_CAT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>FOOD_CAT_ID</name>
+        <rename>FOOD_CAT_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>322</xloc>
+      <yloc>421</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>GRADE1_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_GRADE1</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GI_GRADE_CODE_1</name>
+        <field>GRADE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRADE1_ID</name>
+        <rename>GRADE1_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>448</xloc>
+      <yloc>58</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>GRADE2_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_GRADE2</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GI_GRADE_CODE_2</name>
+        <field>GRADE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRADE2_ID</name>
+        <rename>GRADE2_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>565</xloc>
+      <yloc>59</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GI_ITEM_CODE</name>
+        <field>ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>322</xloc>
+      <yloc>297</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ITEM_UOM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_ITEM_UOM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GI_ITEM_CODE</name>
+        <field>IU_ITEM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>GI_UOM_CODE</name>
+        <field>IU_UOM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ITEM_UOM_ID</name>
+        <rename>ITEM_UOM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>314</xloc>
+      <yloc>52</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>STC_FACT_GR_ITEM_TED</table>
+      <key>
+        <name>ITED_SYS_ID</name>
+        <field>ITED_SYS_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>PROG_CR_DT</name>
+        <rename>SYSDATE</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>ITED_SYS_ID</name>
+        <rename>ITED_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_H_SYS_ID</name>
+        <rename>ITED_H_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_I_SYS_ID</name>
+        <rename>ITED_I_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_PH_SYS_ID</name>
+        <rename>ITED_PH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_PI_SYS_ID</name>
+        <rename>ITED_PI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ITED_SYS_ID</name>
+        <rename>ITED_ITED_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_CODE</name>
+        <rename>ITED_TED_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_TYPE_CODE</name>
+        <rename>ITED_TED_TYPE_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_TYPE_NUM</name>
+        <rename>ITED_TED_TYPE_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_HEAD_ITEM_NUM</name>
+        <rename>ITED_TED_HEAD_ITEM_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_INCL_EXCL_FLAG</name>
+        <rename>ITED_TED_INCL_EXCL_FLAG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_BASIS</name>
+        <rename>ITED_TED_BASIS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_CURR_CODE</name>
+        <rename>ITED_TED_CURR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TXN_CURR_CODE</name>
+        <rename>ITED_TXN_CURR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_RATE</name>
+        <rename>ITED_TED_RATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_UOM</name>
+        <rename>ITED_TED_UOM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TXN_UOM</name>
+        <rename>ITED_TXN_UOM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TXN_QTY</name>
+        <rename>ITED_TXN_QTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_USER_QTY</name>
+        <rename>ITED_USER_QTY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SET_OFF_PERC</name>
+        <rename>ITED_SET_OFF_PERC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SET_OFF_FC_AMT</name>
+        <rename>ITED_SET_OFF_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SET_OFF_LC_AMT</name>
+        <rename>ITED_SET_OFF_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TAXABLE_FC_AMT</name>
+        <rename>ITED_TAXABLE_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TAXABLE_LC_AMT</name>
+        <rename>ITED_TAXABLE_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UNROUND_FC_AMT</name>
+        <rename>ITED_UNROUND_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UNROUND_LC_AMT</name>
+        <rename>ITED_UNROUND_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FC_AMT</name>
+        <rename>ITED_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_LC_AMT</name>
+        <rename>ITED_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UPDATED_YN_NUM</name>
+        <rename>ITED_UPDATED_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_REMARKS</name>
+        <rename>ITED_REMARKS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ADD_TO_COST_YN</name>
+        <rename>ITED_ADD_TO_COST_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ALLOC_BY</name>
+        <rename>ITED_ALLOC_BY</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ALLOC_BY_NUM</name>
+        <rename>ITED_ALLOC_BY_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_NET_FC_AMT</name>
+        <rename>ITED_NET_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_NET_LC_AMT</name>
+        <rename>ITED_NET_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UTILIZED_AMT</name>
+        <rename>ITED_UTILIZED_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UTILIZED_LC_AMT</name>
+        <rename>ITED_UTILIZED_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_MAIN_ACNT_CODE</name>
+        <rename>ITED_MAIN_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SUB_ACNT_CODE</name>
+        <rename>ITED_SUB_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_DIVN_CODE</name>
+        <rename>ITED_DIVN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_DEPT_CODE</name>
+        <rename>ITED_DEPT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_HEAD_NO_1</name>
+        <rename>ITED_ANLY_HEAD_NO_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_HEAD_NO_2</name>
+        <rename>ITED_ANLY_HEAD_NO_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_CODE_1</name>
+        <rename>ITED_ANLY_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ANLY_CODE_2</name>
+        <rename>ITED_ANLY_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ACTY_VALUE_CODE_1</name>
+        <rename>ITED_ACTY_VALUE_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_ACTY_VALUE_CODE_2</name>
+        <rename>ITED_ACTY_VALUE_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_EXCISE_TYPE</name>
+        <rename>ITED_EXCISE_TYPE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CENVAT_PERC</name>
+        <rename>ITED_CENVAT_PERC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CENVAT_FC_AMT</name>
+        <rename>ITED_CENVAT_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CENVAT_LC_AMT</name>
+        <rename>ITED_CENVAT_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_RES_CODE</name>
+        <rename>ITED_RES_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_COST_PERC</name>
+        <rename>ITED_COST_PERC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_EXP_PERC</name>
+        <rename>ITED_EXP_PERC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_EXCISE_YN_NUM</name>
+        <rename>ITED_TED_EXCISE_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_TED_MODVAT_YN</name>
+        <rename>ITED_TED_MODVAT_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_POST_TYPE_NUM</name>
+        <rename>ITED_POST_TYPE_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_PAY_TO_SUPP_YN_NUM</name>
+        <rename>ITED_PAY_TO_SUPP_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_01</name>
+        <rename>ITED_FLEX_01</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_02</name>
+        <rename>ITED_FLEX_02</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_03</name>
+        <rename>ITED_FLEX_03</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_04</name>
+        <rename>ITED_FLEX_04</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_05</name>
+        <rename>ITED_FLEX_05</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_06</name>
+        <rename>ITED_FLEX_06</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_07</name>
+        <rename>ITED_FLEX_07</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_08</name>
+        <rename>ITED_FLEX_08</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_09</name>
+        <rename>ITED_FLEX_09</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_10</name>
+        <rename>ITED_FLEX_10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_11</name>
+        <rename>ITED_FLEX_11</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_12</name>
+        <rename>ITED_FLEX_12</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_13</name>
+        <rename>ITED_FLEX_13</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_14</name>
+        <rename>ITED_FLEX_14</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_15</name>
+        <rename>ITED_FLEX_15</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_16</name>
+        <rename>ITED_FLEX_16</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_17</name>
+        <rename>ITED_FLEX_17</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_18</name>
+        <rename>ITED_FLEX_18</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_19</name>
+        <rename>ITED_FLEX_19</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_FLEX_20</name>
+        <rename>ITED_FLEX_20</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CR_UID</name>
+        <rename>ITED_CR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CR_DT</name>
+        <rename>ITED_CR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UPD_UID</name>
+        <rename>ITED_UPD_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_UPD_DT</name>
+        <rename>ITED_UPD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_BH_SYS_ID</name>
+        <rename>ITED_BH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_BI_SYS_ID</name>
+        <rename>ITED_BI_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_RG23D_UTILIZED_AMT</name>
+        <rename>ITED_RG23D_UTILIZED_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_RG23D_UTILIZED_LC_AMT</name>
+        <rename>ITED_RG23D_UTILIZED_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CR_UTILIZED_AMT</name>
+        <rename>ITED_CR_UTILIZED_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_CR_UTILIZED_LC_AMT</name>
+        <rename>ITED_CR_UTILIZED_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_SERVICE_YN_NUM</name>
+        <rename>ITED_SERVICE_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITED_COLL_FM_SC_YN_NUM</name>
+        <rename>ITED_COLL_FM_SC_YN_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITEM_UOM_ID</name>
+        <rename>ITEM_UOM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>GRADE1_ID</name>
+        <rename>GRADE1_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>GRADE2_ID</name>
+        <rename>GRADE2_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CATEGORY_ID</name>
+        <rename>CATEGORY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>LOCATION_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>COMPANY_ID</name>
+        <rename>COMP_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TRAN_ID</name>
+        <rename>TXN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DEPARTMENT_ID</name>
+        <rename>department_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DOC_SRC_LOCATION_ID</name>
+        <rename>DOC_SRC_LOCN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SUPPLIER_ID</name>
+        <rename>SUPPLIER_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ITEM_ID</name>
+        <rename>ITEM_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>REF_TRAN_ID</name>
+        <rename>REF_TRAN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ARTICLE_ID</name>
+        <rename>ARTICLE_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SHORT_CLO_REASON_ID</name>
+        <rename>SHORT_CLO_REASON_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PACKING_ID</name>
+        <rename>PACKING_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SIZE_ID</name>
+        <rename>SIZE_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CAT_MANG_ID</name>
+        <rename>CAT_MANG_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FOOD_CAT_ID</name>
+        <rename>FOOD_CAT_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_UPD_DT</name>
+        <rename>SYSDATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_FLEX_DT_01</name>
+        <rename>GH_DT</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>479</xloc>
+      <yloc>540</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>LOCATION_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_LOCATION</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GI_LOCN_CODE</name>
+        <field>LOCN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LOCATION_ID</name>
+        <rename>LOCATION_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>619</xloc>
+      <yloc>182</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>PACKING_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_PACKING</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_11</name>
+        <field>PACKING_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>PACKING_ID</name>
+        <rename>PACKING_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>902</xloc>
+      <yloc>444</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>REF_TRAN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TXN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GH_TXN_CODE</name>
+        <field>TXN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TXN_ID</name>
+        <rename>REF_TRAN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>544</xloc>
+      <yloc>335</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SHORT_CLO_REASON_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_REASON</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GI_SHORT_CLO_RES_CODE</name>
+        <field>RES_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>REASON_ID</name>
+        <rename>SHORT_CLO_REASON_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>887</xloc>
+      <yloc>335</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SIZE_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_SIZE</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ITEM_ANLY_CODE_12</name>
+        <field>SIZE_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SIZE_ID</name>
+        <rename>SIZE_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>751</xloc>
+      <yloc>444</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SUPPLIER_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_SUPPLIER</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GH_SUPP_CODE</name>
+        <field>SUPP_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>SUPPLIER_ID</name>
+        <rename>SUPPLIER_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>91</xloc>
+      <yloc>326</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>GH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_TXN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ACNT_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CAL_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CAL_PERIOD</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_AMD_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_AMD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_AMD_USER_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_AMD_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_REF_FROM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_REF_FROM_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_REF_TXN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_REF_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_REF_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DOC_SRC_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SUPP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ADDR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SUPP_DEL_REF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SUPP_INV_REF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SUPP_INV_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_BOE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_COSTING_COMP_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_LC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_LC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_EXGE_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DISC_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_FC_DISC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CHARGE_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CHARGE_AREA_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CHARGE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ANLY_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ANLY_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_FORM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_TERM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_PRINT_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_APPR_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_APPR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_APPR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_TH_TRAN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_TH_DOC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_TH_DOC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ANNOTATION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_ANLY_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CON_ANLY_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_POST_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SUBMIT_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_EXC_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CENVAT_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CR_QTY_UPDATED_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CR_DUTY_UPDATED_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CHALLAN_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CHALLAN_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_EXC_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_EXC_INV_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ED_SUPP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ED_SUPP_ADDR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DOC_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_HOLD_LVL_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_BILL_TO_FOLLOW_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_FORM_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_FORM_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_FORM_DESC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_FORM_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ENTRY_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DEPB_HEAD_ITEM_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_DEPB_CASH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_TRAN_CLASS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_VAT_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SUBCONTRACT_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SC_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SC_DIRECT_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SC_JWC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SC_JWC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CENVAT_SC_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_PULL_MULTIPLE_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_WH_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_RECEIVE_BAY_POSN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_RECEIVE_BAY_POSN_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SHIP_AGENT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SHIP_REF_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_AWB_BILL_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_VOYAGE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CARR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_VESSEL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SHIP_MODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SHIP_LINE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_FROM_PORT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_TO_PORT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ETS_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ETA_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_BILL_LAD_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CONTAINER_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_SEAL_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_CROSS_DOCK_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_ORDER_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GH_HHT_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_GH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_II_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_PI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SOI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_RI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_BI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ITEM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ITEM_STK_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_CHARGE_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_CHARGE_AREA_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_CHARGE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ACTH_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ITEM_LENGTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ITEM_WIDTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ITEM_HEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ITEM_AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_DIMENSION_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_WEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_WEIGHT_UOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_CBM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PROG_CBM_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_LENGTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_WIDTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IP_PACK_HEIGHT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SHIP_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SHIP_QTY_LS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SHIP_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_QTY_LS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SRI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_LTOI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_BI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_DISC_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ITEM_DESC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_FC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_FC_VAL_AFT_H_DISC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_FC_DISC_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_LAND_COST</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_EXP_ALLOC_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_BOE_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_FC_TAX_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ANLY_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ANLY_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_LC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_LC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_REQ_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_HOLD_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_RELEASE_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_REJECT_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_II_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_GRADE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_GRADE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SEQ_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_GR_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_REG_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_RG_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_CHAP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SUBHEAD_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ASSESS_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_ASSESS_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_EXC_INV_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_EXC_INV_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_RELEASE_UTIL_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_REJECT_UTIL_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_WHOI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_DUTY_PAID_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_REF_EXC_INV_EL_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_EL_LOCN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_INSP_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_QTY_SR_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_DUTY_SR_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_WHPI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_STD_BATCH_SIZE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_BARCODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_CRI_QTY_BU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SC_BOM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SC_JWC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SC_JWC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SHORT_CLO_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SHORT_CLO_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SHORT_CLO_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SHORT_CLO_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_FC_ACT_VAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_SUPERCEDE_ORG_ITEM_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GI_74_GN_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>IM_MANF_NAME</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITEM_ANLY_CODE_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_H_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_I_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_PH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_PI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ITED_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_TYPE_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_TYPE_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_HEAD_ITEM_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_INCL_EXCL_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_BASIS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TXN_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_RATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_UOM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TXN_UOM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TXN_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_USER_QTY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SET_OFF_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SET_OFF_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SET_OFF_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TAXABLE_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TAXABLE_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UNROUND_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UNROUND_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UPDATED_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_REMARKS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ADD_TO_COST_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ALLOC_BY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ALLOC_BY_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_NET_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_NET_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UTILIZED_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UTILIZED_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_EXCISE_TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CENVAT_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CENVAT_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CENVAT_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_COST_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_EXP_PERC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_EXCISE_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_TED_MODVAT_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_POST_TYPE_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_PAY_TO_SUPP_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_FLEX_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_BH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_BI_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_RG23D_UTILIZED_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_RG23D_UTILIZED_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CR_UTILIZED_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_CR_UTILIZED_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_SERVICE_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ITED_COLL_FM_SC_YN_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd-MM-yy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>189</xloc>
+      <yloc>50</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Set Variables</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <field_name/>
+        <variable_name>VARFACTNAME</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value>STC_FACT_GR_ITEM_TED</default_value>
+        </field>
+      </fields>
+    <use_formatting>Y</use_formatting>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>119</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TERM_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TERM</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GH_TERM_CODE</name>
+        <field>TERM_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TERM_ID</name>
+        <rename>TERM_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>338</xloc>
+      <yloc>503</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TRAN_ID</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TXN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>GH_TXN_CODE</name>
+        <field>TXN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TXN_ID</name>
+        <rename>TXN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>337</xloc>
+      <yloc>166</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>orion_original</connection>
+    <sql>SELECT
+
+A.GH_SYS_ID ,
+A.GH_COMP_CODE ,
+A.GH_TXN_CODE ,
+A.GH_NO ,
+A.GH_DT ,
+A.GH_ACNT_YEAR ,
+A.GH_CAL_YEAR ,
+A.GH_CAL_PERIOD ,
+A.GH_AMD_NO ,
+A.GH_AMD_DT ,
+A.GH_AMD_USER_ID ,
+A.GH_AMD_RES_CODE ,
+A.GH_REF_FROM ,
+A.GH_REF_FROM_NUM ,
+A.GH_REF_TXN_CODE ,
+A.GH_REF_NO ,
+A.GH_REF_SYS_ID ,
+A.GH_DOC_SRC_LOCN_CODE ,
+A.GH_LOCN_CODE ,
+A.GH_SUPP_CODE ,
+A.GH_ADDR_CODE ,
+A.GH_SUPP_DEL_REF ,
+A.GH_SUPP_INV_REF ,
+A.GH_SUPP_INV_DT ,
+A.GH_BOE_NO ,
+A.GH_COSTING_COMP_YN_NUM ,
+A.GH_LC_NO ,
+A.GH_LC_DT ,
+A.GH_CURR_CODE ,
+A.GH_EXGE_RATE ,
+A.GH_DISC_PERC ,
+A.GH_FC_DISC_VAL ,
+A.GH_CHARGE_AREA ,
+A.GH_CHARGE_AREA_NUM ,
+A.GH_CHARGE_CODE ,
+A.GH_MAIN_ACNT_CODE ,
+A.GH_SUB_ACNT_CODE ,
+A.GH_DIVN_CODE ,
+A.GH_DEPT_CODE ,
+A.GH_ANLY_CODE_1 ,
+A.GH_ANLY_CODE_2 ,
+A.GH_ACTY_VALUE_CODE_1 ,
+A.GH_ACTY_VALUE_CODE_2 ,
+A.GH_ANLY_HEAD_NO_1 ,
+A.GH_ANLY_HEAD_NO_2 ,
+A.GH_FORM_CODE ,
+A.GH_TERM_CODE ,
+A.GH_STATUS ,
+A.GH_PRINT_STATUS ,
+
+CASE A.GH_APPR_STATUS
+WHEN 0 THEN nvl(&apos;SAVED&apos;,0)
+WHEN 1 THEN nvl(&apos;SAVED&apos;,0)
+WHEN 3 THEN nvl(&apos;APPROVED&apos;,0)
+END GH_APPR_STATUS,
+
+A.GH_APPR_UID ,
+A.GH_APPR_DT ,
+A.GH_TH_TRAN_CODE ,
+A.GH_TH_DOC_NO ,
+A.GH_TH_DOC_DT ,
+A.GH_ANNOTATION ,
+A.GH_CON_MAIN_ACNT_CODE ,
+A.GH_CON_SUB_ACNT_CODE ,
+A.GH_CON_DIVN_CODE ,
+A.GH_CON_DEPT_CODE ,
+A.GH_CON_ANLY_CODE_1 ,
+A.GH_CON_ANLY_CODE_2 ,
+A.GH_CON_ACTY_VALUE_CODE_1 ,
+A.GH_CON_ACTY_VALUE_CODE_2 ,
+A.GH_CON_ANLY_HEAD_NO_1 ,
+A.GH_CON_ANLY_HEAD_NO_2 ,
+
+CASE A.GH_POST_STATUS
+WHEN 1 THEN nvl(&apos;POSTED&apos;,0)
+WHEN 0 THEN nvl(&apos;UNPOSTED&apos;,0)
+WHEN NULL THEN nvl(&apos;UNPOSTED&apos;,0)
+END GH_POST_STATUS,
+
+A.GH_SUBMIT_STATUS ,
+A.GH_EXC_YN ,
+A.GH_CENVAT_YN ,
+A.GH_CR_QTY_UPDATED_YN ,
+A.GH_CR_DUTY_UPDATED_YN ,
+A.GH_CT_CODE ,
+A.GH_CHALLAN_NO ,
+A.GH_CHALLAN_DT ,
+A.GH_EXC_INV_NO ,
+A.GH_EXC_INV_DT ,
+A.GH_ED_SUPP_CODE ,
+A.GH_ED_SUPP_ADDR_CODE ,
+A.GH_DOC_TYPE ,
+A.GH_HOLD_LVL_NUM ,
+A.GH_BILL_TO_FOLLOW_YN_NUM ,
+A.GH_FORM_STATUS ,
+A.GH_FORM_NO ,
+A.GH_FORM_DESC ,
+A.GH_FORM_DT ,
+A.GH_CR_UID ,
+A.GH_CR_DT ,
+A.GH_UPD_UID ,
+A.GH_UPD_DT ,
+A.GH_ENTRY_STATUS ,
+A.GH_DEPB_HEAD_ITEM_NUM ,
+A.GH_DEPB_CASH ,
+
+CASE A.GH_TRAN_CLASS
+WHEN 1 THEN nvl(&apos;NORMAL&apos;,0)
+WHEN 2 THEN nvl(&apos;VEHICLE&apos;,0)
+WHEN NULL THEN NULL
+END GH_TRAN_CLASS,
+
+A.GH_VAT_INV_NO ,
+A.GH_SUBCONTRACT_YN ,
+A.GH_SC_LOCN_CODE ,
+A.GH_SC_DIRECT_YN ,
+A.GH_SC_JWC_NO ,
+A.GH_SC_JWC_DT ,
+A.GH_CENVAT_SC_YN ,
+
+CASE A.GH_PULL_MULTIPLE_YN_NUM
+WHEN 1 THEN nvl(&apos;YES&apos;,0)
+WHEN 2 THEN nvl(&apos;NO&apos;,0)
+WHEN NULL THEN NULL
+END GH_PULL_MULTIPLE_YN_NUM,
+
+A.GH_WH_CODE ,
+A.GH_RECEIVE_BAY_POSN_CODE ,
+A.GH_RECEIVE_BAY_POSN_NO ,
+A.GH_SHIP_AGENT ,
+A.GH_SHIP_REF_NO ,
+A.GH_AWB_BILL_NO ,
+A.GH_VOYAGE_NO ,
+A.GH_CARR_CODE ,
+A.GH_VESSEL_CODE ,
+A.GH_SHIP_MODE ,
+A.GH_SHIP_LINE ,
+A.GH_FROM_PORT ,
+A.GH_TO_PORT ,
+A.GH_ETS_DT ,
+A.GH_ETA_DT ,
+A.GH_BILL_LAD_NO ,
+A.GH_CONTAINER_NO ,
+A.GH_SEAL_NO ,
+A.GH_CROSS_DOCK_YN_NUM ,
+A.GH_ORDER_TYPE ,
+A.GH_HHT_YN_NUM ,
+B.GI_SYS_ID ,
+B.GI_GH_SYS_ID ,
+B.GI_II_SYS_ID ,
+B.GI_SI_SYS_ID ,
+B.GI_PI_SYS_ID ,
+B.GI_SOI_SYS_ID ,
+B.GI_RI_SYS_ID ,
+B.GI_BI_SYS_ID ,
+B.GI_LOCN_CODE ,
+B.GI_ITEM_CODE ,
+
+CASE B.GI_ITEM_STK_YN_NUM
+WHEN 1 THEN nvl(&apos;STOCK&apos;,0)
+WHEN 2 THEN nvl(&apos;NON STOCK&apos;,0)
+END GI_ITEM_STK_YN_NUM,
+
+B.GI_UOM_CODE ,
+B.GI_CHARGE_AREA ,
+B.GI_CHARGE_AREA_NUM ,
+B.GI_CHARGE_CODE ,
+B.GI_ACTH_CODE ,
+B.GI_ITEM_LENGTH ,
+B.GI_ITEM_WIDTH ,
+B.GI_ITEM_HEIGHT ,
+B.GI_ITEM_AREA ,
+E.IP_DIMENSION_UOM_CODE ,
+E.IP_PACK_WEIGHT ,
+E.IP_WEIGHT_UOM_CODE ,
+(E.IP_PACK_LENGTH * E.IP_PACK_WIDTH * E.IP_PACK_HEIGHT)&#47;1000000 AS prog_cbm ,
+(E.IP_PACK_LENGTH * E.IP_PACK_WIDTH * E.IP_PACK_HEIGHT * E.IP_MAX_QTY_BU)&#47;1000000 AS prog_cbm_BU ,
+E.IP_PACK_LENGTH ,
+E.IP_PACK_WIDTH ,
+E.IP_PACK_HEIGHT,
+B.GI_SHIP_QTY ,
+B.GI_SHIP_QTY_LS ,
+B.GI_SHIP_QTY_BU ,
+B.GI_QTY ,
+B.GI_QTY_LS ,
+B.GI_QTY_BU ,
+B.GI_SRI_QTY_BU ,
+B.GI_LTOI_QTY_BU ,
+B.GI_BI_QTY_BU ,
+B.GI_RATE ,
+B.GI_DISC_PERC ,
+B.GI_ITEM_DESC ,
+B.GI_FC_VAL ,
+B.GI_FC_VAL_AFT_H_DISC ,
+B.GI_FC_DISC_VAL ,
+B.GI_LAND_COST ,
+B.GI_EXP_ALLOC_YN_NUM ,
+B.GI_BOE_NO ,
+B.GI_RES_CODE ,
+B.GI_FC_TAX_AMT ,
+B.GI_COMP_CODE ,
+B.GI_MAIN_ACNT_CODE ,
+B.GI_SUB_ACNT_CODE ,
+B.GI_DIVN_CODE ,
+B.GI_DEPT_CODE ,
+B.GI_ANLY_CODE_1 ,
+B.GI_ANLY_CODE_2 ,
+B.GI_ACTY_VALUE_CODE_1 ,
+B.GI_ACTY_VALUE_CODE_2 ,
+B.GI_ANLY_HEAD_NO_1 ,
+B.GI_ANLY_HEAD_NO_2 ,
+B.GI_LC_NO ,
+B.GI_LC_DT ,
+B.GI_REQ_FLAG ,
+B.GI_HOLD_QTY_BU ,
+B.GI_RELEASE_QTY_BU ,
+B.GI_REJECT_QTY_BU ,
+B.GI_II_QTY_BU ,
+B.GI_GRADE_CODE_1 ,
+B.GI_GRADE_CODE_2 ,
+B.GI_SEQ_NO ,
+B.GI_GR_SYS_ID ,
+B.GI_REG_TYPE ,
+B.GI_RG_CODE ,
+B.GI_CHAP_CODE ,
+B.GI_SUBHEAD_CODE ,
+B.GI_ASSESS_RATE ,
+B.GI_ASSESS_VAL ,
+B.GI_EXC_INV_NO ,
+B.GI_EXC_INV_DT ,
+B.GI_RELEASE_UTIL_QTY_BU ,
+B.GI_REJECT_UTIL_QTY_BU ,
+B.GI_WHOI_QTY_BU ,
+B.GI_DUTY_PAID_YN ,
+B.GI_REF_EXC_INV_EL_CODE ,
+B.GI_EL_LOCN_CODE ,
+B.GI_INSP_SYS_ID ,
+B.GI_QTY_SR_NO ,
+B.GI_DUTY_SR_NO ,
+B.GI_WHPI_QTY_BU ,
+B.GI_STD_BATCH_SIZE ,
+B.GI_BARCODE ,
+B.GI_CR_DT ,
+B.GI_CR_UID ,
+B.GI_UPD_UID ,
+B.GI_UPD_DT ,
+B.GI_CRI_QTY_BU ,
+B.GI_SC_BOM_CODE ,
+B.GI_SC_JWC_NO ,
+B.GI_SC_JWC_DT ,
+B.GI_SHORT_CLO_STATUS ,
+B.GI_SHORT_CLO_UID ,
+B.GI_SHORT_CLO_DT ,
+B.GI_SHORT_CLO_RES_CODE ,
+B.GI_FC_ACT_VAL ,
+B.GI_SUPERCEDE_ORG_ITEM_CODE ,
+B.GI_74_GN_SYS_ID ,
+D.IM_MANF_NAME,
+C.ITEM_ANLY_CODE_01,
+LTRIM(RTRIM(C.ITEM_ANLY_CODE_02)) as ITEM_ANLY_CODE_02,
+C.ITEM_ANLY_CODE_03,
+C.ITEM_ANLY_CODE_04,
+C.ITEM_ANLY_CODE_05,
+LTRIM(RTRIM(C.ITEM_ANLY_CODE_06)) as ITEM_ANLY_CODE_06,
+LTRIM(RTRIM(C.ITEM_ANLY_CODE_07)) as ITEM_ANLY_CODE_07,
+C.ITEM_ANLY_CODE_08,
+C.ITEM_ANLY_CODE_09,
+C.ITEM_ANLY_CODE_10,
+C.ITEM_ANLY_CODE_11,
+C.ITEM_ANLY_CODE_12,
+C.ITEM_ANLY_CODE_13,
+C.ITEM_ANLY_CODE_14,
+C.ITEM_ANLY_CODE_15,
+C.ITEM_ANLY_CODE_16,
+C.ITEM_ANLY_CODE_17,
+sysdate,
+
+
+  z.ited_SYS_ID                         ,
+  z.ited_H_SYS_ID               ,
+  z.ited_I_SYS_ID               ,
+  z.ited_PH_SYS_ID              ,
+  z.ited_PI_SYS_ID              ,
+  z.ited_ited_SYS_ID            ,
+  z.ited_TED_CODE                ,
+  z.ited_TED_TYPE_CODE          ,
+  z.ited_TED_TYPE_NUM           ,
+  z.ited_TED_HEAD_ITEM_NUM      ,
+  z.ited_TED_INCL_EXCL_FLAG     ,
+  z.ited_TED_BASIS              ,
+  z.ited_TED_CURR_CODE          ,
+  z.ited_TXN_CURR_CODE          ,
+  z.ited_TED_RATE               ,
+  z.ited_TED_UOM                ,
+  z.ited_TXN_UOM                ,
+  z.ited_TXN_QTY                ,
+  z.ited_USER_QTY               ,
+  z.ited_SET_OFF_PERC           ,
+  z.ited_SET_OFF_FC_AMT         ,
+  z.ited_SET_OFF_LC_AMT         ,
+  z.ited_TAXABLE_FC_AMT         ,
+  z.ited_TAXABLE_LC_AMT         ,
+  z.ited_UNROUND_FC_AMT         ,
+  z.ited_UNROUND_LC_AMT         ,
+  z.ited_FC_AMT                 ,
+  z.ited_LC_AMT                 ,
+  z.ited_UPDATED_YN_NUM         ,
+  z.ited_REMARKS              ,
+  z.ited_ADD_TO_COST_YN         ,
+  z.ited_ALLOC_BY               ,
+  z.ited_ALLOC_BY_NUM           ,
+  z.ited_NET_FC_AMT             ,
+  z.ited_NET_LC_AMT             ,
+  z.ited_UTILIZED_AMT           ,
+  z.ited_UTILIZED_LC_AMT        ,
+  z.ited_MAIN_ACNT_CODE         ,
+  z.ited_SUB_ACNT_CODE          ,
+  z.ited_DIVN_CODE              ,
+  z.ited_DEPT_CODE              ,
+  z.ited_ANLY_HEAD_NO_1         ,
+  z.ited_ANLY_HEAD_NO_2         ,
+  z.ited_ANLY_CODE_1            ,
+  z.ited_ANLY_CODE_2            ,
+  z.ited_ACTY_VALUE_CODE_1      ,
+  z.ited_ACTY_VALUE_CODE_2      ,
+  z.ited_EXCISE_TYPE            ,
+  z.ited_CENVAT_PERC            ,
+  z.ited_CENVAT_FC_AMT          ,
+  z.ited_CENVAT_LC_AMT          ,
+  z.ited_RES_CODE               ,
+  z.ited_COST_PERC              ,
+  z.ited_EXP_PERC               ,
+  z.ited_TED_EXCISE_YN_NUM                 ,
+  z.ited_TED_MODVAT_YN           ,
+  z.ited_POST_TYPE_NUM          ,
+  z.ited_PAY_TO_SUPP_YN_NUM     ,
+  z.ited_FLEX_01                ,
+  z.ited_FLEX_02                ,
+  z.ited_FLEX_03                ,
+  z.ited_FLEX_04                ,
+  z.ited_FLEX_05                ,
+  z.ited_FLEX_06                ,
+  z.ited_FLEX_07                ,
+  z.ited_FLEX_08                ,
+  z.ited_FLEX_09                ,
+  z.ited_FLEX_10                ,
+  z.ited_FLEX_11                ,
+  z.ited_FLEX_12                ,
+  z.ited_FLEX_13                ,
+  z.ited_FLEX_14                ,
+  z.ited_FLEX_15                ,
+  z.ited_FLEX_16                ,
+  z.ited_FLEX_17                ,
+  z.ited_FLEX_18                ,
+  z.ited_FLEX_19                ,
+  z.ited_FLEX_20                ,
+  z.ited_CR_UID                  ,
+  z.ited_CR_DT                                ,
+  z.ited_UPD_UID                ,
+  z.ited_UPD_DT                 ,
+  z.ited_BH_SYS_ID              ,
+  z.ited_BI_SYS_ID              ,
+  z.ited_RG23D_UTILIZED_AMT     ,
+  z.ited_RG23D_UTILIZED_LC_AMT  ,
+  z.ited_CR_UTILIZED_AMT        ,
+  z.ITED_CR_UTILIZED_LC_AMT     ,
+  z.ited_SERVICE_YN_NUM                 ,
+  z.ited_COLL_FM_SC_YN_NUM      
+
+FROM
+
+OT_GR_ITEM_TED Z 
+left outer join OT_gr_ITEM B
+ON(Z.ITED_I_SYS_ID = B.GI_GH_SYS_ID)
+
+left outer join OT_gr_HEAD A
+ON( Z.ITED_H_SYS_ID = A.GH_SYS_ID)
+
+left outer join OM_ITEM c
+ON ( B.GI_ITEM_CODE = C.ITEM_CODE)
+
+left outer join OM_ITEM_PACK E
+on (B.GI_ITEM_CODE= E.IP_ITEM_CODE and B.GI_UOM_CODE = E.IP_PACK_UOM_CODE)
+
+left outer join OM_ITEM_MANF D  
+on (B.GI_ITEM_CODE= D.IM_ITEM_CODE AND B.GI_UOM_CODE = D.IM_MANF_PART_NO)
+
+
+WHERE 
+--A.GH_SYS_ID=B.GI_GH_SYS_ID AND
+--B.GI_ITEM_CODE = C.ITEM_CODE AND
+--(Z.ITED_CR_DT &gt;= TO_DATE(&apos;${MAXETLDATE_GR_TED}&apos;,&apos;DD-MM-YYYY&apos;) AND
+--TO_DATE(Z.ITED_CR_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+--OR 
+--Z.ITED_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_GR_TED}&apos;,&apos;DD-MM-YYYY&apos;) AND 
+--TO_DATE(Z.ITED_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+--OR
+--B.GI_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_GR}&apos;,&apos;DD-MM-YYYY&apos;)  AND
+--TO_DATE(B.GI_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+to_date(A.GH_CR_DT,&apos;DD-MM-YYYY&apos;)&gt;=TO_DATE(&apos;1-JAN-09&apos;,&apos;DD-MM-YYYY&apos;) and
+to_date(A.GH_CR_DT,&apos;DD-MM-YYYY&apos;)&lt;=TO_DATE(&apos;03-AUG-13&apos;,&apos;DD-MM-YYYY&apos;) 
+--ORDER BY 1
+--and rownum&lt;=100</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>66</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <schema/>
+    <table>STC_FACT_GR</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>DEPARTMENT_ID</column_name>
+          <stream_name>department_ID</stream_name>
+        </field>
+        <field>
+          <column_name>COMPANY_ID</column_name>
+          <stream_name>COMP_ID</stream_name>
+        </field>
+        <field>
+          <column_name>PROG_CR_DT</column_name>
+          <stream_name>SYSDATE</stream_name>
+        </field>
+        <field>
+          <column_name>IP_PACK_WEIGHT</column_name>
+          <stream_name>IP_PACK_WEIGHT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ITEM_AREA</column_name>
+          <stream_name>GI_ITEM_AREA</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ITEM_HEIGHT</column_name>
+          <stream_name>IP_PACK_HEIGHT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ITEM_WIDTH</column_name>
+          <stream_name>IP_PACK_WIDTH</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ITEM_LENGTH</column_name>
+          <stream_name>IP_PACK_LENGTH</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SHORT_CLO_UID</column_name>
+          <stream_name>GI_SHORT_CLO_UID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SHORT_CLO_DT</column_name>
+          <stream_name>GI_SHORT_CLO_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SHORT_CLO_STATUS</column_name>
+          <stream_name>GI_SHORT_CLO_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SHORT_CLO_RES_CODE</column_name>
+          <stream_name>GI_SHORT_CLO_RES_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SHIP_QTY</column_name>
+          <stream_name>GI_SHIP_QTY</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SHIP_QTY_LS</column_name>
+          <stream_name>GI_SHIP_QTY_LS</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SUPERCEDE_ORG_ITEM_CODE</column_name>
+          <stream_name>GI_SUPERCEDE_ORG_ITEM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SHIP_QTY_BU</column_name>
+          <stream_name>GI_SHIP_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>IP_WEIGHT_UOM_CODE</column_name>
+          <stream_name>IP_WEIGHT_UOM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>IP_DIMENSION_UOM_CODE</column_name>
+          <stream_name>IP_DIMENSION_UOM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>DOC_SRC_LOCATION_ID</column_name>
+          <stream_name>DOC_SRC_LOCN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>IM_MANF_NAME</column_name>
+          <stream_name>IM_MANF_NAME</stream_name>
+        </field>
+        <field>
+          <column_name>GI_74_GN_SYS_ID</column_name>
+          <stream_name>GI_74_GN_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_FC_ACT_VAL</column_name>
+          <stream_name>GI_FC_ACT_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SC_JWC_DT</column_name>
+          <stream_name>GI_SC_JWC_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SC_JWC_NO</column_name>
+          <stream_name>GI_SC_JWC_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SC_BOM_CODE</column_name>
+          <stream_name>GI_SC_BOM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_CRI_QTY_BU</column_name>
+          <stream_name>GI_CRI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_UPD_DT</column_name>
+          <stream_name>GI_UPD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_UPD_UID</column_name>
+          <stream_name>GI_UPD_UID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_CR_UID</column_name>
+          <stream_name>GI_CR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_CR_DT</column_name>
+          <stream_name>GI_CR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_BARCODE</column_name>
+          <stream_name>GI_BARCODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_STD_BATCH_SIZE</column_name>
+          <stream_name>GI_STD_BATCH_SIZE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_WHPI_QTY_BU</column_name>
+          <stream_name>GI_WHPI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_DUTY_SR_NO</column_name>
+          <stream_name>GI_DUTY_SR_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GI_QTY_SR_NO</column_name>
+          <stream_name>GI_QTY_SR_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GI_INSP_SYS_ID</column_name>
+          <stream_name>GI_INSP_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_EL_LOCN_CODE</column_name>
+          <stream_name>GI_EL_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_REF_EXC_INV_EL_CODE</column_name>
+          <stream_name>GI_REF_EXC_INV_EL_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_DUTY_PAID_YN</column_name>
+          <stream_name>GI_DUTY_PAID_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GI_WHOI_QTY_BU</column_name>
+          <stream_name>GI_WHOI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_REJECT_UTIL_QTY_BU</column_name>
+          <stream_name>GI_REJECT_UTIL_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_RELEASE_UTIL_QTY_BU</column_name>
+          <stream_name>GI_RELEASE_UTIL_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_EXC_INV_DT</column_name>
+          <stream_name>GI_EXC_INV_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_EXC_INV_NO</column_name>
+          <stream_name>GI_EXC_INV_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ASSESS_VAL</column_name>
+          <stream_name>GI_ASSESS_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ASSESS_RATE</column_name>
+          <stream_name>GI_ASSESS_RATE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SUBHEAD_CODE</column_name>
+          <stream_name>GI_SUBHEAD_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_CHAP_CODE</column_name>
+          <stream_name>GI_CHAP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_RG_CODE</column_name>
+          <stream_name>GI_RG_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_REG_TYPE</column_name>
+          <stream_name>GI_REG_TYPE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_GR_SYS_ID</column_name>
+          <stream_name>GI_GR_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SEQ_NO</column_name>
+          <stream_name>GI_SEQ_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GI_GRADE_CODE_2</column_name>
+          <stream_name>GI_GRADE_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>GI_GRADE_CODE_1</column_name>
+          <stream_name>GI_GRADE_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>GI_II_QTY_BU</column_name>
+          <stream_name>GI_II_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_REJECT_QTY_BU</column_name>
+          <stream_name>GI_REJECT_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_RELEASE_QTY_BU</column_name>
+          <stream_name>GI_RELEASE_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_HOLD_QTY_BU</column_name>
+          <stream_name>GI_HOLD_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_REQ_FLAG</column_name>
+          <stream_name>GI_REQ_FLAG</stream_name>
+        </field>
+        <field>
+          <column_name>GI_LC_DT</column_name>
+          <stream_name>GI_LC_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_LC_NO</column_name>
+          <stream_name>GI_LC_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ANLY_HEAD_NO_2</column_name>
+          <stream_name>GI_ANLY_HEAD_NO_2</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ANLY_HEAD_NO_1</column_name>
+          <stream_name>GI_ANLY_HEAD_NO_1</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ACTY_VALUE_CODE_2</column_name>
+          <stream_name>GI_ACTY_VALUE_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ACTY_VALUE_CODE_1</column_name>
+          <stream_name>GI_ACTY_VALUE_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ANLY_CODE_2</column_name>
+          <stream_name>GI_ANLY_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ANLY_CODE_1</column_name>
+          <stream_name>GI_ANLY_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>GI_DEPT_CODE</column_name>
+          <stream_name>GI_DEPT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_DIVN_CODE</column_name>
+          <stream_name>GI_DIVN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SUB_ACNT_CODE</column_name>
+          <stream_name>GI_SUB_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_MAIN_ACNT_CODE</column_name>
+          <stream_name>GI_MAIN_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_COMP_CODE</column_name>
+          <stream_name>GI_COMP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_FC_TAX_AMT</column_name>
+          <stream_name>GI_FC_TAX_AMT</stream_name>
+        </field>
+        <field>
+          <column_name>GI_RES_CODE</column_name>
+          <stream_name>GI_RES_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_BOE_NO</column_name>
+          <stream_name>GI_BOE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GI_EXP_ALLOC_YN_NUM</column_name>
+          <stream_name>GI_EXP_ALLOC_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GI_LAND_COST</column_name>
+          <stream_name>GI_LAND_COST</stream_name>
+        </field>
+        <field>
+          <column_name>GI_FC_DISC_VAL</column_name>
+          <stream_name>GI_FC_DISC_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>GI_FC_VAL_AFT_H_DISC</column_name>
+          <stream_name>GI_FC_VAL_AFT_H_DISC</stream_name>
+        </field>
+        <field>
+          <column_name>GI_FC_VAL</column_name>
+          <stream_name>GI_FC_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ITEM_DESC</column_name>
+          <stream_name>GI_ITEM_DESC</stream_name>
+        </field>
+        <field>
+          <column_name>GI_DISC_PERC</column_name>
+          <stream_name>GI_DISC_PERC</stream_name>
+        </field>
+        <field>
+          <column_name>GI_RATE</column_name>
+          <stream_name>GI_RATE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_BI_QTY_BU</column_name>
+          <stream_name>GI_BI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_LTOI_QTY_BU</column_name>
+          <stream_name>GI_LTOI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SRI_QTY_BU</column_name>
+          <stream_name>GI_SRI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_QTY_BU</column_name>
+          <stream_name>GI_QTY_BU</stream_name>
+        </field>
+        <field>
+          <column_name>GI_QTY_LS</column_name>
+          <stream_name>GI_QTY_LS</stream_name>
+        </field>
+        <field>
+          <column_name>GI_QTY</column_name>
+          <stream_name>GI_QTY</stream_name>
+        </field>
+        <field>
+          <column_name>PROG_CBM_BU</column_name>
+          <stream_name>PROG_CBM_BU</stream_name>
+        </field>
+        <field>
+          <column_name>PROG_CBM</column_name>
+          <stream_name>PROG_CBM</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ACTH_CODE</column_name>
+          <stream_name>GI_ACTH_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_CHARGE_CODE</column_name>
+          <stream_name>GI_CHARGE_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_CHARGE_AREA_NUM</column_name>
+          <stream_name>GI_CHARGE_AREA_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GI_CHARGE_AREA</column_name>
+          <stream_name>GI_CHARGE_AREA</stream_name>
+        </field>
+        <field>
+          <column_name>GI_UOM_CODE</column_name>
+          <stream_name>GI_UOM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ITEM_STK_YN_NUM</column_name>
+          <stream_name>GI_ITEM_STK_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GI_ITEM_CODE</column_name>
+          <stream_name>GI_ITEM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_LOCN_CODE</column_name>
+          <stream_name>GI_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GI_BI_SYS_ID</column_name>
+          <stream_name>GI_BI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_RI_SYS_ID</column_name>
+          <stream_name>GI_RI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SOI_SYS_ID</column_name>
+          <stream_name>GI_SOI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_PI_SYS_ID</column_name>
+          <stream_name>GI_PI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SI_SYS_ID</column_name>
+          <stream_name>GI_SI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_II_SYS_ID</column_name>
+          <stream_name>GI_II_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_GH_SYS_ID</column_name>
+          <stream_name>GI_GH_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GI_SYS_ID</column_name>
+          <stream_name>GI_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GH_HHT_YN_NUM</column_name>
+          <stream_name>GH_HHT_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ORDER_TYPE</column_name>
+          <stream_name>GH_ORDER_TYPE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CROSS_DOCK_YN_NUM</column_name>
+          <stream_name>GH_CROSS_DOCK_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SEAL_NO</column_name>
+          <stream_name>GH_SEAL_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CONTAINER_NO</column_name>
+          <stream_name>GH_CONTAINER_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_BILL_LAD_NO</column_name>
+          <stream_name>GH_BILL_LAD_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ETA_DT</column_name>
+          <stream_name>GH_ETA_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ETS_DT</column_name>
+          <stream_name>GH_ETS_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_TO_PORT</column_name>
+          <stream_name>GH_TO_PORT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_FROM_PORT</column_name>
+          <stream_name>GH_FROM_PORT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SHIP_LINE</column_name>
+          <stream_name>GH_SHIP_LINE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SHIP_MODE</column_name>
+          <stream_name>GH_SHIP_MODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_VESSEL_CODE</column_name>
+          <stream_name>GH_VESSEL_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CARR_CODE</column_name>
+          <stream_name>GH_CARR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_VOYAGE_NO</column_name>
+          <stream_name>GH_VOYAGE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_AWB_BILL_NO</column_name>
+          <stream_name>GH_AWB_BILL_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SHIP_REF_NO</column_name>
+          <stream_name>GH_SHIP_REF_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SHIP_AGENT</column_name>
+          <stream_name>GH_SHIP_AGENT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_RECEIVE_BAY_POSN_NO</column_name>
+          <stream_name>GH_RECEIVE_BAY_POSN_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_RECEIVE_BAY_POSN_CODE</column_name>
+          <stream_name>GH_RECEIVE_BAY_POSN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_WH_CODE</column_name>
+          <stream_name>GH_WH_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_PULL_MULTIPLE_YN_NUM</column_name>
+          <stream_name>GH_PULL_MULTIPLE_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CENVAT_SC_YN</column_name>
+          <stream_name>GH_CENVAT_SC_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SC_JWC_DT</column_name>
+          <stream_name>GH_SC_JWC_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SC_JWC_NO</column_name>
+          <stream_name>GH_SC_JWC_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SC_DIRECT_YN</column_name>
+          <stream_name>GH_SC_DIRECT_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SC_LOCN_CODE</column_name>
+          <stream_name>GH_SC_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SUBCONTRACT_YN</column_name>
+          <stream_name>GH_SUBCONTRACT_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GH_VAT_INV_NO</column_name>
+          <stream_name>GH_VAT_INV_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_TRAN_CLASS</column_name>
+          <stream_name>GH_TRAN_CLASS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DEPB_CASH</column_name>
+          <stream_name>GH_DEPB_CASH</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DEPB_HEAD_ITEM_NUM</column_name>
+          <stream_name>GH_DEPB_HEAD_ITEM_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ENTRY_STATUS</column_name>
+          <stream_name>GH_ENTRY_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_UPD_DT</column_name>
+          <stream_name>GH_UPD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_UPD_UID</column_name>
+          <stream_name>GH_UPD_UID</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CR_DT</column_name>
+          <stream_name>GH_CR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CR_UID</column_name>
+          <stream_name>GH_CR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>GH_FORM_DT</column_name>
+          <stream_name>GH_FORM_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_FORM_DESC</column_name>
+          <stream_name>GH_FORM_DESC</stream_name>
+        </field>
+        <field>
+          <column_name>GH_FORM_NO</column_name>
+          <stream_name>GH_FORM_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_FORM_STATUS</column_name>
+          <stream_name>GH_FORM_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_BILL_TO_FOLLOW_YN_NUM</column_name>
+          <stream_name>GH_BILL_TO_FOLLOW_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_HOLD_LVL_NUM</column_name>
+          <stream_name>GH_HOLD_LVL_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DOC_TYPE</column_name>
+          <stream_name>GH_DOC_TYPE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ED_SUPP_ADDR_CODE</column_name>
+          <stream_name>GH_ED_SUPP_ADDR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ED_SUPP_CODE</column_name>
+          <stream_name>GH_ED_SUPP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_EXC_INV_DT</column_name>
+          <stream_name>GH_EXC_INV_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_EXC_INV_NO</column_name>
+          <stream_name>GH_EXC_INV_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CHALLAN_DT</column_name>
+          <stream_name>GH_CHALLAN_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CHALLAN_NO</column_name>
+          <stream_name>GH_CHALLAN_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CT_CODE</column_name>
+          <stream_name>GH_CT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CR_DUTY_UPDATED_YN</column_name>
+          <stream_name>GH_CR_DUTY_UPDATED_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CR_QTY_UPDATED_YN</column_name>
+          <stream_name>GH_CR_QTY_UPDATED_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CENVAT_YN</column_name>
+          <stream_name>GH_CENVAT_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GH_EXC_YN</column_name>
+          <stream_name>GH_EXC_YN</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SUBMIT_STATUS</column_name>
+          <stream_name>GH_SUBMIT_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_POST_STATUS</column_name>
+          <stream_name>GH_POST_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_ANLY_HEAD_NO_2</column_name>
+          <stream_name>GH_CON_ANLY_HEAD_NO_2</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_ANLY_HEAD_NO_1</column_name>
+          <stream_name>GH_CON_ANLY_HEAD_NO_1</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_ACTY_VALUE_CODE_2</column_name>
+          <stream_name>GH_CON_ACTY_VALUE_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_ACTY_VALUE_CODE_1</column_name>
+          <stream_name>GH_CON_ACTY_VALUE_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_ANLY_CODE_2</column_name>
+          <stream_name>GH_CON_ANLY_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_ANLY_CODE_1</column_name>
+          <stream_name>GH_CON_ANLY_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_DEPT_CODE</column_name>
+          <stream_name>GH_CON_DEPT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_DIVN_CODE</column_name>
+          <stream_name>GH_CON_DIVN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_SUB_ACNT_CODE</column_name>
+          <stream_name>GH_CON_SUB_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CON_MAIN_ACNT_CODE</column_name>
+          <stream_name>GH_CON_MAIN_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ANNOTATION</column_name>
+          <stream_name>GH_ANNOTATION</stream_name>
+        </field>
+        <field>
+          <column_name>GH_TH_DOC_DT</column_name>
+          <stream_name>GH_TH_DOC_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_TH_DOC_NO</column_name>
+          <stream_name>GH_TH_DOC_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_TH_TRAN_CODE</column_name>
+          <stream_name>GH_TH_TRAN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_APPR_DT</column_name>
+          <stream_name>GH_APPR_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_APPR_UID</column_name>
+          <stream_name>GH_APPR_UID</stream_name>
+        </field>
+        <field>
+          <column_name>GH_APPR_STATUS</column_name>
+          <stream_name>GH_APPR_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_PRINT_STATUS</column_name>
+          <stream_name>GH_PRINT_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_STATUS</column_name>
+          <stream_name>GH_STATUS</stream_name>
+        </field>
+        <field>
+          <column_name>GH_TERM_CODE</column_name>
+          <stream_name>GH_TERM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_FORM_CODE</column_name>
+          <stream_name>GH_FORM_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ANLY_HEAD_NO_2</column_name>
+          <stream_name>GH_ANLY_HEAD_NO_2</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ANLY_HEAD_NO_1</column_name>
+          <stream_name>GH_ANLY_HEAD_NO_1</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ACTY_VALUE_CODE_2</column_name>
+          <stream_name>GH_ACTY_VALUE_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ACTY_VALUE_CODE_1</column_name>
+          <stream_name>GH_ACTY_VALUE_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ANLY_CODE_2</column_name>
+          <stream_name>GH_ANLY_CODE_2</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ANLY_CODE_1</column_name>
+          <stream_name>GH_ANLY_CODE_1</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DEPT_CODE</column_name>
+          <stream_name>GH_DEPT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DIVN_CODE</column_name>
+          <stream_name>GH_DIVN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SUB_ACNT_CODE</column_name>
+          <stream_name>GH_SUB_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_MAIN_ACNT_CODE</column_name>
+          <stream_name>GH_MAIN_ACNT_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CHARGE_CODE</column_name>
+          <stream_name>GH_CHARGE_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CHARGE_AREA_NUM</column_name>
+          <stream_name>GH_CHARGE_AREA_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CHARGE_AREA</column_name>
+          <stream_name>GH_CHARGE_AREA</stream_name>
+        </field>
+        <field>
+          <column_name>GH_FC_DISC_VAL</column_name>
+          <stream_name>GH_FC_DISC_VAL</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DISC_PERC</column_name>
+          <stream_name>GH_DISC_PERC</stream_name>
+        </field>
+        <field>
+          <column_name>GH_EXGE_RATE</column_name>
+          <stream_name>GH_EXGE_RATE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CURR_CODE</column_name>
+          <stream_name>GH_CURR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_LC_DT</column_name>
+          <stream_name>GH_LC_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_LC_NO</column_name>
+          <stream_name>GH_LC_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_COSTING_COMP_YN_NUM</column_name>
+          <stream_name>GH_COSTING_COMP_YN_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_BOE_NO</column_name>
+          <stream_name>GH_BOE_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SUPP_INV_DT</column_name>
+          <stream_name>GH_SUPP_INV_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SUPP_INV_REF</column_name>
+          <stream_name>GH_SUPP_INV_REF</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SUPP_DEL_REF</column_name>
+          <stream_name>GH_SUPP_DEL_REF</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ADDR_CODE</column_name>
+          <stream_name>GH_ADDR_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SUPP_CODE</column_name>
+          <stream_name>GH_SUPP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_LOCN_CODE</column_name>
+          <stream_name>GH_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DOC_SRC_LOCN_CODE</column_name>
+          <stream_name>GH_DOC_SRC_LOCN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_REF_SYS_ID</column_name>
+          <stream_name>GH_REF_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GH_REF_NO</column_name>
+          <stream_name>GH_REF_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_REF_TXN_CODE</column_name>
+          <stream_name>GH_REF_TXN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_REF_FROM_NUM</column_name>
+          <stream_name>GH_REF_FROM_NUM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_REF_FROM</column_name>
+          <stream_name>GH_REF_FROM</stream_name>
+        </field>
+        <field>
+          <column_name>GH_AMD_RES_CODE</column_name>
+          <stream_name>GH_AMD_RES_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_AMD_USER_ID</column_name>
+          <stream_name>GH_AMD_USER_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GH_AMD_DT</column_name>
+          <stream_name>GH_AMD_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_AMD_NO</column_name>
+          <stream_name>GH_AMD_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CAL_PERIOD</column_name>
+          <stream_name>GH_CAL_PERIOD</stream_name>
+        </field>
+        <field>
+          <column_name>GH_CAL_YEAR</column_name>
+          <stream_name>GH_CAL_YEAR</stream_name>
+        </field>
+        <field>
+          <column_name>GH_ACNT_YEAR</column_name>
+          <stream_name>GH_ACNT_YEAR</stream_name>
+        </field>
+        <field>
+          <column_name>GH_DT</column_name>
+          <stream_name>GH_DT</stream_name>
+        </field>
+        <field>
+          <column_name>GH_NO</column_name>
+          <stream_name>GH_NO</stream_name>
+        </field>
+        <field>
+          <column_name>GH_TXN_CODE</column_name>
+          <stream_name>GH_TXN_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_COMP_CODE</column_name>
+          <stream_name>GH_COMP_CODE</stream_name>
+        </field>
+        <field>
+          <column_name>GH_SYS_ID</column_name>
+          <stream_name>GH_SYS_ID</stream_name>
+        </field>
+        <field>
+          <column_name>COUNTRY_ORIGIN_ID</column_name>
+          <stream_name>COUNTRY_ORIGIN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SHORT_CLO_REASON_ID</column_name>
+          <stream_name>SHORT_CLO_REASON_ID</stream_name>
+        </field>
+        <field>
+          <column_name>CAT_MANG_ID</column_name>
+          <stream_name>CAT_MANG_ID</stream_name>
+        </field>
+        <field>
+          <column_name>CURRENCY_ID</column_name>
+          <stream_name>CURRENCY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>FOOD_CAT_ID</column_name>
+          <stream_name>FOOD_CAT_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SIZE_ID</column_name>
+          <stream_name>SIZE_ID</stream_name>
+        </field>
+        <field>
+          <column_name>PACKING_ID</column_name>
+          <stream_name>PACKING_ID</stream_name>
+        </field>
+        <field>
+          <column_name>REF_TRAN_ID</column_name>
+          <stream_name>REF_TRAN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>ARTICLE_ID</column_name>
+          <stream_name>ARTICLE_ID</stream_name>
+        </field>
+        <field>
+          <column_name>ITEM_ID</column_name>
+          <stream_name>ITEM_ID</stream_name>
+        </field>
+        <field>
+          <column_name>SUPPLIER_ID</column_name>
+          <stream_name>SUPPLIER_ID</stream_name>
+        </field>
+        <field>
+          <column_name>TRAN_ID</column_name>
+          <stream_name>TXN_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GRP_COMP_ID</column_name>
+          <stream_name>GRP_COMP_ID</stream_name>
+        </field>
+        <field>
+          <column_name>CATEGORY_ID</column_name>
+          <stream_name>CATEGORY_ID</stream_name>
+        </field>
+        <field>
+          <column_name>BRAND_ID</column_name>
+          <stream_name>BRAND_ID</stream_name>
+        </field>
+        <field>
+          <column_name>LOCATION_ID</column_name>
+          <stream_name>LOCATION_ID</stream_name>
+        </field>
+        <field>
+          <column_name>COLOR_ID</column_name>
+          <stream_name>COLOR_ID</stream_name>
+        </field>
+        <field>
+          <column_name>ITEM_UOM_ID</column_name>
+          <stream_name>ITEM_UOM_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GRADE2_ID</column_name>
+          <stream_name>GRADE2_ID</stream_name>
+        </field>
+        <field>
+          <column_name>GRADE1_ID</column_name>
+          <stream_name>GRADE1_ID</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>668</xloc>
+      <yloc>541</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

@@ -1,0 +1,10 @@
+E:\app\Administrator\product\11.2.0\dbhome_1\bin;E:\Oracle\Administrator\product\11.2.0\Client_1\bin;%systemroot%\system32;%systemroot%;%systemroot%\system32\wbem;%systemroot%\system32\windowspowershell\v1.0\;c:\program files\ibm\gsk8\lib64;C:\Program Files (x86)\Java\jdk1.6.0_31\bin;C:\Users\Administrator.STC_DOMAIN\Desktop\data-integration
+
+E:\Oracle\Administrator\product\11.2.0\Client_1\bin;E:\app\Administrator\product\11.2.0\dbhome_1\bin;%systemroot%\system32;%systemroot%;%systemroot%\system32\wbem;%systemroot%\system32\windowspowershell\v1.0\;c:\program files\ibm\gsk8\lib64;C:\Program Files (x86)\Java\jdk1.6.0_31\bin;C:\Users\Administrator.STC_DOMAIN\Desktop\data-integration
+
+
+
+
+
+
+E:\Oracle\Administrator\product\11.2.0\Client_1\dbs

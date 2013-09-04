@@ -1,0 +1,1 @@
+kitchen /file=E:\DW\Incremental_ETL\STC_ETL_JOB.kjb /level=Basic /logfile=E:\DW\Incremental_ETL\Log\stc_log.log

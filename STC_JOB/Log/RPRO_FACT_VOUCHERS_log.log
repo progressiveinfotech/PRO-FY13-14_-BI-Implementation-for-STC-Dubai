@@ -1,0 +1,89 @@
+2013/03/19 12:52:24 - Pan - Logging is at level : Basic logging
+2013/03/19 12:52:24 - Pan - Start of run.
+2013/03/19 12:52:25 - RPRO_FACT_VOUCHERS - Dispatching started for transformation [RPRO_FACT_VOUCHERS]
+2013/03/19 12:52:25 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/03/19 12:52:38 - Table input.0 - linenr 50000
+2013/03/19 12:53:26 - COMP_ID.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : UnexpectedError: 
+2013/03/19 12:53:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : UnexpectedError: 
+2013/03/19 12:53:40 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : UnexpectedError: 
+2013/03/19 12:53:44 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : UnexpectedError: 
+2013/03/19 12:54:00 - Table input.0 - Finished reading query, closing connection.
+2013/03/19 12:54:02 - DEPT_ID.1 - Finished processing (I=183, O=0, R=208, W=208, U=0, E=0)
+2013/03/19 12:54:00 - Select values.1 - Finished processing (I=0, O=0, R=20265, W=20265, U=0, E=0)
+2013/03/19 12:54:00 - Select values.0 - Finished processing (I=0, O=0, R=20266, W=20266, U=0, E=0)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : java.lang.OutOfMemoryError: GC overhead limit exceeded
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CMAREngine.unmarshalDALC(T4CMAREngine.java:2282)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4C8TTIrxh.unmarshalV10(T4C8TTIrxh.java:115)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:552)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:955)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1060)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:839)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1132)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3316)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3361)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.getLookup(Database.java:3063)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.getLookup(Database.java:3050)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.lookupValues(DatabaseLookup.java:135)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:504)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:50)
+2013/03/19 12:53:57 - COMP_CODE_LKP.1 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.lang.Thread.run(Unknown Source)
+2013/03/19 12:54:02 - Table input.0 - Finished processing (I=55601, O=0, R=0, W=55600, U=0, E=1)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Error disconnecting from database:
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Error comitting connection
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Protocol violation
+2013/03/19 12:54:02 - ITEM_ID.1 - Finished processing (I=221, O=0, R=227, W=226, U=0, E=0)
+2013/03/19 12:54:02 - supplier_id.1 - Finished processing (I=153, O=0, R=153, W=152, U=0, E=0)
+2013/03/19 12:54:02 - rpro_item_id.0 - Finished processing (I=132, O=0, R=154, W=153, U=0, E=0)
+2013/03/19 12:54:02 - store_id.0 - Finished processing (I=10220, O=0, R=10265, W=10220, U=0, E=0)
+2013/03/19 12:54:02 - store_id.1 - Finished processing (I=10218, O=0, R=10264, W=10218, U=0, E=0)
+2013/03/19 12:54:02 - rpro_item_id.1 - Finished processing (I=133, O=0, R=154, W=153, U=0, E=0)
+2013/03/19 12:54:02 - DEPT_ID.0 - Finished processing (I=183, O=0, R=212, W=212, U=0, E=0)
+2013/03/19 12:54:02 - supplier_id.0 - Finished processing (I=153, O=0, R=153, W=152, U=0, E=0)
+2013/03/19 12:54:02 - ITEM_ID.0 - Finished processing (I=222, O=0, R=228, W=227, U=0, E=0)
+2013/03/19 12:54:02 - rpro_vendor_id.1 - Finished processing (I=208, O=0, R=208, W=208, U=0, E=0)
+2013/03/19 12:54:02 - rpro_vendor_id.0 - Finished processing (I=212, O=0, R=212, W=212, U=0, E=0)
+2013/03/19 12:54:00 - COMP_ID.0 - Finished processing (I=212, O=0, R=212, W=212, U=0, E=0)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : java.lang.OutOfMemoryError: GC overhead limit exceeded
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.util.Arrays.copyOfRange(Unknown Source)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.lang.String.<init>(Unknown Source)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.lang.StringBuffer.toString(Unknown Source)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.text.DecimalFormat.expandAffix(Unknown Source)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.text.DecimalFormat.expandAffixes(Unknown Source)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.text.DecimalFormat.setDecimalFormatSymbols(Unknown Source)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.getDecimalFormat(ValueMeta.java:784)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.convertStringToNumber(ValueMeta.java:704)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.getNumber(ValueMeta.java:1404)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.convertData(ValueMeta.java:3070)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.lookupValues(DatabaseLookup.java:193)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.processRow(DatabaseLookup.java:504)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:50)
+2013/03/19 12:54:00 - COMP_CODE_LKP.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.lang.Thread.run(Unknown Source)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Error comitting connection
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Protocol violation
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.commit(Database.java:707)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.commit(Database.java:676)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.disconnect(Database.java:563)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.steps.databaselookup.DatabaseLookup.dispose(DatabaseLookup.java:682)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:79)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.lang.Thread.run(Unknown Source)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Caused by: java.sql.SQLException: Protocol violation
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:208)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4C7Ocommoncall.receive(T4C7Ocommoncall.java:150)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CConnection.doCommit(T4CConnection.java:523)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.PhysicalConnection.commit(PhysicalConnection.java:1128)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.commit(Database.java:696)
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	... 5 more
+2013/03/19 12:54:02 - RPRO_FACT_VOUCHERS - RPRO_FACT_VOUCHERS
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Error disconnecting from database:
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Error comitting connection
+2013/03/19 12:54:02 - Warehouse - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Protocol violation
+2013/03/19 12:54:05 - RPRO_FACT_VOUCHERS - RPRO_FACT_VOUCHERS
+2013/03/19 12:54:05 - COMP_ID.1 - Finished processing (I=208, O=0, R=209, W=208, U=0, E=1)
+2013/03/19 12:54:05 - COMP_CODE_LKP.0 - Finished processing (I=213, O=0, R=213, W=212, U=0, E=1)

@@ -1,0 +1,1054 @@
+2013/09/04 06:00:39 - Kitchen - Logging is at level : Basic logging
+2013/09/04 06:00:39 - Kitchen - Start of run.
+2013/09/04 06:00:39 - STC_ETL_INVENTORY_JOB - Start of job execution
+2013/09/04 06:00:39 - STC_ETL_INVENTORY_JOB - Starting entry [SetMaxETLDate]
+2013/09/04 06:00:39 - SetMaxETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/SetMaxETLDate.ktr]
+2013/09/04 06:00:43 - SetMaxETLDate - Dispatching started for transformation [SetMaxETLDate]
+2013/09/04 06:00:44 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:44 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:00:44 - Set Variables.0 - Set variable MAXETLDATE to value [03-09-2013]
+2013/09/04 06:00:44 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:00:44 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:00:44 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:00:44 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:00:44 - STC_ETL_INVENTORY_JOB - Starting entry [Daily Dimension]
+2013/09/04 06:00:44 - Daily Dimension - Starting entry [ORION DIM]
+2013/09/04 06:00:44 - ORION DIM - Starting entry [STC_DIM_ALLOWANCE]
+2013/09/04 06:00:44 - STC_DIM_ALLOWANCE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_ALLOWANCE.ktr]
+2013/09/04 06:00:46 - STC_DIM_ALLOWANCE - Dispatching started for transformation [STC_DIM_ALLOWANCE]
+2013/09/04 06:00:47 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:47 - Add sequence.0 - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+2013/09/04 06:00:47 - Select values.0 - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+2013/09/04 06:00:47 - Table input.0 - Finished processing (I=19, O=0, R=0, W=19, U=0, E=0)
+2013/09/04 06:00:47 - Insert / Update.0 - Finished processing (I=19, O=0, R=19, W=19, U=19, E=0)
+2013/09/04 06:00:47 - ORION DIM - Starting entry [STC_DIM_ARTICLE]
+2013/09/04 06:00:47 - STC_DIM_ARTICLE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_ARTICLE.ktr]
+2013/09/04 06:00:47 - STC_DIM_ARTICLE - Dispatching started for transformation [STC_DIM_ARTICLE]
+2013/09/04 06:00:48 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:48 - Select values.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:00:48 - Add sequence.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:00:48 - Table input.0 - Finished processing (I=2, O=0, R=0, W=2, U=0, E=0)
+2013/09/04 06:00:48 - Insert / Update.0 - Finished processing (I=2, O=0, R=2, W=2, U=2, E=0)
+2013/09/04 06:00:48 - ORION DIM - Starting entry [STC_DIM_BANK_ID]
+2013/09/04 06:00:48 - STC_DIM_BANK_ID - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_BANK_ID.ktr]
+2013/09/04 06:00:48 - STC_DIM_BANK_ID - Dispatching started for transformation [STC_DIM_BANK_ID]
+2013/09/04 06:00:49 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:49 - Add sequence.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:00:49 - Select values.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:00:49 - Table input.0 - Finished processing (I=2, O=0, R=0, W=2, U=0, E=0)
+2013/09/04 06:00:49 - Insert / Update.0 - Finished processing (I=2, O=0, R=2, W=2, U=2, E=0)
+2013/09/04 06:00:49 - ORION DIM - Starting entry [STC_DIM_CALENDER]
+2013/09/04 06:00:49 - STC_DIM_CALENDER - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_CALENDER.ktr]
+2013/09/04 06:00:49 - STC_DIM_CALENDER - Dispatching started for transformation [STC_DIM_CALENDER]
+2013/09/04 06:00:50 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:50 - Select values.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:00:50 - Add sequence.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:00:50 - Table input.0 - Finished processing (I=2, O=0, R=0, W=2, U=0, E=0)
+2013/09/04 06:00:50 - Insert / Update.0 - Finished processing (I=2, O=0, R=2, W=2, U=2, E=0)
+2013/09/04 06:00:50 - ORION DIM - Starting entry [STC_DIM_CAT_MANG]
+2013/09/04 06:00:50 - STC_DIM_CAT_MANG - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_CAT_MANG.ktr]
+2013/09/04 06:00:50 - STC_DIM_CAT_MANG - Dispatching started for transformation [STC_DIM_CAT_MANG]
+2013/09/04 06:00:50 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:50 - Add sequence.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2013/09/04 06:00:50 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2013/09/04 06:00:50 - Table input.0 - Finished processing (I=7, O=0, R=0, W=7, U=0, E=0)
+2013/09/04 06:00:51 - Insert / Update.0 - Finished processing (I=7, O=0, R=7, W=7, U=7, E=0)
+2013/09/04 06:00:51 - ORION DIM - Starting entry [STC_DIM_CATEGORY]
+2013/09/04 06:00:51 - STC_DIM_CATEGORY - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_CATEGORY.ktr]
+2013/09/04 06:00:51 - STC_DIM_CATEGORY - Dispatching started for transformation [STC_DIM_CATEGORY]
+2013/09/04 06:00:51 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:51 - Add sequence.0 - Finished processing (I=0, O=0, R=10, W=10, U=0, E=0)
+2013/09/04 06:00:51 - Select values.0 - Finished processing (I=0, O=0, R=10, W=10, U=0, E=0)
+2013/09/04 06:00:51 - Table input.0 - Finished processing (I=10, O=0, R=0, W=10, U=0, E=0)
+2013/09/04 06:00:51 - Insert / Update.0 - Finished processing (I=10, O=0, R=10, W=10, U=10, E=0)
+2013/09/04 06:00:51 - ORION DIM - Starting entry [STC_DIM_GRATUITY]
+2013/09/04 06:00:51 - STC_DIM_GRATUITY - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_GRATUITY.ktr]
+2013/09/04 06:00:52 - STC_DIM_GRATUITY - Dispatching started for transformation [STC_DIM_GRATUITY]
+2013/09/04 06:00:52 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:52 - Add sequence.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/09/04 06:00:52 - Select values.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/09/04 06:00:52 - Table input.0 - Finished processing (I=3, O=0, R=0, W=3, U=0, E=0)
+2013/09/04 06:00:52 - Insert / Update.0 - Finished processing (I=3, O=0, R=3, W=3, U=3, E=0)
+2013/09/04 06:00:52 - ORION DIM - Starting entry [STC_DIM_GRADE_2]
+2013/09/04 06:00:52 - STC_DIM_GRADE_2 - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_GRADE_2.ktr]
+2013/09/04 06:00:53 - STC_DIM_GRADE_2 - Dispatching started for transformation [STC_DIM_GRADE_2]
+2013/09/04 06:00:53 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:53 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:00:53 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:00:53 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:00:53 - Insert / Update.0 - Finished processing (I=1, O=0, R=1, W=1, U=1, E=0)
+2013/09/04 06:00:53 - ORION DIM - Starting entry [STC_DIM_GRADE_1]
+2013/09/04 06:00:53 - STC_DIM_GRADE_1 - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_GRADE_1.ktr]
+2013/09/04 06:00:54 - STC_DIM_GRADE_1 - Dispatching started for transformation [STC_DIM_GRADE_1]
+2013/09/04 06:00:54 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:54 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:00:54 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:00:54 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:00:54 - Insert / Update.0 - Finished processing (I=1, O=0, R=1, W=1, U=1, E=0)
+2013/09/04 06:00:54 - ORION DIM - Starting entry [STC_DIM_EMP]
+2013/09/04 06:00:54 - STC_DIM_EMP - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_EMP.ktr]
+2013/09/04 06:00:55 - STC_DIM_EMP - Dispatching started for transformation [STC_DIM_EMP]
+2013/09/04 06:00:56 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:56 - Select values.0 - Finished processing (I=0, O=0, R=1441, W=1441, U=0, E=0)
+2013/09/04 06:00:56 - Table input.0 - Finished processing (I=1441, O=0, R=0, W=1441, U=0, E=0)
+2013/09/04 06:00:56 - Add sequence.0 - Finished processing (I=0, O=0, R=1441, W=1441, U=0, E=0)
+2013/09/04 06:00:58 - Insert / Update.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=1441, E=0)
+2013/09/04 06:00:58 - ORION DIM - Starting entry [STC_DIM_DOCUMENT_ID]
+2013/09/04 06:00:58 - STC_DIM_DOCUMENT_ID - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIm_DOCUMENT_ID.ktr]
+2013/09/04 06:00:58 - STC_DIM_DOCUMENT_ID - Dispatching started for transformation [STC_DIm_DOCUMENT_ID]
+2013/09/04 06:00:59 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:00:59 - Table input.0 - Finished processing (I=30, O=0, R=0, W=30, U=0, E=0)
+2013/09/04 06:00:59 - Add sequence.0 - Finished processing (I=0, O=0, R=30, W=30, U=0, E=0)
+2013/09/04 06:00:59 - Select values.0 - Finished processing (I=0, O=0, R=30, W=30, U=0, E=0)
+2013/09/04 06:00:59 - Insert / Update.0 - Finished processing (I=30, O=0, R=30, W=30, U=30, E=0)
+2013/09/04 06:00:59 - ORION DIM - Starting entry [DIM_COA]
+2013/09/04 06:00:59 - DIM_COA - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\prog_coa_level.ktr]
+2013/09/04 06:01:00 - DIM_COA - Dispatching started for transformation [prog_coa_level]
+2013/09/04 06:01:00 - coa_level_output.0 - Connected to database [Warehouse] (commit=1000)
+2013/09/04 06:01:03 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:01:03 - Select values.0 - Finished processing (I=0, O=0, R=1638, W=1638, U=0, E=0)
+2013/09/04 06:01:03 - Table input.0 - Finished processing (I=1638, O=0, R=0, W=1638, U=0, E=0)
+2013/09/04 06:01:03 - Add sequence.0 - Finished processing (I=0, O=0, R=1638, W=1638, U=0, E=0)
+2013/09/04 06:01:04 - coa_level_output.0 - Finished processing (I=0, O=1638, R=1638, W=1638, U=0, E=0)
+2013/09/04 06:01:04 - ORION DIM - Starting entry [STC_DIM_ACTIVITY]
+2013/09/04 06:01:04 - STC_DIM_ACTIVITY - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_ACTIVITY.ktr]
+2013/09/04 06:01:05 - STC_DIM_ACTIVITY - Dispatching started for transformation [STC_DIM_ACTIVITY]
+2013/09/04 06:01:05 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/09/04 06:01:13 - Table input.0 - linenr 50000
+2013/09/04 06:01:28 - Table output.0 - linenr 50000
+2013/09/04 06:01:32 - Table input.0 - linenr 100000
+2013/09/04 06:01:39 - Select values.0 - linenr 50000
+2013/09/04 06:01:40 - Select values.1 - linenr 50000
+2013/09/04 06:01:47 - Table output.0 - linenr 100000
+2013/09/04 06:01:51 - Table input.0 - linenr 150000
+2013/09/04 06:02:06 - Table output.0 - linenr 150000
+2013/09/04 06:02:10 - Table input.0 - linenr 200000
+2013/09/04 06:02:17 - Select values.0 - linenr 100000
+2013/09/04 06:02:17 - Select values.1 - linenr 100000
+2013/09/04 06:02:25 - Table output.0 - linenr 200000
+2013/09/04 06:02:29 - Table input.0 - linenr 250000
+2013/09/04 06:02:44 - Table output.0 - linenr 250000
+2013/09/04 06:02:48 - Table input.0 - linenr 300000
+2013/09/04 06:02:56 - Select values.0 - linenr 150000
+2013/09/04 06:02:56 - Select values.1 - linenr 150000
+2013/09/04 06:03:04 - Table output.0 - linenr 300000
+2013/09/04 06:03:07 - Table input.0 - linenr 350000
+2013/09/04 06:03:22 - Table output.0 - linenr 350000
+2013/09/04 06:03:26 - Table input.0 - linenr 400000
+2013/09/04 06:03:29 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:03:29 - Table input.0 - Finished processing (I=407375, O=0, R=0, W=407375, U=0, E=0)
+2013/09/04 06:03:33 - Select values.0 - linenr 200000
+2013/09/04 06:03:34 - Select values.1 - linenr 200000
+2013/09/04 06:03:36 - Select values.0 - Finished processing (I=0, O=0, R=203688, W=203688, U=0, E=0)
+2013/09/04 06:03:36 - Select values.1 - Finished processing (I=0, O=0, R=203687, W=203687, U=0, E=0)
+2013/09/04 06:03:41 - Table output.0 - linenr 400000
+2013/09/04 06:03:44 - Table output.0 - Finished processing (I=0, O=407375, R=407375, W=407375, U=0, E=0)
+2013/09/04 06:03:44 - ORION DIM - Starting entry [STC_DIM_CURRENCY]
+2013/09/04 06:03:44 - STC_DIM_CURRENCY - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_CURRENCY.ktr]
+2013/09/04 06:03:44 - STC_DIM_CURRENCY - Dispatching started for transformation [STC_DIM_CURRENCY]
+2013/09/04 06:03:44 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:03:44 - Add sequence.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2013/09/04 06:03:44 - Select values.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2013/09/04 06:03:44 - Table input.0 - Finished processing (I=8, O=0, R=0, W=8, U=0, E=0)
+2013/09/04 06:03:44 - Insert / Update.0 - Finished processing (I=8, O=0, R=8, W=8, U=8, E=0)
+2013/09/04 06:03:44 - ORION DIM - Starting entry [STC_DIM_CONTRACT_TYPE]
+2013/09/04 06:03:44 - STC_DIM_CONTRACT_TYPE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_CONTRACT_TYPE.ktr]
+2013/09/04 06:03:45 - STC_DIM_CONTRACT_TYPE - Dispatching started for transformation [STC_DIM_CONTRACT_TYPE]
+2013/09/04 06:03:45 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:03:46 - Table input.0 - Finished processing (I=3, O=0, R=0, W=3, U=0, E=0)
+2013/09/04 06:03:46 - Add sequence.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/09/04 06:03:46 - Select values.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/09/04 06:03:46 - Insert / Update.0 - Finished processing (I=3, O=0, R=3, W=3, U=3, E=0)
+2013/09/04 06:03:46 - ORION DIM - Starting entry [STC_DIM_COMPANY]
+2013/09/04 06:03:46 - STC_DIM_COMPANY - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_COMPANY.ktr]
+2013/09/04 06:03:46 - STC_DIM_COMPANY - Dispatching started for transformation [STC_DIM_COMPANY]
+2013/09/04 06:03:54 - Comp_ledger.0 - Finished reading query, closing connection.
+2013/09/04 06:03:54 - Comp_ledger.0 - Finished processing (I=48457, O=0, R=0, W=48457, U=0, E=0)
+2013/09/04 06:03:57 - Select values.0 - Finished processing (I=0, O=0, R=48457, W=48457, U=0, E=0)
+2013/09/04 06:04:01 - Add sequence.0 - Finished processing (I=0, O=0, R=48457, W=48457, U=0, E=0)
+2013/09/04 06:04:04 - Insert / Update.0 - Finished processing (I=48457, O=0, R=48457, W=48457, U=65, E=0)
+2013/09/04 06:04:04 - ORION DIM - Starting entry [STC_DIM_JOB_TITLE]
+2013/09/04 06:04:04 - STC_DIM_JOB_TITLE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_JOB_TITLE.ktr]
+2013/09/04 06:04:05 - STC_DIM_JOB_TITLE - Dispatching started for transformation [STC_DIM_JOB_TITLE]
+2013/09/04 06:04:05 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:05 - Add sequence.0 - Finished processing (I=0, O=0, R=104, W=104, U=0, E=0)
+2013/09/04 06:04:05 - Select values.0 - Finished processing (I=0, O=0, R=104, W=104, U=0, E=0)
+2013/09/04 06:04:05 - Table input.0 - Finished processing (I=104, O=0, R=0, W=104, U=0, E=0)
+2013/09/04 06:04:05 - Insert / Update.0 - Finished processing (I=104, O=0, R=104, W=104, U=104, E=0)
+2013/09/04 06:04:05 - ORION DIM - Starting entry [STC_DIM_LOAN_ID]
+2013/09/04 06:04:05 - STC_DIM_LOAN_ID - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_LOAN_ID.ktr]
+2013/09/04 06:04:06 - STC_DIM_LOAN_ID - Dispatching started for transformation [STC_DIM_LOAN_ID]
+2013/09/04 06:04:06 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:06 - Add sequence.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:04:06 - Select values.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:04:06 - Table input.0 - Finished processing (I=2, O=0, R=0, W=2, U=0, E=0)
+2013/09/04 06:04:06 - Insert / Update.0 - Finished processing (I=2, O=0, R=2, W=2, U=2, E=0)
+2013/09/04 06:04:06 - ORION DIM - Starting entry [stc_dim_f_acnt_period]
+2013/09/04 06:04:06 - stc_dim_f_acnt_period - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_f_acnt_period.ktr]
+2013/09/04 06:04:07 - stc_dim_f_acnt_period - Dispatching started for transformation [stc_dim_f_acnt_period]
+2013/09/04 06:04:08 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:08 - Select values.0 - Finished processing (I=0, O=0, R=10866, W=10866, U=0, E=0)
+2013/09/04 06:04:08 - Table input.0 - Finished processing (I=10866, O=0, R=0, W=10866, U=0, E=0)
+2013/09/04 06:04:10 - Add sequence.0 - Finished processing (I=0, O=0, R=10866, W=10866, U=0, E=0)
+2013/09/04 06:04:39 - Insert / Update.0 - Finished processing (I=10866, O=0, R=10866, W=10866, U=10866, E=0)
+2013/09/04 06:04:39 - ORION DIM - Starting entry [stc_dim_f_activity]
+2013/09/04 06:04:39 - stc_dim_f_activity - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_f_activity.ktr]
+2013/09/04 06:04:40 - stc_dim_f_activity - Dispatching started for transformation [stc_dim_f_activity]
+2013/09/04 06:04:40 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:41 - Add sequence.0 - Finished processing (I=0, O=0, R=3336, W=3336, U=0, E=0)
+2013/09/04 06:04:41 - Select values.0 - Finished processing (I=0, O=0, R=3336, W=3336, U=0, E=0)
+2013/09/04 06:04:41 - Table input.0 - Finished processing (I=3336, O=0, R=0, W=3336, U=0, E=0)
+2013/09/04 06:04:45 - Insert / Update.0 - Finished processing (I=3336, O=1, R=3336, W=3336, U=3335, E=0)
+2013/09/04 06:04:45 - ORION DIM - Starting entry [STC_DIM_F_BANK]
+2013/09/04 06:04:45 - STC_DIM_F_BANK - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_F_BANK.ktr]
+2013/09/04 06:04:45 - STC_DIM_F_BANK - Dispatching started for transformation [STC_DIM_F_BANK]
+2013/09/04 06:04:45 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:45 - Table input.0 - Finished processing (I=26, O=0, R=0, W=26, U=0, E=0)
+2013/09/04 06:04:45 - Add sequence.0 - Finished processing (I=0, O=0, R=26, W=26, U=0, E=0)
+2013/09/04 06:04:45 - Select values.0 - Finished processing (I=0, O=0, R=26, W=26, U=0, E=0)
+2013/09/04 06:04:45 - Insert / Update.0 - Finished processing (I=26, O=0, R=26, W=26, U=26, E=0)
+2013/09/04 06:04:45 - ORION DIM - Starting entry [stc_dim_f_bank_acnt]
+2013/09/04 06:04:45 - stc_dim_f_bank_acnt - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_f_bank_acnt.ktr]
+2013/09/04 06:04:46 - stc_dim_f_bank_acnt - Dispatching started for transformation [stc_dim_f_bank_acnt]
+2013/09/04 06:04:46 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:46 - Table input.0 - Finished processing (I=25, O=0, R=0, W=25, U=0, E=0)
+2013/09/04 06:04:46 - Select values.0 - Finished processing (I=0, O=0, R=25, W=25, U=0, E=0)
+2013/09/04 06:04:46 - Add sequence.0 - Finished processing (I=0, O=0, R=25, W=25, U=0, E=0)
+2013/09/04 06:04:46 - Insert / Update.0 - Finished processing (I=25, O=0, R=25, W=25, U=25, E=0)
+2013/09/04 06:04:46 - ORION DIM - Starting entry [stc_dim_f_bud_cat]
+2013/09/04 06:04:46 - stc_dim_f_bud_cat - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_f_bud_cat.ktr]
+2013/09/04 06:04:46 - stc_dim_f_bud_cat - Dispatching started for transformation [stc_dim_f_bud_cat]
+2013/09/04 06:04:46 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:46 - Select values.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2013/09/04 06:04:46 - Table input.0 - Finished processing (I=5, O=0, R=0, W=5, U=0, E=0)
+2013/09/04 06:04:46 - Add sequence.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2013/09/04 06:04:46 - Insert / Update.0 - Finished processing (I=5, O=0, R=5, W=5, U=5, E=0)
+2013/09/04 06:04:46 - ORION DIM - Starting entry [stc_dim_f_bud_cat_detail]
+2013/09/04 06:04:46 - stc_dim_f_bud_cat_detail - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_f_bud_cat_detail.ktr]
+2013/09/04 06:04:46 - stc_dim_f_bud_cat_detail - Dispatching started for transformation [stc_dim_f_bud_cat_detail]
+2013/09/04 06:04:47 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:47 - Add sequence.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2013/09/04 06:04:47 - Select values.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2013/09/04 06:04:47 - Table input.0 - Finished processing (I=8, O=0, R=0, W=8, U=0, E=0)
+2013/09/04 06:04:47 - Insert / Update.0 - Finished processing (I=8, O=0, R=8, W=8, U=8, E=0)
+2013/09/04 06:04:47 - ORION DIM - Starting entry [stc_dim_f_bud_hierarchy]
+2013/09/04 06:04:47 - stc_dim_f_bud_hierarchy - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_f_bud_hierarchy.ktr]
+2013/09/04 06:04:47 - stc_dim_f_bud_hierarchy - Dispatching started for transformation [stc_dim_f_bud_hierarchy]
+2013/09/04 06:04:47 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:47 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:04:47 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:04:47 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:04:48 - Insert / Update.0 - Finished processing (I=1, O=0, R=1, W=1, U=1, E=0)
+2013/09/04 06:04:48 - ORION DIM - Starting entry [stc_dim_f_bud_period]
+2013/09/04 06:04:48 - stc_dim_f_bud_period - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_f_bud_period.ktr]
+2013/09/04 06:04:48 - stc_dim_f_bud_period - Dispatching started for transformation [stc_dim_f_bud_period]
+2013/09/04 06:04:48 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:48 - Select values.0 - Finished processing (I=0, O=0, R=20, W=20, U=0, E=0)
+2013/09/04 06:04:48 - Table input.0 - Finished processing (I=20, O=0, R=0, W=20, U=0, E=0)
+2013/09/04 06:04:48 - Add sequence.0 - Finished processing (I=0, O=0, R=20, W=20, U=0, E=0)
+2013/09/04 06:04:48 - Insert / Update.0 - Finished processing (I=20, O=0, R=20, W=20, U=20, E=0)
+2013/09/04 06:04:48 - ORION DIM - Starting entry [STC_DIM_LOCATION]
+2013/09/04 06:04:48 - STC_DIM_LOCATION - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_LOCATION.ktr]
+2013/09/04 06:04:49 - STC_DIM_LOCATION - Dispatching started for transformation [STC_DIM_LOCATION]
+2013/09/04 06:04:49 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:49 - Select values.0 - Finished processing (I=0, O=0, R=51, W=51, U=0, E=0)
+2013/09/04 06:04:49 - Add sequence.0 - Finished processing (I=0, O=0, R=51, W=51, U=0, E=0)
+2013/09/04 06:04:49 - Table input.0 - Finished processing (I=51, O=0, R=0, W=51, U=0, E=0)
+2013/09/04 06:04:49 - Insert / Update.0 - Finished processing (I=51, O=0, R=51, W=51, U=51, E=0)
+2013/09/04 06:04:49 - ORION DIM - Starting entry [STC_DIM_LOCN_GRP_DIM]
+2013/09/04 06:04:49 - STC_DIM_LOCN_GRP_DIM - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_LOCN_GRP_DIM.ktr]
+2013/09/04 06:04:49 - STC_DIM_LOCN_GRP_DIM - Dispatching started for transformation [STC_DIM_LOCN_GRP_DIM]
+2013/09/04 06:04:50 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:50 - Select values.0 - Finished processing (I=0, O=0, R=75, W=75, U=0, E=0)
+2013/09/04 06:04:50 - Add sequence.0 - Finished processing (I=0, O=0, R=75, W=75, U=0, E=0)
+2013/09/04 06:04:50 - Table input.0 - Finished processing (I=75, O=0, R=0, W=75, U=0, E=0)
+2013/09/04 06:04:50 - Insert / Update.0 - Finished processing (I=75, O=0, R=75, W=75, U=75, E=0)
+2013/09/04 06:04:50 - ORION DIM - Starting entry [STC_DIM_LV_ID]
+2013/09/04 06:04:50 - STC_DIM_LV_ID - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_LV_ID.ktr]
+2013/09/04 06:04:50 - STC_DIM_LV_ID - Dispatching started for transformation [STC_DIM_LV_ID]
+2013/09/04 06:04:50 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:50 - Add sequence.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:04:50 - Select values.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2013/09/04 06:04:50 - Table input.0 - Finished processing (I=2, O=0, R=0, W=2, U=0, E=0)
+2013/09/04 06:04:50 - Insert / Update.0 - Finished processing (I=2, O=0, R=2, W=2, U=2, E=0)
+2013/09/04 06:04:50 - ORION DIM - Starting entry [STC_DIM_PACKING]
+2013/09/04 06:04:50 - STC_DIM_PACKING - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_PACKING.ktr]
+2013/09/04 06:04:51 - STC_DIM_PACKING - Dispatching started for transformation [STC_DIM_PACKING]
+2013/09/04 06:04:51 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:51 - Add sequence.0 - Finished processing (I=0, O=0, R=470, W=470, U=0, E=0)
+2013/09/04 06:04:51 - Select values.0 - Finished processing (I=0, O=0, R=470, W=470, U=0, E=0)
+2013/09/04 06:04:51 - Table input.0 - Finished processing (I=470, O=0, R=0, W=470, U=0, E=0)
+2013/09/04 06:04:52 - Insert / Update.0 - Finished processing (I=470, O=0, R=470, W=470, U=470, E=0)
+2013/09/04 06:04:52 - ORION DIM - Starting entry [STC_DIM_pay_type]
+2013/09/04 06:04:52 - STC_DIM_pay_type - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_pay_type.ktr]
+2013/09/04 06:04:52 - STC_DIM_pay_type - Dispatching started for transformation [STC_DIM_pay_type]
+2013/09/04 06:04:53 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:53 - Add sequence.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2013/09/04 06:04:53 - Select values.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2013/09/04 06:04:53 - Table input.0 - Finished processing (I=5, O=0, R=0, W=5, U=0, E=0)
+2013/09/04 06:04:53 - Insert / Update.0 - Finished processing (I=5, O=0, R=5, W=5, U=5, E=0)
+2013/09/04 06:04:53 - ORION DIM - Starting entry [STC_DIM_PAYROLL_GRADE]
+2013/09/04 06:04:53 - STC_DIM_PAYROLL_GRADE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_PAYROLL_GRADE.ktr]
+2013/09/04 06:04:53 - STC_DIM_PAYROLL_GRADE - Dispatching started for transformation [STC_DIM_PAYROLL_GRADE]
+2013/09/04 06:04:53 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:53 - Select values.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2013/09/04 06:04:53 - Add sequence.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2013/09/04 06:04:53 - Table input.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2013/09/04 06:04:53 - Insert / Update.0 - Finished processing (I=11, O=0, R=11, W=11, U=11, E=0)
+2013/09/04 06:04:53 - ORION DIM - Starting entry [STC_DIM_PAYROLL_LOCN]
+2013/09/04 06:04:53 - STC_DIM_PAYROLL_LOCN - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_PAYROLL_LOCN.ktr]
+2013/09/04 06:04:53 - STC_DIM_PAYROLL_LOCN - Dispatching started for transformation [STC_DIM_PAYROLL_LOCN]
+2013/09/04 06:04:54 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:54 - Add sequence.0 - Finished processing (I=0, O=0, R=29, W=29, U=0, E=0)
+2013/09/04 06:04:54 - Select values.0 - Finished processing (I=0, O=0, R=29, W=29, U=0, E=0)
+2013/09/04 06:04:54 - Table input.0 - Finished processing (I=29, O=0, R=0, W=29, U=0, E=0)
+2013/09/04 06:04:54 - Insert / Update.0 - Finished processing (I=29, O=0, R=29, W=29, U=29, E=0)
+2013/09/04 06:04:54 - ORION DIM - Starting entry [STC_DIM_PAYROLL_TXN_ID]
+2013/09/04 06:04:54 - STC_DIM_PAYROLL_TXN_ID - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_PAYROLL_TXN_ID.ktr]
+2013/09/04 06:04:54 - STC_DIM_PAYROLL_TXN_ID - Dispatching started for transformation [STC_DIM_PAYROLL_TXN_ID]
+2013/09/04 06:04:54 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:54 - Table input.0 - Finished processing (I=44, O=0, R=0, W=44, U=0, E=0)
+2013/09/04 06:04:54 - Add sequence.0 - Finished processing (I=0, O=0, R=44, W=44, U=0, E=0)
+2013/09/04 06:04:54 - Select values.0 - Finished processing (I=0, O=0, R=44, W=44, U=0, E=0)
+2013/09/04 06:04:54 - Insert / Update.0 - Finished processing (I=44, O=0, R=44, W=44, U=44, E=0)
+2013/09/04 06:04:54 - ORION DIM - Starting entry [STC_DIM_POSITION_TYPE]
+2013/09/04 06:04:54 - STC_DIM_POSITION_TYPE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_POSITION_TYPE.ktr]
+2013/09/04 06:04:55 - STC_DIM_POSITION_TYPE - Dispatching started for transformation [STC_DIM_POSITION_TYPE]
+2013/09/04 06:04:55 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:55 - Table input.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2013/09/04 06:04:55 - Select values.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2013/09/04 06:04:55 - Add sequence.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2013/09/04 06:04:55 - Insert / Update.0 - Finished processing (I=11, O=0, R=11, W=11, U=11, E=0)
+2013/09/04 06:04:55 - ORION DIM - Starting entry [STC_DIM_food_cat]
+2013/09/04 06:04:55 - STC_DIM_food_cat - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_FOOD_CAT.ktr]
+2013/09/04 06:04:55 - STC_DIM_food_cat - Dispatching started for transformation [STC_DIM_FOOD_CAT]
+2013/09/04 06:04:55 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:55 - Add sequence.0 - Finished processing (I=0, O=0, R=57, W=57, U=0, E=0)
+2013/09/04 06:04:55 - Select values 2.0 - Finished processing (I=0, O=0, R=57, W=57, U=0, E=0)
+2013/09/04 06:04:55 - Table input.0 - Finished processing (I=57, O=0, R=0, W=57, U=0, E=0)
+2013/09/04 06:04:55 - Insert / Update.0 - Finished processing (I=57, O=0, R=57, W=57, U=56, E=0)
+2013/09/04 06:04:55 - ORION DIM - Starting entry [STC_DIM_REASON]
+2013/09/04 06:04:55 - STC_DIM_REASON - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_REASON.ktr]
+2013/09/04 06:04:56 - STC_DIM_REASON - Dispatching started for transformation [STC_DIM_REASON]
+2013/09/04 06:04:56 - Table input_om_reason.0 - Finished reading query, closing connection.
+2013/09/04 06:04:56 - Select values.0 - Finished processing (I=0, O=0, R=52, W=52, U=0, E=0)
+2013/09/04 06:04:56 - Add sequence.0 - Finished processing (I=0, O=0, R=52, W=52, U=0, E=0)
+2013/09/04 06:04:56 - Table input_om_reason.0 - Finished processing (I=52, O=0, R=0, W=52, U=0, E=0)
+2013/09/04 06:04:56 - Insert / Update.0 - Finished processing (I=52, O=0, R=52, W=52, U=52, E=0)
+2013/09/04 06:04:56 - ORION DIM - Starting entry [STC_DIM_RELATION]
+2013/09/04 06:04:56 - STC_DIM_RELATION - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_RELATION.ktr]
+2013/09/04 06:04:57 - STC_DIM_RELATION - Dispatching started for transformation [STC_DIM_RELATION]
+2013/09/04 06:04:57 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:57 - Add sequence.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2013/09/04 06:04:57 - Select values.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2013/09/04 06:04:57 - Table input.0 - Finished processing (I=5, O=0, R=0, W=5, U=0, E=0)
+2013/09/04 06:04:57 - Insert / Update.0 - Finished processing (I=5, O=0, R=5, W=5, U=5, E=0)
+2013/09/04 06:04:57 - ORION DIM - Starting entry [STC_DIM_RELIGION]
+2013/09/04 06:04:57 - STC_DIM_RELIGION - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_RELIGION.ktr]
+2013/09/04 06:04:57 - STC_DIM_RELIGION - Dispatching started for transformation [STC_DIM_RELIGION]
+2013/09/04 06:04:57 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:57 - Select values.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2013/09/04 06:04:57 - Add sequence.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2013/09/04 06:04:57 - Table input.0 - Finished processing (I=9, O=0, R=0, W=9, U=0, E=0)
+2013/09/04 06:04:58 - Insert / Update.0 - Finished processing (I=9, O=0, R=9, W=9, U=9, E=0)
+2013/09/04 06:04:58 - ORION DIM - Starting entry [STC_DIM_SECTION_ID]
+2013/09/04 06:04:58 - STC_DIM_SECTION_ID - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_SECTION_ID.ktr]
+2013/09/04 06:04:58 - STC_DIM_SECTION_ID - Dispatching started for transformation [STC_DIM_SECTION_ID]
+2013/09/04 06:04:58 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:58 - Select values.0 - Finished processing (I=0, O=0, R=45, W=45, U=0, E=0)
+2013/09/04 06:04:58 - Table input.0 - Finished processing (I=45, O=0, R=0, W=45, U=0, E=0)
+2013/09/04 06:04:58 - Add sequence.0 - Finished processing (I=0, O=0, R=45, W=45, U=0, E=0)
+2013/09/04 06:04:58 - Insert / Update.0 - Finished processing (I=45, O=0, R=45, W=45, U=45, E=0)
+2013/09/04 06:04:58 - ORION DIM - Starting entry [STC_DIM_SECTR_ID]
+2013/09/04 06:04:58 - STC_DIM_SECTR_ID - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_SECTR_ID.ktr]
+2013/09/04 06:04:59 - STC_DIM_SECTR_ID - Dispatching started for transformation [STC_DIM_SECTR_ID]
+2013/09/04 06:04:59 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:04:59 - Add sequence.0 - Finished processing (I=0, O=0, R=231, W=231, U=0, E=0)
+2013/09/04 06:04:59 - Select values.0 - Finished processing (I=0, O=0, R=231, W=231, U=0, E=0)
+2013/09/04 06:04:59 - Table input.0 - Finished processing (I=231, O=0, R=0, W=231, U=0, E=0)
+2013/09/04 06:04:59 - Insert / Update.0 - Finished processing (I=231, O=0, R=231, W=231, U=231, E=0)
+2013/09/04 06:05:00 - ORION DIM - Starting entry [STC_DIM_SIZE]
+2013/09/04 06:05:00 - STC_DIM_SIZE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_SIZE.ktr]
+2013/09/04 06:05:00 - STC_DIM_SIZE - Dispatching started for transformation [STC_DIM_SIZE]
+2013/09/04 06:05:00 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:00 - Add sequence.0 - Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2013/09/04 06:05:00 - Select values.0 - Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2013/09/04 06:05:00 - Table input.0 - Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2013/09/04 06:05:00 - Insert / Update.0 - Finished processing (I=4, O=0, R=4, W=4, U=4, E=0)
+2013/09/04 06:05:00 - ORION DIM - Starting entry [STC_DIM_TERM]
+2013/09/04 06:05:00 - STC_DIM_TERM - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_TERM.ktr]
+2013/09/04 06:05:00 - STC_DIM_TERM - Dispatching started for transformation [STC_DIM_TERM]
+2013/09/04 06:05:00 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:00 - Add sequence.0 - Finished processing (I=0, O=0, R=21, W=21, U=0, E=0)
+2013/09/04 06:05:00 - Select values.0 - Finished processing (I=0, O=0, R=21, W=21, U=0, E=0)
+2013/09/04 06:05:00 - Table input.0 - Finished processing (I=21, O=0, R=0, W=21, U=0, E=0)
+2013/09/04 06:05:00 - Insert / Update.0 - Finished processing (I=21, O=0, R=21, W=21, U=21, E=0)
+2013/09/04 06:05:00 - ORION DIM - Starting entry [STC_DIM_WMS_CARTON]
+2013/09/04 06:05:00 - STC_DIM_WMS_CARTON - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_WMS_CARTON.ktr]
+2013/09/04 06:05:01 - STC_DIM_WMS_CARTON - Dispatching started for transformation [STC_DIM_WMS_CARTON]
+2013/09/04 06:05:01 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:01 - Select values.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2013/09/04 06:05:01 - Table input.0 - Finished processing (I=14, O=0, R=0, W=14, U=0, E=0)
+2013/09/04 06:05:01 - Add sequence.0 - Finished processing (I=0, O=0, R=14, W=14, U=0, E=0)
+2013/09/04 06:05:01 - Insert / Update.0 - Finished processing (I=14, O=0, R=14, W=14, U=14, E=0)
+2013/09/04 06:05:01 - ORION DIM - Starting entry [STC_DIM_WMS_PALLET_POSITION]
+2013/09/04 06:05:01 - STC_DIM_WMS_PALLET_POSITION - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_WMS_PALLET_POSITION.ktr]
+2013/09/04 06:05:01 - STC_DIM_WMS_PALLET_POSITION - Dispatching started for transformation [STC_DIM_WMS_PALLET_POSITION]
+2013/09/04 06:05:03 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:03 - Add sequence.0 - Finished processing (I=0, O=0, R=7254, W=7254, U=0, E=0)
+2013/09/04 06:05:03 - Select values.0 - Finished processing (I=0, O=0, R=7254, W=7254, U=0, E=0)
+2013/09/04 06:05:03 - Table input.0 - Finished processing (I=7254, O=0, R=0, W=7254, U=0, E=0)
+2013/09/04 06:05:45 - Insert / Update.0 - Finished processing (I=7254, O=0, R=7254, W=7254, U=7236, E=0)
+2013/09/04 06:05:45 - ORION DIM - Starting entry [STC_DIM_WMS_RULE]
+2013/09/04 06:05:45 - STC_DIM_WMS_RULE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_wms_wave.ktr]
+2013/09/04 06:05:45 - STC_DIM_WMS_RULE - Dispatching started for transformation [STC_DIM_wms_wave]
+2013/09/04 06:05:46 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:46 - Select values.0 - Finished processing (I=0, O=0, R=40, W=40, U=0, E=0)
+2013/09/04 06:05:46 - Add sequence.0 - Finished processing (I=0, O=0, R=40, W=40, U=0, E=0)
+2013/09/04 06:05:46 - Table input.0 - Finished processing (I=40, O=0, R=0, W=40, U=0, E=0)
+2013/09/04 06:05:46 - Insert / Update.0 - Finished processing (I=40, O=0, R=40, W=40, U=40, E=0)
+2013/09/04 06:05:46 - ORION DIM - Starting entry [STC_DIM_WMS_WH]
+2013/09/04 06:05:46 - STC_DIM_WMS_WH - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\STC_DIM_WMS_WH.ktr]
+2013/09/04 06:05:46 - STC_DIM_WMS_WH - Dispatching started for transformation [STC_DIM_WMS_WH]
+2013/09/04 06:05:46 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:46 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:05:46 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:05:46 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:05:46 - Insert / Update.0 - Finished processing (I=1, O=0, R=1, W=1, U=1, E=0)
+2013/09/04 06:05:46 - ORION DIM - Starting entry [stc_dim_wms_wh_user]
+2013/09/04 06:05:46 - stc_dim_wms_wh_user - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\stc_dim_wms_wh_user.ktr]
+2013/09/04 06:05:46 - stc_dim_wms_wh_user - Dispatching started for transformation [stc_dim_wms_wh_user]
+2013/09/04 06:05:47 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:47 - Add sequence.0 - Finished processing (I=0, O=0, R=77, W=77, U=0, E=0)
+2013/09/04 06:05:47 - Select values.0 - Finished processing (I=0, O=0, R=77, W=77, U=0, E=0)
+2013/09/04 06:05:47 - Table input.0 - Finished processing (I=77, O=0, R=0, W=77, U=0, E=0)
+2013/09/04 06:05:47 - Insert / Update.0 - Finished processing (I=77, O=0, R=77, W=77, U=77, E=0)
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_wms_wh_user] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_WMS_WH] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_WMS_RULE] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_WMS_PALLET_POSITION] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_WMS_CARTON] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_TERM] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_SIZE] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_SECTR_ID] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_SECTION_ID] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_RELIGION] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_RELATION] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_REASON] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_food_cat] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_POSITION_TYPE] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_PAYROLL_TXN_ID] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_PAYROLL_LOCN] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_PAYROLL_GRADE] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_pay_type] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_PACKING] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_LV_ID] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_LOCN_GRP_DIM] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_LOCATION] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_f_bud_period] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_f_bud_hierarchy] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_f_bud_cat_detail] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_f_bud_cat] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_f_bank_acnt] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_F_BANK] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_f_activity] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [stc_dim_f_acnt_period] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_LOAN_ID] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_JOB_TITLE] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_COMPANY] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_CONTRACT_TYPE] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_CURRENCY] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_ACTIVITY] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [DIM_COA] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_DOCUMENT_ID] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_EMP] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_GRADE_1] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_GRADE_2] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_GRATUITY] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_CATEGORY] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_CAT_MANG] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_CALENDER] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_BANK_ID] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_ARTICLE] (result=[true])
+2013/09/04 06:05:47 - ORION DIM - Finished job entry [STC_DIM_ALLOWANCE] (result=[true])
+2013/09/04 06:05:47 - Daily Dimension - Starting entry [Item]
+2013/09/04 06:05:48 - Item - Starting entry [VAR_ITEM_ORION]
+2013/09/04 06:05:48 - VAR_ITEM_ORION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/DIM_item_JOB/dim_item_env.ktr]
+2013/09/04 06:05:49 - dim_item_env - Dispatching started for transformation [dim_item_env]
+2013/09/04 06:05:49 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:49 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:05:49 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:05:49 - Set Variables.0 - Set variable VAR_ITEM_ID to value [5551901]
+2013/09/04 06:05:49 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:05:49 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:05:49 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:05:49 - Item - Starting entry [DIM_ITEM_ORION]
+2013/09/04 06:05:49 - DIM_ITEM_ORION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/DIM_item_JOB/dim_item.ktr]
+2013/09/04 06:05:49 - dim_item - Dispatching started for transformation [dim_item]
+2013/09/04 06:05:52 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:05:52 - Add sequence.0 - Finished processing (I=0, O=0, R=101, W=101, U=0, E=0)
+2013/09/04 06:05:52 - Select values.0 - Finished processing (I=0, O=0, R=101, W=101, U=0, E=0)
+2013/09/04 06:05:52 - Table input.0 - Finished processing (I=101, O=0, R=0, W=101, U=0, E=0)
+2013/09/04 06:06:19 - Insert / Update.0 - Finished processing (I=101, O=12, R=101, W=101, U=89, E=0)
+2013/09/04 06:06:19 - Item - Finished job entry [DIM_ITEM_ORION] (result=[true])
+2013/09/04 06:06:19 - Item - Finished job entry [VAR_ITEM_ORION] (result=[true])
+2013/09/04 06:06:19 - Daily Dimension - Starting entry [Customer Address]
+2013/09/04 06:06:20 - Customer Address - Starting entry [orion_add_var]
+2013/09/04 06:06:20 - orion_add_var - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/stc_dim_customer_address/STC_CUST_ADDR_VARIABLE.ktr]
+2013/09/04 06:06:21 - STC_CUST_ADDR_VARIABLE - Dispatching started for transformation [STC_CUST_ADDR_VARIABLE]
+2013/09/04 06:06:21 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:06:21 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:06:21 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:06:21 - Set Variables.0 - Set variable VAR_CUST_ADDRESS_ID to value [873457]
+2013/09/04 06:06:21 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:06:21 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:06:21 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:06:21 - Customer Address - Starting entry [orion customer address]
+2013/09/04 06:06:21 - orion customer address - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/stc_dim_customer_address/STC_DIM_ORION_CUSTOMER_ADDRESS.ktr]
+2013/09/04 06:06:22 - STC_DIM_ORION_CUSTOMER_ADDRESS - Dispatching started for transformation [STC_DIM_ORION_CUSTOMER_ADDRESS]
+2013/09/04 06:06:23 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:06:23 - Add sequence.0 - Finished processing (I=0, O=0, R=9372, W=9372, U=0, E=0)
+2013/09/04 06:06:23 - Select values 2.0 - Finished processing (I=0, O=0, R=9372, W=9372, U=0, E=0)
+2013/09/04 06:06:23 - Table input.0 - Finished processing (I=9372, O=0, R=0, W=9372, U=0, E=0)
+2013/09/04 06:09:49 - Insert / Update.0 - Finished processing (I=9372, O=0, R=9372, W=9372, U=9364, E=0)
+2013/09/04 06:09:49 - Customer Address - Finished job entry [orion customer address] (result=[true])
+2013/09/04 06:09:49 - Customer Address - Finished job entry [orion_add_var] (result=[true])
+2013/09/04 06:09:49 - Daily Dimension - Starting entry [Supplier]
+2013/09/04 06:09:49 - Supplier - Starting entry [VAR_supplier_ORION]
+2013/09/04 06:09:49 - VAR_supplier_ORION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SUPPLIER_JOB/supplier_variable.ktr]
+2013/09/04 06:09:50 - supplier job - Dispatching started for transformation [supplier job]
+2013/09/04 06:09:50 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:09:50 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:09:50 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:09:50 - Set Variables.0 - Set variable VAR_SUPPLIER_ID to value [121270]
+2013/09/04 06:09:50 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:09:50 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:09:50 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:09:50 - Supplier - Starting entry [DIM_supplier_ORION]
+2013/09/04 06:09:50 - DIM_supplier_ORION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SUPPLIER_JOB/SUPPLIER_ORION.ktr]
+2013/09/04 06:09:50 - SUPPLIER_ORION - Dispatching started for transformation [SUPPLIER_ORION]
+2013/09/04 06:09:51 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:09:51 - Add sequence.0 - Finished processing (I=0, O=0, R=2637, W=2637, U=0, E=0)
+2013/09/04 06:09:51 - Select values 2.0 - Finished processing (I=0, O=0, R=2637, W=2637, U=0, E=0)
+2013/09/04 06:09:51 - Table input.0 - Finished processing (I=2637, O=0, R=0, W=2637, U=0, E=0)
+2013/09/04 06:10:02 - Insert / Update.0 - Finished processing (I=2637, O=0, R=2637, W=2637, U=2637, E=0)
+2013/09/04 06:10:02 - Supplier - Starting entry [VAR_supplier_rpro]
+2013/09/04 06:10:02 - VAR_supplier_ORION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SUPPLIER_JOB/supplier_variable.ktr]
+2013/09/04 06:10:02 - supplier job - Dispatching started for transformation [supplier job]
+2013/09/04 06:10:03 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:10:03 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:10:03 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:10:03 - Set Variables.0 - Set variable VAR_SUPPLIER_ID to value [121270]
+2013/09/04 06:10:03 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:10:03 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:10:03 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:10:03 - Supplier - Starting entry [DIM_supplier_RPRO]
+2013/09/04 06:10:03 - DIM_supplier_RPRO - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SUPPLIER_JOB/SUPPLIER_RPRO.ktr]
+2013/09/04 06:10:03 - SUPPLIER_RPRO - Dispatching started for transformation [SUPPLIER_RPRO]
+2013/09/04 06:10:03 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:10:03 - Add sequence.0 - Finished processing (I=0, O=0, R=757, W=757, U=0, E=0)
+2013/09/04 06:10:03 - Select values 2.0 - Finished processing (I=0, O=0, R=757, W=757, U=0, E=0)
+2013/09/04 06:10:03 - Table input.0 - Finished processing (I=757, O=0, R=0, W=757, U=0, E=0)
+2013/09/04 06:10:06 - Insert / Update.0 - Finished processing (I=757, O=0, R=757, W=757, U=757, E=0)
+2013/09/04 06:10:06 - Supplier - Starting entry [VAR_supplier_mycom]
+2013/09/04 06:10:06 - VAR_supplier_ORION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SUPPLIER_JOB/supplier_variable.ktr]
+2013/09/04 06:10:06 - supplier job - Dispatching started for transformation [supplier job]
+2013/09/04 06:10:06 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:10:06 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:10:06 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:10:06 - Set Variables.0 - Set variable VAR_SUPPLIER_ID to value [121270]
+2013/09/04 06:10:06 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:10:06 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:10:06 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:10:06 - Supplier - Starting entry [DIM_supplier_MYCOM]
+2013/09/04 06:10:06 - DIM_supplier_MYCOM - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SUPPLIER_JOB/SUPPLIER_MYCOM.ktr]
+2013/09/04 06:10:07 - SUPPLIER_MYCOM - Dispatching started for transformation [SUPPLIER_MYCOM]
+2013/09/04 06:10:07 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:10:07 - Select values 2.0 - Finished processing (I=0, O=0, R=1417, W=1417, U=0, E=0)
+2013/09/04 06:10:07 - Table input.0 - Finished processing (I=1417, O=0, R=0, W=1417, U=0, E=0)
+2013/09/04 06:10:07 - Add sequence.0 - Finished processing (I=0, O=0, R=1417, W=1417, U=0, E=0)
+2013/09/04 06:10:09 - Insert / Update.0 - Finished processing (I=1417, O=0, R=1417, W=1417, U=0, E=0)
+2013/09/04 06:10:09 - Supplier - Finished job entry [DIM_supplier_MYCOM] (result=[true])
+2013/09/04 06:10:09 - Supplier - Finished job entry [VAR_supplier_mycom] (result=[true])
+2013/09/04 06:10:09 - Supplier - Finished job entry [DIM_supplier_RPRO] (result=[true])
+2013/09/04 06:10:09 - Supplier - Finished job entry [VAR_supplier_rpro] (result=[true])
+2013/09/04 06:10:09 - Supplier - Finished job entry [DIM_supplier_ORION] (result=[true])
+2013/09/04 06:10:09 - Supplier - Finished job entry [VAR_supplier_ORION] (result=[true])
+2013/09/04 06:10:09 - Daily Dimension - Starting entry [Customer]
+2013/09/04 06:10:10 - Customer - Starting entry [Transformation cust variable]
+2013/09/04 06:10:10 - Transformation cust variable - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/Dim_Customer_Job/dim_customer_variable.ktr]
+2013/09/04 06:10:10 - dim_customer_variable - Dispatching started for transformation [dim_customer_variable]
+2013/09/04 06:10:10 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:10:10 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:10:10 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:10:10 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:10:10 - Set Variables.0 - Set variable VAR_customer_ID to value [810306]
+2013/09/04 06:10:10 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:10:10 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:10:10 - Customer - Starting entry [Transformation orion customer ]
+2013/09/04 06:10:10 - Transformation orion customer  - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/Dim_Customer_Job/stc_dim_orion_customer.ktr]
+2013/09/04 06:10:11 - stc_dim_orion_customer - Dispatching started for transformation [stc_dim_orion_customer]
+2013/09/04 06:10:12 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:10:12 - Add sequence.0 - Finished processing (I=0, O=0, R=6772, W=6772, U=0, E=0)
+2013/09/04 06:10:12 - Select values 2.0 - Finished processing (I=0, O=0, R=6772, W=6772, U=0, E=0)
+2013/09/04 06:10:12 - Table input.0 - Finished processing (I=6772, O=0, R=0, W=6772, U=0, E=0)
+2013/09/04 06:11:48 - Insert / Update.0 - Finished processing (I=6772, O=0, R=6772, W=6772, U=6772, E=0)
+2013/09/04 06:11:48 - Customer - Finished job entry [Transformation orion customer ] (result=[true])
+2013/09/04 06:11:48 - Customer - Finished job entry [Transformation cust variable] (result=[true])
+2013/09/04 06:11:48 - Daily Dimension - Starting entry [TXN]
+2013/09/04 06:11:49 - TXN - Starting entry [txn_om_var]
+2013/09/04 06:11:49 - txn_om_var - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/dim_TXN/dim_txn_variable.ktr]
+2013/09/04 06:11:49 - dim_txn_variable - Dispatching started for transformation [dim_txn_variable]
+2013/09/04 06:11:49 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:11:49 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:49 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:11:49 - Set Variables.0 - Set variable VAR_txn_ID to value [7998]
+2013/09/04 06:11:49 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:49 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:11:49 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:49 - TXN - Starting entry [txn_om]
+2013/09/04 06:11:49 - txn_om - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/dim_TXN/stc_dim_txn_OM.ktr]
+2013/09/04 06:11:49 - stc_dim_txn_OM - Dispatching started for transformation [stc_dim_txn_OM]
+2013/09/04 06:11:49 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:11:49 - Add sequence.0 - Finished processing (I=0, O=0, R=1373, W=1373, U=0, E=0)
+2013/09/04 06:11:49 - Select values 2.0 - Finished processing (I=0, O=0, R=1373, W=1373, U=0, E=0)
+2013/09/04 06:11:49 - Table input.0 - Finished processing (I=1373, O=0, R=0, W=1373, U=0, E=0)
+2013/09/04 06:11:51 - Insert / Update.0 - Finished processing (I=1373, O=0, R=1373, W=1373, U=1373, E=0)
+2013/09/04 06:11:51 - TXN - Starting entry [txn_fm_var]
+2013/09/04 06:11:51 - txn_om_var - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/dim_TXN/dim_txn_variable.ktr]
+2013/09/04 06:11:51 - dim_txn_variable - Dispatching started for transformation [dim_txn_variable]
+2013/09/04 06:11:51 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:11:51 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:51 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:11:51 - Set Variables.0 - Set variable VAR_txn_ID to value [7998]
+2013/09/04 06:11:51 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:51 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:11:51 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:51 - TXN - Starting entry [txn_fm]
+2013/09/04 06:11:51 - txn_fm - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/dim_TXN/stc_dim_txn_fm.ktr]
+2013/09/04 06:11:51 - stc_dim_txn_fm - Dispatching started for transformation [stc_dim_txn_fm]
+2013/09/04 06:11:52 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:11:52 - Add sequence.0 - Finished processing (I=0, O=0, R=690, W=690, U=0, E=0)
+2013/09/04 06:11:52 - Table input.0 - Finished processing (I=690, O=0, R=0, W=690, U=0, E=0)
+2013/09/04 06:11:52 - Select values 2.0 - Finished processing (I=0, O=0, R=690, W=690, U=0, E=0)
+2013/09/04 06:11:52 - Insert / Update.0 - Finished processing (I=690, O=0, R=690, W=690, U=416, E=0)
+2013/09/04 06:11:52 - TXN - Finished job entry [txn_fm] (result=[true])
+2013/09/04 06:11:52 - TXN - Finished job entry [txn_fm_var] (result=[true])
+2013/09/04 06:11:52 - TXN - Finished job entry [txn_om] (result=[true])
+2013/09/04 06:11:52 - TXN - Finished job entry [txn_om_var] (result=[true])
+2013/09/04 06:11:52 - Daily Dimension - Finished job entry [TXN] (result=[true])
+2013/09/04 06:11:52 - Daily Dimension - Finished job entry [Customer] (result=[true])
+2013/09/04 06:11:52 - Daily Dimension - Finished job entry [Supplier] (result=[true])
+2013/09/04 06:11:52 - Daily Dimension - Finished job entry [Customer Address] (result=[true])
+2013/09/04 06:11:52 - Daily Dimension - Finished job entry [Item] (result=[true])
+2013/09/04 06:11:52 - Daily Dimension - Finished job entry [ORION DIM] (result=[true])
+2013/09/04 06:11:53 - STC_ETL_INVENTORY_JOB - Starting entry [Inventory]
+2013/09/04 06:11:53 - Inventory - Starting entry [SetMaxETLDate]
+2013/09/04 06:11:53 - SetMaxETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/SetINVMaxETLDate.ktr]
+2013/09/04 06:11:53 - SetMaxETLDate - Dispatching started for transformation [SetMaxETLDate]
+2013/09/04 06:11:53 - Set Module Name.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:11:53 - Set Module Name.0 - Set variable VARMODULENAME to value [Inventory]
+2013/09/04 06:11:53 - Set Module Name.0 - Finished after 0 rows.
+2013/09/04 06:11:53 - REQ.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - Select values 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:53 - Set Variables 2 8.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables 2 7.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables 2.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables 2 4.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables 2 3.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables 2 5.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables 2 2.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables 2 6.0 - Setting environment variables...
+2013/09/04 06:11:53 - Set Variables.0 - Setting environment variables...
+2013/09/04 06:11:53 - LOCN_CURR_STK.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - ADJ_BATCH.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - COST_GROUP_CURR_VAL.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - ADJ_VAR.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - TRF_IN.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - TRF_OUT.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - STK_LEDGER.0 - Finished reading query, closing connection.
+2013/09/04 06:11:53 - LOCN_BATCH_CURR_STK.0 - Finished reading query, closing connection.
+2013/09/04 06:11:54 - COST_GROUP_CURR_VAL.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - ADJ_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - LOCN_CURR_STK.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables.0 - Set variable MAXETLDATE_ADJ to value [03-09-2013]
+2013/09/04 06:11:54 - Set Variables 2 6.0 - Set variable MAXETLDATE_LOCN_CURR_STK to value [17-07-2013]
+2013/09/04 06:11:54 - Set Variables 2 2.0 - Set variable MAXETLDATE_TRF_IN to value [03-09-2013]
+2013/09/04 06:11:53 - Set Variables 2 5.0 - Set variable MAXETLDATE_STK_LEDGER to value [03-09-2013]
+2013/09/04 06:11:53 - Set Variables 2 3.0 - Set variable MAXETLDATE_TRF_OUT to value [03-09-2013]
+2013/09/04 06:11:53 - Set Variables 2 4.0 - Set variable MAXETLDATE_REQ to value [03-09-2013]
+2013/09/04 06:11:53 - Set Variables 2.0 - Set variable MAXETLDATE_ADJ_BATCH to value [03-09-2013]
+2013/09/04 06:11:53 - Set Variables 2 7.0 - Set variable MAXETLDATE_LOCN_BATCH_CURR_STK to value [03-09-2013]
+2013/09/04 06:11:53 - Set Variables 2 8.0 - Set variable MAXETLDATE_COST_GROUP_CURR_VAL to value [11-02-2013]
+2013/09/04 06:11:53 - REQ.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 8.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables 2 7.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables 2.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables 2 4.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables 2 3.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables 2 5.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables 2 2.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables 2 6.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - Set Variables.0 - Finished after 1 rows.
+2013/09/04 06:11:54 - LOCN_BATCH_CURR_STK.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - STK_LEDGER.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - ADJ_VAR.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - TRF_OUT.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - TRF_IN.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Set Variables 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:11:54 - Inventory - Starting entry [STC_FACT_ADJ_INCR]
+2013/09/04 06:11:54 - STC_FACT_ADJ_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/stc_fact_adj_INCR.ktr]
+2013/09/04 06:11:54 - adj_test - Dispatching started for transformation [adj_test]
+2013/09/04 06:11:56 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:11:56 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_ADJ]
+2013/09/04 06:11:56 - Set Variables.0 - Finished after 0 rows.
+2013/09/04 06:11:59 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:11:59 - Select values.0 - Finished processing (I=0, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - Select values.1 - Finished processing (I=0, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - REASON ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - Table input.0 - Finished processing (I=456, O=0, R=0, W=456, U=0, E=0)
+2013/09/04 06:11:59 - GRADE1_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - LOCATION_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - GRADE1_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - CATEGORY_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - LOCATION_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - GRADE2_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - GRADE2_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - REASON ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - Reason_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - CATEGORY_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - Reason_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - Dept_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - TRAN_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - DOC_SRC_LOCTN_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - COMP_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - DOC_SRC_LOCTN_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - COMP_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - Dept_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:11:59 - TRAN_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:11 - ITEM_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - FOOD_CAT_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - PACKING_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - SIZE_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - CAT_MANG_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - ARTICLE_ID.0 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - REF_TRAN_ID.0 - Finished processing (I=14, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - ITEM_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - SIZE_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - Insert / Update.0 - Finished processing (I=456, O=454, R=456, W=456, U=2, E=0)
+2013/09/04 06:12:12 - PACKING_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - CAT_MANG_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - REF_TRAN_ID.1 - Finished processing (I=15, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - ARTICLE_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - FOOD_CAT_ID.1 - Finished processing (I=228, O=0, R=228, W=228, U=0, E=0)
+2013/09/04 06:12:12 - Inventory - Starting entry [ETL LOG]
+2013/09/04 06:12:12 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/09/04 06:12:12 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/09/04 06:12:12 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:12 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:12 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:12 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:12:12 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:12 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:12:12 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:12 - Inventory - Starting entry [STC_FACT_ADJ_BATCH_INCR]
+2013/09/04 06:12:12 - STC_FACT_ADJ_BATCH_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/stc_fact_adj_batch_INCR.ktr]
+2013/09/04 06:12:12 - stc_fact_adj_batch_INCR - Dispatching started for transformation [stc_fact_adj_batch_INCR]
+2013/09/04 06:12:13 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/09/04 06:12:13 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:12:13 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_ADJ_BATCH]
+2013/09/04 06:12:13 - Set Variables.0 - Finished after 0 rows.
+2013/09/04 06:12:14 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:14 - Inventory - Starting entry [PROG_ETL_LOG]
+2013/09/04 06:12:14 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/09/04 06:12:14 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/09/04 06:12:14 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:14 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:14 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:14 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:14 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:12:14 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:12:14 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:14 - Inventory - Starting entry [STC_FACT_TRF_IN_INCR]
+2013/09/04 06:12:14 - STC_FACT_TRF_IN_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/stc_fact_locn_trf_in_INCR.ktr]
+2013/09/04 06:12:14 - stc_fact_locn_trf_in_INCR - Dispatching started for transformation [stc_fact_locn_trf_in_INCR]
+2013/09/04 06:12:16 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/09/04 06:12:16 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:12:16 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_LOCN_TRF_IN]
+2013/09/04 06:12:16 - Set Variables.0 - Finished after 0 rows.
+2013/09/04 06:12:17 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:17 - Select values.0 - Finished processing (I=0, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:17 - Select values.1 - Finished processing (I=0, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:17 - Table input.0 - Finished processing (I=12, O=0, R=0, W=12, U=0, E=0)
+2013/09/04 06:12:17 - GRADE1_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:17 - CATEGORY_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:17 - GRADE2_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:17 - CATEGORY_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:17 - GRADE1_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:17 - GRADE2_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - dept id lkp.0 - Finished processing (I=12, O=0, R=12, W=12, U=0, E=0)
+2013/09/04 06:12:18 - GRP_COMP_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - COMP_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - TRAN_ID.1 - Finished processing (I=5, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - COMP_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - TRAN_ID.0 - Finished processing (I=5, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - GRP_COMP_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - ITEM_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - SIZE_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - FOOD_CAT_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - CAT_MANG_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - ARTICLE_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - PACKING_ID.0 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - ITEM_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - SIZE_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - ARTICLE_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - PACKING_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - CAT_MANG_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - FOOD_CAT_ID.1 - Finished processing (I=6, O=0, R=6, W=6, U=0, E=0)
+2013/09/04 06:12:18 - Insert / Update.0 - Finished processing (I=12, O=12, R=12, W=12, U=0, E=0)
+2013/09/04 06:12:18 - Inventory - Starting entry [PROG_ETL_LOG (2)]
+2013/09/04 06:12:18 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/09/04 06:12:18 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/09/04 06:12:18 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:18 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:12:18 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:18 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:18 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:18 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:18 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:12:18 - Inventory - Starting entry [STC_FACT_TRF_OUT_INCR]
+2013/09/04 06:12:18 - STC_FACT_TRF_OUT_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/stc_fact_locn_trf_out_INCR.ktr]
+2013/09/04 06:12:18 - stc_fact_locn_trf_out_INCR - Dispatching started for transformation [stc_fact_locn_trf_out_INCR]
+2013/09/04 06:12:20 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/09/04 06:12:20 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:12:20 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_LOCN_TRF_OUT]
+2013/09/04 06:12:20 - Set Variables.0 - Finished after 0 rows.
+2013/09/04 06:12:22 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:22 - Select values.0 - Finished processing (I=0, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - Select values.1 - Finished processing (I=0, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - CATEGORY_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - GRADE2_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - GRADE1_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - GRADE2_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - CATEGORY_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - GRADE1_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - Table input.0 - Finished processing (I=62, O=0, R=0, W=62, U=0, E=0)
+2013/09/04 06:12:22 - department_id.0 - Finished processing (I=62, O=0, R=62, W=62, U=0, E=0)
+2013/09/04 06:12:22 - COMP_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - TRAN_ID.0 - Finished processing (I=29, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - COMP_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - GRP_COMP_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - GRP_COMP_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:22 - TRAN_ID.1 - Finished processing (I=28, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - ITEM_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - SIZE_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - CAT_MANG_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - FOOD_CAT_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - ITEM_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - supplier_id.0 - Finished processing (I=0, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - supplier_id.1 - Finished processing (I=0, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - SIZE_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - Location_id.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - PACKING_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - FOOD_CAT_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - ARTICLE_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - ARTICLE_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - PACKING_ID.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - CAT_MANG_ID.1 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:23 - Location_id.0 - Finished processing (I=31, O=0, R=31, W=31, U=0, E=0)
+2013/09/04 06:12:27 - Insert / Update.0 - Finished processing (I=62, O=62, R=62, W=62, U=0, E=0)
+2013/09/04 06:12:27 - Inventory - Starting entry [PROG_ETL_LOG (3)]
+2013/09/04 06:12:27 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/09/04 06:12:27 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/09/04 06:12:27 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:27 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:27 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:27 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:27 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:12:27 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:12:27 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:27 - Inventory - Starting entry [stc_fact_req_incr]
+2013/09/04 06:12:27 - stc_fact_req_incr - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/stc_fact_req_incr.ktr]
+2013/09/04 06:12:27 - stc_fact_req_incr - Dispatching started for transformation [stc_fact_req_incr]
+2013/09/04 06:12:28 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/09/04 06:12:28 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:12:28 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_REQ]
+2013/09/04 06:12:28 - Set Variables.0 - Finished after 0 rows.
+2013/09/04 06:12:28 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:28 - Table input.0 - Finished processing (I=13, O=0, R=0, W=13, U=0, E=0)
+2013/09/04 06:12:28 - Select values.0 - Finished processing (I=0, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - ITEM_UOM_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - GRADE2_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - CATEGORY_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - GRADE1_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - LOCATION_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - TRAN_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - COMP_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - PACKING_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - FOOD_CAT_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - SIZE_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - DEPARTMENT_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - CAT_MANG_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - ITEM_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - Insert / Update.0 - Finished processing (I=13, O=13, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - ARTICLE_ID.0 - Finished processing (I=13, O=0, R=13, W=13, U=0, E=0)
+2013/09/04 06:12:31 - Inventory - Starting entry [PROG_ETL_LOG (4)]
+2013/09/04 06:12:31 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/09/04 06:12:31 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/09/04 06:12:31 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:31 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:31 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:12:31 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:31 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:31 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:12:31 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:12:31 - Inventory - Starting entry [STC_FACT_STK_LEDGER_INCR]
+2013/09/04 06:12:31 - STC_FACT_STK_LEDGER_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/STC_FACT_STK_LEDGER_INCR.ktr]
+2013/09/04 06:12:31 - STC_FACT_STK_LEDGER_INCR - Dispatching started for transformation [STC_FACT_STK_LEDGER_INCR]
+2013/09/04 06:12:33 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/09/04 06:12:33 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:12:33 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_STK_LEDGER]
+2013/09/04 06:12:33 - Set Variables.0 - Finished after 0 rows.
+2013/09/04 06:12:52 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:12:52 - Select values.0 - Finished processing (I=0, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:12:52 - Select values.1 - Finished processing (I=0, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:12:52 - Table input.0 - Finished processing (I=10376, O=0, R=0, W=10376, U=0, E=0)
+2013/09/04 06:17:55 - ITEM_UOM_ID.1 - Finished processing (I=5132, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - GRADE2_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - GRADE1_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - ITEM_UOM_ID.0 - Finished processing (I=5133, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - CATEGORY_ID.0 - Finished processing (I=10376, O=0, R=10376, W=10376, U=0, E=0)
+2013/09/04 06:17:55 - COMP_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - GRADE2_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - GRADE1_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - LOCATION_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - LOCATION_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - ITEM_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - COST_GRP_LOC_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - CAT_MANG_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - DEPT_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - ARTICLE_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - FOOD_CAT_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - STOCK_LOC_GRP_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - PACKING_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - SIZE_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - ITEM_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - TRAN_ID.1 - Finished processing (I=0, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - TRAN_ID.0 - Finished processing (I=0, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - COMP_ID.0 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - Insert / Update.0 - Finished processing (I=10376, O=10376, R=10376, W=10376, U=0, E=0)
+2013/09/04 06:17:55 - PACKING_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - DEPT_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - ARTICLE_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - SIZE_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - FOOD_CAT_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - CAT_MANG_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - STOCK_LOC_GRP_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - COST_GRP_LOC_ID.1 - Finished processing (I=5188, O=0, R=5188, W=5188, U=0, E=0)
+2013/09/04 06:17:55 - Inventory - Starting entry [PROG_ETL_LOG (5)]
+2013/09/04 06:17:55 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/09/04 06:17:55 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/09/04 06:17:55 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:17:55 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:17:55 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:17:55 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:17:55 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:17:55 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:17:56 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:17:56 - Inventory - Starting entry [STC_FACT_LOCN_BATCH_CURR_STk_INCR]
+2013/09/04 06:17:56 - STC_FACT_LOCN_BATCH_CURR_STk_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Inventory/STC_FACT_LOCN_BATCH_CURR_STk_INCR.ktr]
+2013/09/04 06:17:56 - STC_FACT_LOCN_BATCH_CURR_STk_INCR - Dispatching started for transformation [STC_FACT_LOCN_BATCH_CURR_STk_INCR]
+2013/09/04 06:17:57 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/09/04 06:17:58 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:17:58 - Execute SQL script 2.0 - Finished reading query, closing connection.
+2013/09/04 06:17:58 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/09/04 06:17:58 - Oracle Bulk Loader.0 - Deletion of files is not compatible with 'manual load method'
+2013/09/04 06:17:58 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_LOCN_BATCH_CURR_STk]
+2013/09/04 06:17:58 - Set Variables.0 - Finished after 0 rows.
+2013/09/04 06:17:59 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:17:59 - Select values.0 - Finished processing (I=0, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:17:59 - Select values.1 - Finished processing (I=0, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:17:59 - Table input.0 - Finished processing (I=1713, O=0, R=0, W=1713, U=0, E=0)
+2013/09/04 06:17:59 - GRADE1_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:17:59 - GRADE1_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:17:59 - GRADE2_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:17:59 - GRADE2_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:17:59 - CATEGORY_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:17:59 - CATEGORY_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:17:59 - LOCATION_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:17:59 - DEPT_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:17:59 - DEPT_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:17:59 - LOCATION_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:17:59 - COMP_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:17:59 - COMP_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:36 - ITEM_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:36 - SIZE_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:36 - ARTICLE_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:36 - FOOD_CAT_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:36 - CAT_MANG_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:36 - PACKING_ID.1 - Finished processing (I=856, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:36 - ITEM_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:18:36 - PACKING_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:18:36 - CAT_MANG_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:18:36 - SIZE_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:18:36 - ARTICLE_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:18:36 - FOOD_CAT_ID.0 - Finished processing (I=857, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:18:44 - ITEM_UOM_ID.1 - Finished processing (I=855, O=0, R=856, W=856, U=0, E=0)
+2013/09/04 06:18:44 - ITEM_UOM_ID.0 - Finished processing (I=853, O=0, R=857, W=857, U=0, E=0)
+2013/09/04 06:18:44 - Insert / Update.0 - Finished processing (I=1713, O=146, R=1713, W=1713, U=1567, E=0)
+2013/09/04 06:18:44 - Inventory - Starting entry [PROG_ETL_LOG (7)]
+2013/09/04 06:18:44 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/09/04 06:18:44 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/09/04 06:18:44 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:18:44 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:44 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:44 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:44 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:18:44 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:18:44 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:44 - Inventory - Finished job entry [PROG_ETL_LOG (7)] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [STC_FACT_LOCN_BATCH_CURR_STk_INCR] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [PROG_ETL_LOG (5)] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [STC_FACT_STK_LEDGER_INCR] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [PROG_ETL_LOG (4)] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [stc_fact_req_incr] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [PROG_ETL_LOG (3)] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [STC_FACT_TRF_OUT_INCR] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [PROG_ETL_LOG (2)] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [STC_FACT_TRF_IN_INCR] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [PROG_ETL_LOG] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [STC_FACT_ADJ_BATCH_INCR] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [ETL LOG] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [STC_FACT_ADJ_INCR] (result=[true])
+2013/09/04 06:18:44 - Inventory - Finished job entry [SetMaxETLDate] (result=[true])
+2013/09/04 06:18:44 - STC_ETL_INVENTORY_JOB - Starting entry [InsertETLDate]
+2013/09/04 06:18:44 - InsertETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/InsertETLDate.ktr]
+2013/09/04 06:18:45 - InsertETLDate - Dispatching started for transformation [InsertETLDate]
+2013/09/04 06:18:45 - Table input.0 - Finished reading query, closing connection.
+2013/09/04 06:18:45 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:45 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:45 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:45 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/09/04 06:18:45 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/09/04 06:18:45 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/09/04 06:18:45 - STC_ETL_INVENTORY_JOB - Finished job entry [InsertETLDate] (result=[true])
+2013/09/04 06:18:45 - STC_ETL_INVENTORY_JOB - Finished job entry [Inventory] (result=[true])
+2013/09/04 06:18:45 - STC_ETL_INVENTORY_JOB - Finished job entry [Daily Dimension] (result=[true])
+2013/09/04 06:18:45 - STC_ETL_INVENTORY_JOB - Finished job entry [SetMaxETLDate] (result=[true])
+2013/09/04 06:18:45 - STC_ETL_INVENTORY_JOB - Job execution finished

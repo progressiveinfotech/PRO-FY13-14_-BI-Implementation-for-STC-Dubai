@@ -1,0 +1,3037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>STC_FACT_F_TRANS_INCR</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;09&#47;10 17:12:11.000</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;09&#47;10 17:12:11.000</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>leaf_fact</name>
+    <server>localhost</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1521</port>
+    <username>hr</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10bef2a7c8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Live_CRM</name>
+    <server>10.1.0.223</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MYCOM</name>
+    <server>192.168.2.100</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>STC_V4</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom1</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycom2</name>
+    <server>10.0.0.237</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>shanker_trading</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycrm</name>
+    <server>10.1.0.222</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79b864d795aac8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycrm3</name>
+    <server>10.1.0.222</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79b864d795aac8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycrm4</name>
+    <server>10.1.0.222</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79b864d795aac8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>mycrm5</name>
+    <server>10.1.0.222</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vtigercrm</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79b864d795aac8</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>naga</name>
+    <server>10.80.0.46</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>test</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb10be7c81c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ORION</name>
+    <server>biserver</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>ORION106</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orion_original</name>
+    <server>shankartrading</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>orion106</username>
+    <password>Encrypted 2be98dcbc09c8808da417ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>orionpay</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>ORCL</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PAYROLL</name>
+    <server>SHANKARTRADING</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>STCNEW.WORLD</database>
+    <port>1521</port>
+    <username>ORIONPAY</username>
+    <password>Encrypted 2be98fc9c29e8a0ad84379e51e7c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>RPRO</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>rpro</username>
+    <password>Encrypted 2be98afc86aa78190a80bbe62d1c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>STCBI106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact0</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact007</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact07</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact2</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact3</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact5</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>stc_dim_fact6</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STC_DIM_FACT_1</name>
+    <server>10.0.0.237</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stc_dim_fact</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce7fcc9ba0d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Warehouse1</name>
+    <server>BISERVER</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>stcbi106</username>
+    <password>Encrypted 2be98afc86ad48687a910ff2088c5fe89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Table input</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>grp_comp_id_lkp</to><enabled>Y</enabled> </hop>  <hop> <from>grp_comp_id_lkp</from><to>txn_lkp</to><enabled>Y</enabled> </hop>  <hop> <from>txn_lkp</from><to>Currency_lkp</to><enabled>Y</enabled> </hop>  <hop> <from>ACNT_PERIOD</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  <hop> <from>Currency_lkp</from><to>activity_id</to><enabled>Y</enabled> </hop>  <hop> <from>activity_id</from><to>ACNT_PERIOD</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>ACNT_PERIOD</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_F_ACNT_PERIOD</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>TH_COMP_CODE</name>
+        <field>APER_COMP_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>TH_ACNT_YEAR</name>
+        <field>APER_ACNT_YEAR</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>TH_DOC_CAL_YEAR</name>
+        <field>APER_CAL_YEAR</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>TH_DOC_CAL_MONTH</name>
+        <field>APER_CAL_MONTH</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ACNT_PERIOD_ID</name>
+        <rename>ACNT_PERIOD_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>426</xloc>
+      <yloc>222</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Currency_lkp</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_CURRENCY</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>TD_CURR_CODE</name>
+        <field>CURR_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>522</xloc>
+      <yloc>119</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <commit>10000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>STC_FACT_F_TRANS</table>
+      <key>
+        <name>TH_SYS_ID</name>
+        <field>TH_SYS_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>TD_SYS_ID</name>
+        <field>TD_SYS_ID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TH_SYS_ID</name>
+        <rename>TH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_COMP_CODE</name>
+        <rename>TH_COMP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_ACNT_YEAR</name>
+        <rename>TH_ACNT_YEAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_TRAN_CODE</name>
+        <rename>TH_TRAN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DOC_NO</name>
+        <rename>TH_DOC_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DOC_DT</name>
+        <rename>TH_DOC_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DOC_CAL_YEAR</name>
+        <rename>TH_DOC_CAL_YEAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DOC_CAL_MONTH</name>
+        <rename>TH_DOC_CAL_MONTH</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DOC_REF</name>
+        <rename>TH_DOC_REF</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DOC_REF_DT</name>
+        <rename>TH_DOC_REF_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DOC_DUE_DT</name>
+        <rename>TH_DOC_DUE_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DIVN_CODE</name>
+        <rename>TH_DIVN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DEPT_CODE</name>
+        <rename>TH_DEPT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_CTL_TOTAL</name>
+        <rename>TH_CTL_TOTAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_AMD_NO</name>
+        <rename>TH_AMD_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_AMD_DT</name>
+        <rename>TH_AMD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_AMD_USER_ID</name>
+        <rename>TH_AMD_USER_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_AMD_RES_CODE</name>
+        <rename>TH_AMD_RES_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_APPR_STATUS</name>
+        <rename>TH_APPR_STATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_APPR_UID</name>
+        <rename>TH_APPR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_APPR_DT</name>
+        <rename>TH_APPR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_DESC</name>
+        <rename>TH_DESC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_ANNOTATION</name>
+        <rename>TH_ANNOTATION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_01</name>
+        <rename>TH_FLEX_01</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_02</name>
+        <rename>TH_FLEX_02</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_03</name>
+        <rename>TH_FLEX_03</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_04</name>
+        <rename>TH_FLEX_04</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_05</name>
+        <rename>TH_FLEX_05</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_06</name>
+        <rename>TH_FLEX_06</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_07</name>
+        <rename>TH_FLEX_07</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_08</name>
+        <rename>TH_FLEX_08</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_09</name>
+        <rename>TH_FLEX_09</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_10</name>
+        <rename>TH_FLEX_10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_11</name>
+        <rename>TH_FLEX_11</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_12</name>
+        <rename>TH_FLEX_12</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_13</name>
+        <rename>TH_FLEX_13</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_14</name>
+        <rename>TH_FLEX_14</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_15</name>
+        <rename>TH_FLEX_15</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_16</name>
+        <rename>TH_FLEX_16</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_17</name>
+        <rename>TH_FLEX_17</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_18</name>
+        <rename>TH_FLEX_18</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_19</name>
+        <rename>TH_FLEX_19</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_FLEX_20</name>
+        <rename>TH_FLEX_20</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_CR_UID</name>
+        <rename>TH_CR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_CR_DT</name>
+        <rename>TH_CR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_UPD_UID</name>
+        <rename>TH_UPD_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_UPD_DT</name>
+        <rename>TH_UPD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_CATG_CODE</name>
+        <rename>TH_CATG_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_REF_COMP_CODE</name>
+        <rename>TH_REF_COMP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_REF_ACNT_YEAR</name>
+        <rename>TH_REF_ACNT_YEAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_REF_TRAN_CODE</name>
+        <rename>TH_REF_TRAN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TH_REF_DOC_NO</name>
+        <rename>TH_REF_DOC_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_SYS_ID</name>
+        <rename>TD_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_SEQ_NO</name>
+        <rename>TD_SEQ_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_TH_SYS_ID</name>
+        <rename>TD_TH_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_TD_SYS_ID</name>
+        <rename>TD_TD_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_COMP_CODE</name>
+        <rename>TD_COMP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONTRA_COMP_CODE</name>
+        <rename>TD_CONTRA_COMP_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_ACNT_YEAR</name>
+        <rename>TD_ACNT_YEAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_TRAN_CODE</name>
+        <rename>TD_TRAN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_NO</name>
+        <rename>TD_DOC_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_DT</name>
+        <rename>TD_DOC_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_REF</name>
+        <rename>TD_DOC_REF</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_OTH_REF</name>
+        <rename>TD_OTH_REF</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_DUE_DT</name>
+        <rename>TD_DOC_DUE_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_MAIN_ACNT_CODE</name>
+        <rename>TD_MAIN_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_SUB_ACNT_CODE</name>
+        <rename>TD_SUB_ACNT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DIVN_CODE</name>
+        <rename>TD_DIVN_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DEPT_CODE</name>
+        <rename>TD_DEPT_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_ANLY_CODE_1</name>
+        <rename>TD_ANLY_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_ANLY_CODE_2</name>
+        <rename>TD_ANLY_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_ACTY_VALUE_CODE_1</name>
+        <rename>TD_ACTY_VALUE_CODE_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_ACTY_VALUE_CODE_2</name>
+        <rename>TD_ACTY_VALUE_CODE_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_HEAD_NO_1</name>
+        <rename>TD_HEAD_NO_1</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_HEAD_NO_2</name>
+        <rename>TD_HEAD_NO_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CURR_CODE</name>
+        <rename>TD_CURR_CODE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_DRCR_FLAG</name>
+        <rename>TD_DOC_DRCR_FLAG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_AMT</name>
+        <rename>TD_DOC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_AMT_2</name>
+        <rename>TD_DOC_AMT_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DOC_AMT_3</name>
+        <rename>TD_DOC_AMT_3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FC_AMT</name>
+        <rename>TD_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DESC</name>
+        <rename>TD_DESC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_DBK_PRINT_FLAG</name>
+        <rename>TD_DBK_PRINT_FLAG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_LED_PRINT_FLAG</name>
+        <rename>TD_LED_PRINT_FLAG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_MONTH_PRC_FLAG</name>
+        <rename>TD_MONTH_PRC_FLAG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PYMT_APPR_FLAG</name>
+        <rename>TD_PYMT_APPR_FLAG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_BILL_STATUS</name>
+        <rename>TD_BILL_STATUS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_BILL_LC_AMT</name>
+        <rename>TD_BILL_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_BILL_FC_AMT</name>
+        <rename>TD_BILL_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PYMT_LAST_APPR_FC_AMT</name>
+        <rename>TD_PYMT_LAST_APPR_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PYMT_LAST_APPR_LC_AMT</name>
+        <rename>TD_PYMT_LAST_APPR_LC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PYMT_LAST_APPR_BANK</name>
+        <rename>TD_PYMT_LAST_APPR_BANK</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_SYSTEM_GEN_YN</name>
+        <rename>TD_SYSTEM_GEN_YN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_BILL_LC_AMT_2</name>
+        <rename>TD_BILL_LC_AMT_2</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_BILL_LC_AMT_3</name>
+        <rename>TD_BILL_LC_AMT_3</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CASH_DISC_FC_AMT</name>
+        <rename>TD_CASH_DISC_FC_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_01</name>
+        <rename>TD_FLEX_01</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_02</name>
+        <rename>TD_FLEX_02</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_03</name>
+        <rename>TD_FLEX_03</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_04</name>
+        <rename>TD_FLEX_04</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_05</name>
+        <rename>TD_FLEX_05</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_06</name>
+        <rename>TD_FLEX_06</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_07</name>
+        <rename>TD_FLEX_07</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_08</name>
+        <rename>TD_FLEX_08</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_09</name>
+        <rename>TD_FLEX_09</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_10</name>
+        <rename>TD_FLEX_10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_11</name>
+        <rename>TD_FLEX_11</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_12</name>
+        <rename>TD_FLEX_12</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_13</name>
+        <rename>TD_FLEX_13</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_14</name>
+        <rename>TD_FLEX_14</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_15</name>
+        <rename>TD_FLEX_15</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_16</name>
+        <rename>TD_FLEX_16</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_17</name>
+        <rename>TD_FLEX_17</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_18</name>
+        <rename>TD_FLEX_18</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_19</name>
+        <rename>TD_FLEX_19</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_FLEX_20</name>
+        <rename>TD_FLEX_20</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CR_UID</name>
+        <rename>TD_CR_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CR_DT</name>
+        <rename>TD_CR_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_UPD_UID</name>
+        <rename>TD_UPD_UID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_UPD_DT</name>
+        <rename>TD_UPD_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CHQ_NO</name>
+        <rename>TD_CHQ_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CHQ_DT</name>
+        <rename>TD_CHQ_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_VALUE_DT</name>
+        <rename>TD_VALUE_DT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PAY_SLIP_NO</name>
+        <rename>TD_PAY_SLIP_NO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PAY_SLIP_DATE</name>
+        <rename>TD_PAY_SLIP_DATE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CASH_DISC_SYS_ID</name>
+        <rename>TD_CASH_DISC_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PARENT_SYS_ID</name>
+        <rename>TD_PARENT_SYS_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_PARENT_TYPE_NUM</name>
+        <rename>TD_PARENT_TYPE_NUM</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_01</name>
+        <rename>TD_CONFIG_FLD_01</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_02</name>
+        <rename>TD_CONFIG_FLD_02</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_03</name>
+        <rename>TD_CONFIG_FLD_03</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_04</name>
+        <rename>TD_CONFIG_FLD_04</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_05</name>
+        <rename>TD_CONFIG_FLD_05</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_06</name>
+        <rename>TD_CONFIG_FLD_06</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_07</name>
+        <rename>TD_CONFIG_FLD_07</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_08</name>
+        <rename>TD_CONFIG_FLD_08</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_09</name>
+        <rename>TD_CONFIG_FLD_09</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_10</name>
+        <rename>TD_CONFIG_FLD_10</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_11</name>
+        <rename>TD_CONFIG_FLD_11</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_12</name>
+        <rename>TD_CONFIG_FLD_12</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_13</name>
+        <rename>TD_CONFIG_FLD_13</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_14</name>
+        <rename>TD_CONFIG_FLD_14</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_15</name>
+        <rename>TD_CONFIG_FLD_15</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_16</name>
+        <rename>TD_CONFIG_FLD_16</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_17</name>
+        <rename>TD_CONFIG_FLD_17</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_18</name>
+        <rename>TD_CONFIG_FLD_18</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_19</name>
+        <rename>TD_CONFIG_FLD_19</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_20</name>
+        <rename>TD_CONFIG_FLD_20</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_21</name>
+        <rename>TD_CONFIG_FLD_21</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_22</name>
+        <rename>TD_CONFIG_FLD_22</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_23</name>
+        <rename>TD_CONFIG_FLD_23</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_24</name>
+        <rename>TD_CONFIG_FLD_24</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_25</name>
+        <rename>TD_CONFIG_FLD_25</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_26</name>
+        <rename>TD_CONFIG_FLD_26</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_27</name>
+        <rename>TD_CONFIG_FLD_27</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_28</name>
+        <rename>TD_CONFIG_FLD_28</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_29</name>
+        <rename>TD_CONFIG_FLD_29</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_30</name>
+        <rename>TD_CONFIG_FLD_30</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_31</name>
+        <rename>TD_CONFIG_FLD_31</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_32</name>
+        <rename>TD_CONFIG_FLD_32</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_33</name>
+        <rename>TD_CONFIG_FLD_33</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_34</name>
+        <rename>TD_CONFIG_FLD_34</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_35</name>
+        <rename>TD_CONFIG_FLD_35</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_36</name>
+        <rename>TD_CONFIG_FLD_36</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_37</name>
+        <rename>TD_CONFIG_FLD_37</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_38</name>
+        <rename>TD_CONFIG_FLD_38</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_39</name>
+        <rename>TD_CONFIG_FLD_39</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TD_CONFIG_FLD_40</name>
+        <rename>TD_CONFIG_FLD_40</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_CR_DT</name>
+        <rename>SYSDATE</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>PROG_DR_AMNT</name>
+        <rename>TD_FC_DR_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_CR_AMNT</name>
+        <rename>TD_FC_CR_AMT</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>GRP_COMP_ID</name>
+        <rename>GRP_COMP_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TRAN_ID</name>
+        <rename>TXN_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CURRENCY_ID</name>
+        <rename>CURRENCY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ACTIVITY_ID</name>
+        <rename>ACTIVITY_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ACNT_PERIOD_ID</name>
+        <rename>ACNT_PERIOD_ID</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PROG_UPD_DT</name>
+        <rename>SYSDATE</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>315</xloc>
+      <yloc>221</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>TH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_ACNT_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_TRAN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DOC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DOC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DOC_CAL_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DOC_CAL_MONTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DOC_REF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DOC_REF_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DOC_DUE_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_CTL_TOTAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_AMD_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_AMD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_AMD_USER_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_AMD_RES_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_APPR_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_APPR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_APPR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_DESC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_ANNOTATION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_FLEX_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_CATG_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_REF_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_REF_ACNT_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_REF_TRAN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TH_REF_DOC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_SEQ_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_TH_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_TD_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONTRA_COMP_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_ACNT_YEAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_TRAN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_REF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_OTH_REF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_DUE_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_MAIN_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_SUB_ACNT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DIVN_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DEPT_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_ANLY_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_ANLY_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_ACTY_VALUE_CODE_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_ACTY_VALUE_CODE_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_HEAD_NO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_HEAD_NO_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CURR_CODE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_DRCR_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_AMT_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DOC_AMT_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DESC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_DBK_PRINT_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_LED_PRINT_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_MONTH_PRC_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PYMT_APPR_FLAG</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_BILL_STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_BILL_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_BILL_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PYMT_LAST_APPR_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PYMT_LAST_APPR_LC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PYMT_LAST_APPR_BANK</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_SYSTEM_GEN_YN</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_BILL_LC_AMT_2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_BILL_LC_AMT_3</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CASH_DISC_FC_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FLEX_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CR_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CR_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_UPD_UID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_UPD_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CHQ_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CHQ_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_VALUE_DT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PAY_SLIP_NO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PAY_SLIP_DATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CASH_DISC_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PARENT_SYS_ID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_PARENT_TYPE_NUM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_01</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_02</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_03</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_04</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_05</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_06</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_07</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_08</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_09</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_10</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_11</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_12</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_14</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_15</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_16</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_17</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_18</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_19</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_20</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_21</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_22</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_23</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_24</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_25</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_26</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_27</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_28</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_29</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_30</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_31</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_32</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_33</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_34</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_35</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_36</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_37</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_38</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_39</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_CONFIG_FLD_40</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SYSDATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FC_DR_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TD_FC_CR_AMT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>SYSDATE</name>
+        <rename>SYSDATE</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd-MM-yy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>210</xloc>
+      <yloc>120</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Set Variables</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <field_name/>
+        <variable_name>VARFACTNAME</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value>STC_FACT_F_TRANS</default_value>
+        </field>
+      </fields>
+    <use_formatting>Y</use_formatting>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>434</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>orion_original</connection>
+    <sql>SELECT
+  A.TH_SYS_ID
+, A.TH_COMP_CODE
+, A.TH_ACNT_YEAR
+, A.TH_TRAN_CODE
+, A.TH_DOC_NO
+, A.TH_DOC_DT
+, A.TH_DOC_CAL_YEAR
+, A.TH_DOC_CAL_MONTH
+, A.TH_DOC_REF
+, A.TH_DOC_REF_DT
+, A.TH_DOC_DUE_DT
+, A.TH_DIVN_CODE
+, A.TH_DEPT_CODE
+, A.TH_CTL_TOTAL
+, A.TH_AMD_NO
+, A.TH_AMD_DT
+, A.TH_AMD_USER_ID
+, A.TH_AMD_RES_CODE
+, A.TH_APPR_STATUS
+, A.TH_APPR_UID
+, A.TH_APPR_DT
+, A.TH_DESC
+, A.TH_ANNOTATION
+, A.TH_FLEX_01
+, A.TH_FLEX_02
+, A.TH_FLEX_03
+, A.TH_FLEX_04
+, A.TH_FLEX_05
+, A.TH_FLEX_06
+, A.TH_FLEX_07
+, A.TH_FLEX_08
+, A.TH_FLEX_09
+, A.TH_FLEX_10
+, A.TH_FLEX_11
+, A.TH_FLEX_12
+, A.TH_FLEX_13
+, A.TH_FLEX_14
+, A.TH_FLEX_15
+, A.TH_FLEX_16
+, A.TH_FLEX_17
+, A.TH_FLEX_18
+, A.TH_FLEX_19
+, A.TH_FLEX_20
+, A.TH_CR_UID
+, A.TH_CR_DT
+, A.TH_UPD_UID
+, A.TH_UPD_DT
+, A.TH_CATG_CODE
+, A.TH_REF_COMP_CODE
+, A.TH_REF_ACNT_YEAR
+, A.TH_REF_TRAN_CODE
+, A.TH_REF_DOC_NO
+, B.TD_SYS_ID
+, B.TD_SEQ_NO
+, B.TD_TH_SYS_ID
+, B.TD_TD_SYS_ID
+, B.TD_COMP_CODE
+, B.TD_CONTRA_COMP_CODE
+, B.TD_ACNT_YEAR
+, B.TD_TRAN_CODE
+, B.TD_DOC_NO
+, B.TD_DOC_DT
+, B.TD_DOC_REF
+, B.TD_OTH_REF
+, B.TD_DOC_DUE_DT
+, B.TD_MAIN_ACNT_CODE
+, B.TD_SUB_ACNT_CODE
+, B.TD_DIVN_CODE
+, B.TD_DEPT_CODE
+, B.TD_ANLY_CODE_1
+, B.TD_ANLY_CODE_2
+, B.TD_ACTY_VALUE_CODE_1
+, B.TD_ACTY_VALUE_CODE_2
+, B.TD_HEAD_NO_1
+, B.TD_HEAD_NO_2
+, B.TD_CURR_CODE
+, B.TD_DOC_DRCR_FLAG
+, B.TD_DOC_AMT
+, B.TD_DOC_AMT_2
+, B.TD_DOC_AMT_3
+, B.TD_FC_AMT
+, B.TD_DESC
+, B.TD_DBK_PRINT_FLAG
+, B.TD_LED_PRINT_FLAG
+, B.TD_MONTH_PRC_FLAG
+, B.TD_PYMT_APPR_FLAG
+, B.TD_BILL_STATUS
+, B.TD_BILL_LC_AMT
+, B.TD_BILL_FC_AMT
+, B.TD_PYMT_LAST_APPR_FC_AMT
+, B.TD_PYMT_LAST_APPR_LC_AMT
+, B.TD_PYMT_LAST_APPR_BANK
+, B.TD_SYSTEM_GEN_YN
+, B.TD_BILL_LC_AMT_2
+, B.TD_BILL_LC_AMT_3
+, B.TD_CASH_DISC_FC_AMT
+, B.TD_FLEX_01
+, B.TD_FLEX_02
+, B.TD_FLEX_03
+, B.TD_FLEX_04
+, B.TD_FLEX_05
+, B.TD_FLEX_06
+, B.TD_FLEX_07
+, B.TD_FLEX_08
+, B.TD_FLEX_09
+, B.TD_FLEX_10
+, B.TD_FLEX_11
+, B.TD_FLEX_12
+, B.TD_FLEX_13
+, B.TD_FLEX_14
+, B.TD_FLEX_15
+, B.TD_FLEX_16
+, B.TD_FLEX_17
+, B.TD_FLEX_18
+, B.TD_FLEX_19
+, B.TD_FLEX_20
+, B.TD_CR_UID
+, B.TD_CR_DT
+, B.TD_UPD_UID
+, B.TD_UPD_DT
+, B.TD_CHQ_NO
+, B.TD_CHQ_DT
+, B.TD_VALUE_DT
+, B.TD_PAY_SLIP_NO
+, B.TD_PAY_SLIP_DATE
+, B.TD_CASH_DISC_SYS_ID
+, B.TD_PARENT_SYS_ID
+, B.TD_PARENT_TYPE_NUM
+, B.TD_CONFIG_FLD_01
+, B.TD_CONFIG_FLD_02
+, B.TD_CONFIG_FLD_03
+, B.TD_CONFIG_FLD_04
+, B.TD_CONFIG_FLD_05
+, B.TD_CONFIG_FLD_06
+, B.TD_CONFIG_FLD_07
+, B.TD_CONFIG_FLD_08
+, B.TD_CONFIG_FLD_09
+, B.TD_CONFIG_FLD_10
+, B.TD_CONFIG_FLD_11
+, B.TD_CONFIG_FLD_12
+, B.TD_CONFIG_FLD_13
+, B.TD_CONFIG_FLD_14
+, B.TD_CONFIG_FLD_15
+, B.TD_CONFIG_FLD_16
+, B.TD_CONFIG_FLD_17
+, B.TD_CONFIG_FLD_18
+, B.TD_CONFIG_FLD_19
+, B.TD_CONFIG_FLD_20
+, B.TD_CONFIG_FLD_21
+, B.TD_CONFIG_FLD_22
+, B.TD_CONFIG_FLD_23
+, B.TD_CONFIG_FLD_24
+, B.TD_CONFIG_FLD_25
+, B.TD_CONFIG_FLD_26
+, B.TD_CONFIG_FLD_27
+, B.TD_CONFIG_FLD_28
+, B.TD_CONFIG_FLD_29
+, B.TD_CONFIG_FLD_30
+, B.TD_CONFIG_FLD_31
+, B.TD_CONFIG_FLD_32
+, B.TD_CONFIG_FLD_33
+, B.TD_CONFIG_FLD_34
+, B.TD_CONFIG_FLD_35
+, B.TD_CONFIG_FLD_36
+, B.TD_CONFIG_FLD_37
+, B.TD_CONFIG_FLD_38
+, B.TD_CONFIG_FLD_39
+, B.TD_CONFIG_FLD_40
+,SYSDATE,
+
+CASE  B.TD_DOC_DRCR_FLAG 
+WHEN &apos;D&apos; THEN nvl(B.TD_FC_AMT,0)
+WHEN &apos;C&apos; THEN 0
+END TD_FC_DR_AMT,
+
+case B.TD_DOC_DRCR_FLAG 
+WHEN &apos;C&apos; THEN nvl(B.TD_FC_AMT,0)
+WHEN &apos;D&apos; THEN 0
+END TD_FC_CR_AMT
+
+
+
+FROM FT_CUR_TRANS_HEADER A,
+FT_CUR_TRANS_DETAIL B
+
+WHERE 
+A.TH_SYS_ID=B.TD_TH_SYS_ID AND
+(A.TH_CR_DT &gt;= TO_DATE(&apos;${MAXETLDATE_TRANS}&apos;,&apos;DD-MM-YYYY&apos;) AND
+TO_DATE(A.TH_CR_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR 
+A.TH_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_TRANS}&apos;,&apos;DD-MM-YYYY&apos;) AND 
+TO_DATE(A.TH_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR
+B.TD_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_TRANS}&apos;,&apos;DD-MM-YYYY&apos;)  AND
+TO_DATE(B.TD_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+--and to_date(A.TH_CR_DT,&apos;DD-MM-YYYY&apos;)&gt;=TO_DATE(&apos;1-JULY-03&apos;,&apos;DD-MM-YYYY&apos;)  and
+--to_date(A.TH_CR_DT,&apos;DD-MM-YYYY&apos;)&lt;=TO_DATE(&apos;10-JANUARY-13&apos;,&apos;DD-MM-YYYY&apos;) 
+
+UNION
+
+
+SELECT
+  E.TH_SYS_ID
+, E.TH_COMP_CODE
+, E.TH_ACNT_YEAR
+, E.TH_TRAN_CODE
+, E.TH_DOC_NO
+, E.TH_DOC_DT
+, E.TH_DOC_CAL_YEAR
+, E.TH_DOC_CAL_MONTH
+, E.TH_DOC_REF
+, E.TH_DOC_REF_DT
+, E.TH_DOC_DUE_DT
+, E.TH_DIVN_CODE
+, E.TH_DEPT_CODE
+, E.TH_CTL_TOTAL
+, E.TH_AMD_NO
+, E.TH_AMD_DT
+, E.TH_AMD_USER_ID
+, E.TH_AMD_RES_CODE
+, E.TH_APPR_STATUS
+, E.TH_APPR_UID
+, E.TH_APPR_DT
+, E.TH_DESC
+, E.TH_ANNOTATION
+, E.TH_FLEX_01
+, E.TH_FLEX_02
+, E.TH_FLEX_03
+, E.TH_FLEX_04
+, E.TH_FLEX_05
+, E.TH_FLEX_06
+, E.TH_FLEX_07
+, E.TH_FLEX_08
+, E.TH_FLEX_09
+, E.TH_FLEX_10
+, E.TH_FLEX_11
+, E.TH_FLEX_12
+, E.TH_FLEX_13
+, E.TH_FLEX_14
+, E.TH_FLEX_15
+, E.TH_FLEX_16
+, E.TH_FLEX_17
+, E.TH_FLEX_18
+, E.TH_FLEX_19
+, E.TH_FLEX_20
+, E.TH_CR_UID
+, E.TH_CR_DT
+, E.TH_UPD_UID
+, E.TH_UPD_DT
+, E.TH_CATG_CODE
+, E.TH_REF_COMP_CODE
+, E.TH_REF_ACNT_YEAR
+, E.TH_REF_TRAN_CODE
+, E.TH_REF_DOC_NO
+, F.TD_SYS_ID
+, F.TD_SEQ_NO
+, F.TD_TH_SYS_ID
+, F.TD_TD_SYS_ID
+, F.TD_COMP_CODE
+, F.TD_CONTRA_COMP_CODE
+, F.TD_ACNT_YEAR
+, F.TD_TRAN_CODE
+, F.TD_DOC_NO
+, F.TD_DOC_DT
+, F.TD_DOC_REF
+, F.TD_OTH_REF
+, F.TD_DOC_DUE_DT
+, F.TD_MAIN_ACNT_CODE
+, F.TD_SUB_ACNT_CODE
+, F.TD_DIVN_CODE
+, F.TD_DEPT_CODE
+, F.TD_ANLY_CODE_1
+, F.TD_ANLY_CODE_2
+, F.TD_ACTY_VALUE_CODE_1
+, F.TD_ACTY_VALUE_CODE_2
+, F.TD_HEAD_NO_1
+, F.TD_HEAD_NO_2
+, F.TD_CURR_CODE
+, F.TD_DOC_DRCR_FLAG
+, F.TD_DOC_AMT
+, F.TD_DOC_AMT_2
+, F.TD_DOC_AMT_3
+, F.TD_FC_AMT
+, F.TD_DESC
+, F.TD_DBK_PRINT_FLAG
+, F.TD_LED_PRINT_FLAG
+, F.TD_MONTH_PRC_FLAG
+, F.TD_PYMT_APPR_FLAG
+, F.TD_BILL_STATUS
+, F.TD_BILL_LC_AMT
+, F.TD_BILL_FC_AMT
+, F.TD_PYMT_LAST_APPR_FC_AMT
+, F.TD_PYMT_LAST_APPR_LC_AMT
+, F.TD_PYMT_LAST_APPR_BANK
+, F.TD_SYSTEM_GEN_YN
+, F.TD_BILL_LC_AMT_2
+, F.TD_BILL_LC_AMT_3
+, F.TD_CASH_DISC_FC_AMT
+, F.TD_FLEX_01
+, F.TD_FLEX_02
+, F.TD_FLEX_03
+, F.TD_FLEX_04
+, F.TD_FLEX_05
+, F.TD_FLEX_06
+, F.TD_FLEX_07
+, F.TD_FLEX_08
+, F.TD_FLEX_09
+, F.TD_FLEX_10
+, F.TD_FLEX_11
+, F.TD_FLEX_12
+, F.TD_FLEX_13
+, F.TD_FLEX_14
+, F.TD_FLEX_15
+, F.TD_FLEX_16
+, F.TD_FLEX_17
+, F.TD_FLEX_18
+, F.TD_FLEX_19
+, F.TD_FLEX_20
+, F.TD_CR_UID
+, F.TD_CR_DT
+, F.TD_UPD_UID
+, F.TD_UPD_DT
+, F.TD_CHQ_NO
+, F.TD_CHQ_DT
+, F.TD_VALUE_DT
+, F.TD_PAY_SLIP_NO
+, F.TD_PAY_SLIP_DATE
+, F.TD_PARENT_SYS_ID
+, F.TD_PARENT_TYPE_NUM
+, F.TD_CASH_DISC_SYS_ID
+, F.TD_CONFIG_FLD_01
+, F.TD_CONFIG_FLD_02
+, F.TD_CONFIG_FLD_03
+, F.TD_CONFIG_FLD_04
+, F.TD_CONFIG_FLD_05
+, F.TD_CONFIG_FLD_06
+, F.TD_CONFIG_FLD_07
+, F.TD_CONFIG_FLD_08
+, F.TD_CONFIG_FLD_09
+, F.TD_CONFIG_FLD_10
+, F.TD_CONFIG_FLD_11
+, F.TD_CONFIG_FLD_12
+, F.TD_CONFIG_FLD_13
+, F.TD_CONFIG_FLD_14
+, F.TD_CONFIG_FLD_15
+, F.TD_CONFIG_FLD_16
+, F.TD_CONFIG_FLD_17
+, F.TD_CONFIG_FLD_18
+, F.TD_CONFIG_FLD_19
+, F.TD_CONFIG_FLD_20
+, F.TD_CONFIG_FLD_21
+, F.TD_CONFIG_FLD_22
+, F.TD_CONFIG_FLD_23
+, F.TD_CONFIG_FLD_24
+, F.TD_CONFIG_FLD_25
+, F.TD_CONFIG_FLD_26
+, F.TD_CONFIG_FLD_27
+, F.TD_CONFIG_FLD_28
+, F.TD_CONFIG_FLD_29
+, F.TD_CONFIG_FLD_30
+, F.TD_CONFIG_FLD_31
+, F.TD_CONFIG_FLD_32
+, F.TD_CONFIG_FLD_33
+, F.TD_CONFIG_FLD_34
+, F.TD_CONFIG_FLD_35
+, F.TD_CONFIG_FLD_36
+, F.TD_CONFIG_FLD_37
+, F.TD_CONFIG_FLD_38
+, F.TD_CONFIG_FLD_39
+, F.TD_CONFIG_FLD_40
+,sysdate,
+
+CASE  F.TD_DOC_DRCR_FLAG 
+WHEN &apos;D&apos; THEN nvl(F.TD_FC_AMT,0)
+WHEN &apos;C&apos; THEN 0
+END TD_FC_DR_AMT,
+
+CASE  F.TD_DOC_DRCR_FLAG 
+WHEN &apos;C&apos; THEN nvl(F.TD_FC_AMT,0)
+WHEN &apos;D&apos; THEN 0
+END TD_FC_CR_AMT
+
+FROM
+FT_PRV_TRANS_HEADER E,
+FT_PRV_TRANS_DETAIL F
+WHERE 
+E.TH_SYS_ID=F.TD_TH_SYS_ID AND
+(E.TH_CR_DT &gt;= TO_DATE(&apos;${MAXETLDATE_TRANS}&apos;,&apos;DD-MM-YYYY&apos;) AND
+TO_DATE(E.TH_CR_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR 
+E.TH_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_TRANS}&apos;,&apos;DD-MM-YYYY&apos;) AND 
+TO_DATE(E.TH_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;)
+OR
+F.TD_UPD_DT &gt;= TO_DATE(&apos;${MAXETLDATE_TRANS}&apos;,&apos;DD-MM-YYYY&apos;)  AND
+TO_DATE(F.TD_UPD_DT, &apos;DD-MON-YYYY&apos;) &lt; TO_DATE(SYSDATE, &apos;DD-MON-YYYY&apos;))
+--AND to_date(E.TH_CR_DT,&apos;DD-MM-YYYY&apos;)&gt;=TO_DATE(&apos;1-JULY-12&apos;,&apos;DD-MM-YYYY&apos;)  and
+--to_date(E.TH_CR_DT,&apos;DD-MM-YYYY&apos;)&lt;=TO_DATE(&apos;10-JANUARY-13&apos;,&apos;DD-MM-YYYY&apos;)</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>98</xloc>
+      <yloc>123</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>activity_id</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>stc_dim_f_activity</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>TD_ACTY_VALUE_CODE_1</name>
+        <field>ACTY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ACTIVITY_ID</name>
+        <rename>ACTIVITY_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>523</xloc>
+      <yloc>223</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>grp_comp_id_lkp</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>stc_dim_group_companies</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>TD_COMP_CODE</name>
+        <field>COMPANY_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>TD_MAIN_ACNT_CODE</name>
+        <field>MAIN_ACCOUNT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>TD_SUB_ACNT_CODE</name>
+        <field>SUB_ACCOUNT_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>GRP_COMP_ID</name>
+        <rename>GRP_COMP_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>320</xloc>
+      <yloc>120</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>txn_lkp</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Warehouse</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>STC_DIM_TXN</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>TD_TRAN_CODE</name>
+        <field>TXN_CODE</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TXN_ID</name>
+        <rename>TXN_ID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>424</xloc>
+      <yloc>120</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

@@ -1,0 +1,168 @@
+2013/03/14 12:19:16 - Pan - Logging is at level : Basic logging
+2013/03/14 12:19:16 - Pan - Start of run.
+2013/03/14 12:19:17 - MYCOM_FACT_STOCK_CNT - Dispatching started for transformation [MYCOM_FACT_STOCK_CNT]
+2013/03/14 12:19:18 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/03/14 12:28:58 - Table input.0 - linenr 50000
+2013/03/14 12:37:44 - Select values.0 - linenr 50000
+2013/03/14 12:46:51 - Prod_mast_id.0 - linenr 50000
+2013/03/14 12:55:52 - pack_master_id .0 - linenr 50000
+2013/03/14 13:04:46 - item_id.0 - linenr 50000
+2013/03/14 13:04:46 - Database lookup.0 - linenr 50000
+2013/03/14 13:04:46 - comp_code 2.0 - linenr 50000
+2013/03/14 13:04:46 - prod_um_id.0 - linenr 50000
+2013/03/14 13:04:46 - barcode_id.0 - linenr 50000
+2013/03/14 13:04:46 - Dept_Id.0 - linenr 50000
+2013/03/14 13:04:46 - branch_id.0 - linenr 50000
+2013/03/14 13:04:46 - Table output.0 - linenr 50000
+2013/03/14 13:13:37 - Table input.0 - linenr 100000
+2013/03/14 13:22:33 - Select values.0 - linenr 100000
+2013/03/14 13:31:18 - Prod_mast_id.0 - linenr 100000
+2013/03/14 13:40:00 - pack_master_id .0 - linenr 100000
+2013/03/14 13:48:31 - item_id.0 - linenr 100000
+2013/03/14 13:48:31 - Database lookup.0 - linenr 100000
+2013/03/14 13:48:31 - comp_code 2.0 - linenr 100000
+2013/03/14 13:48:31 - prod_um_id.0 - linenr 100000
+2013/03/14 13:48:31 - barcode_id.0 - linenr 100000
+2013/03/14 13:48:31 - Dept_Id.0 - linenr 100000
+2013/03/14 13:48:31 - branch_id.0 - linenr 100000
+2013/03/14 13:48:31 - Table output.0 - linenr 100000
+2013/03/14 13:57:03 - Table input.0 - linenr 150000
+2013/03/14 14:05:31 - Select values.0 - linenr 150000
+2013/03/14 14:14:09 - Prod_mast_id.0 - linenr 150000
+2013/03/14 14:22:40 - pack_master_id .0 - linenr 150000
+2013/03/14 14:31:06 - item_id.0 - linenr 150000
+2013/03/14 14:31:06 - Database lookup.0 - linenr 150000
+2013/03/14 14:31:06 - comp_code 2.0 - linenr 150000
+2013/03/14 14:31:06 - prod_um_id.0 - linenr 150000
+2013/03/14 14:31:06 - barcode_id.0 - linenr 150000
+2013/03/14 14:31:06 - Dept_Id.0 - linenr 150000
+2013/03/14 14:31:06 - branch_id.0 - linenr 150000
+2013/03/14 14:31:06 - Table output.0 - linenr 150000
+2013/03/14 14:39:48 - Table input.0 - linenr 200000
+2013/03/14 14:48:39 - Select values.0 - linenr 200000
+2013/03/14 14:57:28 - Prod_mast_id.0 - linenr 200000
+2013/03/14 15:06:18 - pack_master_id .0 - linenr 200000
+2013/03/14 15:14:58 - item_id.0 - linenr 200000
+2013/03/14 15:14:58 - Database lookup.0 - linenr 200000
+2013/03/14 15:14:58 - comp_code 2.0 - linenr 200000
+2013/03/14 15:14:58 - prod_um_id.0 - linenr 200000
+2013/03/14 15:14:58 - barcode_id.0 - linenr 200000
+2013/03/14 15:14:58 - Dept_Id.0 - linenr 200000
+2013/03/14 15:14:58 - branch_id.0 - linenr 200000
+2013/03/14 15:14:58 - Table output.0 - linenr 200000
+2013/03/14 15:23:43 - Table input.0 - linenr 250000
+2013/03/14 15:32:35 - Select values.0 - linenr 250000
+2013/03/14 15:41:24 - Prod_mast_id.0 - linenr 250000
+2013/03/14 15:50:10 - pack_master_id .0 - linenr 250000
+2013/03/14 15:58:51 - item_id.0 - linenr 250000
+2013/03/14 15:58:51 - Database lookup.0 - linenr 250000
+2013/03/14 15:58:51 - comp_code 2.0 - linenr 250000
+2013/03/14 15:58:51 - prod_um_id.0 - linenr 250000
+2013/03/14 15:58:51 - barcode_id.0 - linenr 250000
+2013/03/14 15:58:51 - Dept_Id.0 - linenr 250000
+2013/03/14 15:58:51 - branch_id.0 - linenr 250000
+2013/03/14 15:58:51 - Table output.0 - linenr 250000
+2013/03/14 16:07:30 - Table input.0 - linenr 300000
+2013/03/14 16:16:09 - Select values.0 - linenr 300000
+2013/03/14 16:24:33 - Prod_mast_id.0 - linenr 300000
+2013/03/14 16:32:50 - pack_master_id .0 - linenr 300000
+2013/03/14 16:40:58 - item_id.0 - linenr 300000
+2013/03/14 16:40:58 - Database lookup.0 - linenr 300000
+2013/03/14 16:40:58 - comp_code 2.0 - linenr 300000
+2013/03/14 16:40:58 - prod_um_id.0 - linenr 300000
+2013/03/14 16:40:58 - barcode_id.0 - linenr 300000
+2013/03/14 16:40:58 - Dept_Id.0 - linenr 300000
+2013/03/14 16:40:58 - branch_id.0 - linenr 300000
+2013/03/14 16:40:58 - Table output.0 - linenr 300000
+2013/03/14 16:49:12 - Table input.0 - linenr 350000
+2013/03/14 16:57:30 - Select values.0 - linenr 350000
+2013/03/14 17:05:28 - Prod_mast_id.0 - linenr 350000
+2013/03/14 17:14:15 - pack_master_id .0 - linenr 350000
+2013/03/14 17:22:58 - item_id.0 - linenr 350000
+2013/03/14 17:22:58 - Database lookup.0 - linenr 350000
+2013/03/14 17:22:58 - comp_code 2.0 - linenr 350000
+2013/03/14 17:22:58 - prod_um_id.0 - linenr 350000
+2013/03/14 17:22:58 - barcode_id.0 - linenr 350000
+2013/03/14 17:22:58 - Dept_Id.0 - linenr 350000
+2013/03/14 17:22:58 - branch_id.0 - linenr 350000
+2013/03/14 17:22:58 - Table output.0 - linenr 350000
+2013/03/14 17:31:41 - Table input.0 - linenr 400000
+2013/03/14 17:40:25 - Select values.0 - linenr 400000
+2013/03/14 17:48:55 - Prod_mast_id.0 - linenr 400000
+2013/03/14 17:56:10 - pack_master_id .0 - linenr 400000
+2013/03/14 18:03:06 - item_id.0 - linenr 400000
+2013/03/14 18:03:06 - Database lookup.0 - linenr 400000
+2013/03/14 18:03:06 - comp_code 2.0 - linenr 400000
+2013/03/14 18:03:06 - prod_um_id.0 - linenr 400000
+2013/03/14 18:03:06 - barcode_id.0 - linenr 400000
+2013/03/14 18:03:06 - Dept_Id.0 - linenr 400000
+2013/03/14 18:03:06 - branch_id.0 - linenr 400000
+2013/03/14 18:03:06 - Table output.0 - linenr 400000
+2013/03/14 18:10:14 - Table input.0 - linenr 450000
+2013/03/14 18:17:26 - Select values.0 - linenr 450000
+2013/03/14 18:24:23 - Prod_mast_id.0 - linenr 450000
+2013/03/14 18:31:09 - pack_master_id .0 - linenr 450000
+2013/03/14 18:37:56 - item_id.0 - linenr 450000
+2013/03/14 18:37:56 - Database lookup.0 - linenr 450000
+2013/03/14 18:37:56 - comp_code 2.0 - linenr 450000
+2013/03/14 18:37:56 - prod_um_id.0 - linenr 450000
+2013/03/14 18:37:56 - barcode_id.0 - linenr 450000
+2013/03/14 18:37:56 - Dept_Id.0 - linenr 450000
+2013/03/14 18:37:56 - branch_id.0 - linenr 450000
+2013/03/14 18:37:56 - Table output.0 - linenr 450000
+2013/03/14 18:44:50 - Table input.0 - linenr 500000
+2013/03/14 18:51:40 - Select values.0 - linenr 500000
+2013/03/14 18:58:21 - Prod_mast_id.0 - linenr 500000
+2013/03/14 19:05:15 - pack_master_id .0 - linenr 500000
+2013/03/14 19:12:04 - item_id.0 - linenr 500000
+2013/03/14 19:12:04 - Database lookup.0 - linenr 500000
+2013/03/14 19:12:04 - comp_code 2.0 - linenr 500000
+2013/03/14 19:12:04 - prod_um_id.0 - linenr 500000
+2013/03/14 19:12:04 - barcode_id.0 - linenr 500000
+2013/03/14 19:12:04 - Dept_Id.0 - linenr 500000
+2013/03/14 19:12:04 - branch_id.0 - linenr 500000
+2013/03/14 19:12:04 - Table output.0 - linenr 500000
+2013/03/14 19:18:49 - Table input.0 - linenr 550000
+2013/03/14 19:25:33 - Select values.0 - linenr 550000
+2013/03/14 19:32:19 - Prod_mast_id.0 - linenr 550000
+2013/03/14 19:39:11 - pack_master_id .0 - linenr 550000
+2013/03/14 19:45:54 - item_id.0 - linenr 550000
+2013/03/14 19:45:54 - Database lookup.0 - linenr 550000
+2013/03/14 19:45:54 - comp_code 2.0 - linenr 550000
+2013/03/14 19:45:54 - prod_um_id.0 - linenr 550000
+2013/03/14 19:45:54 - barcode_id.0 - linenr 550000
+2013/03/14 19:45:54 - Dept_Id.0 - linenr 550000
+2013/03/14 19:45:54 - branch_id.0 - linenr 550000
+2013/03/14 19:45:54 - Table output.0 - linenr 550000
+2013/03/14 19:45:59 - Table input.0 - Finished reading query, closing connection.
+2013/03/14 19:45:59 - Table input.0 - Finished processing (I=590121, O=0, R=0, W=590121, U=0, E=0)
+2013/03/14 19:52:33 - Select values.0 - Finished processing (I=0, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 19:58:55 - Prod_mast_id.0 - Finished processing (I=590121, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:04:54 - pack_master_id .0 - Finished processing (I=590121, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - item_id.0 - Finished processing (I=9, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - Dept_Id.0 - Finished processing (I=590121, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - branch_id.0 - Finished processing (I=590121, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - Database lookup.0 - Finished processing (I=590121, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - comp_code 2.0 - Finished processing (I=0, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - prod_um_id.0 - Finished processing (I=589955, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - barcode_id.0 - Finished processing (I=589802, O=0, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - Table output.0 - Finished processing (I=0, O=590121, R=590121, W=590121, U=0, E=0)
+2013/03/14 20:10:49 - Pan - Finished!
+2013/03/14 20:10:49 - Pan - Start=2013/03/14 12:19:16.716, Stop=2013/03/14 20:10:49.230
+2013/03/14 20:10:49 - Pan - Processing ended after 7 hours, 51 minutes and 32 seconds (28292 seconds total).
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT -  
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step Table input.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step Select values.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step prod_um_id.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step barcode_id.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step Prod_mast_id.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step pack_master_id .0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step item_id.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step Dept_Id.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step branch_id.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step Table output.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step Database lookup.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step comp_code 2.0 ended successfully, processed 590121 lines. ( 20 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step SUPP_ID.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step comp_code.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/14 20:10:49 - MYCOM_FACT_STOCK_CNT - Step supp_ref_id.0 ended successfully, processed 0 lines. ( 0 lines/s)

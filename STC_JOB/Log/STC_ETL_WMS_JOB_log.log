@@ -1,0 +1,456 @@
+2013/08/30 10:39:46 - Kitchen - Logging is at level : Basic logging
+2013/08/30 10:39:46 - Kitchen - Start of run.
+2013/08/30 10:39:47 - STC_ETL_WMS_JOB - Start of job execution
+2013/08/30 10:39:47 - STC_ETL_WMS_JOB - Starting entry [WMS]
+2013/08/30 10:39:47 - WMS - Starting entry [SetMaxETLDate]
+2013/08/30 10:39:47 - SetMaxETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/SetWMSMaxETLDate.ktr]
+2013/08/30 10:39:49 - SetWMSMaxETLDate - Dispatching started for transformation [SetWMSMaxETLDate]
+2013/08/30 10:39:50 - Set Module Name.0 - We didn't receive a row while setting the default values.
+2013/08/30 10:39:50 - Set Module Name.0 - Set variable VARMODULENAME to value [WMS]
+2013/08/30 10:39:50 - Set Module Name.0 - Finished after 0 rows.
+2013/08/30 10:39:50 - WMS_POSITION.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - Set Variables 2 13.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 5.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 7.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 12.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 3.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 2.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 11.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 6.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 9.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 10.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 8.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 4.0 - Setting environment variables...
+2013/08/30 10:39:50 - Set Variables 2 14.0 - Setting environment variables...
+2013/08/30 10:39:50 - WMS_ADJ_VAR.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_RCV.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_WAVE_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_INB.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_POSITION_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_TRANSFER.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_CYL_CNT.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_INB_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_PUTAWAY.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_RCV_REF.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_WORK_ORDER.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_WAVE.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_OBN.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - WMS_OBN_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 10:39:50 - Set Variables 2 14.0 - Set variable MAXETLDATE_WMS_OBN_BATCH to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 4.0 - Set variable MAXETLDATE_WMS_PUTAWAY to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 8.0 - Set variable MAXETLDATE_WMS_WAVE to value [23-08-2013]
+2013/08/30 10:39:50 - WMS_POSITION.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 10.0 - Set variable MAXETLDATE_WMS_WORK_ORDER to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables.0 - Set variable MAXETLDATE_WMS_ADJ to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2.0 - Set variable MAXETLDATE_WMS_CYL_CNT to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 9.0 - Set variable MAXETLDATE_WMS_WAVE_BATCH to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 6.0 - Set variable MAXETLDATE_WMS_RCV_REF to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 11.0 - Set variable MAXETLDATE_WMS_INB to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 2.0 - Set variable MAXETLDATE_WMS_POSITION to value [28-06-2013]
+2013/08/30 10:39:50 - Set Variables 2 3.0 - Set variable MAXETLDATE_WMS_POSITION_BATCH to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 12.0 - Set variable MAXETLDATE_WMS_INB_BATCH to value [23-08-2013]
+2013/08/30 10:39:50 - Select values 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 12.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 12.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Select values 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 9.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 14.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 13.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 10.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Select values 2 11.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 7.0 - Set variable MAXETLDATE_WMS_TRANSFER to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 5.0 - Set variable MAXETLDATE_WMS_RCV to value [23-08-2013]
+2013/08/30 10:39:50 - Set Variables 2 13.0 - Set variable MAXETLDATE_WMS_OBN to value [23-08-2013]
+2013/08/30 10:39:50 - WMS_ADJ_VAR.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 12.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 3.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 2.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 11.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 6.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 9.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 10.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 8.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 4.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 14.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 10.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 9.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 5.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 13.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - WMS_CYL_CNT.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 11.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 7.0 - Finished after 1 rows.
+2013/08/30 10:39:50 - Set Variables 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_WAVE_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_INB.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_RCV.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_WAVE.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_OBN_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 13.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_WORK_ORDER.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_POSITION_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_OBN.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_TRANSFER.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_RCV_REF.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_PUTAWAY.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS_INB_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - Set Variables 2 14.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:50 - WMS - Starting entry [wms_adj_INCR]
+2013/08/30 10:39:50 - wms_adj_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/stc_fact_wms_adj_INCR.ktr]
+2013/08/30 10:39:50 - stc_fact_wms_adj_INCR - Dispatching started for transformation [stc_fact_wms_adj_INCR]
+2013/08/30 10:39:51 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 10:39:51 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 10:39:51 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_ADJ]
+2013/08/30 10:39:51 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 10:39:52 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:39:52 - Table input.0 - Finished processing (I=94, O=0, R=0, W=94, U=0, E=0)
+2013/08/30 10:39:52 - Select values.0 - Finished processing (I=0, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - COMP_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - CATEGORY_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - Department_id.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - ARTICLE_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - CAT_MANG_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - FOOD_CAT_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - SIZE_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - PACKING_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - WH_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - LOCATION_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:52 - Doc_SRC_LOC_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:57 - ITEM_UOM_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:57 - GRADE2_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:57 - ITEM_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:57 - ref_tran_id.0 - Finished processing (I=0, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:57 - GRADE1_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:57 - TRAN_ID.0 - Finished processing (I=94, O=0, R=94, W=94, U=0, E=0)
+2013/08/30 10:39:58 - Insert / Update.0 - Finished processing (I=94, O=0, R=94, W=94, U=94, E=0)
+2013/08/30 10:39:58 - WMS - Starting entry [ETL LOG]
+2013/08/30 10:39:58 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 10:39:58 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 10:39:58 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:39:58 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:58 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:58 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:39:58 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:58 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 10:39:58 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:39:58 - WMS - Starting entry [WMS_CYL_CNT_INCR]
+2013/08/30 10:39:58 - WMS_CYL_CNT_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/STC_FACT_WMS_CYL_CNT_INCR.ktr]
+2013/08/30 10:39:58 - STC_FACT_WMS_CYL_CNT_INCR - Dispatching started for transformation [STC_FACT_WMS_CYL_CNT_INCR]
+2013/08/30 10:40:00 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 10:40:00 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 10:40:00 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_CYL_CNT]
+2013/08/30 10:40:00 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 10:40:02 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:40:02 - Table input.0 - Finished processing (I=1938, O=0, R=0, W=1938, U=0, E=0)
+2013/08/30 10:40:02 - Select values.1 - Finished processing (I=0, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - Select values.0 - Finished processing (I=0, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - PALLET_POSITION_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - COMP_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - CATEGORY_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - Department_id.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - ARTICLE_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - CAT_MANG_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - FOOD_CAT_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - PACKING_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - SIZE_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - WH_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - PALLET_POSITION_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - LOCATION_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - COMP_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - CATEGORY_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - DOC_SRC_LOCN_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - Department_id.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - ARTICLE_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - CAT_MANG_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - FOOD_CAT_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - PACKING_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - SIZE_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:02 - WH_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:03 - LOCATION_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:03 - DOC_SRC_LOCN_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - ITEM_UOM_ID.1 - Finished processing (I=962, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - GRADE2_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - TRAN_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - GRADE1_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - ITEM_ID.1 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - ITEM_UOM_ID.0 - Finished processing (I=965, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - TRAN_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - GRADE1_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - GRADE2_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:40:54 - ITEM_ID.0 - Finished processing (I=969, O=0, R=969, W=969, U=0, E=0)
+2013/08/30 10:47:39 - Insert / Update.0 - Finished processing (I=1938, O=0, R=1938, W=1938, U=1938, E=0)
+2013/08/30 10:47:39 - WMS - Starting entry [PROG_ETL_LOG]
+2013/08/30 10:47:39 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 10:47:39 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 10:47:39 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:47:39 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:47:39 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:47:39 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:47:39 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:47:39 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 10:47:39 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:47:39 - WMS - Starting entry [WMS_PUTAWAY_INCR]
+2013/08/30 10:47:39 - WMS_PUTAWAY_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/STC_FACT_WMS_PUTAWAY_INCR.ktr]
+2013/08/30 10:47:39 - STC_FACT_WMS_PUTAWAY_INCR - Dispatching started for transformation [STC_FACT_WMS_PUTAWAY_INCR]
+2013/08/30 10:47:40 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 10:47:40 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 10:47:40 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_PUTAWAY]
+2013/08/30 10:47:40 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 10:47:41 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:47:41 - Select values.0 - Finished processing (I=0, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:41 - Select values.1 - Finished processing (I=0, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:41 - Table input.0 - Finished processing (I=1467, O=0, R=0, W=1467, U=0, E=0)
+2013/08/30 10:47:41 - Department_id.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:41 - Department_id.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:41 - COMP_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:41 - COMP_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:41 - CATEGORY_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:41 - CATEGORY_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:41 - ARTICLE_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:41 - ARTICLE_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:41 - CAT_MANG_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:41 - CAT_MANG_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:42 - FOOD_CAT_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:42 - SIZE_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:42 - PACKING_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:42 - FOOD_CAT_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:42 - WH_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:42 - PACKING_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:42 - WH_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:42 - LOCATION_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:42 - SIZE_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:42 - LOCATION_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:47:42 - SUPPLIER_ID.0 - Finished processing (I=364, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:47:42 - SUPPLIER_ID.1 - Finished processing (I=364, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:48:22 - ITEM_UOM_ID.0 - Finished processing (I=707, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:48:22 - ref_tran_id.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:48:22 - GRADE1_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:48:22 - GRADE2_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:48:22 - ITEM_ID.0 - Finished processing (I=734, O=0, R=734, W=734, U=0, E=0)
+2013/08/30 10:48:23 - ITEM_UOM_ID.1 - Finished processing (I=706, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:48:23 - GRADE2_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:48:23 - ITEM_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:48:23 - GRADE1_ID.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:48:23 - ref_tran_id.1 - Finished processing (I=733, O=0, R=733, W=733, U=0, E=0)
+2013/08/30 10:51:57 - Insert / Update.0 - Finished processing (I=1467, O=0, R=1467, W=1467, U=1467, E=0)
+2013/08/30 10:51:57 - WMS - Starting entry [PROG_ETL_LOG (4)]
+2013/08/30 10:51:57 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 10:51:57 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 10:51:57 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:51:57 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:51:57 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:51:57 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:51:57 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:51:57 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 10:51:57 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:51:57 - WMS - Starting entry [WMS_RCV_INCR]
+2013/08/30 10:51:57 - WMS_RCV_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/STC_FACT_WMS_RCV_INCR.ktr]
+2013/08/30 10:51:58 - STC_FACT_WMS_RCV_INCR - Dispatching started for transformation [STC_FACT_WMS_RCV_INCR]
+2013/08/30 10:52:00 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 10:52:00 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 10:52:00 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_RCV]
+2013/08/30 10:52:00 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 10:52:00 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:52:01 - Select values.1 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:00 - Select values.0 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - Table input.0 - Finished processing (I=1176, O=0, R=0, W=1176, U=0, E=0)
+2013/08/30 10:52:01 - Department_id.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - Department_id.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - PALLET_POSITION_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - PALLET_POSITION_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - COMP_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - COMP_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - CATEGORY_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - CATEGORY_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - ARTICLE_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - ARTICLE_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - CAT_MANG_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - FOOD_CAT_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - CAT_MANG_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - FOOD_CAT_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - PACKING_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - PACKING_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - SIZE_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - WH_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - LOCATION_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - WH_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - SIZE_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - SUPPLIER_ID.0 - Finished processing (I=218, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - LOCATION_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:01 - SUPPLIER_ID.1 - Finished processing (I=220, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:35 - ITEM_UOM_ID.0 - Finished processing (I=562, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:35 - TRAN_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:35 - DOC_SRC_LOCN_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:35 - GRADE2_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:35 - GRADE1_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:35 - ref_tran_id.0 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:35 - ITEM_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:36 - ITEM_UOM_ID.1 - Finished processing (I=562, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:36 - DOC_SRC_LOCN_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:36 - TRAN_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:36 - GRADE1_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:36 - ref_tran_id.1 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:36 - GRADE2_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:52:36 - ITEM_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:22 - Insert / Update.0 - Finished processing (I=1176, O=1176, R=1176, W=1176, U=0, E=0)
+2013/08/30 10:54:22 - WMS - Starting entry [PROG_ETL_LOG (5)]
+2013/08/30 10:54:22 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 10:54:22 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 10:54:22 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:54:22 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:54:22 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:54:22 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:54:22 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 10:54:22 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:54:22 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:54:22 - WMS - Starting entry [WMS_RCV_REF_INCR]
+2013/08/30 10:54:22 - WMS_RCV_REF_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/STC_FACT_WMS_RCV_REF_INCR.ktr]
+2013/08/30 10:54:22 - STC_FACT_WMS_RCV_REF_INCR - Dispatching started for transformation [STC_FACT_WMS_RCV_REF_INCR]
+2013/08/30 10:54:24 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 10:54:24 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 10:54:24 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_RCV_REF]
+2013/08/30 10:54:24 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 10:54:25 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:54:25 - Table input.0 - Finished processing (I=1176, O=0, R=0, W=1176, U=0, E=0)
+2013/08/30 10:54:25 - Select values.1 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - Select values.0 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - Department_id.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - Department_id.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - COMP_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - COMP_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - CATEGORY_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - CATEGORY_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - CAT_MANG_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - CAT_MANG_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - ARTICLE_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - ARTICLE_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - FOOD_CAT_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - PACKING_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - FOOD_CAT_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - SIZE_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - PACKING_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - WH_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - SIZE_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - LOCATION_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - LOCATION_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - WH_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - SUPPLIER_ID.1 - Finished processing (I=221, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:54:25 - SUPPLIER_ID.0 - Finished processing (I=217, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - ITEM_UOM_ID.0 - Finished processing (I=562, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - ref_tran_id.0 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - DOC_SRC_LOCN_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - TRAN_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - GRADE1_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - GRADE2_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - ITEM_ID.0 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - ITEM_UOM_ID.1 - Finished processing (I=562, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - ref_tran_id.1 - Finished processing (I=0, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - DOC_SRC_LOCN_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - TRAN_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - GRADE2_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - GRADE1_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:01 - ITEM_ID.1 - Finished processing (I=588, O=0, R=588, W=588, U=0, E=0)
+2013/08/30 10:55:02 - Insert / Update.0 - Finished processing (I=1176, O=366, R=1176, W=1176, U=802, E=0)
+2013/08/30 10:55:02 - WMS - Starting entry [PROG_ETL_LOG (6)]
+2013/08/30 10:55:02 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 10:55:02 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 10:55:02 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:55:02 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:55:02 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:55:02 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:55:02 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 10:55:02 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 10:55:02 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 10:55:02 - WMS - Starting entry [WMS_TRANSFER_INCR]
+2013/08/30 10:55:02 - WMS_TRANSFER_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/STC_FACT_WMS_TRANSFER_INCR.ktr]
+2013/08/30 10:55:02 - STC_FACT_WMS_TRANSFER_INCR - Dispatching started for transformation [STC_FACT_WMS_TRANSFER_INCR]
+2013/08/30 10:55:04 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 10:55:04 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 10:55:04 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_TRANSFER]
+2013/08/30 10:55:04 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 10:55:06 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 10:55:06 - Select values.1 - Finished processing (I=0, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:06 - Table input.0 - Finished processing (I=1435, O=0, R=0, W=1435, U=0, E=0)
+2013/08/30 10:55:06 - Select values.0 - Finished processing (I=0, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - sugg_to_pallet_position_id.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - sugg_to_pallet_position_id.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:06 - sugg_fm_pallet_position_id.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - sugg_fm_pallet_position_id.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:06 - act_fm_pallet_position_id.0 - Finished processing (I=14, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - act_fm_pallet_position_id.1 - Finished processing (I=13, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:06 - act_to_pallet_position_id.0 - Finished processing (I=14, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - COMP_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - act_to_pallet_position_id.1 - Finished processing (I=13, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:06 - CATEGORY_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - ARTICLE_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:06 - COMP_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:06 - CAT_MANG_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:07 - CATEGORY_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - LOCATION_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - FOOD_CAT_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:07 - SIZE_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:07 - PACKING_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - Department_id.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - PACKING_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:07 - WH_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - WH_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:07 - FOOD_CAT_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - CAT_MANG_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - SIZE_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - LOCATION_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:07 - ARTICLE_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:07 - Department_id.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:45 - ITEM_UOM_ID.1 - Finished processing (I=708, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:45 - GRADE2_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:45 - TRAN_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:45 - GRADE1_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:45 - ITEM_ID.1 - Finished processing (I=717, O=0, R=717, W=717, U=0, E=0)
+2013/08/30 10:55:46 - ITEM_UOM_ID.0 - Finished processing (I=710, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:46 - GRADE1_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:46 - GRADE2_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:46 - TRAN_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 10:55:46 - ITEM_ID.0 - Finished processing (I=718, O=0, R=718, W=718, U=0, E=0)
+2013/08/30 11:04:02 - Insert / Update.0 - Finished processing (I=1435, O=1435, R=1435, W=1435, U=0, E=0)
+2013/08/30 11:04:02 - WMS - Starting entry [PROG_ETL_LOG (7)]
+2013/08/30 11:04:02 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 11:04:02 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 11:04:02 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 11:04:02 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:04:02 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:04:02 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:04:02 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:04:02 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 11:04:02 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:04:02 - WMS - Finished job entry [PROG_ETL_LOG (7)] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [WMS_TRANSFER_INCR] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [PROG_ETL_LOG (6)] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [WMS_RCV_REF_INCR] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [PROG_ETL_LOG (5)] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [WMS_RCV_INCR] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [PROG_ETL_LOG (4)] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [WMS_PUTAWAY_INCR] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [PROG_ETL_LOG] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [WMS_CYL_CNT_INCR] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [ETL LOG] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [wms_adj_INCR] (result=[true])
+2013/08/30 11:04:02 - WMS - Finished job entry [SetMaxETLDate] (result=[true])
+2013/08/30 11:04:02 - STC_ETL_WMS_JOB - Finished job entry [WMS] (result=[true])
+2013/08/30 11:04:02 - STC_ETL_WMS_JOB - Job execution finished

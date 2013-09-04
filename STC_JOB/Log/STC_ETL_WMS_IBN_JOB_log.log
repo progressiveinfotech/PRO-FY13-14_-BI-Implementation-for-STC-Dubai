@@ -1,0 +1,446 @@
+2013/08/30 11:10:02 - Kitchen - Logging is at level : Basic logging
+2013/08/30 11:10:02 - Kitchen - Start of run.
+2013/08/30 11:10:02 - STC_ETL_WMS_IBN_JOB - Start of job execution
+2013/08/30 11:10:02 - STC_ETL_WMS_IBN_JOB - Starting entry [WMS IBN]
+2013/08/30 11:10:03 - WMS IBN - Starting entry [SetMaxETLDate]
+2013/08/30 11:10:03 - SetMaxETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/SetWMSMaxETLDate.ktr]
+2013/08/30 11:10:05 - SetWMSMaxETLDate - Dispatching started for transformation [SetWMSMaxETLDate]
+2013/08/30 11:10:06 - Set Module Name.0 - We didn't receive a row while setting the default values.
+2013/08/30 11:10:06 - Set Module Name.0 - Set variable VARMODULENAME to value [WMS]
+2013/08/30 11:10:06 - Set Module Name.0 - Finished after 0 rows.
+2013/08/30 11:10:06 - WMS_INB_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - Set Variables 2 3.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 7.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 5.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 6.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 4.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 9.0 - Setting environment variables...
+2013/08/30 11:10:06 - WMS_POSITION_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - Set Variables 2 11.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 13.0 - Setting environment variables...
+2013/08/30 11:10:06 - WMS_INB.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - Set Variables 2 2.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 14.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 8.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 12.0 - Setting environment variables...
+2013/08/30 11:10:06 - Set Variables 2 10.0 - Setting environment variables...
+2013/08/30 11:10:06 - WMS_WAVE_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_RCV.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_ADJ_VAR.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_CYL_CNT.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_RCV_REF.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_PUTAWAY.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_OBN_BATCH.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_POSITION.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_WORK_ORDER.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_WAVE.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_TRANSFER.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_OBN.0 - Finished reading query, closing connection.
+2013/08/30 11:10:06 - WMS_POSITION.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_OBN_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_WORK_ORDER.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_PUTAWAY.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_RCV_REF.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_CYL_CNT.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_ADJ_VAR.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_RCV.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_WAVE_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Set Variables 2 10.0 - Set variable MAXETLDATE_WMS_WORK_ORDER to value [23-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 12.0 - Set variable MAXETLDATE_WMS_INB_BATCH to value [23-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 8.0 - Set variable MAXETLDATE_WMS_WAVE to value [23-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 14.0 - Set variable MAXETLDATE_WMS_OBN_BATCH to value [23-08-2013]
+2013/08/30 11:10:06 - WMS_INB.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Set Variables.0 - Set variable MAXETLDATE_WMS_ADJ to value [30-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 2.0 - Set variable MAXETLDATE_WMS_POSITION to value [28-06-2013]
+2013/08/30 11:10:06 - WMS_POSITION_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Set Variables 2 13.0 - Set variable MAXETLDATE_WMS_OBN to value [23-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 11.0 - Set variable MAXETLDATE_WMS_INB to value [23-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 9.0 - Set variable MAXETLDATE_WMS_WAVE_BATCH to value [23-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 4.0 - Set variable MAXETLDATE_WMS_PUTAWAY to value [30-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 6.0 - Set variable MAXETLDATE_WMS_RCV_REF to value [30-08-2013]
+2013/08/30 11:10:06 - Set Variables 2 5.0 - Set variable MAXETLDATE_WMS_RCV to value [30-08-2013]
+2013/08/30 11:10:06 - WMS_INB_BATCH.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Set Variables 2.0 - Set variable MAXETLDATE_WMS_CYL_CNT to value [30-08-2013]
+2013/08/30 11:10:06 - Select values 2 10.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 14.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 13.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Set Variables 2 7.0 - Set variable MAXETLDATE_WMS_TRANSFER to value [30-08-2013]
+2013/08/30 11:10:06 - Select values 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 11.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 12.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values 2 9.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:06 - Set Variables 2 3.0 - Set variable MAXETLDATE_WMS_POSITION_BATCH to value [23-08-2013]
+2013/08/30 11:10:07 - Set Variables 2 7.0 - Finished after 1 rows.
+2013/08/30 11:10:07 - Set Variables 2.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 5.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 6.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 4.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 9.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 11.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 13.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 2.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 14.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 8.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 12.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - Set Variables 2 10.0 - Finished after 1 rows.
+2013/08/30 11:10:06 - WMS_OBN.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_TRANSFER.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:06 - WMS_WAVE.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 10.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 12.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 14.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 13.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 11.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 9.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - Set Variables 2 3.0 - Finished after 1 rows.
+2013/08/30 11:10:07 - Set Variables 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:10:07 - WMS IBN - Starting entry [WMS_INB_INCR]
+2013/08/30 11:10:07 - WMS_INB_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/STC_FACT_WMS_INB_INCR.ktr]
+2013/08/30 11:10:07 - STC_FACT_WMS_INB_INCR - Dispatching started for transformation [STC_FACT_WMS_INB_INCR]
+2013/08/30 11:10:10 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 11:10:10 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 11:10:10 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_INB]
+2013/08/30 11:10:10 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 11:10:17 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 11:10:17 - Select values.0 - Finished processing (I=0, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:17 - Select values.1 - Finished processing (I=0, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:17 - Table input.0 - Finished processing (I=10627, O=0, R=0, W=10627, U=0, E=0)
+2013/08/30 11:10:18 - COMP_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:18 - CATEGORY_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - COMP_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - CATEGORY_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - Department_id.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - Department_id.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - ARTICLE_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - ARTICLE_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - CAT_MANG_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - CAT_MANG_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - FOOD_CAT_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - FOOD_CAT_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - PACKING_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - PACKING_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - SIZE_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - SIZE_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - WH_ID.1 - Finished processing (I=585, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - WH_ID.0 - Finished processing (I=591, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:19 - LOCATION_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:19 - LOCATION_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:20 - SUPPLIER_ID.0 - Finished processing (I=0, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:20 - TRAN_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:20 - GRADE1_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:20 - SUPPLIER_ID.1 - Finished processing (I=0, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:20 - TRAN_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:20 - GRADE2_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:10:20 - GRADE1_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:10:20 - GRADE2_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:14:37 - ITEM_ID.0 - Finished processing (I=5314, O=0, R=5314, W=5314, U=0, E=0)
+2013/08/30 11:14:37 - ITEM_ID.1 - Finished processing (I=5313, O=0, R=5313, W=5313, U=0, E=0)
+2013/08/30 11:14:37 - Insert / Update.0 - Finished processing (I=10627, O=10627, R=10627, W=10627, U=0, E=0)
+2013/08/30 11:14:37 - WMS IBN - Starting entry [PROG_ETL_LOG (11)]
+2013/08/30 11:14:37 - PROG_ETL_LOG (11) - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 11:14:37 - PROG_ETL_LOG (11) - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 11:14:37 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 11:14:37 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:37 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:37 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:38 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:14:38 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 11:14:38 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:38 - WMS IBN - Starting entry [WMS_INB_BATCH_INCR]
+2013/08/30 11:14:38 - WMS_INB_BATCH_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/WMS/STC_FACT_WMS_INB_BATCH_INCR.ktr]
+2013/08/30 11:14:38 - STC_FACT_WMS_INB_BATCH_INCR - Dispatching started for transformation [STC_FACT_WMS_INB_BATCH_INCR]
+2013/08/30 11:14:39 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 11:14:40 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 11:14:40 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_WMS_INB_BATCH]
+2013/08/30 11:14:40 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Unexpected error
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : An error occurred executing SQL: 
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : SELECT
+  O.INTIB_BATCH_SYS_ID
+, O.INTIB_INTII_I_SYS_ID
+, O.INTIB_BATCH_BAR_CODE
+, O.INITIB_BATCH_NO
+, O.INTIB_BATCH_QTY
+, O.INTIB_BATCH_QTY_LS
+, O.INTIB_BATCH_QTY_BU
+, O.INTIB_BATCH_MFG_DT
+, O.INTIB_BATCH_EXP_DT
+, O.INTIB_HOLD_QTY_BU
+, O.INTIB_INSP_QTY_BU
+, O.INTIB_RELEASE_QTY_BU
+, O.INTIB_REJECT_QTY_BU
+, O.INTIB_REJECT_UTIL_UTIL_QTY_BU
+, O.INTIB_RELEASE_UTIL_QTY_BU
+, O.INTIB_RCVD_QTY_BU
+, O.INTIB_CONF_RCVD_QTY_BU
+, O.INTIB_PEND_RCPT_QTY_BU
+, O.INTIB_CR_UID
+, O.INTIB_CR_DT
+, O.INTIB_UPD_UID
+, A.INTIH_BATCH_SEQ_NO
+, A.INTIH_TXN_TYPE
+, A.INTIH_HOST_CATG_TYPE
+, A.INTIH_HOST_TXN_ID
+, A.INTIH_DML_MODE
+, A.INTIH_H_SYS_ID
+, A.INTIH_ACNT_YEAR
+, A.INTIH_COMP_CODE
+, A.INTIH_TXN_CODE
+, A.INTIH_DOC_NO
+, A.INTIH_DOC_DT
+, A.INTIH_CAL_YEAR
+, A.INTIH_CAL_PERIOD
+, A.INTIH_ANNOTATION
+, A.INTIH_FM_TRF_LOCN_CODE
+, A.INTIH_LOCN_CODE
+, A.INTIH_WH_CODE
+, A.INTIH_RECEIVE_BAY_POSN_CODE
+, A.INTIH_PARTY_CODE
+, A.INTIH_PARTY_REF
+, A.INTIH_SHIP_AGENT
+, A.INTIH_SHIP_REF_NO
+, A.INTIH_AWB_BILL_NO
+, A.INTIH_VOYAGE_NO
+, A.INTIH_CARRIER_CODE
+, A.INTIH_VESSEL_CODE
+, A.INTIH_SHIP_MODE
+, A.INTIH_SHIP_LINE
+, A.INTIH_FROM_PORT
+, A.INTIH_TO_PORT
+, A.INTIH_ETS_DT
+, A.INTIH_ETA_DT
+, A.INTIH_BOE_NO
+, A.INTIH_BILL_LAD_NO
+, A.INTIH_CONTAINER_NO
+, A.INTIH_SEAL_NO
+, A.INTIH_APPR_STATUS
+, A.INTIH_CLO_STATUS
+, A.INTIH_CR_UID
+, A.INTIH_CR_DT
+, A.INTIH_H_FLEX_01
+, A.INTIH_H_FLEX_02
+, A.INTIH_H_FLEX_03
+, A.INTIH_H_FLEX_04
+, A.INTIH_H_FLEX_05
+, A.INTIH_H_FLEX_06
+, A.INTIH_H_FLEX_07
+, A.INTIH_H_FLEX_08
+, A.INTIH_H_FLEX_09
+, A.INTIH_H_FLEX_10
+, A.INTIH_H_FLEX_11
+, A.INTIH_H_FLEX_12
+, A.INTIH_H_FLEX_13
+, A.INTIH_H_FLEX_14
+, A.INTIH_H_FLEX_15
+, A.INTIH_H_FLEX_16
+, A.INTIH_H_FLEX_17
+, A.INTIH_H_FLEX_18
+, A.INTIH_H_FLEX_19
+, A.INTIH_H_FLEX_20
+, A.INTIH_UPD_UID
+, A.INTIH_UPD_DT
+, A.INTIH_CROSS_DOCK_YN_NUM
+, A.INTIH_ORDER_TYPE
+, A.INTIH_RECEIVE_BAY_POSN_NO
+, A.INTIH_WWR_SYS_ID
+, A.INTIH_ENTRY_COMP_YN
+, A.INTIH_PRIORITY
+, A.INTIH_DIRECT_YN_NUM
+, A.INTIH_SUPP_CODE
+, A.INTIH_CLIENT_CODE
+, A.INTIH_HHT_YN_NUM
+, B.INTII_I_SYS_ID
+, B.INTIII_INTIH_H_SYS_ID
+, B.INTII_ITEM_BAR_CODE
+, B.INTII_ITEM_CODE
+, B.INTII_ITEM_DESC
+, B.INTII_ITEM_REMAKRS
+, B.INTII_GRADE_CODE_1
+, B.INTII_GRADE_CODE_2
+, B.INTII_UOM_CODE
+, B.INTII_ITEM_LENGTH
+, B.INTII_ITEM_WIDTH
+, B.INTII_ITEM_HEIGHT
+, B.INTII_ITEM_AREA
+, B.INTII_ITEM_WEIGHT
+, B.INTII_ITEM_VOULME
+, B.INTII_ITEM_QTY
+, B.INTII_ITEM_QTY_LS
+, B.INTII_ITEM_QTY_BU
+, B.INTII_ITEM_INSP_QTY_BU
+, B.INTII_ITEM_HOLD_QTY_BU
+, B.INTII_ITEM_REJECT_QTY_BU
+, B.INTII_ITEM_RELEASE_QTY_BU
+, B.INTII_RELEASE_UTIL_QTY_BU
+, B.INTII_REJECT_UTIL_QTY_BU
+, B.INTII_SHORT_CLO_STATUS
+, B.INTII_SHORT_CLO_DT
+, B.INTII_ITEM_RCVD_QTY_BU
+, B.INTII_ITEM_CONF_RCVD_QTY_BU
+, B.INTII_ITEM_PEND_RCPT_QTY_BU
+, B.INTII_NO_OF_CARTONS
+, B.INTII_CARTON_ID
+, B.INTII_NO_OF_PALLETS
+, B.INTII_PALLET_ID
+, B.INTII_PALLETIZE_YN_NUM
+, B.INTII_PICK_DROP_POSN_CODE
+, B.INTII_PUTAWAY_POSN_CODE
+, B.INTII_PUTAWAY_COMP_YN_NUM
+, B.INTII_I_FLEX_01
+, B.INTII_I_FLEX_02
+, B.INTII_I_FLEX_03
+, B.INTII_I_FLEX_04
+, B.INTII_I_FLEX_05
+, B.INTII_I_FLEX_06
+, B.INTII_I_FLEX_07
+, B.INTII_I_FLEX_08
+, B.INTII_I_FLEX_09
+, B.INTII_I_FLEX_10
+, B.INTII_I_FLEX_11
+, B.INTII_I_FLEX_12
+, B.INTII_I_FLEX_13
+, B.INTII_I_FLEX_14
+, B.INTII_I_FLEX_15
+, B.INTII_I_FLEX_16
+, B.INTII_I_FLEX_17
+, B.INTII_I_FLEX_18
+, B.INTII_I_FLEX_19
+, B.INTII_I_FLEX_20
+, B.INTII_UPD_UID
+, B.INTII_UPD_DT
+, B.INTII_PH_SYS_ID
+, B.INTII_PH_TXN_CODE
+, B.INTII_PH_TXN_NO
+, B.INTII_SHORT_CLO_REASON_CODE
+, B.INTII_SHORT_CLO_REASON_DESC
+, B.INTII_STATUS
+, B.INTII_PO_POS_TOLERANCE
+, B.INTII_PO_NEG_TOLERANCE
+, B.INTII_PRIORITY
+, B.INTII_CR_UID
+, B.INTII_CR_DT
+, B.INTII_INTOH_HOST_TXN_ID
+, B.INTII_WWI_SYS_ID
+, B.INTII_DFLT_RULE_CODE
+, B.INTII_INTOI_I_SYS_ID
+, B.INTII_WWAD_SYS_ID
+,(C.IP_PACK_LENGTH * C.IP_PACK_WIDTH * C.IP_PACK_HEIGHT)/1000000 AS prog_cbm
+,(C.IP_PACK_LENGTH * C.IP_PACK_WIDTH * C.IP_PACK_HEIGHT * C.IP_MAX_QTY_BU)/1000000 AS prog_cbm_BU
+,(C.IP_PACK_LENGTH * C.IP_PACK_WIDTH)/10000 AS prog_ITEM_AREA 
+,C.IP_PACK_LENGTH
+,C.IP_PACK_WIDTH
+,C.IP_PACK_HEIGHT
+,c.IP_DIMENSION_UOM_CODE
+,c.IP_PACK_WEIGHT
+,c.IP_WEIGHT_UOM_CODE,
+D.IM_MANF_NAME,
+E.ITEM_ANLY_CODE_01,
+E.ITEM_ANLY_CODE_02,
+E.ITEM_ANLY_CODE_03,
+E.ITEM_ANLY_CODE_04,
+E.ITEM_ANLY_CODE_05,
+E.ITEM_ANLY_CODE_06,
+E.ITEM_ANLY_CODE_07,
+E.ITEM_ANLY_CODE_08,
+E.ITEM_ANLY_CODE_09,
+E.ITEM_ANLY_CODE_10,
+E.ITEM_ANLY_CODE_11,
+E.ITEM_ANLY_CODE_12,
+E.ITEM_ANLY_CODE_13,
+E.ITEM_ANLY_CODE_14,
+E.ITEM_ANLY_CODE_15,
+E.ITEM_ANLY_CODE_16,
+E.ITEM_ANLY_CODE_17,
+E.ITEM_ANLY_CODE_18,
+E.ITEM_ANLY_CODE_19,
+E.ITEM_ANLY_CODE_20,
+sysdate
+
+FROM INT_WMS_INB_BATCH O,
+OM_ITEM E,
+INT_WMS_INB_HEAD A,
+INT_WMS_INB_ITEM B
+left outer join OM_ITEM_PACK c
+on (B.INTII_ITEM_CODE= c.IP_ITEM_CODE and B.INTII_UOM_CODE = c.IP_PACK_UOM_CODE)
+left outer join OM_ITEM_MANF D  
+on (B.INTII_ITEM_CODE= D.IM_ITEM_CODE AND B.INTII_UOM_CODE = D.IM_MANF_PART_NO)
+
+WHERE A.INTIH_H_SYS_ID = B.INTIII_INTIH_H_SYS_ID AND
+B.INTII_I_SYS_ID = O.INTIB_INTII_I_SYS_ID AND
+B.INTII_ITEM_CODE = E.ITEM_CODE AND
+(O.INTIB_CR_DT >= TO_DATE('23-08-2013','DD-MM-YYYY') AND
+TO_DATE(O.INTIB_CR_DT, 'DD-MON-YYYY') < TO_DATE(SYSDATE, 'DD-MON-YYYY')
+OR 
+O.INTIB_UPD_DT >= TO_DATE('23-08-2013','DD-MM-YYYY') AND 
+TO_DATE(O.INTIB_UPD_DT, 'DD-MON-YYYY') < TO_DATE(SYSDATE, 'DD-MON-YYYY'))
+OR
+B.INTII_UPD_DT >= TO_DATE('23-08-2013','DD-MM-YYYY')  AND
+TO_DATE(B.INTII_UPD_DT, 'DD-MON-YYYY') < TO_DATE(SYSDATE, 'DD-MON-YYYY'))
+--to_date(A.INTIH_CR_DT,'DD-MM-YYYY')>=TO_DATE('30-JULY-13','DD-MM-YYYY')
+--and to_date(A.INTIH_CR_DT,'DD-MM-YYYY')<=TO_DATE('23-AUGUST-13','DD-MM-YYYY')
+ORDER BY 1
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : ORA-00933: SQL command not properly ended
+
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.openQuery(Database.java:1857)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.doQuery(TableInput.java:233)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.processRow(TableInput.java:143)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:50)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at java.lang.Thread.run(Unknown Source)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Caused by: java.sql.SQLException: ORA-00933: SQL command not properly ended
+
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:743)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:207)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:790)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1037)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.T4CStatement.executeMaybeDescribe(T4CStatement.java:830)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1132)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1272)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.core.database.Database.openQuery(Database.java:1843)
+2013/08/30 11:14:40 - Table input.0 - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	... 4 more
+2013/08/30 11:14:40 - STC_FACT_WMS_INB_BATCH_INCR - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Errors detected!
+2013/08/30 11:14:40 - STC_FACT_WMS_INB_BATCH_INCR - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Errors detected!
+2013/08/30 11:14:40 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 11:14:40 - Table input.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2013/08/30 11:14:40 - STC_FACT_WMS_INB_BATCH_INCR - STC_FACT_WMS_INB_BATCH_INCR
+2013/08/30 11:14:40 - STC_FACT_WMS_INB_BATCH_INCR - STC_FACT_WMS_INB_BATCH_INCR
+2013/08/30 11:14:40 - WMS IBN - Starting entry [PROG_ETL_LOG_ERROR (12)]
+2013/08/30 11:14:40 - PROG_ETL_LOG_ERROR (12) - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG_ERROR.ktr]
+2013/08/30 11:14:40 - PROG_ETL_LOG_ERROR (12) - Dispatching started for transformation [PROG_ETL_LOG_ERROR]
+2013/08/30 11:14:40 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 11:14:40 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:40 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:40 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:40 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 11:14:40 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 11:14:40 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 11:14:40 - WMS IBN - Finished job entry [PROG_ETL_LOG_ERROR (12)] (result=[true])
+2013/08/30 11:14:40 - WMS IBN - Finished job entry [WMS_INB_BATCH_INCR] (result=[true])
+2013/08/30 11:14:40 - WMS IBN - Finished job entry [PROG_ETL_LOG (11)] (result=[true])
+2013/08/30 11:14:40 - WMS IBN - Finished job entry [WMS_INB_INCR] (result=[true])
+2013/08/30 11:14:40 - WMS IBN - Finished job entry [SetMaxETLDate] (result=[true])
+2013/08/30 11:14:40 - STC_ETL_WMS_IBN_JOB - Finished job entry [WMS IBN] (result=[true])
+2013/08/30 11:14:40 - STC_ETL_WMS_IBN_JOB - Job execution finished

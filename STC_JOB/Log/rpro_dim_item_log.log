@@ -1,0 +1,28 @@
+2013/03/18 15:42:39 - Pan - Logging is at level : Basic logging
+2013/03/18 15:42:39 - Pan - Start of run.
+2013/03/18 15:42:40 - rpro_dim_item - Dispatching started for transformation [rpro_dim_item]
+2013/03/18 16:04:57 - Table input.0 - linenr 50000
+2013/03/18 16:12:20 - Select values.0 - linenr 50000
+2013/03/18 16:19:45 - item_id_lkp.0 - linenr 50000
+2013/03/18 16:19:45 - Insert / Update.0 - linenr 50000
+2013/03/18 16:40:41 - Table input.0 - linenr 100000
+2013/03/18 16:46:08 - Select values.0 - linenr 100000
+2013/03/18 16:52:11 - item_id_lkp.0 - linenr 100000
+2013/03/18 16:52:38 - Insert / Update.0 - linenr 100000
+2013/03/18 17:11:01 - Table input.0 - linenr 150000
+2013/03/18 17:17:30 - Select values.0 - linenr 150000
+2013/03/18 17:24:07 - item_id_lkp.0 - linenr 150000
+2013/03/18 17:30:10 - Insert / Update.0 - linenr 150000
+2013/03/18 17:36:48 - Table input.0 - Finished reading query, closing connection.
+2013/03/18 17:36:48 - Table input.0 - Finished processing (I=187834, O=0, R=0, W=187834, U=0, E=0)
+2013/03/18 17:45:27 - Select values.0 - Finished processing (I=0, O=0, R=187834, W=187834, U=0, E=0)
+2013/03/18 17:53:54 - item_id_lkp.0 - Finished processing (I=187834, O=0, R=187834, W=187834, U=0, E=0)
+2013/03/18 18:00:37 - Insert / Update.0 - Finished processing (I=187834, O=96540, R=187834, W=187834, U=222, E=0)
+2013/03/18 18:00:37 - Pan - Finished!
+2013/03/18 18:00:37 - Pan - Start=2013/03/18 15:42:39.622, Stop=2013/03/18 18:00:37.026
+2013/03/18 18:00:37 - Pan - Processing ended after 2 hours, 17 minutes and 57 seconds (8277 seconds total).
+2013/03/18 18:00:37 - rpro_dim_item -  
+2013/03/18 18:00:37 - rpro_dim_item - Step Table input.0 ended successfully, processed 187834 lines. ( 22 lines/s)
+2013/03/18 18:00:37 - rpro_dim_item - Step Select values.0 ended successfully, processed 187834 lines. ( 22 lines/s)
+2013/03/18 18:00:37 - rpro_dim_item - Step item_id_lkp.0 ended successfully, processed 187834 lines. ( 22 lines/s)
+2013/03/18 18:00:37 - rpro_dim_item - Step Insert / Update.0 ended successfully, processed 187834 lines. ( 22 lines/s)

@@ -1,0 +1,369 @@
+2013/08/30 13:50:02 - Kitchen - Logging is at level : Basic logging
+2013/08/30 13:50:02 - Kitchen - Start of run.
+2013/08/30 13:50:03 - STC_ETL_RPRO_JOB - Start of job execution
+2013/08/30 13:50:03 - STC_ETL_RPRO_JOB - Starting entry [RPRO_DIM]
+2013/08/30 13:50:03 - RPRO_DIM - Starting entry [SetMaxDIMETLDate]
+2013/08/30 13:50:03 - SetMaxDIMETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SetRPROMaxDIMETLDate.ktr]
+2013/08/30 13:50:05 - SetRPROMaxDIMETLDate - Dispatching started for transformation [SetRPROMaxDIMETLDate]
+2013/08/30 13:50:05 - Set Module Name.0 - We didn't receive a row while setting the default values.
+2013/08/30 13:50:05 - Set Module Name.0 - Set variable VARMODULENAME to value [RPRO]
+2013/08/30 13:50:05 - Set Module Name.0 - Set variable VARFACTNAME to value [RPRO_DIM]
+2013/08/30 13:50:05 - Set Module Name.0 - Finished after 0 rows.
+2013/08/30 13:50:06 - RPRO_DIM.0 - Finished reading query, closing connection.
+2013/08/30 13:50:06 - Set Variables.0 - Setting environment variables...
+2013/08/30 13:50:06 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 13:50:06 - Set Variables.0 - Set variable MAXETLDATE_RPRO_DIM to value [2013-08-21]
+2013/08/30 13:50:06 - RPRO_DIM.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 13:50:06 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 13:50:06 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 13:50:06 - RPRO_DIM - Starting entry [ITEM_VAR_RPRO]
+2013/08/30 13:50:06 - ITEM_VAR_RPRO - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM_item_JOB\dim_item_env.ktr]
+2013/08/30 13:50:06 - ITEM_VAR_RPRO - Dispatching started for transformation [dim_item_env]
+2013/08/30 13:50:06 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 13:50:06 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 13:50:06 - Set Variables.0 - Setting environment variables...
+2013/08/30 13:50:06 - Set Variables.0 - Set variable VAR_ITEM_ID to value [5535686]
+2013/08/30 13:50:06 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 13:50:06 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 13:50:06 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 13:50:06 - RPRO_DIM - Starting entry [DIM_ITEM_RPRO]
+2013/08/30 13:50:06 - DIM_ITEM_RPRO - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM_item_JOB\dim_item_rpro.ktr]
+2013/08/30 13:50:06 - DIM_ITEM_RPRO - Dispatching started for transformation [dim_item_rpro]
+2013/08/30 13:50:08 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 13:50:08 - Select values.0 - Finished processing (I=0, O=0, R=11263, W=11263, U=0, E=0)
+2013/08/30 13:50:08 - Table input.0 - Finished processing (I=11263, O=0, R=0, W=11263, U=0, E=0)
+2013/08/30 13:53:00 - Add sequence.0 - Finished processing (I=0, O=0, R=11263, W=11263, U=0, E=0)
+2013/08/30 14:13:40 - Insert / Update.0 - Finished processing (I=11263, O=50, R=11263, W=11263, U=9068, E=0)
+2013/08/30 14:13:40 - RPRO_DIM - Starting entry [rpro_dim_item]
+2013/08/30 14:13:40 - rpro_dim_item - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\rpro_dim_item.ktr]
+2013/08/30 14:13:40 - rpro_dim_item - Dispatching started for transformation [rpro_dim_item]
+2013/08/30 14:13:42 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:13:42 - Table input.0 - Finished processing (I=11654, O=0, R=0, W=11654, U=0, E=0)
+2013/08/30 14:14:50 - Select values.0 - Finished processing (I=0, O=0, R=11654, W=11654, U=0, E=0)
+2013/08/30 14:22:06 - item_id_lkp.0 - Finished processing (I=11654, O=0, R=11654, W=11654, U=0, E=0)
+2013/08/30 14:37:04 - Insert / Update.0 - Finished processing (I=11654, O=763, R=11654, W=11654, U=10891, E=0)
+2013/08/30 14:37:04 - RPRO_DIM - Starting entry [VAR_supplier_rpro]
+2013/08/30 14:37:04 - VAR_supplier_rpro - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\SUPPLIER_JOB\supplier_variable.ktr]
+2013/08/30 14:37:04 - VAR_supplier_rpro - Dispatching started for transformation [supplier job]
+2013/08/30 14:37:05 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:05 - Set Variables.0 - Setting environment variables...
+2013/08/30 14:37:05 - Set Variables.0 - Set variable VAR_SUPPLIER_ID to value [118780]
+2013/08/30 14:37:05 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:05 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 14:37:05 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:05 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:05 - RPRO_DIM - Starting entry [DIM_supplier_RPRO]
+2013/08/30 14:37:05 - DIM_supplier_RPRO - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\SUPPLIER_JOB\SUPPLIER_RPRO.ktr]
+2013/08/30 14:37:05 - DIM_supplier_RPRO - Dispatching started for transformation [SUPPLIER_RPRO]
+2013/08/30 14:37:05 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:05 - Select values 2.0 - Finished processing (I=0, O=0, R=757, W=757, U=0, E=0)
+2013/08/30 14:37:05 - Add sequence.0 - Finished processing (I=0, O=0, R=757, W=757, U=0, E=0)
+2013/08/30 14:37:05 - Table input.0 - Finished processing (I=757, O=0, R=0, W=757, U=0, E=0)
+2013/08/30 14:37:08 - Insert / Update.0 - Finished processing (I=757, O=0, R=757, W=757, U=757, E=0)
+2013/08/30 14:37:08 - RPRO_DIM - Starting entry [rpro_dim_vendor]
+2013/08/30 14:37:08 - rpro_dim_vendor - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\rpro_dim_vendor.ktr]
+2013/08/30 14:37:08 - rpro_dim_vendor - Dispatching started for transformation [rpro_dim_vendor]
+2013/08/30 14:37:08 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:08 - Select values.0 - Finished processing (I=0, O=0, R=757, W=757, U=0, E=0)
+2013/08/30 14:37:08 - Table input.0 - Finished processing (I=757, O=0, R=0, W=757, U=0, E=0)
+2013/08/30 14:37:09 - RPRO_SUPPLIER_ID.0 - Finished processing (I=757, O=0, R=757, W=757, U=0, E=0)
+2013/08/30 14:37:10 - Insert / Update.0 - Finished processing (I=757, O=0, R=757, W=757, U=757, E=0)
+2013/08/30 14:37:10 - RPRO_DIM - Starting entry [Rpro_Customer_Variable]
+2013/08/30 14:37:10 - Rpro_Customer_Variable - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\RPRO_CUSTOMER_DIM_JOB\VARIABLE_RPRO_DIM_CUSTOMER.ktr]
+2013/08/30 14:37:10 - Rpro_Customer_Variable - Dispatching started for transformation [VARIABLE_RPRO_DIM_CUSTOMER]
+2013/08/30 14:37:10 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:10 - Set Variables.0 - Setting environment variables...
+2013/08/30 14:37:10 - Set Variables.0 - Set variable VAR_rpro_dim_customer_id to value [399765]
+2013/08/30 14:37:10 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:10 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 14:37:10 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:10 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:10 - RPRO_DIM - Starting entry [Rpro_Customer_Transformation]
+2013/08/30 14:37:10 - Rpro_Customer_Transformation - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\RPRO_CUSTOMER_DIM_JOB\RPRO_DIM_CUSTOMERS.ktr]
+2013/08/30 14:37:10 - Rpro_Customer_Transformation - Dispatching started for transformation [RPRO_DIM_CUSTOMERS]
+2013/08/30 14:37:11 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:11 - Select values 2.0 - Finished processing (I=0, O=0, R=145, W=145, U=0, E=0)
+2013/08/30 14:37:11 - Add sequence.0 - Finished processing (I=0, O=0, R=145, W=145, U=0, E=0)
+2013/08/30 14:37:11 - Table input.0 - Finished processing (I=145, O=0, R=0, W=145, U=0, E=0)
+2013/08/30 14:37:17 - Insert / Update.0 - Finished processing (I=145, O=117, R=145, W=145, U=28, E=0)
+2013/08/30 14:37:17 - RPRO_DIM - Starting entry [InsertDIMETLDate]
+2013/08/30 14:37:17 - InsertDIMETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/InsertMYCOMDIMETLDate.ktr]
+2013/08/30 14:37:17 - InsertMYCOMDIMETLDate - Dispatching started for transformation [InsertMYCOMDIMETLDate]
+2013/08/30 14:37:17 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [InsertDIMETLDate] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [Rpro_Customer_Transformation] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [Rpro_Customer_Variable] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [rpro_dim_vendor] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [DIM_supplier_RPRO] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [VAR_supplier_rpro] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [rpro_dim_item] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [DIM_ITEM_RPRO] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [ITEM_VAR_RPRO] (result=[true])
+2013/08/30 14:37:17 - RPRO_DIM - Finished job entry [SetMaxDIMETLDate] (result=[true])
+2013/08/30 14:37:17 - STC_ETL_RPRO_JOB - Starting entry [RPRO_FACT]
+2013/08/30 14:37:17 - RPRO_FACT - Starting entry [SetMaxETLDate]
+2013/08/30 14:37:17 - SetMaxETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/RPRO/SetRPROMaxETLDate.ktr]
+2013/08/30 14:37:17 - SetRPROMaxETLDate - Dispatching started for transformation [SetRPROMaxETLDate]
+2013/08/30 14:37:17 - Set Module Name.0 - We didn't receive a row while setting the default values.
+2013/08/30 14:37:17 - Set Module Name.0 - Set variable VARMODULENAME to value [RPRO]
+2013/08/30 14:37:17 - Set Module Name.0 - Finished after 0 rows.
+2013/08/30 14:37:17 - RPRO_MEMOS.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Set Variables.0 - Setting environment variables...
+2013/08/30 14:37:17 - Set Variables 2 5.0 - Setting environment variables...
+2013/08/30 14:37:17 - Set Variables 2 2.0 - Setting environment variables...
+2013/08/30 14:37:17 - RPRO_TO.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - RPRO_INVOICES.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Select values 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Select values 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables 2 2.0 - Set variable MAXETLDATE_RPRO_MEMOS to value [21-08-2013]
+2013/08/30 14:37:17 - Set Variables 2 5.0 - Set variable MAXETLDATE_RPRO_TO to value [21-08-2013]
+2013/08/30 14:37:17 - Set Variables 2 4.0 - Setting environment variables...
+2013/08/30 14:37:17 - RPRO_SLIPS.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Set Variables 2 4.0 - Set variable MAXETLDATE_RPRO_SLIPS to value [21-08-2013]
+2013/08/30 14:37:17 - Set Variables.0 - Set variable MAXETLDATE_RPRO_INVOICES to value [21-08-2013]
+2013/08/30 14:37:17 - Set Variables 2 5 2.0 - Setting environment variables...
+2013/08/30 14:37:17 - RPRO_VOUCHERS.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Set Variables 2 5 2.0 - Set variable MAXETLDATE_RPRO_VOUCHERS to value [21-08-2013]
+2013/08/30 14:37:17 - Set Variables 2 3.0 - Setting environment variables...
+2013/08/30 14:37:17 - Set Variables 2 2.0 - Finished after 1 rows.
+2013/08/30 14:37:17 - Set Variables 2.0 - Setting environment variables...
+2013/08/30 14:37:17 - RPRO_INVOICETENDERS.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Set Variables 2.0 - Set variable MAXETLDATE_RPRO_INVOICETENDERS to value [01-05-2013]
+2013/08/30 14:37:17 - RPRO_PO.0 - Finished reading query, closing connection.
+2013/08/30 14:37:17 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 14:37:17 - Set Variables 2 4.0 - Finished after 1 rows.
+2013/08/30 14:37:17 - Set Variables 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables 2 3.0 - Set variable MAXETLDATE_RPRO_PO to value [24-08-2013]
+2013/08/30 14:37:17 - Set Variables 2 5.0 - Finished after 1 rows.
+2013/08/30 14:37:17 - Select values 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Select values 2 5 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables 2.0 - Finished after 1 rows.
+2013/08/30 14:37:17 - Set Variables 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables 2 5 2.0 - Finished after 1 rows.
+2013/08/30 14:37:17 - Set Variables 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables 2 3.0 - Finished after 1 rows.
+2013/08/30 14:37:17 - Set Variables 2 5 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - Set Variables 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:17 - RPRO_MEMOS.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:18 - RPRO_PO.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:18 - RPRO_INVOICETENDERS.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:18 - RPRO_TO.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:18 - RPRO_SLIPS.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:18 - RPRO_INVOICES.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:18 - RPRO_VOUCHERS.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:18 - RPRO_FACT - Starting entry [RPRO_FACT_PO_INC]
+2013/08/30 14:37:18 - RPRO_FACT_PO_INC - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/RPRO/RPRO_FACT_PO_INCR.ktr]
+2013/08/30 14:37:18 - RPRO_FACT_PO_INCR - Dispatching started for transformation [RPRO_FACT_PO_INCR]
+2013/08/30 14:37:18 - Table output.0 - Connected to database [Warehouse] (commit=100)
+2013/08/30 14:37:19 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 14:37:19 - Set Variables.0 - Set variable VARFACTNAME to value [RPRO_FACT_PO]
+2013/08/30 14:37:19 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 14:37:19 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:19 - RPRO_FACT - Starting entry [ETL LOG]
+2013/08/30 14:37:19 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 14:37:19 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 14:37:19 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:19 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:19 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:19 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:19 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:37:19 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 14:37:19 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:37:19 - RPRO_FACT - Starting entry [RPRO_FACT_SLIPS_INCR]
+2013/08/30 14:37:19 - RPRO_FACT_SLIPS_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/RPRO/RPRO_FACT_SLIPS_INCR.ktr]
+2013/08/30 14:37:20 - RPRO_FACT_SLIPS_INCR - Dispatching started for transformation [RPRO_FACT_SLIPS_INCR]
+2013/08/30 14:37:20 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 14:37:20 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 14:37:20 - Set Variables.0 - Set variable VARFACTNAME to value [RPRO_FACT_SLIPS]
+2013/08/30 14:37:20 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 14:37:22 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:37:22 - Select values.1 - Finished processing (I=0, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:22 - Select values.0 - Finished processing (I=0, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:22 - Table input.0 - Finished processing (I=1450, O=0, R=0, W=1450, U=0, E=0)
+2013/08/30 14:37:22 - store_id.0 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:23 - store_id.1 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:56 - ITEM_ID.0 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:56 - rpro_vendor_id.0 - Finished processing (I=685, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:56 - DEPT_ID.0 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:56 - COMP_CODE_LKP.0 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:56 - COMP_ID.0 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:57 - ITEM_ID.1 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:57 - COMP_ID.1 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:57 - rpro_vendor_id.1 - Finished processing (I=685, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:57 - DEPT_ID.1 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:37:57 - COMP_CODE_LKP.1 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:38:29 - rpro_item_id.1 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:38:29 - supplier_id.1 - Finished processing (I=685, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:38:29 - rpro_item_id.0 - Finished processing (I=725, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:38:29 - supplier_id.0 - Finished processing (I=685, O=0, R=725, W=725, U=0, E=0)
+2013/08/30 14:38:29 - Insert / Update.0 - Finished processing (I=1450, O=1187, R=1450, W=1450, U=263, E=0)
+2013/08/30 14:38:29 - RPRO_FACT - Starting entry [PROG_ETL_LOG]
+2013/08/30 14:38:29 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 14:38:30 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 14:38:30 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:38:30 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:30 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:30 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:30 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 14:38:30 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:38:30 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:30 - RPRO_FACT - Starting entry [RPRO_FACT_TO_INCR]
+2013/08/30 14:38:30 - RPRO_FACT_TO_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/RPRO/RPRO_FACT_TO_INCR.ktr]
+2013/08/30 14:38:30 - RPRO_FACT_TO - Dispatching started for transformation [RPRO_FACT_TO]
+2013/08/30 14:38:31 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 14:38:31 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 14:38:31 - Set Variables.0 - Set variable VARFACTNAME to value [RPRO_FACT_TO]
+2013/08/30 14:38:31 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 14:38:31 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:38:31 - RPRO_FACT - Starting entry [PROG_ETL_LOG (2)]
+2013/08/30 14:38:31 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 14:38:31 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 14:38:31 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:38:31 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:31 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:31 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:38:31 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:31 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 14:38:31 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:38:31 - RPRO_FACT - Starting entry [RPRO_FACT_VOUCHERS_INCR]
+2013/08/30 14:38:31 - RPRO_FACT_VOUCHERS_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/RPRO/RPRO_FACT_VOUCHERS_INCR.ktr]
+2013/08/30 14:38:31 - RPRO_FACT_VOUCHERS_INCR - Dispatching started for transformation [RPRO_FACT_VOUCHERS_INCR]
+2013/08/30 14:38:32 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 14:38:32 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 14:38:32 - Set Variables.0 - Set variable VARFACTNAME to value [RPRO_FACT_VOUCHERS]
+2013/08/30 14:38:32 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 14:38:35 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:38:35 - Select values.0 - Finished processing (I=0, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:38:35 - Select values.1 - Finished processing (I=0, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:38:35 - Table input.0 - Finished processing (I=3633, O=0, R=0, W=3633, U=0, E=0)
+2013/08/30 14:38:35 - store_id.0 - Finished processing (I=1817, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:38:35 - store_id.1 - Finished processing (I=1816, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:39:59 - ITEM_ID.1 - Finished processing (I=1816, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:40:00 - ITEM_ID.0 - Finished processing (I=1817, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:40:00 - COMP_CODE_LKP.0 - Finished processing (I=3633, O=0, R=3633, W=3633, U=0, E=0)
+2013/08/30 14:40:00 - COMP_ID.0 - Finished processing (I=1817, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:40:00 - rpro_vendor_id.1 - Finished processing (I=1816, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:40:00 - COMP_ID.1 - Finished processing (I=1816, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:40:00 - DEPT_ID.0 - Finished processing (I=1817, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:40:00 - DEPT_ID.1 - Finished processing (I=1816, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:40:00 - rpro_vendor_id.0 - Finished processing (I=1817, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:41:24 - rpro_item_id.0 - Finished processing (I=1817, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:41:24 - supplier_id.0 - Finished processing (I=1817, O=0, R=1817, W=1817, U=0, E=0)
+2013/08/30 14:41:25 - rpro_item_id.1 - Finished processing (I=1816, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:41:25 - supplier_id.1 - Finished processing (I=1816, O=0, R=1816, W=1816, U=0, E=0)
+2013/08/30 14:41:25 - Insert / Update.0 - Finished processing (I=3633, O=2586, R=3633, W=3633, U=1047, E=0)
+2013/08/30 14:41:25 - RPRO_FACT - Starting entry [PROG_ETL_LOG (3)]
+2013/08/30 14:41:25 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 14:41:25 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 14:41:25 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 14:41:25 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:41:25 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:41:25 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:41:26 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 14:41:26 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 14:41:26 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 14:41:26 - RPRO_FACT - Starting entry [RPRO_FACT_MEMOS_INCR]
+2013/08/30 14:41:26 - RPRO_FACT_MEMOS_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/RPRO/RPRO_FACT_MEMOS_INCR.ktr]
+2013/08/30 14:41:26 - RPRO_FACT_MEMOS_INCR - Dispatching started for transformation [RPRO_FACT_MEMOS_INCR]
+2013/08/30 14:41:26 - Table output.0 - Connected to database [Warehouse] (commit=100)
+2013/08/30 14:41:26 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 14:41:26 - Set Variables.0 - Set variable VARFACTNAME to value [RPRO_FACT_MEMOS]
+2013/08/30 14:41:26 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 14:58:39 - Table input.0 - linenr 50000
+2013/08/30 15:07:13 - Select values.0 - linenr 50000
+2013/08/30 15:09:19 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 15:09:19 - Table input.0 - Finished processing (I=62465, O=0, R=0, W=62465, U=0, E=0)
+2013/08/30 15:15:45 - store_id.0 - linenr 50000
+2013/08/30 15:17:48 - Select values.0 - Finished processing (I=0, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 15:24:02 - ITEM_ID.0 - linenr 50000
+2013/08/30 15:24:02 - COMP_ID.0 - linenr 50000
+2013/08/30 15:24:02 - COMP_CODE_LKP.0 - linenr 50000
+2013/08/30 15:25:28 - DEPT_ID.0 - linenr 50000
+2013/08/30 15:26:07 - store_id.0 - Finished processing (I=62465, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 15:33:48 - ITEM_ID.0 - Finished processing (I=62465, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 15:33:48 - COMP_CODE_LKP.0 - Finished processing (I=3, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 15:33:48 - COMP_ID.0 - Finished processing (I=3, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 15:39:29 - rpro_vendor_id.0 - linenr 50000
+2013/08/30 15:43:06 - DEPT_ID.0 - Finished processing (I=62465, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 15:54:08 - rpro_item_id.0 - linenr 50000
+2013/08/30 15:54:08 - Insert / Update.0 - linenr 50000
+2013/08/30 15:57:40 - rpro_vendor_id.0 - Finished processing (I=62270, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 16:12:13 - rpro_item_id.0 - Finished processing (I=62465, O=0, R=62465, W=62465, U=0, E=0)
+2013/08/30 16:12:13 - supplier_id.0 - Finished processing (I=31141, O=0, R=31233, W=31233, U=0, E=0)
+2013/08/30 16:12:13 - supplier_id.1 - Finished processing (I=31151, O=0, R=31232, W=31232, U=0, E=0)
+2013/08/30 16:12:13 - Insert / Update.0 - Finished processing (I=62465, O=62456, R=62465, W=62465, U=9, E=0)
+2013/08/30 16:12:13 - RPRO_FACT - Starting entry [PROG_ETL_LOG (4)]
+2013/08/30 16:12:13 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 16:12:13 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 16:12:13 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 16:12:14 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:12:14 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:12:13 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:12:14 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 16:12:14 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 16:12:14 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:12:14 - RPRO_FACT - Starting entry [RPRO_FACT_INVOICES_INCR]
+2013/08/30 16:12:14 - RPRO_FACT_INVOICES_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/RPRO/RPRO_FACT_INVOICES_INCR.ktr]
+2013/08/30 16:12:14 - RPRO_FACT_INVOICES_INCR - Dispatching started for transformation [RPRO_FACT_INVOICES_INCR]
+2013/08/30 16:12:14 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 16:12:15 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 16:12:15 - Set Variables.0 - Set variable VARFACTNAME to value [RPRO_FACT_INVOICES]
+2013/08/30 16:12:15 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 16:13:07 -                                                     .0 - Finished reading query, closing connection.
+2013/08/30 16:13:07 - Select values.1 - Finished processing (I=0, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:13:07 - Select values.0 - Finished processing (I=0, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:13:07 -                                                     .0 - Finished processing (I=18942, O=0, R=0, W=18942, U=0, E=0)
+2013/08/30 16:13:07 - store_id.1 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:13:07 - store_id.0 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:13 - ITEM_ID.1 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:13 - COMP_CODE_LKP.1 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:13 - COMP_ID.1 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:13 - rpro_vendor_id.1 - Finished processing (I=9427, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:13 - DEPT_ID.1 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:19 - ITEM_ID.0 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:19 - rpro_vendor_id.0 - Finished processing (I=9434, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:19 - COMP_CODE_LKP.0 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:19 - DEPT_ID.0 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:20:19 - COMP_ID.0 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:27:11 - rpro_item_id.1 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:27:11 - supplier_id.1 - Finished processing (I=9427, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:27:13 - rpro_item_id.0 - Finished processing (I=9471, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:27:13 - supplier_id.0 - Finished processing (I=9434, O=0, R=9471, W=9471, U=0, E=0)
+2013/08/30 16:27:13 - Insert / Update.0 - Finished processing (I=18942, O=16576, R=18942, W=18942, U=2366, E=0)
+2013/08/30 16:27:13 - RPRO_FACT - Starting entry [PROG_ETL_LOG (5)]
+2013/08/30 16:27:13 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 16:27:13 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 16:27:13 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 16:27:13 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:27:13 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:27:13 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:27:13 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 16:27:13 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 16:27:13 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [PROG_ETL_LOG (5)] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [RPRO_FACT_INVOICES_INCR] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [PROG_ETL_LOG (4)] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [RPRO_FACT_MEMOS_INCR] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [PROG_ETL_LOG (3)] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [RPRO_FACT_VOUCHERS_INCR] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [PROG_ETL_LOG (2)] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [RPRO_FACT_TO_INCR] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [PROG_ETL_LOG] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [RPRO_FACT_SLIPS_INCR] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [ETL LOG] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [RPRO_FACT_PO_INC] (result=[true])
+2013/08/30 16:27:13 - RPRO_FACT - Finished job entry [SetMaxETLDate] (result=[true])
+2013/08/30 16:27:13 - STC_ETL_RPRO_JOB - Finished job entry [RPRO_FACT] (result=[true])
+2013/08/30 16:27:13 - STC_ETL_RPRO_JOB - Finished job entry [RPRO_DIM] (result=[true])
+2013/08/30 16:27:13 - STC_ETL_RPRO_JOB - Job execution finished

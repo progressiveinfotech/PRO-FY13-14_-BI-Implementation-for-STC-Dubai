@@ -1,0 +1,32 @@
+2013/03/18 10:10:00 - Pan - Logging is at level : Basic logging
+2013/03/18 10:10:00 - Pan - Start of run.
+2013/03/18 10:10:01 - RPRO_FACT_PO - Dispatching started for transformation [RPRO_FACT_PO]
+2013/03/18 10:10:01 - Table output.0 - Connected to database [Warehouse] (commit=100)
+2013/03/18 10:10:13 - Table input.0 - Finished reading query, closing connection.
+2013/03/18 10:10:13 - Table input.0 - Finished processing (I=41934, O=0, R=0, W=41934, U=0, E=0)
+2013/03/18 10:10:14 - Select values.0 - Finished processing (I=0, O=0, R=41934, W=41934, U=0, E=0)
+2013/03/18 10:10:59 - COMP_CODE_LKP.0 - Finished processing (I=41926, O=0, R=41934, W=41934, U=0, E=0)
+2013/03/18 10:11:39 - COMP_ID.0 - Finished processing (I=41926, O=0, R=41934, W=41934, U=0, E=0)
+2013/03/18 10:18:55 - store_id.0 - Finished processing (I=41926, O=0, R=41934, W=41926, U=0, E=0)
+2013/03/18 10:26:10 - DEPT_ID.0 - Finished processing (I=41420, O=0, R=41926, W=41926, U=0, E=0)
+2013/03/18 10:33:20 - rpro_vendor_id.0 - Finished processing (I=41542, O=0, R=41926, W=41926, U=0, E=0)
+2013/03/18 10:40:20 - ITEM_ID.0 - Finished processing (I=41486, O=0, R=41926, W=41926, U=0, E=0)
+2013/03/18 10:40:20 - STC_DIM_supplier_id.0 - Finished processing (I=41627, O=0, R=41926, W=41627, U=0, E=0)
+2013/03/18 10:40:20 - rpro_item_id.0 - Finished processing (I=11468, O=0, R=41627, W=41627, U=0, E=0)
+2013/03/18 10:40:20 - Table output.0 - Finished processing (I=0, O=41627, R=41627, W=41627, U=0, E=0)
+2013/03/18 10:40:20 - Pan - Finished!
+2013/03/18 10:40:20 - Pan - Start=2013/03/18 10:10:00.473, Stop=2013/03/18 10:40:20.882
+2013/03/18 10:40:20 - Pan - Processing ended after 30 minutes and 20 seconds (1820 seconds total).
+2013/03/18 10:40:20 - RPRO_FACT_PO -  
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step Table input.0 ended successfully, processed 41934 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step Select values.0 ended successfully, processed 41934 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step COMP_CODE_LKP.0 ended successfully, processed 41934 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step COMP_ID.0 ended successfully, processed 41934 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step DEPT_ID.0 ended successfully, processed 41926 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step rpro_vendor_id.0 ended successfully, processed 41926 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step store_id.0 ended successfully, processed 41934 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step ITEM_ID.0 ended successfully, processed 41926 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step STC_DIM_supplier_id.0 ended successfully, processed 41926 lines. ( 23 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step rpro_item_id.0 ended successfully, processed 41627 lines. ( 22 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step Table output.0 ended successfully, processed 41627 lines. ( 22 lines/s)
+2013/03/18 10:40:20 - RPRO_FACT_PO - Step Text file output.0 ended successfully, processed 0 lines. ( 0 lines/s)

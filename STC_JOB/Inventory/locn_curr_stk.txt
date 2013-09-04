@@ -1,0 +1,1 @@
+sqlplus stcbi106/stcbi106713 @Locn_curr_stk.sql

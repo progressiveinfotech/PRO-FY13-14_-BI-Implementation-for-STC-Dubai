@@ -1,0 +1,83 @@
+2013/03/12 11:38:22 - Pan - Logging is at level : Basic logging
+2013/03/12 11:38:22 - Pan - Start of run.
+2013/03/12 11:38:23 - MYCOM_FACT_STOCK_KEEP - Dispatching started for transformation [MYCOM_FACT_STOCK_KEEP]
+2013/03/12 11:38:24 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/03/12 11:47:13 - Table input.0 - linenr 50000
+2013/03/12 11:56:05 - Select values.0 - linenr 50000
+2013/03/12 12:04:49 - Prod_mast_id.0 - linenr 50000
+2013/03/12 12:13:15 - pack_master_id .0 - linenr 50000
+2013/03/12 12:21:34 - item_id.0 - linenr 50000
+2013/03/12 12:21:34 - Database lookup.0 - linenr 50000
+2013/03/12 12:21:34 - comp_code.0 - linenr 50000
+2013/03/12 12:21:34 - prod_um_id.0 - linenr 50000
+2013/03/12 12:21:34 - barcode_id.0 - linenr 50000
+2013/03/12 12:21:34 - Dept_Id.0 - linenr 50000
+2013/03/12 12:21:34 - branch_id.0 - linenr 50000
+2013/03/12 12:21:34 - Table output.0 - linenr 50000
+2013/03/12 12:29:48 - Table input.0 - linenr 100000
+2013/03/12 12:38:07 - Select values.0 - linenr 100000
+2013/03/12 12:46:22 - Prod_mast_id.0 - linenr 100000
+2013/03/12 12:54:41 - pack_master_id .0 - linenr 100000
+2013/03/12 13:03:17 - item_id.0 - linenr 100000
+2013/03/12 13:03:17 - Database lookup.0 - linenr 100000
+2013/03/12 13:03:17 - comp_code.0 - linenr 100000
+2013/03/12 13:03:17 - prod_um_id.0 - linenr 100000
+2013/03/12 13:03:17 - barcode_id.0 - linenr 100000
+2013/03/12 13:03:17 - Dept_Id.0 - linenr 100000
+2013/03/12 13:03:17 - branch_id.0 - linenr 100000
+2013/03/12 13:03:17 - Table output.0 - linenr 100000
+2013/03/12 13:11:35 - Table input.0 - linenr 150000
+2013/03/12 13:19:38 - Select values.0 - linenr 150000
+2013/03/12 13:27:47 - Prod_mast_id.0 - linenr 150000
+2013/03/12 13:36:13 - pack_master_id .0 - linenr 150000
+2013/03/12 13:44:35 - item_id.0 - linenr 150000
+2013/03/12 13:44:35 - Database lookup.0 - linenr 150000
+2013/03/12 13:44:35 - comp_code.0 - linenr 150000
+2013/03/12 13:44:35 - prod_um_id.0 - linenr 150000
+2013/03/12 13:44:35 - barcode_id.0 - linenr 150000
+2013/03/12 13:44:35 - Dept_Id.0 - linenr 150000
+2013/03/12 13:44:35 - branch_id.0 - linenr 150000
+2013/03/12 13:44:35 - Table output.0 - linenr 150000
+2013/03/12 13:52:32 - Table input.0 - linenr 200000
+2013/03/12 13:54:10 - Table input.0 - Finished reading query, closing connection.
+2013/03/12 13:54:12 - Table input.0 - Finished processing (I=202026, O=0, R=0, W=202026, U=0, E=0)
+2013/03/12 14:00:15 - Select values.0 - linenr 200000
+2013/03/12 14:01:50 - Select values.0 - Finished processing (I=0, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:08:13 - Prod_mast_id.0 - linenr 200000
+2013/03/12 14:09:49 - Prod_mast_id.0 - Finished processing (I=202026, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:15:36 - pack_master_id .0 - linenr 200000
+2013/03/12 14:17:08 - pack_master_id .0 - Finished processing (I=202000, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:23:20 - item_id.0 - linenr 200000
+2013/03/12 14:23:20 - Database lookup.0 - linenr 200000
+2013/03/12 14:23:20 - comp_code.0 - linenr 200000
+2013/03/12 14:23:20 - prod_um_id.0 - linenr 200000
+2013/03/12 14:23:20 - barcode_id.0 - linenr 200000
+2013/03/12 14:23:20 - Dept_Id.0 - linenr 200000
+2013/03/12 14:23:20 - branch_id.0 - linenr 200000
+2013/03/12 14:23:20 - Table output.0 - linenr 200000
+2013/03/12 14:24:54 - item_id.0 - Finished processing (I=202026, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - Database lookup.0 - Finished processing (I=202026, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - prod_um_id.0 - Finished processing (I=201981, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - comp_code.0 - Finished processing (I=0, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - branch_id.0 - Finished processing (I=202026, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - Dept_Id.0 - Finished processing (I=202012, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - barcode_id.0 - Finished processing (I=201473, O=0, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - Table output.0 - Finished processing (I=0, O=202026, R=202026, W=202026, U=0, E=0)
+2013/03/12 14:24:54 - Pan - Finished!
+2013/03/12 14:24:54 - Pan - Start=2013/03/12 11:38:22.816, Stop=2013/03/12 14:24:54.121
+2013/03/12 14:24:54 - Pan - Processing ended after 2 hours, 46 minutes and 31 seconds (9991 seconds total).
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP -  
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step Table input.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step Select values.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step prod_um_id.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step barcode_id.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step Prod_mast_id.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step pack_master_id .0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step item_id.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step Dept_Id.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step branch_id.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step Database lookup.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step comp_code.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step Table output.0 ended successfully, processed 202026 lines. ( 20 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step SUPP_ID.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/12 14:24:54 - MYCOM_FACT_STOCK_KEEP - Step supp_ref_id.0 ended successfully, processed 0 lines. ( 0 lines/s)

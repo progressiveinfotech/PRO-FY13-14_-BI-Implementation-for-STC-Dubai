@@ -1,0 +1,1 @@
+kitchen /file=E:\DW\Incremental_ETL\Dummy_JOB_1.kjb /level=Basic /logfile=E:\DW\Incremental_ETL\Log\Dummy_job_1_log.log

@@ -1,0 +1,41 @@
+PAN /file=E:\DW\FULL_LOAD_ETL\STC_DWH_19JAN2013\STC_DIM_FACT_PO_INVTRY\FACT\RPRO_FACT_VOUCHERS.ktr /level=Basic /logfile=E:\DW\Incremental_ETL\Log\RPRO_FACT_VOUCHERS.ktr.log
+
+PAN /file=E:\DW\Incremental_ETL\Sales\STC_FACT_SO_ITEM_TED_INCR.ktr /level=Basic /logfile=E:\DW\Incremental_ETL\Log\STC_FACT_SO_ITEM_TED_INCR_log.log
+
+PAN /file=E:\DW\Incremental_ETL\Finance\STC_FACt_F_BUD_INCR.ktr /level=Basic /logfile=E:\DW\Incremental_ETL\Log\STC_FACt_F_BUD_INCR_log.log
+
+PAN /file=E:\DW\Incremental_ETL\RPRO\InsertETLDate.ktr /level=Basic /logfile=E:\DW\Incremental_ETL\Log\InsertETLDate_log.log
+
+kitchen /file=E:\DW\Incremental_ETL\Dimensions\DIM_item_JOB\dim_item_job.kjb /level=Basic /logfile=E:\DW\Incremental_ETL\Log\dim_item_job_log.log
+
+PAN /file=E:\DW\Incremental_ETL\Dimensions\DIM\prog_coa_level.ktr /level=Basic /logfile=E:\DW\Incremental_ETL\Log\prog_coa_level_log.log
+
+SELECT *
+FROM TABLE stc_dim_item
+WHERE EXISTS (
+  SELECT 1 FROM TABLE
+  WHERE COLUMN_NAME = A.COLUMN_NAME
+  AND ROWID < A.ROWID
+)
+
+
+select max(commit_timestamp) 
+from FLASHBACK_TRANSACTION_QUERY 
+where table_owner = 'stcbi106' 
+      and operation in ('INSERT','UPDATE','DELETE','MERGE') ;
+
+
+select count(*) from stc_dim_item where last_updated_date between sysdate-1/24 and sysdate; 
+==================================================================================
+
+select count(*) from all_table where last_updated_date >= (sysdate-1/24);
+
+ 
+
+FLDDESC2
+,FLDDESC3
+,FLDATTR
+,FLDINVNAUX2
+,FLDINVNAUX7
+,FLDINVNAUX4
+,SYSDATE

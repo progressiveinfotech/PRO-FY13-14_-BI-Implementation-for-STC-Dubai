@@ -1,0 +1,149 @@
+2013/03/09 07:24:15 - Pan - Logging is at level : Basic logging
+2013/03/09 07:24:15 - Pan - Start of run.
+2013/03/09 07:24:16 - STC_FACT_LOCN_CURR_STK_INCR - Dispatching started for transformation [STC_FACT_LOCN_CURR_STK_INCR]
+2013/03/09 07:24:18 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/03/09 07:24:18 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/03/09 07:24:18 - Set Variables.0 - Set variable VARFACTNAME to value [STC_FACT_LOCN_CURR_STK]
+2013/03/09 07:24:18 - Set Variables.0 - Finished after 0 rows.
+2013/03/09 07:24:34 - Table input.0 - linenr 50000
+2013/03/09 07:24:44 - Table input.0 - linenr 100000
+2013/03/09 07:24:44 - Select values.0 - linenr 50000
+2013/03/09 07:24:44 - Select values.1 - linenr 50000
+2013/03/09 07:34:57 - GRADE1_ID.1 - linenr 50000
+2013/03/09 07:34:59 - GRADE1_ID.0 - linenr 50000
+2013/03/09 07:40:31 - Table input.0 - linenr 150000
+2013/03/09 07:45:31 - GRADE2_ID.1 - linenr 50000
+2013/03/09 07:45:35 - GRADE2_ID.0 - linenr 50000
+2013/03/09 07:50:20 - Insert / Update.0 - linenr 50000
+2013/03/09 07:55:04 - CATEGORY_ID.1 - linenr 50000
+2013/03/09 07:55:11 - CATEGORY_ID.0 - linenr 50000
+2013/03/09 08:04:40 - LOCATION_ID.1 - linenr 50000
+2013/03/09 08:04:48 - Table input.0 - linenr 200000
+2013/03/09 08:04:49 - LOCATION_ID.0 - linenr 50000
+2013/03/09 08:14:15 - Select values.1 - linenr 100000
+2013/03/09 08:14:15 - IU_UOM_ID.1 - linenr 50000
+2013/03/09 08:14:15 - COMP_ID.1 - linenr 50000
+2013/03/09 08:14:15 - ITEM_ID.1 - linenr 50000
+2013/03/09 08:14:15 - ARTICLE_ID.1 - linenr 50000
+2013/03/09 08:14:15 - PACKING_ID.1 - linenr 50000
+2013/03/09 08:14:15 - SIZE_ID.1 - linenr 50000
+2013/03/09 08:14:15 - FOOD_CAT_ID.1 - linenr 50000
+2013/03/09 08:14:15 - CAT_MANG_ID.1 - linenr 50000
+2013/03/09 08:14:15 - Department_id_lkp.1 - linenr 50000
+2013/03/09 08:14:19 - Insert / Update.0 - linenr 100000
+2013/03/09 08:14:22 - Select values.0 - linenr 100000
+2013/03/09 08:14:23 - IU_UOM_ID.0 - linenr 50000
+2013/03/09 08:14:23 - COMP_ID.0 - linenr 50000
+2013/03/09 08:14:23 - ITEM_ID.0 - linenr 50000
+2013/03/09 08:14:23 - ARTICLE_ID.0 - linenr 50000
+2013/03/09 08:14:23 - SIZE_ID.0 - linenr 50000
+2013/03/09 08:14:23 - CAT_MANG_ID.0 - linenr 50000
+2013/03/09 08:14:23 - PACKING_ID.0 - linenr 50000
+2013/03/09 08:14:23 - FOOD_CAT_ID.0 - linenr 50000
+2013/03/09 08:14:23 - Department_id_lkp.0 - linenr 50000
+2013/03/09 08:23:50 - GRADE1_ID.1 - linenr 100000
+2013/03/09 08:23:59 - GRADE1_ID.0 - linenr 100000
+2013/03/09 08:24:21 - Table input.0 - Finished reading query, closing connection.
+2013/03/09 08:24:21 - Table input.0 - Finished processing (I=240743, O=0, R=0, W=240743, U=0, E=0)
+2013/03/09 08:34:23 - GRADE2_ID.1 - linenr 100000
+2013/03/09 08:34:35 - GRADE2_ID.0 - linenr 100000
+2013/03/09 08:34:48 - Select values.1 - Finished processing (I=0, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 08:34:59 - Select values.0 - Finished processing (I=0, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 08:39:55 - Insert / Update.0 - linenr 150000
+2013/03/09 08:45:18 - CATEGORY_ID.1 - linenr 100000
+2013/03/09 08:45:31 - CATEGORY_ID.0 - linenr 100000
+2013/03/09 08:45:43 - GRADE1_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 08:45:56 - GRADE1_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 08:56:13 - LOCATION_ID.1 - linenr 100000
+2013/03/09 08:56:26 - LOCATION_ID.0 - linenr 100000
+2013/03/09 08:56:54 - GRADE2_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 08:56:54 - GRADE2_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:07:10 - IU_UOM_ID.1 - linenr 100000
+2013/03/09 09:07:10 - COMP_ID.1 - linenr 100000
+2013/03/09 09:07:10 - ITEM_ID.1 - linenr 100000
+2013/03/09 09:07:10 - ARTICLE_ID.1 - linenr 100000
+2013/03/09 09:07:10 - PACKING_ID.1 - linenr 100000
+2013/03/09 09:07:10 - SIZE_ID.1 - linenr 100000
+2013/03/09 09:07:10 - CAT_MANG_ID.1 - linenr 100000
+2013/03/09 09:07:10 - FOOD_CAT_ID.1 - linenr 100000
+2013/03/09 09:07:10 - Department_id_lkp.1 - linenr 100000
+2013/03/09 09:07:17 - Insert / Update.0 - linenr 200000
+2013/03/09 09:07:24 - IU_UOM_ID.0 - linenr 100000
+2013/03/09 09:07:24 - COMP_ID.0 - linenr 100000
+2013/03/09 09:07:24 - ITEM_ID.0 - linenr 100000
+2013/03/09 09:07:24 - ARTICLE_ID.0 - linenr 100000
+2013/03/09 09:07:24 - PACKING_ID.0 - linenr 100000
+2013/03/09 09:07:24 - SIZE_ID.0 - linenr 100000
+2013/03/09 09:07:24 - CAT_MANG_ID.0 - linenr 100000
+2013/03/09 09:07:24 - FOOD_CAT_ID.0 - linenr 100000
+2013/03/09 09:07:24 - Department_id_lkp.0 - linenr 100000
+2013/03/09 09:07:35 - CATEGORY_ID.1 - Finished processing (I=120357, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:07:49 - CATEGORY_ID.0 - Finished processing (I=120368, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:18:50 - LOCATION_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:19:04 - LOCATION_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:02 - IU_UOM_ID.1 - Finished processing (I=120312, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - COMP_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - ITEM_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - ARTICLE_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - PACKING_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - FOOD_CAT_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - CAT_MANG_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - SIZE_ID.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:02 - Department_id_lkp.1 - Finished processing (I=120371, O=0, R=120371, W=120371, U=0, E=0)
+2013/03/09 09:30:11 - IU_UOM_ID.0 - Finished processing (I=120312, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - PACKING_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - ARTICLE_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - COMP_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - ITEM_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - FOOD_CAT_ID.0 - Finished processing (I=120371, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - CAT_MANG_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - SIZE_ID.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - Department_id_lkp.0 - Finished processing (I=120372, O=0, R=120372, W=120372, U=0, E=0)
+2013/03/09 09:30:11 - Insert / Update.0 - Finished processing (I=240743, O=3523, R=240743, W=240743, U=237220, E=0)
+2013/03/09 09:30:11 - Pan - Finished!
+2013/03/09 09:30:11 - Pan - Start=2013/03/09 07:24:15.368, Stop=2013/03/09 09:30:11.433
+2013/03/09 09:30:11 - Pan - Processing ended after 2 hours, 5 minutes and 56 seconds (7556 seconds total).
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR -  
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Table input.0 ended successfully, processed 240743 lines. ( 31 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Select values.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Select values.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step GRADE1_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step GRADE1_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step GRADE2_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step GRADE2_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step CATEGORY_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step CATEGORY_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step SIZE_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step SIZE_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step CAT_MANG_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step CAT_MANG_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step FOOD_CAT_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step FOOD_CAT_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step COMP_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step COMP_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step ITEM_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step ITEM_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step ARTICLE_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step ARTICLE_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step PACKING_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step PACKING_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Department_id_lkp.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Department_id_lkp.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step LOCATION_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step LOCATION_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step IU_UOM_ID.0 ended successfully, processed 120372 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step IU_UOM_ID.1 ended successfully, processed 120371 lines. ( 15 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Insert / Update.0 ended successfully, processed 240743 lines. ( 31 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step BRAND_ID.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step BRAND_ID.1 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step COLOR_ID.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step COLOR_ID.1 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step COUNTRY_ORIGIN_ID.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step COUNTRY_ORIGIN_ID.1 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step GRP_COMP_ID.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step GRP_COMP_ID.1 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Oracle Bulk Loader.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Set Variables.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step Table output.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step iu_uom_id_new.0 ended successfully, processed 0 lines. ( 0 lines/s)
+2013/03/09 09:30:11 - STC_FACT_LOCN_CURR_STK_INCR - Step iu_uom_id_new.1 ended successfully, processed 0 lines. ( 0 lines/s)

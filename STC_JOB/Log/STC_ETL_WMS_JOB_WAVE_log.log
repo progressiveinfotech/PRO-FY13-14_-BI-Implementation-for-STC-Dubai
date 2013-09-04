@@ -1,0 +1,16 @@
+2013/05/10 22:25:04 - Kitchen - Logging is at level : Basic logging
+2013/05/10 22:25:04 - Kitchen - Start of run.
+2013/05/10 22:25:04 - STC_ETL_WMS_JOB_WAVE - Start of job execution
+2013/05/10 22:25:04 - STC_ETL_WMS_JOB_WAVE - Starting entry [WMS WAVE]
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Error running job entry 'job' : 
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : Endless loop detected: A Job entry in this job called is calling itself.  The filename is [E:\DW\Incremental_ETL\WMS\STC_ETL_WMS_JOB_WAVE.kjb]
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.job.entries.job.JobEntryJob.verifyRecursiveExecution(JobEntryJob.java:1065)
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.job.entries.job.JobEntryJob.execute(JobEntryJob.java:566)
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:589)
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:728)
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:443)
+2013/05/10 22:25:04 - WMS WAVE - ERROR (version 4.4.0-stable, build 17588 from 2012-11-21 16.02.21 by buildguy) : 	at org.pentaho.di.job.Job.run(Job.java:363)
+2013/05/10 22:25:04 - STC_ETL_WMS_JOB_WAVE - Finished job entry [WMS WAVE] (result=[false])
+2013/05/10 22:25:04 - STC_ETL_WMS_JOB_WAVE - Job execution finished

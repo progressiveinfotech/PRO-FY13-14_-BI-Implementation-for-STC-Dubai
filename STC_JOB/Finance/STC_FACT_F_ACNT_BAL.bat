@@ -1,0 +1,1 @@
+sqlplus stcbi106/stcbi106713 @E:\DW\Incremental_ETL\Finance\STC_FACT_F_ACNT_BAL.sql

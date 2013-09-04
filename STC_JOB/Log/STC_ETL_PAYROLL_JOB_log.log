@@ -1,0 +1,444 @@
+2013/08/30 09:45:02 - Kitchen - Logging is at level : Basic logging
+2013/08/30 09:45:02 - Kitchen - Start of run.
+2013/08/30 09:45:02 - STC_ETL_JOB_PAYROLL - Start of job execution
+2013/08/30 09:45:02 - STC_ETL_JOB_PAYROLL - Starting entry [Payroll]
+2013/08/30 09:45:03 - Payroll - Starting entry [sal_stop_from]
+2013/08/30 09:45:03 - sal_stop_from - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/PT_SAL_STOP_FROM_HEAD.ktr]
+2013/08/30 09:45:05 - PT_SAL_STOP_FROM_HEAD - Dispatching started for transformation [PT_SAL_STOP_FROM_HEAD]
+2013/08/30 09:45:05 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:07 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:07 - Table input.0 - Finished processing (I=1468, O=0, R=0, W=1468, U=0, E=0)
+2013/08/30 09:45:07 - Select values.0 - Finished processing (I=0, O=0, R=1468, W=1468, U=0, E=0)
+2013/08/30 09:45:07 - EMP_KEY_ID.0 - Finished processing (I=1468, O=0, R=1468, W=1468, U=0, E=0)
+2013/08/30 09:45:07 - PAYROLL_TXN_ID.0 - Finished processing (I=1468, O=0, R=1468, W=1468, U=0, E=0)
+2013/08/30 09:45:07 - COMP_ID.0 - Finished processing (I=1468, O=0, R=1468, W=1468, U=0, E=0)
+2013/08/30 09:45:08 - Table output.0 - Finished processing (I=0, O=1468, R=1468, W=1468, U=0, E=0)
+2013/08/30 09:45:08 - Payroll - Starting entry [sal_stop_upto]
+2013/08/30 09:45:08 - sal_stop_upto - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/PT_SAL_STOP_UPTO_HEAD.ktr]
+2013/08/30 09:45:08 - PT_SAL_STOP_UPTO_HEAD - Dispatching started for transformation [PT_SAL_STOP_UPTO_HEAD]
+2013/08/30 09:45:08 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:09 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:09 - Table input.0 - Finished processing (I=1417, O=0, R=0, W=1417, U=0, E=0)
+2013/08/30 09:45:09 - Select values.0 - Finished processing (I=0, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 09:45:09 - EMP_KEY_ID.0 - Finished processing (I=1417, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 09:45:09 - PAYROLL_TXN_ID.0 - Finished processing (I=1417, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 09:45:09 - COMP_ID.0 - Finished processing (I=1417, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 09:45:10 - Table output.0 - Finished processing (I=0, O=1417, R=1417, W=1417, U=0, E=0)
+2013/08/30 09:45:10 - Payroll - Starting entry [family_document]
+2013/08/30 09:45:10 - family_document - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_DIM_PAY_FAMILY_DOCUMENT.ktr]
+2013/08/30 09:45:10 - STC_DIM_PAY_FAMILY_DOCUMENT - Dispatching started for transformation [STC_DIM_PAY_FAMILY_DOCUMENT]
+2013/08/30 09:45:10 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:10 - Select values.0 - Finished processing (I=0, O=0, R=428, W=428, U=0, E=0)
+2013/08/30 09:45:10 - Table input.0 - Finished processing (I=428, O=0, R=0, W=428, U=0, E=0)
+2013/08/30 09:45:10 - Add sequence.0 - Finished processing (I=0, O=0, R=428, W=428, U=0, E=0)
+2013/08/30 09:45:11 - Insert / Update.0 - Finished processing (I=428, O=0, R=428, W=428, U=428, E=0)
+2013/08/30 09:45:11 - Payroll - Starting entry [Pay_allowance]
+2013/08/30 09:45:11 - Pay_allowance - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_fact_allowence.ktr]
+2013/08/30 09:45:11 - STC_fact_allowence - Dispatching started for transformation [STC_fact_allowence]
+2013/08/30 09:45:11 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:12 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:12 - Select values.0 - Finished processing (I=0, O=0, R=6126, W=6126, U=0, E=0)
+2013/08/30 09:45:12 - Table input.0 - Finished processing (I=6126, O=0, R=0, W=6126, U=0, E=0)
+2013/08/30 09:45:14 - Allowence_id.0 - Finished processing (I=6126, O=0, R=6126, W=6126, U=0, E=0)
+2013/08/30 09:45:14 - currency_id.0 - Finished processing (I=6126, O=0, R=6126, W=6126, U=0, E=0)
+2013/08/30 09:45:14 - emp_key_id.0 - Finished processing (I=6126, O=0, R=6126, W=6126, U=0, E=0)
+2013/08/30 09:45:14 - company_id.0 - Finished processing (I=6126, O=0, R=6126, W=6126, U=0, E=0)
+2013/08/30 09:45:14 - Table output.0 - Finished processing (I=0, O=6126, R=6126, W=6126, U=0, E=0)
+2013/08/30 09:45:14 - Payroll - Starting entry [emp_document]
+2013/08/30 09:45:14 - emp_document - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_EMP_DOCUMENT.ktr]
+2013/08/30 09:45:14 - STC_FACT_EMP_DOCUMENT - Dispatching started for transformation [STC_FACT_EMP_DOCUMENT]
+2013/08/30 09:45:14 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:16 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:16 - Table input.0 - Finished processing (I=8898, O=0, R=0, W=8898, U=0, E=0)
+2013/08/30 09:45:16 - Select values.0 - Finished processing (I=0, O=0, R=8898, W=8898, U=0, E=0)
+2013/08/30 09:45:18 - EMP_KEY_ID.0 - Finished processing (I=8898, O=0, R=8898, W=8898, U=0, E=0)
+2013/08/30 09:45:18 - DOCUMENT_ID.0 - Finished processing (I=8898, O=0, R=8898, W=8898, U=0, E=0)
+2013/08/30 09:45:18 - COMP_ID.0 - Finished processing (I=8898, O=0, R=8898, W=8898, U=0, E=0)
+2013/08/30 09:45:18 - Table output.0 - Finished processing (I=0, O=8898, R=8898, W=8898, U=0, E=0)
+2013/08/30 09:45:18 - Payroll - Starting entry [attendance]
+2013/08/30 09:45:18 - attendance - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_ATTENDANCE.ktr]
+2013/08/30 09:45:18 - STC_FACT_ATTENDANCE - Dispatching started for transformation [STC_FACT_ATTENDANCE]
+2013/08/30 09:45:18 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:19 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:19 - Select values.0 - Finished processing (I=0, O=0, R=1551, W=1551, U=0, E=0)
+2013/08/30 09:45:19 - Table input.0 - Finished processing (I=1551, O=0, R=0, W=1551, U=0, E=0)
+2013/08/30 09:45:19 - EMP_KEY_ID.0 - Finished processing (I=1551, O=0, R=1551, W=1551, U=0, E=0)
+2013/08/30 09:45:19 - PAYROLL_TXN_ID.0 - Finished processing (I=1551, O=0, R=1551, W=1551, U=0, E=0)
+2013/08/30 09:45:19 - COMP_ID.0 - Finished processing (I=0, O=0, R=1551, W=1551, U=0, E=0)
+2013/08/30 09:45:20 - Table output.0 - Finished processing (I=0, O=1551, R=1551, W=1551, U=0, E=0)
+2013/08/30 09:45:20 - Payroll - Starting entry [family_pers]
+2013/08/30 09:45:20 - family_pers - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_EMP_FAMILY_PERS.ktr]
+2013/08/30 09:45:20 - STC_FACT_EMP_FAMILY_PERS - Dispatching started for transformation [STC_FACT_EMP_FAMILY_PERS]
+2013/08/30 09:45:20 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:21 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:21 - Select values.0 - Finished processing (I=0, O=0, R=1154, W=1154, U=0, E=0)
+2013/08/30 09:45:21 - Table input.0 - Finished processing (I=1154, O=0, R=0, W=1154, U=0, E=0)
+2013/08/30 09:45:21 - COMP_ID.0 - Finished processing (I=0, O=0, R=1154, W=1154, U=0, E=0)
+2013/08/30 09:45:21 - EMP_KEY_ID.0 - Finished processing (I=39, O=0, R=1154, W=1154, U=0, E=0)
+2013/08/30 09:45:21 - SECTR_ID.0 - Finished processing (I=1135, O=0, R=1154, W=1154, U=0, E=0)
+2013/08/30 09:45:21 - RELATION_ID.0 - Finished processing (I=39, O=0, R=1154, W=1154, U=0, E=0)
+2013/08/30 09:45:21 - RELIGION_ID.0 - Finished processing (I=1154, O=0, R=1154, W=1154, U=0, E=0)
+2013/08/30 09:45:22 - Table output.0 - Finished processing (I=0, O=1154, R=1154, W=1154, U=0, E=0)
+2013/08/30 09:45:22 - Payroll - Starting entry [gratuity]
+2013/08/30 09:45:22 - gratuity - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_EMP_GRATUITY.ktr]
+2013/08/30 09:45:22 - STC_FACT_EMP_GRATUITY - Dispatching started for transformation [STC_FACT_EMP_GRATUITY]
+2013/08/30 09:45:22 - STC_FACT_EMP_GRATUITY.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:24 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:24 - Table input.0 - Finished processing (I=21831, O=0, R=0, W=21831, U=0, E=0)
+2013/08/30 09:45:27 - Select values.0 - Finished processing (I=0, O=0, R=21831, W=21831, U=0, E=0)
+2013/08/30 09:45:30 - GRATUITY_ID.0 - Finished processing (I=21831, O=0, R=21831, W=21831, U=0, E=0)
+2013/08/30 09:45:30 - EMP_KEY_ID .0 - Finished processing (I=21831, O=0, R=21831, W=21831, U=0, E=0)
+2013/08/30 09:45:30 - COMP_ID.0 - Finished processing (I=21831, O=0, R=21831, W=21831, U=0, E=0)
+2013/08/30 09:45:30 - STC_FACT_EMP_GRATUITY.0 - Finished processing (I=0, O=21831, R=21831, W=21831, U=0, E=0)
+2013/08/30 09:45:30 - Payroll - Starting entry [emp_key]
+2013/08/30 09:45:30 - emp_key - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_Fact_EMP_KEY.ktr]
+2013/08/30 09:45:30 - STC_Fact_EMP_KEY - Dispatching started for transformation [STC_Fact_EMP_KEY]
+2013/08/30 09:45:30 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:31 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:31 - Table input.0 - Finished processing (I=1441, O=0, R=0, W=1441, U=0, E=0)
+2013/08/30 09:45:31 - Select values.0 - Finished processing (I=0, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - LOCN_ID.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - emp_key_id.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - company_id.0 - Finished processing (I=1440, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - JOB_TITLE_ID.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - grade_id.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - POSN_TYPE_ID.0 - Finished processing (I=0, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - CALENDAR_ID.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - CONTRACT_TYPE_ID.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:32 - section_id.0 - Finished processing (I=1441, O=0, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:33 - Table output.0 - Finished processing (I=0, O=1441, R=1441, W=1441, U=0, E=0)
+2013/08/30 09:45:33 - Payroll - Starting entry [emp_leave]
+2013/08/30 09:45:33 - emp_leave - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_EMP_LEAVE.ktr]
+2013/08/30 09:45:33 - STC_FACT_EMP_LEAVE - Dispatching started for transformation [STC_FACT_EMP_LEAVE]
+2013/08/30 09:45:33 - Table output.0 - Connected to database [Warehouse1] (commit=1000)
+2013/08/30 09:45:34 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:34 - Select values.0 - Finished processing (I=0, O=0, R=1239, W=1239, U=0, E=0)
+2013/08/30 09:45:34 - Table input.0 - Finished processing (I=1239, O=0, R=0, W=1239, U=0, E=0)
+2013/08/30 09:45:34 - emp_key_id.0 - Finished processing (I=1239, O=0, R=1239, W=1239, U=0, E=0)
+2013/08/30 09:45:34 - GRP_COMP_ID.0 - Finished processing (I=1239, O=0, R=1239, W=1239, U=0, E=0)
+2013/08/30 09:45:34 - company_id.0 - Finished processing (I=1239, O=0, R=1239, W=1239, U=0, E=0)
+2013/08/30 09:45:34 - lv_id.0 - Finished processing (I=1239, O=0, R=1239, W=1239, U=0, E=0)
+2013/08/30 09:45:35 - Table output.0 - Finished processing (I=0, O=1239, R=1239, W=1239, U=0, E=0)
+2013/08/30 09:45:35 - Payroll - Starting entry [emp_pay]
+2013/08/30 09:45:35 - emp_pay - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_EMP_PAY.ktr]
+2013/08/30 09:45:35 - STC_FACT_EMP_PAY - Dispatching started for transformation [STC_FACT_EMP_PAY]
+2013/08/30 09:45:35 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:36 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:36 - Table input.0 - Finished processing (I=1291, O=0, R=0, W=1291, U=0, E=0)
+2013/08/30 09:45:36 - Select values.0 - Finished processing (I=0, O=0, R=1291, W=1291, U=0, E=0)
+2013/08/30 09:45:36 - BANK_ID.0 - Finished processing (I=1238, O=0, R=1291, W=1291, U=0, E=0)
+2013/08/30 09:45:36 - GRATUITY_ID.0 - Finished processing (I=1277, O=0, R=1291, W=1291, U=0, E=0)
+2013/08/30 09:45:36 - COMP_ID.0 - Finished processing (I=1291, O=0, R=1291, W=1291, U=0, E=0)
+2013/08/30 09:45:36 - EMP_KEY_ID.0 - Finished processing (I=1291, O=0, R=1291, W=1291, U=0, E=0)
+2013/08/30 09:45:37 - Table output.0 - Finished processing (I=0, O=1291, R=1291, W=1291, U=0, E=0)
+2013/08/30 09:45:37 - Payroll - Starting entry [FIN_POST]
+2013/08/30 09:45:37 - FIN_POST - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_FIN_POST.ktr]
+2013/08/30 09:45:37 - STC_FACT_FIN_POST - Dispatching started for transformation [STC_FACT_FIN_POST]
+2013/08/30 09:45:37 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:40 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:40 - Table input.0 - Finished processing (I=28133, O=0, R=0, W=28133, U=0, E=0)
+2013/08/30 09:45:43 - Select values.0 - Finished processing (I=0, O=0, R=28133, W=28133, U=0, E=0)
+2013/08/30 09:45:46 - EMP_KEY_ID.0 - Finished processing (I=28133, O=0, R=28133, W=28133, U=0, E=0)
+2013/08/30 09:45:46 - CURRENCY ID.0 - Finished processing (I=28133, O=0, R=28133, W=28133, U=0, E=0)
+2013/08/30 09:45:46 - COMP_ID.0 - Finished processing (I=28133, O=0, R=28133, W=28133, U=0, E=0)
+2013/08/30 09:45:46 - Table output.0 - Finished processing (I=0, O=28133, R=28133, W=28133, U=0, E=0)
+2013/08/30 09:45:46 - Payroll - Starting entry [LEAVE_ACCRUAL_CUR_PRV]
+2013/08/30 09:45:46 - LEAVE_ACCRUAL_CUR_PRV - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_LEAVE_ACCRUAL_CURR_PREV.ktr]
+2013/08/30 09:45:47 - STC_FACT_LEAVE_ACCRUAL_CURR_PREV - Dispatching started for transformation [STC_FACT_LEAVE_ACCRUAL_CURR_PREV]
+2013/08/30 09:45:47 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:48 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:48 - Table input.0 - Finished processing (I=7780, O=0, R=0, W=7780, U=0, E=0)
+2013/08/30 09:45:48 - Select values.0 - Finished processing (I=0, O=0, R=7780, W=7780, U=0, E=0)
+2013/08/30 09:45:50 - EMP_KEY_ID.0 - Finished processing (I=7780, O=0, R=7780, W=7780, U=0, E=0)
+2013/08/30 09:45:50 - CURR_CODE.0 - Finished processing (I=7475, O=0, R=7780, W=7780, U=0, E=0)
+2013/08/30 09:45:50 - Leave_id.0 - Finished processing (I=7780, O=0, R=7780, W=7780, U=0, E=0)
+2013/08/30 09:45:50 - COMP_ID.0 - Finished processing (I=7780, O=0, R=7780, W=7780, U=0, E=0)
+2013/08/30 09:45:50 - Table output.0 - Finished processing (I=0, O=7780, R=7780, W=7780, U=0, E=0)
+2013/08/30 09:45:50 - Payroll - Starting entry [LEAVE_APPLICATION_FLIGHT]
+2013/08/30 09:45:50 - LEAVE_APPLICATION_FLIGHT - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_LEAVE_APPLICATION_FLIGHT.ktr]
+2013/08/30 09:45:50 - STC_FACT_LEAVE_APPLICATION_FLIGHT - Dispatching started for transformation [STC_FACT_LEAVE_APPLICATION_FLIGHT]
+2013/08/30 09:45:51 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:51 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:51 - Table input.0 - Finished processing (I=9, O=0, R=0, W=9, U=0, E=0)
+2013/08/30 09:45:51 - Select values.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2013/08/30 09:45:51 - EMP_KEY_ID.0 - Finished processing (I=9, O=0, R=9, W=9, U=0, E=0)
+2013/08/30 09:45:51 - COMP_ID.0 - Finished processing (I=9, O=0, R=9, W=9, U=0, E=0)
+2013/08/30 09:45:51 - PAYROLL_TXN_ID.0 - Finished processing (I=9, O=0, R=9, W=9, U=0, E=0)
+2013/08/30 09:45:51 - Table output.0 - Finished processing (I=0, O=9, R=9, W=9, U=0, E=0)
+2013/08/30 09:45:51 - Payroll - Starting entry [LEAVE_CONV_PROC]
+2013/08/30 09:45:51 - LEAVE_CONV_PROC - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_LEAVE_CONV_PROC.ktr]
+2013/08/30 09:45:51 - STC_FACT_LEAVE_CONV_PROC - Dispatching started for transformation [STC_FACT_LEAVE_CONV_PROC]
+2013/08/30 09:45:52 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:52 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:52 - Table input.0 - Finished processing (I=2005, O=0, R=0, W=2005, U=0, E=0)
+2013/08/30 09:45:52 - Select values.0 - Finished processing (I=0, O=0, R=2005, W=2005, U=0, E=0)
+2013/08/30 09:45:53 - EMP_KEY_ID.0 - Finished processing (I=2005, O=0, R=2005, W=2005, U=0, E=0)
+2013/08/30 09:45:53 - Leave_id.0 - Finished processing (I=2005, O=0, R=2005, W=2005, U=0, E=0)
+2013/08/30 09:45:53 - COMP_ID.0 - Finished processing (I=2005, O=0, R=2005, W=2005, U=0, E=0)
+2013/08/30 09:45:53 - Table output.0 - Finished processing (I=0, O=2005, R=2005, W=2005, U=0, E=0)
+2013/08/30 09:45:53 - Payroll - Starting entry [LOAN_ADV_HEAD]
+2013/08/30 09:45:53 - LOAN_ADV_HEAD - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_LOAN_ADV_HEAD.ktr]
+2013/08/30 09:45:53 - STC_FACT_LOAN_ADV_HEAD - Dispatching started for transformation [STC_FACT_LOAN_ADV_HEAD]
+2013/08/30 09:45:54 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:55 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:55 - Select values.0 - Finished processing (I=0, O=0, R=360, W=360, U=0, E=0)
+2013/08/30 09:45:55 - Table input.0 - Finished processing (I=360, O=0, R=0, W=360, U=0, E=0)
+2013/08/30 09:45:55 - EMP_KEY_ID.0 - Finished processing (I=360, O=0, R=360, W=360, U=0, E=0)
+2013/08/30 09:45:55 - PAYROLL_TXN_ID.0 - Finished processing (I=360, O=0, R=360, W=360, U=0, E=0)
+2013/08/30 09:45:55 - ALLW_ID.0 - Finished processing (I=360, O=0, R=360, W=360, U=0, E=0)
+2013/08/30 09:45:55 - CcOMP_CODE.0 - Finished processing (I=360, O=0, R=360, W=360, U=0, E=0)
+2013/08/30 09:45:55 - COMP_ID 2.0 - Finished processing (I=360, O=0, R=360, W=360, U=0, E=0)
+2013/08/30 09:45:56 - Table output.0 - Finished processing (I=0, O=360, R=360, W=360, U=0, E=0)
+2013/08/30 09:45:56 - Payroll - Starting entry [LOAN_ADV_REPAY]
+2013/08/30 09:45:56 - LOAN_ADV_REPAY - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_LOAN_ADV_REPAY.ktr]
+2013/08/30 09:45:56 - STC_FACT_LOAN_ADV_REPAY - Dispatching started for transformation [STC_FACT_LOAN_ADV_REPAY]
+2013/08/30 09:45:56 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:57 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:57 - Table input.0 - Finished processing (I=65, O=0, R=0, W=65, U=0, E=0)
+2013/08/30 09:45:57 - Select values.0 - Finished processing (I=0, O=0, R=65, W=65, U=0, E=0)
+2013/08/30 09:45:57 - EMP_KEY_ID.0 - Finished processing (I=65, O=0, R=65, W=65, U=0, E=0)
+2013/08/30 09:45:57 - CURRENCY ID.0 - Finished processing (I=65, O=0, R=65, W=65, U=0, E=0)
+2013/08/30 09:45:57 - COMP_ID 2.0 - Finished processing (I=65, O=0, R=65, W=65, U=0, E=0)
+2013/08/30 09:45:57 - CcOMP_CODE.0 - Finished processing (I=65, O=0, R=65, W=65, U=0, E=0)
+2013/08/30 09:45:57 - PAYROLL_TXN_ID.0 - Finished processing (I=65, O=0, R=65, W=65, U=0, E=0)
+2013/08/30 09:45:57 - Table output.0 - Finished processing (I=0, O=65, R=65, W=65, U=0, E=0)
+2013/08/30 09:45:57 - Payroll - Starting entry [LOAN_SUSPENSION]
+2013/08/30 09:45:57 - LOAN_SUSPENSION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_LOAN_SUSPENSION.ktr]
+2013/08/30 09:45:57 - STC_FACT_LOAN_SUSPENSION - Dispatching started for transformation [STC_FACT_LOAN_SUSPENSION]
+2013/08/30 09:45:58 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:45:59 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:45:59 - Select values.0 - Finished processing (I=0, O=0, R=67, W=67, U=0, E=0)
+2013/08/30 09:45:59 - Table input.0 - Finished processing (I=67, O=0, R=0, W=67, U=0, E=0)
+2013/08/30 09:45:59 - EMP_KEY_ID.0 - Finished processing (I=67, O=0, R=67, W=67, U=0, E=0)
+2013/08/30 09:45:59 - PAYROLL_TXN_ID.0 - Finished processing (I=67, O=0, R=67, W=67, U=0, E=0)
+2013/08/30 09:45:59 - COMP_ID 2.0 - Finished processing (I=67, O=0, R=67, W=67, U=0, E=0)
+2013/08/30 09:45:59 - CcOMP_CODE.0 - Finished processing (I=67, O=0, R=67, W=67, U=0, E=0)
+2013/08/30 09:45:59 - Table output.0 - Finished processing (I=0, O=67, R=67, W=67, U=0, E=0)
+2013/08/30 09:45:59 - Payroll - Starting entry [OVERTIME PROCESS]
+2013/08/30 09:45:59 - OVERTIME PROCESS - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_OVERTIME_PROCESS.ktr]
+2013/08/30 09:45:59 - STC_FACT_OVERTIME_PROCESS - Dispatching started for transformation [STC_FACT_OVERTIME_PROCESS]
+2013/08/30 09:45:59 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:46:11 - Table input.0 - linenr 50000
+2013/08/30 09:46:14 - Select values.0 - linenr 50000
+2013/08/30 09:46:17 - EMP_KEY_ID.0 - linenr 50000
+2013/08/30 09:46:17 - COMP_ID.0 - linenr 50000
+2013/08/30 09:46:17 - Table output.0 - linenr 50000
+2013/08/30 09:46:17 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:46:17 - Table input.0 - Finished processing (I=70427, O=0, R=0, W=70427, U=0, E=0)
+2013/08/30 09:46:20 - Select values.0 - Finished processing (I=0, O=0, R=70427, W=70427, U=0, E=0)
+2013/08/30 09:46:23 - EMP_KEY_ID.0 - Finished processing (I=70427, O=0, R=70427, W=70427, U=0, E=0)
+2013/08/30 09:46:23 - COMP_ID.0 - Finished processing (I=70427, O=0, R=70427, W=70427, U=0, E=0)
+2013/08/30 09:46:23 - Table output.0 - Finished processing (I=0, O=70427, R=70427, W=70427, U=0, E=0)
+2013/08/30 09:46:23 - Payroll - Starting entry [PAY_CONT_TYPE_CHANGE]
+2013/08/30 09:46:23 - PAY_CONT_TYPE_CHANGE - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_PAY_CONT_TYPE_CHANGE.ktr]
+2013/08/30 09:46:23 - STC_FACT_PAY_CONT_TYPE_CHANGE - Dispatching started for transformation [STC_FACT_PAY_CONT_TYPE_CHANGE]
+2013/08/30 09:46:23 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:46:24 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:46:24 - Table input.0 - Finished processing (I=3, O=0, R=0, W=3, U=0, E=0)
+2013/08/30 09:46:24 - Select values.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/08/30 09:46:24 - EMP_KEY_ID.0 - Finished processing (I=3, O=0, R=3, W=3, U=0, E=0)
+2013/08/30 09:46:24 - Dept_ID.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/08/30 09:46:24 - LOCATION_ID.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/08/30 09:46:24 - COMP_ID.0 - Finished processing (I=3, O=0, R=3, W=3, U=0, E=0)
+2013/08/30 09:46:24 - Table output.0 - Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2013/08/30 09:46:24 - Payroll - Starting entry [PAYROLL_OVERTIME]
+2013/08/30 09:46:24 - PAYROLL_OVERTIME - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_PAYROLL_OVERTIME.ktr]
+2013/08/30 09:46:24 - STC_FACT_PAYROLL_OVERTIME - Dispatching started for transformation [STC_FACT_PAYROLL_OVERTIME]
+2013/08/30 09:46:24 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:46:34 - Table input.0 - linenr 50000
+2013/08/30 09:46:36 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:46:36 - Table input.0 - Finished processing (I=53988, O=0, R=0, W=53988, U=0, E=0)
+2013/08/30 09:46:38 - Select values.0 - linenr 50000
+2013/08/30 09:46:39 - Select values.0 - Finished processing (I=0, O=0, R=53988, W=53988, U=0, E=0)
+2013/08/30 09:46:41 - EMP_KEY_ID.0 - linenr 50000
+2013/08/30 09:46:42 - EMP_KEY_ID.0 - Finished processing (I=53988, O=0, R=53988, W=53988, U=0, E=0)
+2013/08/30 09:46:45 - PAYROLL_TXN_ID.0 - linenr 50000
+2013/08/30 09:46:48 - PAYROLL_TXN_ID.0 - Finished processing (I=53988, O=0, R=53988, W=53988, U=0, E=0)
+2013/08/30 09:46:52 - COMP_ID.0 - linenr 50000
+2013/08/30 09:46:54 - COMP_ID.0 - Finished processing (I=53988, O=0, R=53988, W=53988, U=0, E=0)
+2013/08/30 09:46:58 - GRP_COMP_ID.0 - linenr 50000
+2013/08/30 09:46:58 - Dept_ID.0 - linenr 50000
+2013/08/30 09:46:58 - Table output.0 - linenr 50000
+2013/08/30 09:47:00 - GRP_COMP_ID.0 - Finished processing (I=53988, O=0, R=53988, W=53988, U=0, E=0)
+2013/08/30 09:47:00 - Dept_ID.0 - Finished processing (I=0, O=0, R=53988, W=53988, U=0, E=0)
+2013/08/30 09:47:00 - Table output.0 - Finished processing (I=0, O=53988, R=53988, W=53988, U=0, E=0)
+2013/08/30 09:47:00 - Payroll - Starting entry [PAYROLL_REVISION]
+2013/08/30 09:47:00 - PAYROLL_REVISION - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_PAYROLL_REVISION.ktr]
+2013/08/30 09:47:01 - STC_FACT_PAYROLL_REVISION - Dispatching started for transformation [STC_FACT_PAYROLL_REVISION]
+2013/08/30 09:47:01 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:47:02 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:47:02 - Table input.0 - Finished processing (I=1265, O=0, R=0, W=1265, U=0, E=0)
+2013/08/30 09:47:02 - Select values.0 - Finished processing (I=0, O=0, R=1265, W=1265, U=0, E=0)
+2013/08/30 09:47:02 - EMP_KEY_ID.0 - Finished processing (I=1265, O=0, R=1265, W=1265, U=0, E=0)
+2013/08/30 09:47:02 - COMP_ID.0 - Finished processing (I=1265, O=0, R=1265, W=1265, U=0, E=0)
+2013/08/30 09:47:02 - PAYROLL_TXN_ID.0 - Finished processing (I=1265, O=0, R=1265, W=1265, U=0, E=0)
+2013/08/30 09:47:03 - Table output.0 - Finished processing (I=0, O=1265, R=1265, W=1265, U=0, E=0)
+2013/08/30 09:47:03 - Payroll - Starting entry [PAYROLL_TIMESHEET]
+2013/08/30 09:47:03 - PAYROLL_TIMESHEET - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_PAYROLL_TIMESHEET.ktr]
+2013/08/30 09:47:03 - STC_FACT_PAYROLL_TIMESHEET - Dispatching started for transformation [STC_FACT_PAYROLL_TIMESHEET]
+2013/08/30 09:47:04 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:47:05 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:47:05 - Table input.0 - Finished processing (I=10000, O=0, R=0, W=10000, U=0, E=0)
+2013/08/30 09:47:05 - Select values.0 - Finished processing (I=0, O=0, R=10000, W=10000, U=0, E=0)
+2013/08/30 09:47:07 - EMP_KEY_ID.0 - Finished processing (I=9995, O=0, R=10000, W=10000, U=0, E=0)
+2013/08/30 09:47:07 - PAYROLL_TXN_ID.0 - Finished processing (I=10000, O=0, R=10000, W=10000, U=0, E=0)
+2013/08/30 09:47:07 - COMP_ID.0 - Finished processing (I=9926, O=0, R=10000, W=10000, U=0, E=0)
+2013/08/30 09:47:07 - Table output.0 - Finished processing (I=0, O=10000, R=10000, W=10000, U=0, E=0)
+2013/08/30 09:47:07 - Payroll - Starting entry [PAYROLL_TRANSFERS]
+2013/08/30 09:47:07 - PAYROLL_TRANSFERS - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_PAYROLL_TRANSFERS.ktr]
+2013/08/30 09:47:07 - STC_FACT_PAYROLL_TRANSFERS - Dispatching started for transformation [STC_FACT_PAYROLL_TRANSFERS]
+2013/08/30 09:47:08 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:47:09 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:47:09 - Table input.0 - Finished processing (I=150, O=0, R=0, W=150, U=0, E=0)
+2013/08/30 09:47:09 - Select values.0 - Finished processing (I=0, O=0, R=150, W=150, U=0, E=0)
+2013/08/30 09:47:09 - EMP_KEY_ID.0 - Finished processing (I=150, O=0, R=150, W=150, U=0, E=0)
+2013/08/30 09:47:09 - COMP_ID.0 - Finished processing (I=150, O=0, R=150, W=150, U=0, E=0)
+2013/08/30 09:47:09 - Dept_ID.0 - Finished processing (I=0, O=0, R=150, W=150, U=0, E=0)
+2013/08/30 09:47:09 - Table output.0 - Finished processing (I=0, O=150, R=150, W=150, U=0, E=0)
+2013/08/30 09:47:09 - Payroll - Starting entry [PAYROLL_SAL_REVISION_ALLOWANCE]
+2013/08/30 09:47:09 - PAYROLL_SAL_REVISION_ALLOWANCE - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_SAL_REVISION_ALLOWANCE.ktr]
+2013/08/30 09:47:09 - STC_FACT_SAL_REVISION_ALLOWANCE - Dispatching started for transformation [STC_FACT_SAL_REVISION_ALLOWANCE]
+2013/08/30 09:47:09 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:47:10 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:47:10 - Table input.0 - Finished processing (I=1986, O=0, R=0, W=1986, U=0, E=0)
+2013/08/30 09:47:10 - Select values.0 - Finished processing (I=0, O=0, R=1986, W=1986, U=0, E=0)
+2013/08/30 09:47:11 - Currency_id.0 - Finished processing (I=1986, O=0, R=1986, W=1986, U=0, E=0)
+2013/08/30 09:47:11 - EMP_KEY_ID.0 - Finished processing (I=1986, O=0, R=1986, W=1986, U=0, E=0)
+2013/08/30 09:47:11 - PAYROLL_TXN_ID.0 - Finished processing (I=1986, O=0, R=1986, W=1986, U=0, E=0)
+2013/08/30 09:47:11 - ALLW_ID.0 - Finished processing (I=1986, O=0, R=1986, W=1986, U=0, E=0)
+2013/08/30 09:47:11 - COMP_ID.0 - Finished processing (I=1986, O=0, R=1986, W=1986, U=0, E=0)
+2013/08/30 09:47:12 - Table output.0 - Finished processing (I=0, O=1986, R=1986, W=1986, U=0, E=0)
+2013/08/30 09:47:12 - Payroll - Starting entry [VAR_ALLW]
+2013/08/30 09:47:12 - VAR_ALLW - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_VAR_ALLW.ktr]
+2013/08/30 09:47:12 - STC_FACT_VAR_ALLW - Dispatching started for transformation [STC_FACT_VAR_ALLW]
+2013/08/30 09:47:12 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:47:14 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:47:14 - Table input.0 - Finished processing (I=5424, O=0, R=0, W=5424, U=0, E=0)
+2013/08/30 09:47:14 - Select values.0 - Finished processing (I=0, O=0, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:15 - EMP_KEY_ID.0 - Finished processing (I=5424, O=0, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:15 - PAYROLL_TXN_ID.0 - Finished processing (I=5424, O=0, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:15 - ALLW_ID.0 - Finished processing (I=5424, O=0, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:15 - SECTION_ID.0 - Finished processing (I=0, O=0, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:15 - COMP_ID.0 - Finished processing (I=5424, O=0, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:15 - CURRENCY ID.0 - Finished processing (I=5424, O=0, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:16 - Table output.0 - Finished processing (I=0, O=5424, R=5424, W=5424, U=0, E=0)
+2013/08/30 09:47:16 - Payroll - Starting entry [RESU_HEAD]
+2013/08/30 09:47:16 - RESU_HEAD - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_LEAVE_RESU_HEAD.ktr]
+2013/08/30 09:47:16 - STC_LEAVE_RESU_HEAD - Dispatching started for transformation [STC_LEAVE_RESU_HEAD]
+2013/08/30 09:47:16 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:47:17 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:47:17 - Table input.0 - Finished processing (I=552, O=0, R=0, W=552, U=0, E=0)
+2013/08/30 09:47:17 - Select values.0 - Finished processing (I=0, O=0, R=552, W=552, U=0, E=0)
+2013/08/30 09:47:17 - EMP_KEY_ID.0 - Finished processing (I=552, O=0, R=552, W=552, U=0, E=0)
+2013/08/30 09:47:17 - PAYROLL_TXN_ID.0 - Finished processing (I=552, O=0, R=552, W=552, U=0, E=0)
+2013/08/30 09:47:17 - COMP_ID.0 - Finished processing (I=552, O=0, R=552, W=552, U=0, E=0)
+2013/08/30 09:47:18 - Table output.0 - Finished processing (I=0, O=552, R=552, W=552, U=0, E=0)
+2013/08/30 09:47:18 - Payroll - Starting entry [PROG_FLEX_PAY_FIELDS]
+2013/08/30 09:47:18 - PROG_FLEX_PAY_FIELDS - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/PROG_FLEX_PAY_FIELDS.ktr]
+2013/08/30 09:47:18 - PROG_FLEX_PAY_FIELDS - Dispatching started for transformation [PROG_FLEX_PAY_FIELDS]
+2013/08/30 09:47:18 - Table output 2.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 09:47:19 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:47:19 - Table input.0 - Finished processing (I=1294, O=0, R=0, W=1294, U=0, E=0)
+2013/08/30 09:47:19 - Select values 2.0 - Finished processing (I=0, O=0, R=1294, W=1294, U=0, E=0)
+2013/08/30 09:47:19 - Database lookup.0 - Finished processing (I=1294, O=0, R=1294, W=1294, U=0, E=0)
+2013/08/30 09:47:19 - Table output 2.0 - Finished processing (I=0, O=1294, R=1294, W=1294, U=0, E=0)
+2013/08/30 09:47:19 - Payroll - Starting entry [FINAL_PROC]
+2013/08/30 09:47:19 - FINAL_PROC - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_FACT_PAY_EMP_FINAL_PROC.ktr]
+2013/08/30 09:47:19 - STC_FACT_PAY_EMP_FINAL_PROC - Dispatching started for transformation [STC_FACT_PAY_EMP_FINAL_PROC]
+2013/08/30 09:47:20 - Table output.0 - Connected to database [Warehouse1] (commit=1000)
+2013/08/30 09:47:35 - Table input.0 - linenr 50000
+2013/08/30 09:47:40 - Select values.0 - linenr 50000
+2013/08/30 09:47:47 - pay_grade_id.0 - linenr 50000
+2013/08/30 09:47:47 - EMP_SECTION_CODE.0 - linenr 50000
+2013/08/30 09:47:47 - SECTION_ID.0 - linenr 50000
+2013/08/30 09:47:47 - BANK_ID.0 - linenr 50000
+2013/08/30 09:47:47 - ALLOWANCE_ID.0 - linenr 50000
+2013/08/30 09:47:47 - PAY LOCATION CODE.0 - linenr 50000
+2013/08/30 09:47:47 - PAY_LOCATIN_ID.0 - linenr 50000
+2013/08/30 09:47:48 - EMP_KEY_ID.0 - linenr 50000
+2013/08/30 09:47:48 - job_title_id.0 - linenr 50000
+2013/08/30 09:47:48 - BANK_ID 6.0 - linenr 50000
+2013/08/30 09:47:48 - CcOMP_CODE.0 - linenr 50000
+2013/08/30 09:47:48 - COMP_ID.0 - linenr 50000
+2013/08/30 09:47:49 - Table output.0 - linenr 50000
+2013/08/30 09:48:05 - Table input.0 - linenr 100000
+2013/08/30 09:48:12 - Select values.0 - linenr 100000
+2013/08/30 09:48:12 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:48:12 - Table input.0 - Finished processing (I=109935, O=0, R=0, W=109935, U=0, E=0)
+2013/08/30 09:48:16 - pay_grade_id.0 - linenr 100000
+2013/08/30 09:48:17 - Select values.0 - Finished processing (I=0, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:17 - EMP_SECTION_CODE.0 - linenr 100000
+2013/08/30 09:48:17 - SECTION_ID.0 - linenr 100000
+2013/08/30 09:48:17 - BANK_ID.0 - linenr 100000
+2013/08/30 09:48:17 - ALLOWANCE_ID.0 - linenr 100000
+2013/08/30 09:48:17 - PAY LOCATION CODE.0 - linenr 100000
+2013/08/30 09:48:17 - PAY_LOCATIN_ID.0 - linenr 100000
+2013/08/30 09:48:17 - EMP_KEY_ID.0 - linenr 100000
+2013/08/30 09:48:17 - job_title_id.0 - linenr 100000
+2013/08/30 09:48:17 - BANK_ID 6.0 - linenr 100000
+2013/08/30 09:48:17 - CcOMP_CODE.0 - linenr 100000
+2013/08/30 09:48:18 - COMP_ID.0 - linenr 100000
+2013/08/30 09:48:18 - Table output.0 - linenr 100000
+2013/08/30 09:48:20 - pay_grade_id.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:20 - EMP_SECTION_CODE.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - SECTION_ID.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - BANK_ID.0 - Finished processing (I=104439, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - ALLOWANCE_ID.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - PAY_LOCATIN_ID.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - PAY LOCATION CODE.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - EMP_KEY_ID.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - job_title_id.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - BANK_ID 6.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - CcOMP_CODE.0 - Finished processing (I=109935, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - COMP_ID.0 - Finished processing (I=109915, O=0, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - Table output.0 - Finished processing (I=0, O=109935, R=109935, W=109935, U=0, E=0)
+2013/08/30 09:48:21 - Payroll - Starting entry [EOS_PROC]
+2013/08/30 09:48:21 - EOS_PROC - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Payroll/STC_PAY_FACT_EOS_PROC.ktr]
+2013/08/30 09:48:22 - STC_PAY_FACT_EOS_PROC - Dispatching started for transformation [STC_PAY_FACT_EOS_PROC]
+2013/08/30 09:48:22 - Table output.0 - Connected to database [Warehouse1] (commit=1000)
+2013/08/30 09:48:23 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 09:48:23 - Select values.0 - Finished processing (I=0, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - Table input.0 - Finished processing (I=1081, O=0, R=0, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - pay_grade_id.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - SECTOR_ID.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - BANK_ID.0 - Finished processing (I=1048, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - ALLOWANCE_ID.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - PAY_LOCATIN_ID.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - EMP_KEY_ID.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - job_title_id.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - POSN_TYPE.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - CcOMP_CODE.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:23 - COMP_ID 2.0 - Finished processing (I=1081, O=0, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:24 - Table output.0 - Finished processing (I=0, O=1081, R=1081, W=1081, U=0, E=0)
+2013/08/30 09:48:24 - Payroll - Finished job entry [EOS_PROC] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [FINAL_PROC] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [PROG_FLEX_PAY_FIELDS] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [RESU_HEAD] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [VAR_ALLW] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [PAYROLL_SAL_REVISION_ALLOWANCE] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [PAYROLL_TRANSFERS] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [PAYROLL_TIMESHEET] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [PAYROLL_REVISION] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [PAYROLL_OVERTIME] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [PAY_CONT_TYPE_CHANGE] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [OVERTIME PROCESS] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [LOAN_SUSPENSION] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [LOAN_ADV_REPAY] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [LOAN_ADV_HEAD] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [LEAVE_CONV_PROC] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [LEAVE_APPLICATION_FLIGHT] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [LEAVE_ACCRUAL_CUR_PRV] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [FIN_POST] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [emp_pay] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [emp_leave] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [emp_key] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [gratuity] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [family_pers] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [attendance] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [emp_document] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [Pay_allowance] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [family_document] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [sal_stop_upto] (result=[true])
+2013/08/30 09:48:24 - Payroll - Finished job entry [sal_stop_from] (result=[true])
+2013/08/30 09:48:24 - STC_ETL_JOB_PAYROLL - Finished job entry [Payroll] (result=[true])
+2013/08/30 09:48:24 - STC_ETL_JOB_PAYROLL - Job execution finished

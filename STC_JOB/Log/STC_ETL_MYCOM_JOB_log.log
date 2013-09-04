@@ -1,0 +1,601 @@
+2013/08/30 17:04:47 - Kitchen - Logging is at level : Basic logging
+2013/08/30 17:04:47 - Kitchen - Start of run.
+2013/08/30 17:04:47 - STC_ETL_MYCOM_JOB - Start of job execution
+2013/08/30 17:04:47 - STC_ETL_MYCOM_JOB - Starting entry [MYCOM_DIM]
+2013/08/30 17:04:47 - MYCOM_DIM - Starting entry [SetMaxDIMETLDate]
+2013/08/30 17:04:47 - SetMaxDIMETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/SetMYCOMMaxDIMETLDate.ktr]
+2013/08/30 17:04:49 - SetMYCOMMaxDIMETLDate - Dispatching started for transformation [SetMYCOMMaxDIMETLDate]
+2013/08/30 17:04:50 - Set Module Name.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:04:50 - Set Module Name.0 - Set variable VARMODULENAME to value [MYCOM]
+2013/08/30 17:04:50 - Set Module Name.0 - Set variable VARFACTNAME to value [MYCOM_DIM]
+2013/08/30 17:04:50 - Set Module Name.0 - Finished after 0 rows.
+2013/08/30 17:04:50 - MYCOM_DIM.0 - Finished reading query, closing connection.
+2013/08/30 17:04:50 - Set Variables.0 - Setting environment variables...
+2013/08/30 17:04:50 - Set Variables.0 - Set variable MAXETLDATE_MYCOM_DIM to value [2013-08-30]
+2013/08/30 17:04:50 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:50 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 17:04:50 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:50 - MYCOM_DIM.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:04:50 - MYCOM_DIM - Starting entry [ITEM_VAR_MYCOM]
+2013/08/30 17:04:50 - ITEM_VAR_MYCOM - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM_item_JOB\dim_item_env.ktr]
+2013/08/30 17:04:50 - ITEM_VAR_MYCOM - Dispatching started for transformation [dim_item_env]
+2013/08/30 17:04:50 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:50 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:50 - Set Variables.0 - Setting environment variables...
+2013/08/30 17:04:50 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:04:50 - Set Variables.0 - Set variable VAR_ITEM_ID to value [5551698]
+2013/08/30 17:04:50 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 17:04:50 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:50 - MYCOM_DIM - Starting entry [DIM_ITEM_MYCOM]
+2013/08/30 17:04:50 - DIM_ITEM_MYCOM - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM_item_JOB\dim_item_mycom.ktr]
+2013/08/30 17:04:50 - DIM_ITEM_MYCOM - Dispatching started for transformation [dim_item_mycom]
+2013/08/30 17:04:50 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:50 - MYCOM_DIM - Starting entry [cust variable MYCOM]
+2013/08/30 17:04:50 - cust variable MYCOM - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\Dim_Customer_Job\dim_customer_variable.ktr]
+2013/08/30 17:04:50 - cust variable MYCOM - Dispatching started for transformation [dim_customer_variable]
+2013/08/30 17:04:50 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:50 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:50 - Set Variables.0 - Setting environment variables...
+2013/08/30 17:04:50 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:04:50 - Set Variables.0 - Set variable VAR_customer_ID to value [803567]
+2013/08/30 17:04:51 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 17:04:51 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:51 - MYCOM_DIM - Starting entry [MYCOM CUST DIM]
+2013/08/30 17:04:51 - MYCOM CUST DIM - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\Dim_Customer_Job\MYCOM_DIM_CUSTOMERS_CONSOLIDATE.ktr]
+2013/08/30 17:04:51 - MYCOM CUST DIM - Dispatching started for transformation [MYCOM_DIM_CUSTOMERS_CONSOLIDATE]
+2013/08/30 17:04:51 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:51 - Select values 2.0 - Finished processing (I=0, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:51 - Table input.0 - Finished processing (I=16, O=0, R=0, W=16, U=0, E=0)
+2013/08/30 17:04:51 - Add sequence.0 - Finished processing (I=0, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:51 - Insert / Update.0 - Finished processing (I=16, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:51 - MYCOM_DIM - Starting entry [mycm_addr_var]
+2013/08/30 17:04:51 - mycm_addr_var - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\stc_dim_customer_address\STC_CUST_ADDR_VARIABLE.ktr]
+2013/08/30 17:04:51 - mycm_addr_var - Dispatching started for transformation [STC_CUST_ADDR_VARIABLE]
+2013/08/30 17:04:51 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:51 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:51 - Set Variables.0 - Setting environment variables...
+2013/08/30 17:04:51 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:04:51 - Set Variables.0 - Set variable VAR_CUST_ADDRESS_ID to value [864357]
+2013/08/30 17:04:51 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 17:04:51 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:51 - MYCOM_DIM - Starting entry [mycom_cust_addr]
+2013/08/30 17:04:51 - mycom_cust_addr - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\stc_dim_customer_address\mycom_cust_addr.ktr]
+2013/08/30 17:04:51 - mycom_cust_addr - Dispatching started for transformation [mycom_cust_addr]
+2013/08/30 17:04:51 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:51 - Select values 2.0 - Finished processing (I=0, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:51 - Add sequence.0 - Finished processing (I=0, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:51 - Table input.0 - Finished processing (I=16, O=0, R=0, W=16, U=0, E=0)
+2013/08/30 17:04:52 - Insert / Update.0 - Finished processing (I=16, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:52 - MYCOM_DIM - Starting entry [VAR_supplier_mycom]
+2013/08/30 17:04:52 - VAR_supplier_mycom - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\SUPPLIER_JOB\supplier_variable.ktr]
+2013/08/30 17:04:52 - VAR_supplier_mycom - Dispatching started for transformation [supplier job]
+2013/08/30 17:04:52 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:52 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:52 - Set Variables.0 - Setting environment variables...
+2013/08/30 17:04:52 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:04:52 - Set Variables.0 - Set variable VAR_SUPPLIER_ID to value [118780]
+2013/08/30 17:04:52 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 17:04:52 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:04:52 - MYCOM_DIM - Starting entry [DIM_supplier_MYCOM]
+2013/08/30 17:04:52 - DIM_supplier_MYCOM - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\SUPPLIER_JOB\SUPPLIER_MYCOM.ktr]
+2013/08/30 17:04:52 - DIM_supplier_MYCOM - Dispatching started for transformation [SUPPLIER_MYCOM]
+2013/08/30 17:04:52 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:52 - Table input.0 - Finished processing (I=1417, O=0, R=0, W=1417, U=0, E=0)
+2013/08/30 17:04:52 - Select values 2.0 - Finished processing (I=0, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 17:04:52 - Add sequence.0 - Finished processing (I=0, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 17:04:54 - Insert / Update.0 - Finished processing (I=1417, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 17:04:54 - MYCOM_DIM - Starting entry [mycom_dim_price_lev]
+2013/08/30 17:04:54 - mycom_dim_price_lev - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_price_lev.ktr]
+2013/08/30 17:04:55 - mycom_dim_price_lev - Dispatching started for transformation [mycom_dim_price_lev]
+2013/08/30 17:04:56 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:56 - MYCOM_DIM - Starting entry [Supplier]
+2013/08/30 17:04:56 - Supplier - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_suppliers.ktr]
+2013/08/30 17:04:56 - Supplier - Dispatching started for transformation [mycom_dim_suppliers]
+2013/08/30 17:04:56 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:56 - Select values.0 - Finished processing (I=0, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 17:04:56 - Table input.0 - Finished processing (I=1417, O=0, R=0, W=1417, U=0, E=0)
+2013/08/30 17:04:57 - MYCOM_SUPPLIER_ID.0 - Finished processing (I=1417, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 17:04:57 - Insert / Update.0 - Finished processing (I=1417, O=0, R=1417, W=1417, U=0, E=0)
+2013/08/30 17:04:57 - MYCOM_DIM - Starting entry [customers]
+2013/08/30 17:04:57 - customers - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_customers.ktr]
+2013/08/30 17:04:57 - customers - Dispatching started for transformation [mycom_dim_customers]
+2013/08/30 17:04:57 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:57 - Select values.0 - Finished processing (I=0, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:57 - Table input.0 - Finished processing (I=16, O=0, R=0, W=16, U=0, E=0)
+2013/08/30 17:04:58 - cust_id_lkp.0 - Finished processing (I=16, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:58 - Insert / Update.0 - Finished processing (I=16, O=0, R=16, W=16, U=0, E=0)
+2013/08/30 17:04:58 - MYCOM_DIM - Starting entry [mycom_dim_supp_ref]
+2013/08/30 17:04:58 - mycom_dim_supp_ref - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\\mycom_dim_supp_ref.ktr]
+2013/08/30 17:04:58 - mycom_dim_supp_ref - Dispatching started for transformation [mycom_dim_supp_ref]
+2013/08/30 17:04:59 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:59 - MYCOM_DIM - Starting entry [mycom_dim_pack_master]
+2013/08/30 17:04:59 - mycom_dim_pack_master - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_pack_master.ktr]
+2013/08/30 17:04:59 - mycom_dim_pack_master - Dispatching started for transformation [mycom_dim_pack_master]
+2013/08/30 17:04:59 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:04:59 - Select values.0 - Finished processing (I=0, O=0, R=10, W=10, U=0, E=0)
+2013/08/30 17:04:59 - Table input.0 - Finished processing (I=10, O=0, R=0, W=10, U=0, E=0)
+2013/08/30 17:04:59 - Add sequence.0 - Finished processing (I=0, O=0, R=10, W=10, U=0, E=0)
+2013/08/30 17:04:59 - Insert / Update.0 - Finished processing (I=10, O=0, R=10, W=10, U=0, E=0)
+2013/08/30 17:04:59 - MYCOM_DIM - Starting entry [mycom_dim_barcode]
+2013/08/30 17:04:59 - mycom_dim_barcode - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_barcode.ktr]
+2013/08/30 17:04:59 - mycom_dim_barcode - Dispatching started for transformation [mycom_dim_barcode]
+2013/08/30 17:05:01 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:05:01 - MYCOM_DIM - Starting entry [mycom_dim_price_grp]
+2013/08/30 17:05:01 - mycom_dim_price_grp - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_price_grp.ktr]
+2013/08/30 17:05:01 - mycom_dim_price_grp - Dispatching started for transformation [mycom_dim_price_grp]
+2013/08/30 17:05:01 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:05:01 - Select values.0 - Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2013/08/30 17:05:01 - Add sequence.0 - Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2013/08/30 17:05:01 - Table input.0 - Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2013/08/30 17:05:01 - Insert / Update.0 - Finished processing (I=4, O=0, R=4, W=4, U=0, E=0)
+2013/08/30 17:05:01 - MYCOM_DIM - Starting entry [mycom_dim_prod_mast]
+2013/08/30 17:05:01 - mycom_dim_prod_mast - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_prod_mast.ktr]
+2013/08/30 17:05:01 - mycom_dim_prod_mast - Dispatching started for transformation [mycom_dim_prod_mast]
+2013/08/30 17:05:01 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:05:01 - MYCOM_DIM - Starting entry [mycom_dim_prod_um]
+2013/08/30 17:05:01 - mycom_dim_prod_um - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\\mycom_dim_prod_um.ktr]
+2013/08/30 17:05:01 - mycom_dim_prod_um - Dispatching started for transformation [mycom_dim_prod_um]
+2013/08/30 17:05:01 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:05:01 - MYCOM_DIM - Starting entry [mycom_dim_scale_grp]
+2013/08/30 17:05:02 - mycom_dim_scale_grp - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\mycom_dim_scale_grp.ktr]
+2013/08/30 17:05:02 - mycom_dim_scale_grp - Dispatching started for transformation [mycom_dim_scale_grp]
+2013/08/30 17:05:02 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:05:02 - Select values.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2013/08/30 17:05:02 - Table input.0 - Finished processing (I=8, O=0, R=0, W=8, U=0, E=0)
+2013/08/30 17:05:02 - Add sequence.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2013/08/30 17:05:02 - Insert / Update.0 - Finished processing (I=8, O=0, R=8, W=8, U=0, E=0)
+2013/08/30 17:05:02 - MYCOM_DIM - Starting entry [MYCOM_DIM_STORE]
+2013/08/30 17:05:02 - MYCOM_DIM_STORE - Loading transformation from XML file [E:\DW\Incremental_ETL\Dimensions\DIM\MYCOM_DIM_STORE.ktr]
+2013/08/30 17:05:02 - MYCOM_DIM_STORE - Dispatching started for transformation [MYCOM_DIM_STORE]
+2013/08/30 17:05:02 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:05:02 - Select values.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2013/08/30 17:05:02 - Add sequence.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2013/08/30 17:05:02 - Table input.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2013/08/30 17:05:02 - Insert / Update.0 - Finished processing (I=11, O=0, R=11, W=11, U=0, E=0)
+2013/08/30 17:05:02 - MYCOM_DIM - Starting entry [InsertDIMETLDate]
+2013/08/30 17:05:02 - InsertDIMETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/Dimensions/InsertMYCOMDIMETLDate.ktr]
+2013/08/30 17:05:02 - InsertMYCOMDIMETLDate - Dispatching started for transformation [InsertMYCOMDIMETLDate]
+2013/08/30 17:05:02 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:05:02 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:02 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:02 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:02 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:02 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:05:02 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [InsertDIMETLDate] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [MYCOM_DIM_STORE] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_scale_grp] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_prod_um] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_prod_mast] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_price_grp] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_barcode] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_pack_master] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_supp_ref] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [customers] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [Supplier] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_dim_price_lev] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [DIM_supplier_MYCOM] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [VAR_supplier_mycom] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycom_cust_addr] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [mycm_addr_var] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [MYCOM CUST DIM] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [cust variable MYCOM] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [DIM_ITEM_MYCOM] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [ITEM_VAR_MYCOM] (result=[true])
+2013/08/30 17:05:02 - MYCOM_DIM - Finished job entry [SetMaxDIMETLDate] (result=[true])
+2013/08/30 17:05:02 - STC_ETL_MYCOM_JOB - Starting entry [MYCOM_FACT]
+2013/08/30 17:05:02 - MYCOM_FACT - Starting entry [SetMaxETLDate]
+2013/08/30 17:05:02 - SetMaxETLDate - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/SetMYCOMMaxETLDate.ktr]
+2013/08/30 17:05:03 - SetMYCOMMaxETLDate - Dispatching started for transformation [SetMYCOMMaxETLDate]
+2013/08/30 17:05:03 - Set Module Name.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:05:03 - Set Module Name.0 - Set variable VARMODULENAME to value [MYCOM]
+2013/08/30 17:05:03 - Set Module Name.0 - Finished after 0 rows.
+2013/08/30 17:05:03 - MYCOM_ADJ_HD.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - Select values 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 4.0 - Setting environment variables...
+2013/08/30 17:05:03 - MYCOM_POS_TRAN_HD.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - Set Variables 2 6.0 - Setting environment variables...
+2013/08/30 17:05:03 - Select values 2 9.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - MYCOM_PURCHASE_RET.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - Set Variables 2 3.0 - Setting environment variables...
+2013/08/30 17:05:03 - Set Variables 2 5.0 - Setting environment variables...
+2013/08/30 17:05:03 - Set Variables 2 7.0 - Setting environment variables...
+2013/08/30 17:05:03 - MYCOM_PO_HD.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - Set Variables 2 2.0 - Setting environment variables...
+2013/08/30 17:05:03 - MYCOM_OP_HD_BAL.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - MYCOM_STOCK.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - Set Variables 2.0 - Setting environment variables...
+2013/08/30 17:05:03 - MYCOM_INV_HD.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - MYCOM_GRN.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - Set Variables 2 8.0 - Setting environment variables...
+2013/08/30 17:05:03 - Set Variables 2 7 2.0 - Setting environment variables...
+2013/08/30 17:05:03 - MYCOM_STOCK_CNT.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - MYCOM_STOCK_KEEP.0 - Finished reading query, closing connection.
+2013/08/30 17:05:03 - Set Variables.0 - Setting environment variables...
+2013/08/30 17:05:03 - MYCOM_GRN.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - MYCOM_INV_HD.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 7 2.0 - Set variable MAXETLDATE_MYCOM_STOCK_KEEP to value [2013-08-24]
+2013/08/30 17:05:03 - MYCOM_STOCK.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 8.0 - Set variable MAXETLDATE_MYCOM_STOCK_CNT to value [2013-08-23]
+2013/08/30 17:05:03 - Set Variables 2.0 - Set variable MAXETLDATE_MYCOM_GRN to value [2013-08-30]
+2013/08/30 17:05:03 - MYCOM_OP_HD_BAL.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - MYCOM_PO_HD.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 2.0 - Set variable MAXETLDATE_MYCOM_INV_HD to value [2013-08-23]
+2013/08/30 17:05:03 - Set Variables 2 7.0 - Set variable MAXETLDATE_MYCOM_STOCK to value [2013-05-30]
+2013/08/30 17:05:03 - MYCOM_PURCHASE_RET.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 5.0 - Set variable MAXETLDATE_MYCOM_PO_HD to value [2013-08-23]
+2013/08/30 17:05:03 - Set Variables 2 3.0 - Set variable MAXETLDATE_MYCOM_OP_HD_BAL to value [2013-08-23]
+2013/08/30 17:05:03 - MYCOM_POS_TRAN_HD.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 6.0 - Set variable MAXETLDATE_MYCOM_PURCHASE_RET to value [2013-08-23]
+2013/08/30 17:05:03 - Set Variables 2 4.0 - Set variable MAXETLDATE_MYCOM_POS_TRAN_HD to value [2013-08-23]
+2013/08/30 17:05:03 - MYCOM_ADJ_HD.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Select values 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 4.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2 6.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2 3.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2 5.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2 7.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2 2.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2 8.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables 2 7 2.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - MYCOM_STOCK_KEEP.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - MYCOM_STOCK_CNT.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables.0 - Set variable MAXETLDATE_MYCOM_ADJ_HD to value [2013-08-30]
+2013/08/30 17:05:03 - Set Variables 2 7 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 8.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 2.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 7.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 5.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 6.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables 2 4.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:03 - Set Variables.0 - Finished after 1 rows.
+2013/08/30 17:05:03 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:05:04 - MYCOM_FACT - Starting entry [MYCOM_FACT_ADJ_HD_INCR]
+2013/08/30 17:05:04 - MYCOM_FACT_ADJ_HD_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_ADJ_HD_INCR.ktr]
+2013/08/30 17:05:04 - MYCOM_FACT_ADJ_HD_INCR - Dispatching started for transformation [MYCOM_FACT_ADJ_HD_INCR]
+2013/08/30 17:05:05 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 17:05:05 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:05:05 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_ADJ_HD]
+2013/08/30 17:05:05 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 17:07:22 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:07:22 - MYCOM_FACT - Starting entry [ETL LOG]
+2013/08/30 17:07:22 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 17:07:22 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 17:07:22 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:07:22 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:07:22 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:07:22 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:07:22 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:07:22 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:07:22 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:07:22 - MYCOM_FACT - Starting entry [MYCOM_FACT_GRN_INCR]
+2013/08/30 17:07:22 - MYCOM_FACT_GRN_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_GRN_INCR.ktr]
+2013/08/30 17:07:22 - MYCOM_FACT_GRN_INCR - Dispatching started for transformation [MYCOM_FACT_GRN_INCR]
+2013/08/30 17:07:23 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 17:07:23 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:07:23 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_GRN]
+2013/08/30 17:07:23 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 17:09:38 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:09:38 - MYCOM_FACT - Starting entry [PROG_ETL_LOG]
+2013/08/30 17:09:38 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 17:09:38 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 17:09:38 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:09:38 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:09:38 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:09:38 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:09:38 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:09:38 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:09:38 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:09:38 - MYCOM_FACT - Starting entry [MYCOM_FACT_INV_HD_INCR]
+2013/08/30 17:09:38 - MYCOM_FACT_INV_HD_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_INV_HD_INCR.ktr]
+2013/08/30 17:09:38 - MYCOM_FACT_INV_HD_INCR - Dispatching started for transformation [MYCOM_FACT_INV_HD_INCR]
+2013/08/30 17:09:40 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 17:09:40 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:09:40 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_INV_HD]
+2013/08/30 17:09:40 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 17:10:18 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:10:18 - Table input.0 - Finished processing (I=110, O=0, R=0, W=110, U=0, E=0)
+2013/08/30 17:10:18 - Select values.0 - Finished processing (I=0, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Select values.1 - Finished processing (I=0, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Prod_mast_id.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - pack_master_id .0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - pack_master_id .1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Prod_mast_id.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - item_id.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - comp_code.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Database lookup.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - prod_um_id.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - SUPP_ID 2.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - curr_id.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - barcode_id.0 - Finished processing (I=0, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Database lookup.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - SUPP_ID.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - branch_id.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - item_id.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Dept_Id.0 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - comp_code.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - supp_ref_id.0 - Finished processing (I=0, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - prod_um_id.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - SUPP_ID 2.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - barcode_id.1 - Finished processing (I=0, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Dept_Id.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - curr_id.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - supp_ref_id.1 - Finished processing (I=0, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - branch_id.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - SUPP_ID.1 - Finished processing (I=55, O=0, R=55, W=55, U=0, E=0)
+2013/08/30 17:10:18 - Insert / Update.0 - Finished processing (I=110, O=108, R=110, W=110, U=2, E=0)
+2013/08/30 17:10:18 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (2)]
+2013/08/30 17:10:18 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 17:10:18 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 17:10:19 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:10:19 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:19 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:19 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:10:19 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:19 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:10:19 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:19 - MYCOM_FACT - Starting entry [MYCOM_FACT_OP_HD_BAL_INCR]
+2013/08/30 17:10:19 - MYCOM_FACT_OP_HD_BAL_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_OP_HD_BAL_INCR.ktr]
+2013/08/30 17:10:19 - MYCOM_FACT_OP_HD_BAL_INCR - Dispatching started for transformation [MYCOM_FACT_OP_HD_BAL_INCR]
+2013/08/30 17:10:19 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 17:10:19 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:10:19 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_OP_HD_BAL]
+2013/08/30 17:10:19 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 17:10:21 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:10:21 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (3)]
+2013/08/30 17:10:21 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 17:10:21 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 17:10:21 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:10:21 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:21 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:21 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:21 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:10:21 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:10:21 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:10:21 - MYCOM_FACT - Starting entry [MYCOM_FACT_PURCHASE_RET_INCR]
+2013/08/30 17:10:21 - MYCOM_FACT_PURCHASE_RET_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_PURCHASE_RET_INCR.ktr]
+2013/08/30 17:10:21 - MYCOM_FACT_PURCHASE_RET_INCR - Dispatching started for transformation [MYCOM_FACT_PURCHASE_RET_INCR]
+2013/08/30 17:10:22 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 17:10:22 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:10:22 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_PURCHASE_RET]
+2013/08/30 17:10:22 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 17:11:16 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:11:16 - Table input.0 - Finished processing (I=1813, O=0, R=0, W=1813, U=0, E=0)
+2013/08/30 17:11:16 - Select values.0 - Finished processing (I=0, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:16 - Select values.1 - Finished processing (I=0, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:16 - Prod_mast_id.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:16 - pack_master_id .1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:16 - Prod_mast_id.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:16 - pack_master_id .0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - item_id.1 - Finished processing (I=7, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - Database lookup.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - prod_um_id.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - comp_code.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - Database lookup.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - prod_um_id.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - comp_code.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - item_id.0 - Finished processing (I=7, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - barcode_id.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - curr_id.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - curr_id.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - Dept_Id.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - supp_ref_id.1 - Finished processing (I=0, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - Dept_Id.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - SUPP_ID.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - branch_id.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - barcode_id.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - branch_id.1 - Finished processing (I=906, O=0, R=906, W=906, U=0, E=0)
+2013/08/30 17:11:17 - SUPP_ID.0 - Finished processing (I=907, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - supp_ref_id.0 - Finished processing (I=0, O=0, R=907, W=907, U=0, E=0)
+2013/08/30 17:11:17 - Insert / Update.0 - Finished processing (I=1813, O=1813, R=1813, W=1813, U=0, E=0)
+2013/08/30 17:11:17 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (6)]
+2013/08/30 17:11:17 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 17:11:17 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 17:11:17 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:11:17 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:11:17 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:11:17 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:11:17 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:11:17 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:11:17 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:11:17 - MYCOM_FACT - Starting entry [MYCOM_FACT_POS_TRAN_HD_INCR]
+2013/08/30 17:11:17 - MYCOM_FACT_POS_TRAN_HD_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_POS_TRAN_HD_INCR.ktr]
+2013/08/30 17:11:17 - MYCOM_FACT_POS_TRAN_HD_INCR - Dispatching started for transformation [MYCOM_FACT_POS_TRAN_HD_INCR]
+2013/08/30 17:11:18 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 17:11:18 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:11:18 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_POS_TRAN_HD]
+2013/08/30 17:11:18 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 17:13:08 - Table input.0 - linenr 50000
+2013/08/30 17:22:09 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:22:09 - Select values.0 - Finished processing (I=0, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:22:09 - Select values.1 - Finished processing (I=0, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:22:09 - Table input.0 - Finished processing (I=77293, O=0, R=0, W=77293, U=0, E=0)
+2013/08/30 17:27:06 - Prod_mast_id.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:27:09 - Prod_mast_id.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:34:02 - Insert / Update.0 - linenr 50000
+2013/08/30 17:35:59 - pack_master_id .1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:36:00 - pack_master_id .0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:36 - item_id.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:36 - comp_code.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:36 - prod_um_id.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:36 - Database lookup.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:37 - branch_id.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:37 - Dept_Id.0 - Finished processing (I=38646, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:37 - curr_id.0 - Finished processing (I=0, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:37 - barcode_id.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:37 - supp_ref_id.0 - Finished processing (I=0, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:37 - SUPP_ID.0 - Finished processing (I=38647, O=0, R=38647, W=38647, U=0, E=0)
+2013/08/30 17:44:41 - item_id.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - Database lookup.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - barcode_id.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - comp_code.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - prod_um_id.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - curr_id.1 - Finished processing (I=0, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - Dept_Id.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - branch_id.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - SUPP_ID.1 - Finished processing (I=38646, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - supp_ref_id.1 - Finished processing (I=0, O=0, R=38646, W=38646, U=0, E=0)
+2013/08/30 17:44:41 - Insert / Update.0 - Finished processing (I=77293, O=73954, R=77293, W=77293, U=3339, E=0)
+2013/08/30 17:44:41 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (7)]
+2013/08/30 17:44:41 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 17:44:41 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 17:44:41 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:44:41 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:44:41 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:44:41 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:44:41 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:44:41 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:44:41 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:44:41 - MYCOM_FACT - Starting entry [MYCOM_FACT_PO_HD_INCR]
+2013/08/30 17:44:41 - MYCOM_FACT_PO_HD_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_PO_HD_INCR.ktr]
+2013/08/30 17:44:41 - MYCOM_FACT_PO_HD_INCR - Dispatching started for transformation [MYCOM_FACT_PO_HD_INCR]
+2013/08/30 17:44:42 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 17:44:42 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 17:44:42 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_PO_HD]
+2013/08/30 17:44:42 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 17:45:48 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:45:48 - Select values.0 - Finished processing (I=0, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:45:48 - Select values.1 - Finished processing (I=0, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:45:48 - Table input.0 - Finished processing (I=18911, O=0, R=0, W=18911, U=0, E=0)
+2013/08/30 17:48:30 - Prod_mast_id.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:48:30 - pack_master_id .0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:48:33 - Prod_mast_id.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:48:33 - pack_master_id .1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - item_id.1 - Finished processing (I=695, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - Database lookup.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - comp_code 2.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - prod_um_id.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - Dept_Id.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - curr_id.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - barcode_id.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - SUPP_ID.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - branch_id.1 - Finished processing (I=9455, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:31 - supp_ref_id.1 - Finished processing (I=0, O=0, R=9455, W=9455, U=0, E=0)
+2013/08/30 17:53:36 - item_id.0 - Finished processing (I=706, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - Database lookup.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - prod_um_id.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - comp_code 2.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - Dept_Id.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - curr_id.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - supp_ref_id.0 - Finished processing (I=0, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - barcode_id.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - branch_id.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - SUPP_ID.0 - Finished processing (I=9456, O=0, R=9456, W=9456, U=0, E=0)
+2013/08/30 17:53:36 - Insert / Update.0 - Finished processing (I=18911, O=18203, R=18911, W=18911, U=708, E=0)
+2013/08/30 17:53:36 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (8)]
+2013/08/30 17:53:36 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 17:53:36 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 17:53:36 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 17:53:36 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:53:36 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:53:36 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 17:53:36 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:53:36 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 17:53:36 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 17:53:36 - MYCOM_FACT - Starting entry [MYCOM_FACT_STOCK_INCR]
+2013/08/30 17:53:36 - MYCOM_FACT_STOCK_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_STOCK_INCR.ktr]
+2013/08/30 17:53:36 - MYCOM_FACT_STOCK_INCR - Dispatching started for transformation [MYCOM_FACT_STOCK_INCR]
+2013/08/30 17:53:37 - Table output.0 - Connected to database [Warehouse] (commit=10000)
+2013/08/30 17:55:05 - Table input.0 - linenr 50000
+2013/08/30 18:05:13 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 18:05:13 - Table input.0 - Finished processing (I=90441, O=0, R=0, W=90441, U=0, E=0)
+2013/08/30 18:13:06 - Select values.1 - Finished processing (I=0, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 18:13:16 - Select values.0 - Finished processing (I=0, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 18:20:58 - Prod_mast_id.1 - Finished processing (I=45220, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 18:21:15 - Prod_mast_id.0 - Finished processing (I=45221, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 18:27:55 - item_id.1 - Finished processing (I=0, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 18:27:55 - Database lookup.1 - Finished processing (I=45220, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 18:27:55 - barcode_id.1 - Finished processing (I=45220, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 18:27:55 - comp_code.1 - Finished processing (I=45220, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 18:28:10 - item_id.0 - Finished processing (I=0, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 18:28:10 - Database lookup.0 - Finished processing (I=45221, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 18:28:10 - barcode_id.0 - Finished processing (I=45221, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 18:28:10 - comp_code.0 - Finished processing (I=45221, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 19:02:52 - Dept_Id.1 - Finished processing (I=0, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 19:04:01 - Dept_Id.0 - Finished processing (I=0, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 19:47:49 - Insert / Update.0 - linenr 50000
+2013/08/30 19:48:27 - branch_id.1 - Finished processing (I=45220, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 19:49:38 - branch_id.0 - Finished processing (I=45221, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 20:34:51 - SUPP_ID.1 - Finished processing (I=0, O=0, R=45220, W=45220, U=0, E=0)
+2013/08/30 20:35:53 - SUPP_ID.0 - Finished processing (I=0, O=0, R=45221, W=45221, U=0, E=0)
+2013/08/30 21:15:56 - Insert / Update.0 - Finished processing (I=90441, O=188, R=90441, W=90441, U=90253, E=0)
+2013/08/30 21:15:56 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (9)]
+2013/08/30 21:15:56 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 21:15:56 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 21:15:56 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 21:15:56 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:15:56 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:15:56 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 21:15:56 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:15:56 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 21:15:56 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:15:56 - MYCOM_FACT - Starting entry [MYCOM_FACT_STOCK_CNT_INCR]
+2013/08/30 21:15:56 - MYCOM_FACT_STOCK_CNT_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_STOCK_CNT_INCR.ktr]
+2013/08/30 21:15:56 - MYCOM_FACT_STOCK_CNT_INCR - Dispatching started for transformation [MYCOM_FACT_STOCK_CNT_INCR]
+2013/08/30 21:15:57 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 21:15:57 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 21:15:57 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_STOCK_CNT]
+2013/08/30 21:15:57 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 21:16:01 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 21:16:01 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (4)]
+2013/08/30 21:16:01 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 21:16:01 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 21:16:01 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 21:16:01 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:01 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:01 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:01 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 21:16:01 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 21:16:01 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:01 - MYCOM_FACT - Starting entry [MYCOM_FACT_STOCK_KEEP_INCR]
+2013/08/30 21:16:01 - MYCOM_FACT_STOCK_KEEP_INCR - Loading transformation from XML file [file:///E:/DW/Incremental_ETL/MYCOM/MYCOM_FACT_STOCK_KEEP_INCR.ktr]
+2013/08/30 21:16:01 - MYCOM_FACT_STOCK_KEEP - Dispatching started for transformation [MYCOM_FACT_STOCK_KEEP]
+2013/08/30 21:16:02 - Table output.0 - Connected to database [Warehouse] (commit=1000)
+2013/08/30 21:16:02 - Set Variables.0 - We didn't receive a row while setting the default values.
+2013/08/30 21:16:02 - Set Variables.0 - Set variable VARFACTNAME to value [MYCOM_FACT_STOCK_KEEP]
+2013/08/30 21:16:02 - Set Variables.0 - Finished after 0 rows.
+2013/08/30 21:16:03 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 21:16:03 - MYCOM_FACT - Starting entry [PROG_ETL_LOG (5)]
+2013/08/30 21:16:03 - ETL LOG - Loading transformation from XML file [E:\DW\Incremental_ETL\Common\PROG_ETL_LOG.ktr]
+2013/08/30 21:16:03 - ETL LOG - Dispatching started for transformation [PROG_ETL_LOG]
+2013/08/30 21:16:03 - Table input.0 - Finished reading query, closing connection.
+2013/08/30 21:16:03 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:03 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:03 - Add sequence.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:03 - Table input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/08/30 21:16:03 - Execute SQL script.0 - Finished reading query, closing connection.
+2013/08/30 21:16:03 - Execute SQL script.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (5)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_STOCK_KEEP_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (4)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_STOCK_CNT_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (9)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_STOCK_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (8)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_PO_HD_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (7)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_POS_TRAN_HD_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (6)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_PURCHASE_RET_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (3)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_OP_HD_BAL_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG (2)] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_INV_HD_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [PROG_ETL_LOG] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_GRN_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [ETL LOG] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [MYCOM_FACT_ADJ_HD_INCR] (result=[true])
+2013/08/30 21:16:03 - MYCOM_FACT - Finished job entry [SetMaxETLDate] (result=[true])
+2013/08/30 21:16:03 - STC_ETL_MYCOM_JOB - Finished job entry [MYCOM_FACT] (result=[true])
+2013/08/30 21:16:03 - STC_ETL_MYCOM_JOB - Finished job entry [MYCOM_DIM] (result=[true])
+2013/08/30 21:16:03 - STC_ETL_MYCOM_JOB - Job execution finished
